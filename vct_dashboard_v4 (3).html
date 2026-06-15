@@ -1,0 +1,1167 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VConnecTech — Workforce Intelligence Dashboard v3</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',Arial,sans-serif;font-size:13px;background:#F0F3F8;color:#1a1a1a;min-height:100vh}
+:root{
+  --navy:#1F3864;--blue:#2E5FAC;--teal:#1F7A8C;
+  --g-bg:#E2EFDA;--g:#375623;--gbar:#6FA84F;
+  --y-bg:#FFF2CC;--y:#7A5000;--ybar:#E6B84C;
+  --r-bg:#FFCCCC;--r:#C00000;--rbar:#E06666;
+  --b-bg:#D6E4F7;--b:#1F3864;
+  --grey-bg:#E8EAF0;--grey:#555;
+  --rad:8px;--shadow:0 2px 8px rgba(0,0,0,.07);
+}
+.page{max-width:1440px;margin:0 auto;padding:14px}
+
+/* TOPBAR */
+.topbar{background:linear-gradient(135deg,#1F3864 0%,#2E5FAC 100%);border-radius:var(--rad);padding:14px 20px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 3px 12px rgba(31,56,100,.3);flex-wrap:wrap;gap:8px}
+.topbar .title{color:#fff;font-size:17px;font-weight:700}
+.topbar .sub{color:#B4C7E7;font-size:11px;margin-top:3px}
+.topbar-right{color:#B4C7E7;font-size:11px;text-align:right}
+.logo{font-size:22px;font-weight:700;color:#fff;letter-spacing:2px}
+.vpill{display:inline-block;background:rgba(255,255,255,.15);color:#fff;font-size:9px;padding:2px 8px;border-radius:3px;margin-left:8px;vertical-align:middle}
+
+/* DATA SOURCE BAR */
+.srcbar{display:flex;align-items:center;gap:10px;font-size:11px;padding:7px 14px;border-radius:var(--rad);margin:10px 0;border:1.5px solid;flex-wrap:wrap}
+.srcbar.live{background:#E2EFDA;border-color:#6FA84F;color:#375623}
+.srcbar.snap{background:#FFF2CC;border-color:#E6B84C;color:#7A5000}
+.srcbar.loading{background:#D6E4F7;border-color:#8CA8D8;color:#1F3864}
+.src-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+.srcbar.live .src-dot{background:#375623;box-shadow:0 0 0 3px rgba(55,86,35,.2)}
+.srcbar.snap .src-dot{background:#E6AC00}
+.srcbar.loading .src-dot{background:#2E5FAC;animation:pulse 1s infinite}
+@keyframes pulse{50%{opacity:.3}}
+.src-btn{margin-left:auto;font-size:10px;padding:4px 11px;border-radius:5px;border:1px solid currentColor;background:transparent;color:inherit;cursor:pointer;font-weight:700}
+.src-help{font-size:10px;margin-top:6px;width:100%;display:none;line-height:1.6}
+.src-help.open{display:block}
+.src-help code{background:rgba(0,0,0,.07);padding:1px 5px;border-radius:3px;font-size:9px}
+
+/* KPI STRIP */
+.kpi-strip{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.kpi{flex:1;min-width:105px;background:#fff;border:1.5px solid #dde3ef;border-radius:var(--rad);padding:11px 13px;box-shadow:var(--shadow);cursor:pointer;transition:transform .12s}
+.kpi:hover{transform:translateY(-2px)}
+.kpi-val{font-size:25px;font-weight:700;line-height:1}
+.kpi-lbl{font-size:10px;color:#666;margin-top:3px;text-transform:uppercase;letter-spacing:.04em}
+.kpi-sub{font-size:9px;color:#999;margin-top:3px}
+.kpi.green .kpi-val{color:var(--g)}.kpi.amber .kpi-val{color:var(--y)}
+.kpi.red .kpi-val{color:var(--r)}.kpi.blue .kpi-val{color:var(--b)}
+.kpi.teal .kpi-val{color:var(--teal)}.kpi.grey .kpi-val{color:var(--grey)}
+
+/* ALERTS */
+.alert{display:flex;align-items:flex-start;gap:10px;border-radius:var(--rad);padding:9px 14px;margin-bottom:8px;font-size:11px;border:1.5px solid;line-height:1.5}
+.alert.crit{background:var(--r-bg);border-color:var(--r);color:var(--r)}
+.alert.warn{background:var(--y-bg);border-color:#E6AC00;color:var(--y)}
+.alert-pill{font-size:9px;font-weight:700;padding:2px 7px;border-radius:3px;white-space:nowrap;color:#fff;margin-top:1px}
+.alert.crit .alert-pill{background:var(--r)}.alert.warn .alert-pill{background:#E6AC00}
+
+/* LEGEND */
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11px;margin-bottom:10px;background:#fff;padding:8px 13px;border-radius:var(--rad);border:1.5px solid #dde3ef;align-items:center}
+.legend .dot{margin-right:4px}
+.legend-note{color:#999;font-size:10px}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;vertical-align:middle}
+.dot.g{background:var(--gbar)}.dot.y{background:var(--ybar)}.dot.r{background:var(--rbar)}.dot.o{background:#999}
+
+/* FILTER BAR */
+.filterbar{display:flex;gap:9px;flex-wrap:wrap;align-items:center;background:#fff;border:1.5px solid #dde3ef;border-radius:var(--rad);padding:9px 13px;margin-bottom:12px;box-shadow:var(--shadow)}
+.filterbar label{font-size:11px;font-weight:700;color:#444}
+.filterbar select{font-size:11px;padding:5px 9px;border-radius:5px;border:1px solid #ccc;background:#fff;cursor:pointer;max-width:160px}
+.filter-count{font-size:11px;color:#888;margin-left:auto}
+.btn-reset{font-size:11px;padding:5px 11px;border-radius:5px;border:1px solid #ccc;background:#fff;cursor:pointer;color:#555}
+.btn-reset:hover{background:#f0f0f0}
+
+/* TABS */
+.tab-row{display:flex;border-bottom:2px solid #dde3ef;margin-bottom:6px;overflow-x:auto}
+.tab{padding:9px 15px;font-size:11px;font-weight:700;cursor:pointer;border:none;background:none;color:#888;border-bottom:3px solid transparent;margin-bottom:-2px;white-space:nowrap}
+.tab.active{color:var(--navy);border-bottom-color:var(--navy);background:#f5f7fc}
+.tab:hover{color:var(--navy)}
+.pane{display:none}.pane.active{display:block}
+.pane-cap{font-size:11px;color:#888;margin:6px 0 12px}
+
+/* CARDS GENERIC */
+.card{background:#fff;border:1.5px solid #dde3ef;border-radius:var(--rad);padding:14px 16px;box-shadow:var(--shadow);margin-bottom:12px}
+.card h4{font-size:11px;font-weight:700;color:var(--navy);margin-bottom:10px;text-transform:uppercase;letter-spacing:.05em;padding-bottom:6px;border-bottom:1.5px solid #dde3ef}
+.card .hint{font-size:10px;color:#999;margin-bottom:8px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:820px){.grid2{grid-template-columns:1fr}}
+
+/* ORG HIERARCHY — level card boxes */
+.org-level{margin-bottom:18px}
+.org-level-hdr{font-size:10px;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;padding-bottom:5px;border-bottom:1.5px solid #dde3ef}
+.org-level-hdr span{color:#aaa;font-weight:400;margin-left:6px}
+.org-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
+.org-connector{width:1px;background:#c8d4e8;margin:0 0 8px 18px;height:14px}
+/* sub-group label (e.g. SystemC) */
+.org-subhdr{font-size:10px;font-weight:700;color:#555;margin:8px 0 5px;padding-left:2px;text-transform:uppercase;letter-spacing:.05em;width:100%}
+
+/* card base */
+.ocard{border-radius:7px;padding:11px 12px 9px;cursor:pointer;transition:transform .12s,box-shadow .12s;min-width:155px;max-width:200px;box-shadow:0 1px 6px rgba(0,0,0,.1);position:relative}
+.ocard:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.18)}
+.ocard-name{font-size:12px;font-weight:700;line-height:1.3;margin-bottom:3px}
+.ocard-sub{font-size:10px;opacity:.72;margin-bottom:2px;line-height:1.4}
+.ocard-prac{font-size:9.5px;opacity:.60;margin-bottom:7px;line-height:1.4}
+.ocard-pill{display:inline-block;font-size:9px;font-weight:700;padding:2px 8px;border-radius:10px;white-space:nowrap}
+
+/* L1 — navy */
+.oc-l1{background:#1F3864;color:#fff}
+.oc-l1 .ocard-pill.pill-b{background:rgba(255,255,255,.22);color:#fff}
+.oc-l1 .ocard-pill.pill-f{background:#E6B84C;color:#5a3c00}
+.oc-l1 .ocard-pill.pill-u{background:#E06666;color:#fff}
+
+/* L2 billed — teal */
+.oc-l2b{background:#1F7A8C;color:#fff}
+.oc-l2b .ocard-pill.pill-b{background:rgba(255,255,255,.22);color:#fff}
+.oc-l2b .ocard-pill.pill-f{background:#E6B84C;color:#5a3c00}
+.oc-l2b .ocard-pill.pill-u{background:#E06666;color:#fff}
+
+/* L2 buffer — mid-blue */
+.oc-l2f{background:#2E5FAC;color:#fff}
+.oc-l2f .ocard-pill.pill-b{background:rgba(255,255,255,.22);color:#fff}
+.oc-l2f .ocard-pill.pill-f{background:#E6B84C;color:#5a3c00}
+.oc-l2f .ocard-pill.pill-u{background:#E06666;color:#fff}
+
+/* L3 — light blue */
+.oc-l3{background:#D6E4F7;color:#1F3864;border:1.5px solid #8CA8D8}
+.oc-l3 .ocard-pill.pill-b{background:#1F3864;color:#fff}
+.oc-l3 .ocard-pill.pill-f{background:#2E5FAC;color:#fff}
+.oc-l3 .ocard-pill.pill-u{background:#E06666;color:#fff}
+
+/* L4 — white */
+.oc-l4{background:#fff;color:#1a1a1a;border:1.5px solid #c8d4e8}
+.oc-l4 .ocard-pill.pill-b{background:#1F3864;color:#fff}
+.oc-l4 .ocard-pill.pill-f{background:#2E5FAC;color:#fff}
+.oc-l4 .ocard-pill.pill-u{background:#E06666;color:#fff}
+
+.ocard-pill.pill-k{background:#8C8C8C;color:#fff}
+.oc-l3 .ocard-pill.pill-k,.oc-l4 .ocard-pill.pill-k{background:#8C8C8C;color:#fff}
+
+
+/* legacy chip (unused in new view but kept for matrix etc.) */
+.lead-group{display:none}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:10px;padding:5px 9px;border-radius:14px;border:1.2px solid #dde3ef;background:#fafbfd;cursor:pointer;font-family:inherit;transition:transform .1s}
+.chip:hover{transform:translateY(-1px);box-shadow:0 3px 8px rgba(0,0,0,.1);background:#fff}
+.chip .cp{color:#999;font-size:9px}
+.chip.st-Billed{border-color:#1F3864;background:#EEF2FA}.chip.st-Buffer{border-color:#2E5FAC;background:#F0F5FF}.chip.st-UnBilled{border-color:#1F7A8C;background:#EAF4F7}.chip.st-Onsite{border-color:#8CA8D8;background:#F5F8FD}
+
+/* MATRIX */
+.matrix-wrap{overflow-x:auto;border-radius:var(--rad);box-shadow:var(--shadow)}
+table.mx{border-collapse:collapse;font-size:11px;width:100%;background:#fff}
+table.mx th{background:var(--navy);color:#fff;padding:6px 6px;text-align:center;font-weight:700;font-size:9.5px;border:1px solid #2E5FAC;position:sticky;top:0;z-index:2;white-space:pre-line;min-width:52px}
+table.mx th.prac-hdr{text-align:left;min-width:150px;position:sticky;left:0;z-index:3;background:var(--navy)}
+table.mx td{padding:4px 3px;text-align:center;border:1px solid #e8ecf4;vertical-align:middle}
+table.mx td.pname{text-align:left;font-weight:700;padding-left:10px;background:#f5f7fc;position:sticky;left:0;z-index:1;border-right:2px solid #dde3ef;cursor:pointer}
+table.mx td.pname:hover{background:#e9eef8}
+table.mx td.tot{font-weight:700;background:var(--b-bg);color:var(--b);border-left:2px solid #8CA8D8;cursor:pointer}
+table.mx td.tot:hover{background:#c3d6f0}
+table.mx tr.tot-row td{font-weight:700;background:var(--navy);color:#fff;cursor:pointer}
+table.mx tr.tot-row td:hover{background:#2E5FAC}
+table.mx tr.tot-row td.pname{background:var(--navy);color:#fff}
+.cx{display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:22px;border-radius:4px;font-weight:700;font-size:10.5px;cursor:pointer;margin:1px;transition:transform .1s}
+.cx:hover{transform:scale(1.18);box-shadow:0 2px 6px rgba(0,0,0,.15)}
+.cx-b{background:var(--g-bg);color:var(--g)}.cx-f{background:var(--y-bg);color:var(--y)}.cx-u{background:var(--r-bg);color:var(--r)}.cx-k{background:var(--grey-bg);color:var(--grey)}.cx-o{background:var(--grey-bg);color:var(--grey)}.stb-Bench{background:var(--grey-bg);color:var(--grey)}
+.cx-nil{color:#ddd}
+
+/* PROJECT CARDS */
+.own-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:10px}
+.own-card{border-radius:var(--rad);padding:12px 14px;border:1.5px solid #dde3ef;background:#fff;cursor:pointer;transition:transform .12s,box-shadow .12s;position:relative;box-shadow:var(--shadow)}
+.own-card:hover{transform:translateY(-2px);box-shadow:0 5px 14px rgba(0,0,0,.12)}
+.own-hc{position:absolute;top:10px;right:13px;font-size:22px;font-weight:700;color:var(--navy)}
+.own-proj{font-weight:700;font-size:12px;padding-right:42px}
+.own-client{font-size:10px;color:#888;margin-top:2px}
+.own-owner{font-size:10px;color:var(--blue);font-weight:700;margin-top:4px}
+.own-split{display:flex;gap:5px;margin-top:8px;flex-wrap:wrap}
+.split-pill{font-size:9.5px;font-weight:700;padding:2px 7px;border-radius:10px}
+.sp-g{background:var(--g-bg);color:var(--g)}.sp-y{background:var(--y-bg);color:var(--y)}.sp-r{background:var(--r-bg);color:var(--r)}.sp-o{background:var(--grey-bg);color:var(--grey)}
+.own-risk{font-size:10px;margin-top:8px;padding:3px 8px;border-radius:4px;display:inline-block;font-weight:600}
+.own-risk.r{background:var(--r-bg);color:var(--r)}.own-risk.w{background:var(--y-bg);color:var(--y)}.own-risk.ok{background:var(--g-bg);color:var(--g)}
+.own-hdr{font-size:12px;font-weight:700;color:var(--navy);margin:16px 0 8px;padding-bottom:5px;border-bottom:2px solid #dde3ef;text-transform:uppercase;letter-spacing:.04em}
+
+/* HEALTH: gauge + stacked bars */
+.gauge-wrap{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.gi-val{font-size:34px;font-weight:700;color:var(--navy)}
+.gi-lbl{font-size:10px;color:#888;text-transform:uppercase;letter-spacing:.04em}
+.gi-sub{font-size:11px;color:#555;margin-top:4px;max-width:340px;line-height:1.5}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.pill{font-size:10px;padding:4px 10px;border-radius:20px;font-weight:700;cursor:pointer}
+.pl-g{background:var(--g-bg);color:var(--g)}.pl-y{background:var(--y-bg);color:var(--y)}.pl-r{background:var(--r-bg);color:var(--r)}.pl-o{background:var(--grey-bg);color:var(--grey)}
+.stk-row{display:flex;align-items:center;gap:8px;margin-bottom:7px;cursor:pointer}
+.stk-row:hover .stk-lbl{color:var(--navy);font-weight:700}
+.stk-lbl{font-size:10.5px;color:#555;min-width:128px;text-align:right}
+.stk-track{flex:1;display:flex;height:19px;border-radius:4px;overflow:hidden;background:#f0f3f8}
+.stk-seg{height:100%;display:flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700;min-width:0;white-space:nowrap;overflow:hidden}
+.seg-g{background:var(--gbar);color:#fff}.seg-y{background:var(--ybar);color:#5a3c00}.seg-r{background:var(--rbar);color:#fff}.seg-o{background:#b9bfcc;color:#fff}
+.stk-n{font-size:10px;color:#888;min-width:28px}
+.conc-row{display:flex;align-items:center;gap:8px;margin-bottom:6px;cursor:pointer}
+.conc-row:hover .stk-lbl{color:var(--navy);font-weight:700}
+.conc-fill{height:17px;border-radius:3px;background:linear-gradient(90deg,#2E5FAC,#1F7A8C);display:flex;align-items:center;padding:0 7px;color:#fff;font-size:9.5px;font-weight:700;min-width:30px}
+.cliff-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px}
+.cliff-card{border-radius:var(--rad);padding:12px 14px;border:1.5px solid;cursor:pointer;transition:transform .12s}
+.cliff-card:hover{transform:translateY(-2px)}
+.cliff-card .cc-val{font-size:24px;font-weight:700;line-height:1}
+.cliff-card .cc-lbl{font-size:10px;margin-top:4px;font-weight:700;text-transform:uppercase;letter-spacing:.03em}
+.cliff-card .cc-sub{font-size:9.5px;margin-top:3px;opacity:.8}
+.cc-r{background:var(--r-bg);border-color:var(--rbar);color:var(--r)}
+.cc-y{background:var(--y-bg);border-color:var(--ybar);color:var(--y)}
+.cc-g{background:var(--g-bg);border-color:var(--gbar);color:var(--g)}
+.cc-b{background:var(--b-bg);border-color:#8CA8D8;color:var(--b)}
+
+/* PLANNING: gantt */
+.gantt{margin-top:6px}
+.g-scale{display:flex;margin-left:148px;font-size:9.5px;color:#999;border-bottom:1px solid #eee;padding-bottom:3px;margin-bottom:7px}
+.g-scale span{flex:1;text-align:left;border-left:1px dashed #e2e6f0;padding-left:4px}
+.g-row{display:flex;align-items:center;margin-bottom:7px;cursor:pointer}
+.g-row:hover .g-lbl{color:var(--navy);font-weight:700}
+.g-lbl{font-size:10.5px;color:#555;width:148px;flex-shrink:0;padding-right:8px;text-align:right;line-height:1.3}
+.g-track{flex:1;position:relative;height:21px;background:repeating-linear-gradient(90deg,#f6f8fc 0,#f6f8fc calc(16.66% - 1px),#e8ecf4 calc(16.66% - 1px),#e8ecf4 16.66%);border-radius:4px}
+.g-bar{position:absolute;top:2px;bottom:2px;border-radius:4px;display:flex;align-items:center;padding:0 7px;font-size:9.5px;font-weight:700;color:#fff;white-space:nowrap;overflow:hidden}
+.gb-r{background:var(--rbar)}.gb-y{background:var(--ybar);color:#5a3c00}.gb-g{background:var(--gbar)}.gb-b{background:#5B85C9}
+.g-end{position:absolute;top:-1px;bottom:-1px;width:2.5px;background:var(--r)}
+.req-row{display:flex;align-items:center;gap:9px;padding:8px 0;border-bottom:1px dashed #eee}
+.req-row:last-child{border-bottom:none}
+.req-badge{font-size:9px;font-weight:700;padding:3px 8px;border-radius:3px;white-space:nowrap}
+.req-urgent{background:var(--r-bg);color:var(--r)}.req-soon{background:var(--y-bg);color:var(--y)}
+.req-info{flex:1}.ri-proj{font-size:11px;font-weight:700}.ri-detail{font-size:10px;color:#888;margin-top:2px}
+.req-count{font-size:17px;font-weight:700;color:var(--navy)}
+
+/* TABLES */
+.tbl{width:100%;border-collapse:collapse;font-size:11px}
+.tbl th{background:var(--navy);color:#fff;padding:6px 9px;text-align:left;font-size:10px;font-weight:700;white-space:nowrap}
+.tbl td{padding:5px 9px;border-bottom:1px solid #eee;vertical-align:top}
+.tbl tr:nth-child(even) td{background:#fafbfd}
+.tbl tr:last-child td{border-bottom:none}
+.tbl tr.clickable{cursor:pointer}
+.tbl tr.clickable:hover td{background:#eef3fb}
+.sid{font-size:9px;font-weight:700;padding:2px 6px;border-radius:3px;font-family:'Courier New',monospace}
+.sid-vc{background:var(--b-bg);color:var(--b)}.sid-vcin{background:var(--y-bg);color:var(--y)}.sid-vcc{background:#E9D7F5;color:#3C3489}
+.st-badge{font-size:9px;font-weight:700;padding:2px 7px;border-radius:3px;white-space:nowrap}
+.stb-Billed{background:var(--g-bg);color:var(--g)}.stb-Buffer{background:var(--y-bg);color:var(--y)}
+.stb-UnBilled{background:var(--r-bg);color:var(--r)}.stb-Bench{background:var(--grey-bg);color:var(--grey)}.stb-Onsite{background:var(--grey-bg);color:var(--grey)}
+
+/* MODAL */
+.modal-bg{display:none;position:fixed;inset:0;background:rgba(20,30,55,.45);z-index:50;padding:16px;align-items:flex-end;justify-content:center}
+.modal-bg.open{display:flex}
+.modal-card{background:#fff;border-radius:12px 12px 8px 8px;max-width:920px;width:100%;max-height:78vh;display:flex;flex-direction:column;box-shadow:0 -8px 40px rgba(0,0,0,.3)}
+.modal-hd{display:flex;align-items:center;justify-content:space-between;padding:13px 18px;border-bottom:1.5px solid #dde3ef}
+.modal-hd .mt{font-size:13px;font-weight:700;color:var(--navy)}
+.modal-hd .ms{font-size:10px;color:#999;margin-top:2px}
+.modal-x{font-size:24px;cursor:pointer;color:#999;background:none;border:none;line-height:1;padding:0 4px}
+.modal-body{overflow:auto;padding:6px 12px 14px}
+@media(min-width:700px){.modal-bg{align-items:center}}
+
+.footer{text-align:center;font-size:10px;color:#aaa;margin-top:22px;padding-top:12px;border-top:1px solid #dde3ef}
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:#f0f3f8}
+::-webkit-scrollbar-thumb{background:#cdd6e8;border-radius:3px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="topbar">
+  <div>
+    <div class="title">VConnecTech Systems — Workforce Intelligence <span class="vpill">v3.0 LIVE</span></div>
+    <div class="sub">Org · Allocation · Projects · Business Health · Planning &nbsp;·&nbsp; FY 2026–27</div>
+  </div>
+  <div class="topbar-right"><div class="logo">VCT</div><div style="margin-top:2px">Confidential</div></div>
+</div>
+
+<div class="srcbar loading" id="srcbar">
+  <span class="src-dot"></span>
+  <span id="src-text">Connecting to Google Sheet…</span>
+  <button class="src-btn" onclick="boot(true)">&#8635; Refresh data</button>
+  <button class="src-btn" id="src-help-btn" style="display:none" onclick="document.getElementById('src-help').classList.toggle('open')">How to fix</button>
+  <div class="src-help" id="src-help">
+    Best fix: deploy the Apps Script web app (file provided) and paste its <code>/exec</code> URL into <code>WEBAPP_URL</code> near the top of this file. That works even from a local file. The published CSV only loads when the dashboard is opened from a real web address (not file://). Until live data is reachable, this shows the built-in snapshot from 10 Jun 2026.
+  </div>
+</div>
+
+<div class="kpi-strip" id="kpi-strip"></div>
+<div id="alerts"></div>
+
+
+
+<div class="filterbar">
+  <label>Practice</label><select id="f-practice" onchange="renderAll()"><option value="">All</option></select>
+  <label>Status</label><select id="f-status" onchange="renderAll()"><option value="">All</option><option>Billed</option><option>Buffer</option><option>UnBilled</option><option>Bench</option><option>Onsite</option></select>
+  <label>Client</label><select id="f-client" onchange="renderAll()"><option value="">All</option></select>
+  <span class="filter-count" id="filter-count"></span>
+  <button class="btn-reset" onclick="resetFilters()">&#8635; Reset</button>
+</div>
+
+<div class="tab-row">
+  <button class="tab active" data-pane="org" onclick="showTab('org',this)">🏢 Org Hierarchy</button>
+  <button class="tab" data-pane="matrix" onclick="showTab('matrix',this)">📊 Allocation Matrix</button>
+  <button class="tab" data-pane="projects" onclick="showTab('projects',this)">📋 Projects</button>
+  <button class="tab" data-pane="health" onclick="showTab('health',this)">💚 Business Health</button>
+  <button class="tab" data-pane="planning" onclick="showTab('planning',this)">🗓 Planning</button>
+</div>
+
+<div class="pane active" id="pane-org">
+  <div class="pane-cap">Who reports to whom — grouped by Project Lead from the sheet. Click a header for the team list, a chip for one person.</div>
+  <div id="org-wrap"></div>
+</div>
+
+<div class="pane" id="pane-matrix">
+  <div class="pane-cap">Who is staffed where — practices × projects. Click any cell, row total, column total or the grand total to see names.</div>
+  <div class="matrix-wrap"><table class="mx" id="mx-table"></table></div>
+</div>
+
+<div class="pane" id="pane-projects">
+  <div class="pane-cap">Every project at a glance — headcount, status mix and billing risk. Click a card for the full team.</div>
+  <div id="own-wrap"></div>
+</div>
+
+<div class="pane" id="pane-health">
+  <div class="pane-cap">Headcount-based health metrics only — no estimated rupees. Everything here is computed directly from the sheet.</div>
+  <div class="grid2">
+    <div class="card">
+      <h4>Core Utilization</h4>
+      <div class="gauge-wrap">
+        <svg viewBox="0 0 120 70" width="135">
+          <path d="M10,65 A55,55 0 0,1 110,65" fill="none" stroke="#eee" stroke-width="10" stroke-linecap="round"/>
+          <path id="gauge-arc" d="M10,65 A55,55 0 0,1 110,65" fill="none" stroke="#2E5FAC" stroke-width="10" stroke-linecap="round" stroke-dasharray="0,200"/>
+        </svg>
+        <div>
+          <div class="gi-val" id="util-pct">—</div>
+          <div class="gi-lbl">Billed ÷ (Total − Onsite)</div>
+          <div class="gi-sub" id="util-sub"></div>
+        </div>
+      </div>
+      <div class="pills" id="util-pills"></div>
+      <div style="font-size:10px;color:#888;margin-top:10px">Healthy range for a services firm: <b>75–85%</b>. Below 65% is a margin warning.</div>
+    </div>
+    <div class="card">
+      <h4>Practice Health — Billed / Buffer / Bench</h4>
+      <div class="hint">One bar per practice. Green earns, amber is parked, red costs. Click a bar for names.</div>
+      <div id="practice-stacks"></div>
+    </div>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <h4>Client Concentration — % of Billed Headcount</h4>
+      <div class="hint" id="conc-hint"></div>
+      <div id="conc-bars"></div>
+    </div>
+    <div class="card">
+      <h4>Billing Cliff — How Long Is Revenue Confirmed?</h4>
+      <div class="hint">Of currently billed engineers, when does their confirmed billing end? Click a card for names.</div>
+      <div class="cliff-grid" id="cliff-cards"></div>
+    </div>
+  </div>
+</div>
+
+<div class="pane" id="pane-planning">
+  <div class="pane-cap">The next 6 months on one screen — billing cliffs, hiring needs and the bench pipeline. Click anything for details.</div>
+  <div class="card">
+    <h4>Billing Timeline — Jun → Dec 2026</h4>
+    <div class="hint">Each bar = how long that engagement's billing is confirmed. Red edge = confirmed end with no successor. Blue = billing not yet started.</div>
+    <div class="gantt" id="gantt"></div>
+  </div>
+  <div class="grid2">
+    <div class="card">
+      <h4>🔴 Open Hiring Requirements (from sheet)</h4>
+      <div id="req-list"></div>
+    </div>
+    <div class="card">
+      <h4>⚠️ Roll-offs & Billing Gaps</h4>
+      <div id="rolloff-list"></div>
+    </div>
+  </div>
+  <div class="card">
+    <h4>📅 Billed Headcount Forecast (no new wins assumed)</h4>
+    <div class="hint" id="forecast-hint"></div>
+    <div style="overflow-x:auto"><table class="tbl" id="forecast-table"></table></div>
+  </div>
+  <div class="card">
+    <h4>🔄 Bench → Staffing Pipeline</h4>
+    <div class="hint">Everyone currently unbilled, with the plan recorded in the sheet. Click a row for full detail.</div>
+    <div style="overflow-x:auto"><table class="tbl" id="bench-table"></table></div>
+  </div>
+</div>
+
+<div class="footer" id="footer">VConnecTech Systems · Workforce Intelligence v3 · Confidential</div>
+</div>
+
+<div class="modal-bg" id="modal" onclick="if(event.target===this)closeModal()">
+  <div class="modal-card">
+    <div class="modal-hd">
+      <div><div class="mt" id="modal-title"></div><div class="ms" id="modal-sub"></div></div>
+      <button class="modal-x" onclick="closeModal()">&#215;</button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+<script>
+// ════════════════════════════════════════════════════════════
+// CONFIG — data source
+// ════════════════════════════════════════════════════════════
+// ▼▼▼ PASTE YOUR APPS SCRIPT WEB-APP URL HERE (ends in /exec). This is the most reliable live source. ▼▼▼
+const WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbxSbXaYmTkLaOBeOEHNDkVNou6dpJoWB12GeL5SiUSvF-gP7HyBN9hoCRKvqz52ikt5jw/exec';
+// ▲▲▲ Leave blank until you deploy the Apps Script. When set, the dashboard reads live JSON from it. ▲▲▲
+const SHEET_ID = '1mnOK_Ui4EATsbwkacDCodhrYO1aKu3THXMQTqdwuebc';
+const SHEET_NAME_CANDIDATES = ['Employee List 2026- 27','Employee List 2026-27','Employee List 2026 - 27','Employee List'];
+const SNAPSHOT_DATE = '10 Jun 2026';
+
+// Hiring requirements — from the "Requirements" block in the SystemC sheet tab.
+// Edit here (or move into the sheet later) when requirements change.
+const REQUIREMENTS = [
+  {proj:'SmartSoC-ADI', role:'Trainees — buffers for existing engineers', count:4, eta:'Immediate', urg:'urgent'},
+  {proj:'SmartSoC-ADI', role:'Engineers with 3–4 yrs experience', count:4, eta:'Aug 2026', urg:'soon'},
+];
+
+// Embedded fallback snapshot — verbatim copy of the "Employee List 2026- 27" tab, 10 Jun 2026.
+// Used automatically only if the live fetch fails. Same parser handles both, so behaviour is identical.
+const SNAPSHOT_CSV = `EMP ID,Employee Name,Project Lead,Domain,Designation,YOE,Project Assigned,Bandwidth,Billed Status,Bench,Current Task,Billed Upto,Billing Scope ,Plan,Back Up Plan,Remarks,April,May 
+VC_099,Srikanth Neelam,,,Director,24,FLC,,Billed  ,,,,,,,,Billed
+VC_116,Abhishek Vulapu,Srikanth,Program Manager,Program Manager,14,Renesas,100%,Billed,,,,,,,,Billed
+VC_112,Prithvi Nagilla,Shyam,Program Manager,Program Manager,14,Smart IP Camera,70%,Buffer,,,,,,,,Buffer
+VC_104,Aravind Kumar Goud Kurra,Srikanth,SystemC Modelling,Staff Engineer,8,SmartSoC-ADI,100%,Billed,,,,,,,,Billed
+VC_191,Sollapuram Kishore Reddy,Aravind,SystemC Modelling,Engineer I,1.1,SmartSoC-ADI,100%,Billed,Billed from May,Supporting DLI models,July,,,,Need 4 engineers with 3-4 years of experience from August. Need 3 buffers(Trainees) for existing engineers.,Billed
+VC_218,Kota Poojitha ,Aravind,SystemC Modelling,Engineer I,0.9,SmartSoC-ADI,100%,Billed,Billed from May,Supporting DLI models,July,,,,,Billed
+VC_192,Sudeep B Channalli,Aravind,SystemC Modelling,Engineer I,1.1,SmartSoC-ADI,100%,Billed,Billed from May,Supporting DLI models,,,,,,Billed
+VC_194,Yepuri Karthikeya,Aravind,SystemC Modelling,Engineer I,1.1,FLC IP Modelling,100%,Buffer Billed,,FLC Chip top modelling,,,,,Aravind will ask srikanth,BufferBilled
+VC_225,G Sudarshan Reddy,Aravind,SystemC Modelling,Engineer I,0.7,FLC IP Modelling,100%,Buffer,,QEMU bringup,,,,,Aravind will ask srikanth,Buffer
+VC_226,Kanturi Jeevan Sai,Aravind,SystemC Modelling,Engineer I,0.7,DLI Soc Modelling,100%,Buffer,,Security IP modelling,,,,,Billing plan?,Buffer
+VC_213,Mutakoduru Sowmya,Aravind,SystemC Modelling,Engineer I,0.6,DLI Soc Modelling,100%,Buffer,,Security IP modelling,,,,,,Buffer
+VC_217,Balijepalli Anil Kumar,Aravind,SystemC Modelling,Trainee II,0.4,DLI Soc Modelling,100%,Buffer,,DMA model,,,,,,Buffer
+VC_122,Charan Raj Bommadeni,Aravind,FPGA,Senior Engineer,5.1,DLI Soc   ,0%,UnBilled,Bench,,,,Staffing,,,UnBilled
+VC_126,Sreekanth. Arati,Aravind,FPGA,Senior Engineer,5.5,DLI Soc   ,0%,Billed,,,,,Staffing,,Billed in FLC,Billed
+VC_136,Itla Sai Bharadwaj,Aravind,FPGA,Senior Engineer,4.1,FLC,0%,Billed,,,,,Staffing,,,Billed
+VC_238,Tejeswara Rao Padda,Aravind,FPGA,Engineer I,2.1,DLI Soc   ,0%,UnBilled,Bench,,,,Staffing,,,UnBilled
+VC_133,Mahammad Vaheed Pasha,Aravind,FPGA,Engineer II,2,DLI Soc   ,0%,UnBilled,Bench,,,,Staffing,,,UnBilled
+VC_227,Borusu Bala Satya Phaneendra,Aravind,FPGA,Engineer I,0.8,DLI Soc   ,0%,UnBilled,Bench,,,,Staffing,,,UnBilled
+VC_204 ,Swarna Latha Jakka,Srikanth,DV,Senior Staff Engineer,15,,0%,UnBilled,Bench,,,,New Project,,,Billed
+VC_149,Haridasu Rudra Bhupathi Naidu,Swarna Latha,DV,Engineer II,1.11,ORCA,30%,Billed,,Drop_c.1 release and code coverage,June 15th,,,New Project,,Billed
+VC_188,Rayidi Luhitha,Swarna Latha,DV,Engineer I,1.1,ORCA,30%,Billed,,,June 15th,,,New Project,,Billed
+VC_189,Chittimadha Anil,Swarna Latha,DV,Engineer I,1.1,ORCA,30%,Buffer,,,,,New Project,,,Buffer
+VC_190,Pothula Bhargav Sai,Swarna Latha,DV,Engineer I,1.1,ORCA,30%,Buffer Billed,,,June 15th,,,New Project,,BufferBilled
+VC_193,Tammana Viswanadha Muralidhar,Swarna Latha,DV,Engineer I,1.1,ORCA,30%,Billed,,,June 15th,,,New Project,,Billed
+VC_220,Mudragada Sri Venkata Ram Pavan,Swarna Latha,DV,Engineer I,0.9,ORCA,30%,Buffer,,,,,New Project,,,Buffer
+VC_150,Mani Gopi Nalajala,Srikanth,DV,Engineer II,1.11,FLC,100%,Billed,,,,,,,,Billed
+VC_203,Aadesh Gonda,Swarna Latha,DV,Engineer I,3.1,Zerro Power systems,100%,Billed,,,6 Months from May 2026,,,,,Billed
+VC_221,A.V.S.Padma Sri,Swarna Latha,DV,Engineer I,0.7,DLI Soc   ,0%,UnBilled,Bench,EMAC Bit file generation,,,Staffing,,,UnBilled
+VC_223,Anasuri durgabhavani,Swarna Latha,DV,Engineer I,0.6,DLI Soc   ,0%,UnBilled,Bench,FPGA Bit file generation,,,Staffing,,,UnBilled
+VC_228,Kona Sri Devi,Swarna Latha ,DV,Engineer I,0.6,DLI Soc   ,0%,UnBilled,Bench,USB Bit file generation,,,Staffing,,,UnBilled
+VC_105,AV Rajesh,Srikanth,Hardware,Director,24,"FLC, SmartSoc(ProbeASIC)",,Billed,,,,,,,,Billed
+VC_101,Srinivasa Rao Supuri,Rajesh,Hardware,Senior Engineer,7+,FLC,100%,Billed,,,,,,,,Billed
+VC_124,Galipothu.Sunil Kumar,Rajesh,Hardware,Senior Staff Engineer,18,FLC,,Billed,,,,,,,,Billed
+VC_176,Jampani Samudralankaiah,Rajesh,Hardware,Senior Engineer,6.1,FLC,,Billed,,,,,,,,Billed
+VC_183,Varimadla Anjaneyulu,Rajesh,Hardware,Engineer II,7.10,FLC/TRS/Internal,100%,Billed,,,,,,,,Billed
+VC_224,Chintha Vivek Sai,Rajesh,Hardware,Engineer I,0.7,FLC,75%,Buffer,,,,,,,,Buffer
+VC_161,Veeresh Meeniga,Rajesh,Hardware,Engineer I,2.4,FLC,25%,Buffer,,,,,,,,Buffer
+VC_141,Ravada Ramesh,Rajesh,Hardware,Engineer II,3.11,TRS,100%,Billed,,,,,,,,Billed
+VC_163,Ruka Nandi Vardhan Reddy,Rajesh,Hardware,Engineer I,2.4,TRS,100%,Billed,,,,,,,,Billed
+VC_196,Keerthi Sepana,Rajesh,Hardware,Associate Engineer,1,TRS,100%,Billed,,,,,,,,Billed
+VC_200,Harika Kunduru,Rajesh,Hardware,Engineer II,3.9,Smart IP Camera,,Billed,,,,,,,,Billed
+VC_229,Bommi Sandhya,Rajesh,Hardware,Engineer I,0.7,Voila Tech,100%,Billed,,,,,,,,Billed
+VCIN_43,Jayadev Lokanadham,Rajesh,Hardware,Intern I,,Smart IP Camera,,UnBilled,,,,,,,,UnBilled
+VCIN_26,Naveen,Rajesh,Hardware,Consultant,,Voila Tech,100%,Buffer
+VC_110,Shyam Kumar Thella  ,Srikanth,Embedded - Linux,Senior Staff Engineer,11,"FLC, Renesas (NPU), Smart IP Camera",,Billed,,,,,,,,Billed
+VC_119,Buneboyina.Pavan Kalyan,Sasikanth,Embedded - Linux,Engineer II,2.3,Kandou,100%,Billed,,"E21 , ANDES Bring up",3 Months,,,Kandou,,BufferBilled
+VC_134,Yeshwanth Namburi,Kameswara rao,Embedded - Linux,Engineer II,2,FLC,70%,Buffer,,FLC hand off,,,FLC,,Buffer Billed for shyam to replace Pavan B,Buffer
+VC_138,Gunupuru Pavan Kalyan,Shyam,Embedded - Linux,Senior Engineer,4.2,Edge,100%,Billed,,DDR,3 months,,Edge,,,Billed
+VC_209,Naveen Namburi,Sasikanth,Embedded - Linux,Senior Engineer,6.8,Kandou,100%,Billed,,,,,,Kandou,,Billed
+VC_214,Kiran Allada,Teja,Embedded - Linux,Senior Engineer,5.5,Gen5,100%,Billed,,,,,,,Billed in place off venkatesh nookatattu,UnBilled
+VC_186,Inampudi Phani Kumar,Shyam,Embedded - Linux,Engineer I,1.2,Renesas NPU,100%,Buffer Billed,,NPU Validation,June ,,,,"Customer has plan till Dec, not officially confirmed",BufferBilled
+VC_187,Bali Harsha Vardhan,Shyam,Embedded - Linux,Engineer I,1.1,Smart IP Camera,100%,Billed,,Camera Sensor,,,,,,UnBilled
+VC_219,S Vishnu Vardhan Reddy ,Shyam,Embedded - Linux,Engineer I,0.9,Smart IP Camera,100%,Billed,,Optimization Pipelines,,,,,,UnBilled
+VC_205,Veleparampil Limin,Shyam,Embedded - Linux,Engineer I,0.9,Smart IP Camera,100%,Billed,,Server app sensors,,,,,,UnBilled
+VCIN_47,Menuga Sai Swetha Sri,Shyam,Embedded - Linux,Intern II,,Smart IP Camera,100%,Buffer,,Training,,,,,,UnBilled
+VC_106,SriTeja Allani,Srikanth,Embedded - S/W,Staff Engineer,7,Renesas,,Billed,,,,,,,,Billed
+VC_107,Hardik,Teja,Embedded - S/W,,,Gen5,80%,Billed,,,June,,,,Project May Extend - May 29th,Billed
+VC_103,Deepika Vandana,Sasikanth,Embedded - S/W,Engineer I,2.8,DLI Soc   ,30%,UnBilled,,"Infra development for DLI IPs, automating tests for low speed peripherals",,No,Staffing,,,UnBilled
+VC_118,Panchangam. Sai Vinodh,Teja,Embedded - S/W,Engineer II,2.3,Renesas,100%,Billed,,,June,,,,Project May Extend - May 29th,Billed
+VC_120,S Noor Mahammad,Teja,Embedded - S/W,Engineer II,2.3,Renesas,100%,Billed,,,June,,,,Project May Extend - May 29th,Billed
+VC_123,Bhimineni.Pravallika,Kiran Allada,Embedded - S/W,Engineer II,2.3,Internal ( Delivery Robot ),,UnBilled,,,,,,,,UnBilled
+VC_127,Mallikharjun Palasa,Teja,Embedded - S/W,Engineer II,4.5,Renesas,60% ( Ramping up Parallel ),Billed,,,June,,,,Project May Extend - May 29th,Billed
+VC_131,Tappeta Sai Lakshmi Geetha,Kiran Allada,Embedded - S/W,Engineer II,2,Internal ( Delivery Robot ),,UnBilled,,,,,,,,UnBilled
+VC_132,Ullangula Aparna,Kameswara rao,Embedded - S/W,Engineer II,2,FLC,100%,Buffer,,,,,"Backup for Poorna in FLC, poorna will move to Kandou",,,Billed
+VC_139,Chandaka Srinivasarao,Kameswara rao,Embedded - S/W,Senior Engineer,3.11,Renesas FSP,100%,Buffer,,Preparation for Reneses MCU,Dont know ,Billing will start in next week,,,,UnBilled
+VC_148,Nokatattu Venkatesh,Teja,Embedded - S/W,Senior Engineer,5.1,Gen5,100%,Buffer,,,,,,,Back up for naveen namburi in Gen5,UnBilled
+VC_152,Akhila Reddy Addula,Teja,Embedded - S/W,Senior Engineer,6.10,Gen5,100%,Billed,,,June,,,,Project May Extend - May 29th,UnBilled
+VC_162,Subramanyam G,Shyam,Embedded - S/W,Engineer I,1.11,"Parking, Edge",50% + 50%,Buffer,,LoRa gateway change for 8 channels,,,,,Srikanth ,UnBilled
+VC_165,Yaswanth E,Sasikanth,Embedded - S/W,Engineer I,1.9,DLI Soc   ,30%,UnBilled,,"bluetootha, wifi spec, drivers understanding",,No,Staffing,,,UnBilled
+VC_167,Geetha Mounika V,Teja,Embedded - S/W,Engineer I,1.11,Gen5,100%,Billed,,,June,,,,Project May Extend - May 29th,Billed
+VC_168,Chandrika K,Kameswara rao,Embedded - S/W,Engineer I,1.11,Renesas FSP,100%,Buffer,,Preparation for Reneses MCU,Dont know ,Billing will start in next week,,,,UnBilled
+VC_170,Pavani D S,Teja,Embedded - S/W,Engineer I,1.11,Gen5,100%,Buffer,,,,,,,,Billed
+VC_171,Hari Chandana K,Teja,Embedded - S/W,Engineer I,1.11,Gen5,100%,Billed,,,June,,,,Project May Extend - May 29th,Billed
+VC_198,Pujitha Uttharkar,Teja,Embedded - S/W,Engineer II,2.11,Gen5,100%,Billed,,,June,,,,Project May Extend - May 29th,Billed
+VC_181,Kantipudi Sri Sai Kiran,Teja,Embedded - S/W,Engineer I,1.2,Renesas,100%,Buffer,,,,,,,,Buffer
+VC_185,T Harish,Sasikanth,Embedded - S/W,Engineer I,1.1,DLI Soc   ,50%,UnBilled,,"Bood code development is completed, working on bringup of USB ",,No,Staffing,,,UnBilled
+VC_243,Kolapalli Vyshnavi Sai,Kameswara rao,Embedded - S/W,Engineer I,3.1,FLC,50%,Buffer,,-,,,Buffer in place of Pavan G for FLC,,,UnBilled
+VC_206,Gorli Poorna Lakshmi Praneeth,Kameswara rao,Embedded - S/W,Engineer I,0.9,Renesas FSP,100%,Buffer,,Preparation for Reneses MCU,Dont know ,Billing will start in next week,,,,Buffer
+VC_222,Undamatla Santhoshi Mani ,Shyam,Embedded - S/W,Engineer I,0.9,Smart IP Camera,100%,Buffer,,Tuning and Caliberation,,,,,,UnBilled
+VCC_113,Ambika Vallandas,Sasikanth,Embedded - S/W,Consultant,,Kandou,100%,UnBilled,,,,,Kandou ,Kandou ,Kranthi,UnBilled
+VC_240,Sudheer Reddy,Kameswara rao,Embedded - S/W,,,Renesas FSP,100%,Buffer,,Preparation for Reneses MCU,Dont know ,Billing will start in next week,,,,UnBilled
+VC_113,SasiKanth Golla,Srikanth,Embedded - Validation,Senior Staff Engineer,14,Kandou,100%,Billed,,,,,Kandou,Kandou,Billed in FLC,Billed
+VC_125,Jithendran Ponnusamy,Srikanth,Embedded - Validation,Senior Engineer,4.1,Renesas,100%,Billed,,,,,,,,Billed
+VC_130,Kamasani Poorna,Sasikanth,Embedded - Validation,Engineer II,2.2,Kandou,100%,Billed,,D2D,,,,Kandou,,Billed
+VC_155,LingaSwamy Shyaga,Shyam,Embedded - Validation,Senior Engineer,7.9,Renesas NPU,100%,Billed,,NPU Validation,June,,"Customer has plan till Dec, not officially confirmed",,,Billed
+VC_164,Akash R,Teja,Embedded - Validation,Engineer I,1.11,Gen5,100%,Billed,,,June,,,,,Billed
+VC_166,Sai Gandhi A,Kameswara rao,Embedded - Validation,Engineer I,1.11,FLC,100%,Billed,,"IPM, RC",,,,,,Billed
+VC_169,Yeshasri. S,Teja,Embedded - Validation,Engineer I,1.11,Gen5,100%,Buffer,,,,,,,,UnBilled
+VC_215,Kameswara rao Dasari,Srikanth,Embedded - Validation,Senior Staff Engineer,11+,Renesas FSP,,Buffer,,,,,,,,UnBilled
+VC_129,Hemanth Aare,Sasikanth,Embedded - Validation,Engineer I,2.1,Self Learning,0%,UnBilled,Bench,-,,,New Project,,,UnBilled
+VC_178,Battula Venu Madhav,Sasikanth,Embedded - Validation,Engineer I,1.1,FLC,50%,Buffer,,"Power, Boot from SPI, Boot from SD",,,New Project,,,Buffer
+VC_179,Maganti Raviteja,Sasikanth,Embedded - Validation,Engineer I,1.2,DLI Soc   ,50%,UnBilled,,"Camera- Completed, Security, HSM-study",,,Staffing,,,UnBilled
+VC_180,Saahith Chandra Geela,Kameswara rao,Embedded - Validation,Engineer I,1.2,FLC,100%,Buffer,,"RISC-V, D2D",,,"Backup for Poorna in FLC, poorna will move to Kandou",,,UnBilled
+VC_182,Singireddi Mohan Rao,Kameswara rao,Embedded - Validation,Engineer I,1.2,Renesas FSP,100%,Buffer,,Preparation for Reneses MCU,Dont know ,Billing will start in next week,,,,UnBilled
+VC_184,Sanaka Venkata Karthikeya,Sasikanth,Embedded - Validation,Engineer I,1.2,FLC,60%,Buffer,,"FLC1, FLC2,OSPI, SMC",,,New Project,,,Buffer
+VC_208,Arepu Naga Sai Nikhitha,Kameswara rao,Embedded - Validation,Engineer I,0.9,Renesas FSP,100%,UnBilled,,Ethernet- Completed,,,Renesas FSP,,,UnBilled
+VC_207,Rupaji Rithika,Kameswara rao,Embedded - Validation,Engineer I,0.9,Renesas FSP,100%,UnBilled,Bench,NVMe,,,Renesas FSP,,,UnBilled
+VC_233,Mahmad Ameerullah,Teja,Software,Engineer I,0.8,Renesas,80%,Buffer,,,,,,,,Buffer
+VC_235,Gandla Vaishnavi,George,Software,Engineer I,1.1,RLCC,100%,Billed,,,,,,,,Billed
+VC_232,Sai Charan Siddhanthi Thyadi,George,Software,Engineer I,0.8,RLCC,100%,Billed,,,,,,,,Billed
+VC_231,Gonthina Lakshmana Swami,George,Software,Engineer I,0.8,RLCC,100%,Buffer,,,,,,,,Buffer
+VC_230,Thota Chaithra,Shyam,Software,Engineer I,0.8,Smart IP Camera,0%,UnBilled,Bench,,,,,,,Buffer
+VC_234,Roopini Gorle,Shyam,Software,Software Trainee II,0.5,Smart IP Camera,0%,UnBilled,Bench,NPU models,,,"NPU is low priority in camera, need to plan tasks",,,UnBilled
+VCIN_44,Kiranmai Battu,George,Software,Trainee III,0.2,RLCC,100%,UnBilled,,NPU models,,,"NPU is low priority in camera, need to plan tasks",,,UnBilled
+VCIN_51,Yogeshwar Reddy Meda,Srikanth,Software,Software Intern II,,,,UnBilled,Bench,,,,,,,UnBilled
+VCIN_49,Praddumna Rajendra Raut,Srikanth,Product Engineers,Product Management Intern,,Smart IP Camera,,Buffer,,,,,,,,UnBilled
+VCIN_53,Durga R,Srikanth,Product Engineers,Product Management Intern,,Edge,,Buffer,,,,,,,,UnBilled
+VCIN_54,Bharath Mamidi,Venkata Kiran,Product Engineers,Product Management Intern,,Server,,Buffer,,,,,,,,UnBilled
+VC_159,Sriram Ungatla,Mounika,CI/ CD Automation Engineer,CI/CD Automation Engineer,2.1,Website,100%,UnBilled,,,,,,,,UnBilled
+VC_177,Abhishek Begari,Srikanth,Technical Writer,Technical Writer,4.8,Internal ( Vconnectech Website ),100%,Buffer,,,,,,,,UnBilled
+VCC_112,Venkata Kiran Venigalla,Srikanth,Program Manager,Consultant,,Edge,,Buffer,,,,,,,,UnBilled
+VC_210,Supriya Kallepelli,,DV,,,On Site,100%
+VC_212,Balachandra Anguru,,DV,,,On Site,100%
+VCC_100,Koppurothu Subash,,Physical Design,,,FLC
+VCC_101,Yedla Suryaarjuna rao,,Physical Design,,,FLC
+VCC_102,Shinagam Chanti,,Physical Design,,,FLC
+VCC_103,Duragasi Venkatesh,,Physical Design,,,FLC
+VCC_115,Chinni Murali Krishna,,Embedded - Validation,,,AMD,100%
+VCIN_52,Attuluri Venkat Dhanush,Srikanth,Software,,,,,UnBilled,Bench
+VC_197,MukeshKumar Rajkumar Pasi,Srikanth,Embedded - S/W,Engineer II,3.3,Renesas (FUSA),,UnBilled,,UnBilled from April 7th ,Billed from July 1st
+VC_201,Vidhu Shekhar Singh,Srikanth,Functional Safety,Senior Staff Engineer,14+,Renesas (FUSA),,UnBilled,,UnBilled from April 7th ,,UnBilled
+VCC_104,Anil Kumar Gedela,,Physical Design,,,FLC
+VCC_116,Kshitij Varma Pinnamaraju,,Software,,,,,UnBilled,Bench`;
+
+// ════════════════════════════════════════════════════════════
+// PARSING & NORMALIZATION
+// ════════════════════════════════════════════════════════════
+function parseCSV(text){
+  const rows=[]; let row=[], cur='', q=false;
+  for(let i=0;i<text.length;i++){
+    const c=text[i];
+    if(q){ if(c==='"'){ if(text[i+1]==='"'){cur+='"';i++;} else q=false; } else cur+=c; }
+    else{
+      if(c==='"') q=true;
+      else if(c===','){ row.push(cur); cur=''; }
+      else if(c==='\n'){ row.push(cur); rows.push(row); row=[]; cur=''; }
+      else if(c==='\r'){ /* skip */ }
+      else cur+=c;
+    }
+  }
+  if(cur!=='' || row.length){ row.push(cur); rows.push(row); }
+  return rows;
+}
+
+const PRACTICE_RULES=[
+  [/system\s*c/i,'SystemC'],
+  [/fpga/i,'FPGA'],
+  [/^dv$/i,'DV'],
+  [/hardware/i,'Hardware'],
+  [/linux/i,'Embedded Linux'],
+  [/s\s*\/\s*w/i,'Embedded SW'],
+  [/validation/i,'Embedded Validation'],
+  [/physical/i,'Physical Design'],
+  [/functional/i,'Functional Safety'],
+  [/program manager/i,'Program Mgmt'],
+  [/product/i,'Product Mgmt'],
+  [/technical writer|ci\s*\/?\s*cd/i,'Operations'],
+  [/software/i,'Software'],
+];
+const PRACTICE_ORDER=['SystemC','FPGA','DV','Hardware','Embedded Linux','Embedded SW','Embedded Validation','Software','Physical Design','Functional Safety','Program Mgmt','Product Mgmt','Operations','Leadership'];
+
+const PROJ_DEFS={
+  FLC:    {label:'FLC',              client:'FLC'},
+  ADI:    {label:'SmartSoC-ADI',     client:'ADI / SmartSoC'},
+  DLI:    {label:'DLI SoC',          client:'DLI'},
+  ORCA:   {label:'ORCA',             client:'ORCA'},
+  ZPS:    {label:'Zerro Power',      client:'Zerro Power'},
+  GEN5:   {label:'Renesas Gen5',     client:'Renesas'},
+  REN:    {label:'Renesas Main',     client:'Renesas'},
+  FSP:    {label:'Renesas FSP',      client:'Renesas'},
+  NPU:    {label:'Renesas NPU',      client:'Renesas'},
+  FUSA:   {label:'Renesas FUSA',     client:'Renesas'},
+  KAN:    {label:'Kandou',           client:'Kandou'},
+  RLCC:   {label:'Airport CV (RLCC)',client:'GMR / RLCC'},
+  TRS:    {label:'TRS',              client:'TRS'},
+  VLT:    {label:'Voila Tech',       client:'Voila Tech'},
+  AMD:    {label:'AMD',              client:'AMD'},
+  CAM:    {label:'Smart IP Camera',  client:'Internal'},
+  EDGE:   {label:'Edge / Parking',   client:'Internal'},
+  SERVER: {label:'AI Edge Server',   client:'Internal'},
+  DBOT:   {label:'Delivery Robot',   client:'Internal'},
+  INT:    {label:'Internal / Web',   client:'Internal'},
+  ONSITE: {label:'On Site',          client:'Onsite'},
+  BENCH:  {label:'Bench / Self-Learning', client:'—'},
+};
+const PROJ_ORDER=['FLC','ADI','DLI','ORCA','ZPS','GEN5','REN','FSP','NPU','FUSA','KAN','RLCC','TRS','VLT','AMD','CAM','EDGE','SERVER','DBOT','INT','ONSITE','BENCH'];
+
+function canonProj(raw){
+  const p=(raw||'').toLowerCase();
+  if(!p.trim()||p.includes('self learning')) return 'BENCH';
+  if(p.includes('on site')) return 'ONSITE';
+  if(p.includes('flc')) return 'FLC';
+  if(p.includes('smartsoc')) return 'ADI';
+  if(p.includes('dli')) return 'DLI';
+  if(p.includes('orca')) return 'ORCA';
+  if(p.includes('zerro')) return 'ZPS';
+  if(p.includes('gen5')||p.includes('gen 5')) return 'GEN5';
+  if(p.includes('fusa')) return 'FUSA';
+  if(p.includes('fsp')||p.includes('renesas mcu')||p.includes('reneses mcu')) return 'FSP';
+  if(p.includes('npu')) return 'NPU';
+  if(p.includes('renesas')) return 'REN';
+  if(p.includes('kandou')) return 'KAN';
+  if(p.includes('rlcc')||p.includes('airport')) return 'RLCC';
+  if(p.includes('trs')) return 'TRS';
+  if(p.includes('voila')) return 'VLT';
+  if(p.includes('amd')) return 'AMD';
+  if(p.includes('camera')) return 'CAM';
+  if(p.includes('robot')) return 'DBOT';
+  if(p.includes('server')) return 'SERVER';
+  if(p.includes('edge')||p.includes('parking')) return 'EDGE';
+  if(p.includes('website')||p.includes('internal')) return 'INT';
+  return 'BENCH';
+}
+
+// Billed-Upto → cliff bucket. m = month number on a Jun(6) → Dec(12) scale.
+function parseUpto(u){
+  const s=(u||'').toLowerCase();
+  if(!s.trim()||s.includes('dont')||s.includes("don't")) return null;
+  if(s.includes('june 15')) return {label:'Jun 15', m:6, mid:true};
+  if(s.includes('june'))    return {label:'end Jun', m:6};
+  if(s.includes('july'))    return {label:'end Jul', m:7};
+  if(s.includes('3 month')) return {label:'~Aug', m:8};
+  if(s.includes('6 month')) return {label:'~Nov', m:11};
+  return {label:u.trim(), m:9};
+}
+
+// Shared per-employee derivation — used by both the CSV path and the Apps Script JSON path.
+function finalizeEmp(e){
+  e.domainRaw=e.domainRaw||''; e.statusRaw=e.statusRaw||''; e.projRaw=e.projRaw||''; e.bw=e.bw||'';
+
+  if(!e.practice){
+    if(PRACTICE_ORDER.includes(e.domainRaw)) e.practice=e.domainRaw;     // already-clean (Master sheet)
+    else { for(const [re,n] of PRACTICE_RULES){ if(re.test(e.domainRaw)){ e.practice=n; break; } } }
+    if(!e.practice) e.practice=/director/i.test(e.desig||'')?'Leadership':'Other';
+  }
+  e.proj=canonProj(e.projRaw); e.projLabel=PROJ_DEFS[e.proj].label; e.client=PROJ_DEFS[e.proj].client;
+  const s=e.statusRaw.toLowerCase().replace(/\s+/g,' ').trim();
+  if(e.proj==='ONSITE') e.status='Onsite';
+  else if(s==='onsite') e.status='Onsite';
+  else if(!s){ if(e.projRaw.trim()){ e.status='Billed'; e.assumed=true; } else { e.status='UnBilled'; e.assumed=true; } }
+  else if(s==='bench') e.status='Bench';
+  else if(s.includes('unbilled')) e.status='UnBilled';
+  else if(s.replace(/ /g,'').includes('bufferbilled')){ e.status='Billed'; e.bufferBilled=true; }
+  else if(s.startsWith('buffer')) e.status='Buffer';
+  else if(s.includes('billed')) e.status='Billed';
+  else e.status='UnBilled';
+
+  if(e.alloc==null){ const p=(e.bw.match(/\d+/g)||[]).map(Number); e.alloc=p.length?Math.min(100,p.reduce((a,b)=>a+b,0)):null; }
+  e.cliff=parseUpto(e.upto);
+  return e;
+}
+
+// Adapter: one row from the clean "Master" tab (served as JSON by Apps Script) → internal employee object.
+function fromMaster(row){
+  const g=k=>{const v=row[k]; return v==null?'':String(v).trim();};
+  const id=g('EmpID'); if(!/^VC/i.test(id)) return null;
+  const alloc=g('Allocation');
+  return finalizeEmp({
+    id, name:g('Name')||id, lead:g('ReportsTo'), domainRaw:g('Practice'), desig:g('Designation'),
+    yoe:g('YOE'), projRaw:g('Project'), bw:alloc?alloc+'%':'', statusRaw:g('Status'),
+    task:g('CurrentTask'), upto:g('BilledUpto'), plan:g('Plan'), remarks:g('Remarks'),
+  });
+}
+
+function normalize(rows){
+  const hi=rows.findIndex(r=>r.some(c=>/emp\s*id/i.test(c||'')));
+  if(hi<0) throw new Error('Header row with EMP ID not found');
+  const head=rows[hi].map(h=>(h||'').trim().toLowerCase());
+  const col=n=>head.findIndex(h=>h.startsWith(n));
+  const ix={id:col('emp id'),name:col('employee name'),lead:col('project lead'),dom:col('domain'),
+    des:col('designation'),yoe:col('yoe'),proj:col('project assigned'),bw:col('bandwidth'),
+   st:col('billed status'),task:col('current task'),upto:col('billed upto'),plan:col('plan'),rem:col('remarks')};
+  const emps=[];
+  const seen=new Set();
+  for(let i=hi+1;i<rows.length;i++){
+    const r=rows[i]||[];
+    const id=((ix.id>=0?r[ix.id]:'')||'').trim();
+    if(!/^VC/i.test(id)||seen.has(id)) continue;
+    seen.add(id);
+    const get=k=>ix[k]>=0?((r[ix[k]]||'').trim()):'';
+   const e={
+  id, name:get('name')||id, lead:get('lead'), domainRaw:get('dom'), desig:get('des'),
+  yoe:get('yoe'), projRaw:get('proj'), bw:get('bw'), statusRaw:get('st'),
+  task:get('task'), upto:get('upto'), plan:get('plan'), remarks:get('rem'),
+};
+    emps.push(finalizeEmp(e));
+  }
+  return emps;
+}
+function summarize(emps){
+  const by=s=>emps.filter(e=>e.status===s).length;
+  const total=emps.length, onsite=by('Onsite'), billed=by('Billed'), buffer=by('Buffer'), bench=by('UnBilled')+by('Bench');
+  const denom=Math.max(1,total-onsite);
+  return {total,onsite,billed,buffer,bench,util:Math.round(billed/denom*100)};
+}
+
+// ════════════════════════════════════════════════════════════
+// STATE & HELPERS
+// ════════════════════════════════════════════════════════════
+let ALL=[]; let LISTS={}; let regId=0; let SRC='loading';
+const $=id=>document.getElementById(id);
+const esc=s=>String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+const reg=(title,sub,emps)=>{const k='k'+(regId++);LISTS[k]={title,sub,emps};return k;};
+const STATUS_ORDER=['Billed','Buffer','UnBilled','Bench','Onsite'];
+const ST_DOT={Billed:'g',Buffer:'y',UnBilled:'r',Bench:'k',Onsite:'o'};
+const ST_CX={Billed:'cx-b',Buffer:'cx-f',UnBilled:'cx-u',Bench:'cx-k',Onsite:'cx-o'};
+function filtered(){
+  const fp=$('f-practice').value, fs=$('f-status').value, fc=$('f-client').value;
+  return ALL.filter(e=>(!fp||e.practice===fp)&&(!fs||e.status===fs)&&(!fc||e.client===fc));
+}
+function resetFilters(){ $('f-practice').value=''; $('f-status').value=''; $('f-client').value=''; renderAll(); }
+function showTab(name,btn){
+  document.querySelectorAll('.pane').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  $('pane-'+name).classList.add('active'); btn.classList.add('active');
+}
+
+// ════════════════════════════════════════════════════════════
+// MODAL DRILL-DOWN
+// ════════════════════════════════════════════════════════════
+function idBadge(id){
+  const cls=id.startsWith('VCIN')?'sid-vcin':id.startsWith('VCC')?'sid-vcc':'sid-vc';
+  return `<span class="sid ${cls}">${esc(id)}</span>`;
+}
+function notesOf(e){
+  const bits=[];
+  if(e.task) bits.push(e.task);
+  if(e.upto) bits.push('Billed upto: '+e.upto);
+  if(e.plan) bits.push('Plan: '+e.plan);
+  if(e.remarks) bits.push(e.remarks);
+  if(e.bufferBilled) bits.push('Buffer Billed in sheet');
+  if(e.assumed) bits.push('status not in sheet — assumed from project');
+  return bits.join(' · ');
+}
+function openList(k){
+  const d=LISTS[k]; if(!d) return;
+  $('modal-title').textContent=d.title;
+  $('modal-sub').textContent=d.sub||(d.emps.length+' people');
+  const rows=d.emps.map(e=>`<tr class="clickable" onclick="openPerson('${esc(e.id)}')">
+    <td>${idBadge(e.id)}</td><td><b>${esc(e.name)}</b></td><td>${esc(e.practice)}</td>
+  <td>${esc(e.yoe||'—')}</td><td><span class="st-badge stb-${e.status}">${e.status}</span></td>
+    <td>${esc(e.projLabel)}${e.alloc!=null&&e.alloc<100?` <span style="color:#C00000;font-size:9px">⚠ ${e.alloc}%</span>`:''}</td>
+    <td style="font-size:10px;color:#777;max-width:260px">${esc(notesOf(e))||'—'}</td></tr>`).join('');
+  $('modal-body').innerHTML=`<table class="tbl"><thead><tr><th>ID</th><th>Name</th><th>Practice</th><th>YOE</th><th>Status</th><th>Project</th><th>Notes</th></tr></thead><tbody>${rows||'<tr><td colspan=7 style="color:#999;text-align:center;padding:18px">No one matches.</td></tr>'}</tbody></table>`;
+  $('modal').classList.add('open');
+}
+function openPerson(id){
+  const e=ALL.find(x=>x.id===id); if(!e) return;
+  $('modal-title').textContent=e.name;
+  $('modal-sub').textContent=`${e.id} · ${e.practice} · ${e.desig||'—'}`;
+  const row=(l,v)=>v?`<tr><td style="font-weight:700;color:#1F3864;width:140px">${l}</td><td>${esc(v)}</td></tr>`:'';
+  $('modal-body').innerHTML=`<table class="tbl"><tbody>
+    ${row('Status',e.status+(e.bufferBilled?' (Buffer Billed in sheet — revenue-generating)':'')+(e.assumed?' (assumed — blank in sheet)':''))}
+    ${row('Project',e.projLabel+(e.projRaw&&e.projRaw.trim()!==e.projLabel?` — sheet says: "${e.projRaw.trim()}"`:''))}
+    ${row('Client',e.client)}
+    ${row('Reports to',e.lead)}
+    ${row('Experience',e.yoe)}
+    ${row('Allocation',e.bw)}
+    ${row('Current task',e.task)}
+    ${row('Billed upto',e.upto)}
+    ${row('Plan',e.plan)}
+    ${row('Remarks',e.remarks)}
+  </tbody></table>`;
+  $('modal').classList.add('open');
+}
+function closeModal(){ $('modal').classList.remove('open'); }
+document.addEventListener('keydown',ev=>{ if(ev.key==='Escape') closeModal(); });
+
+// ════════════════════════════════════════════════════════════
+// RENDERERS
+// ════════════════════════════════════════════════════════════
+function renderKPIs(emps){
+  const s=summarize(emps);
+  const atRisk=emps.filter(e=>e.status==='Billed'&&e.cliff&&e.cliff.m<=6);
+  const card=(cls,val,lbl,sub,k)=>`<div class="kpi ${cls}" onclick="openList('${k}')"><div class="kpi-val">${val}</div><div class="kpi-lbl">${lbl}</div><div class="kpi-sub">${sub}</div></div>`;
+  $('kpi-strip').innerHTML=
+    card('blue',s.total,'Total People','incl. interns & consultants',reg('Everyone','',emps))+
+    card('green',s.billed,'Billed','incl. Buffer Billed',reg('Billed engineers','Generating revenue now',emps.filter(e=>e.status==='Billed')))+
+    card('amber',s.buffer,'Buffer','on project, not invoicing',reg('Buffer engineers','On a project but not yet invoiced',emps.filter(e=>e.status==='Buffer')))+
+    card('red',s.bench,'Bench / UnBilled','pure cost',reg('Bench / UnBilled','No revenue — staffing action needed',emps.filter(e=>e.status==='UnBilled'||e.status==='Bench')))+
+    card('grey',s.onsite,'Onsite','tracked separately',reg('Onsite','At client site',emps.filter(e=>e.status==='Onsite')))+
+    card('teal',s.util+'%','Billing Rate','billed ÷ (total − onsite)',reg('Billed engineers','',emps.filter(e=>e.status==='Billed')))+
+    card('red',atRisk.length,'Billing Ends ≤ Jun','confirmed end, no successor',reg('Billing ends in June','Billed today, confirmed only to mid/end June',atRisk));
+}
+
+function renderAlerts(){ $('alerts').innerHTML=''; }
+
+function renderOrg(emps){
+  // Pill helpers
+  const pillCls=e=>e.status==='Billed'?'pill-b':e.status==='Buffer'?'pill-f':e.status==='Bench'?'pill-k':'pill-u';
+const pillTxt=e=>{
+    const proj=e.projLabel&&e.projLabel!=='Bench / Self-Learning'?e.projLabel:'';
+    return e.status+(proj?' · '+proj:'');
+};
+
+  // Build a single card box
+  function ocard(e,lvlCls,showPrac){
+    const first2=e.name.trim().split(/\s+/).slice(0,2).join(' ');
+    const yoe=e.yoe?e.yoe+' yrs':'';
+    const desigYoe=[e.desig,yoe].filter(Boolean).join(' · ');
+    const prac=showPrac&&e.practice&&e.practice!=='Leadership'?e.practice:'';
+    return `<div class="ocard ${lvlCls}" onclick="openPerson('${esc(e.id)}')">
+      <div class="ocard-name">${esc(first2)}</div>
+      ${desigYoe?`<div class="ocard-sub">${esc(desigYoe)}</div>`:''}
+      ${prac?`<div class="ocard-prac">${esc(prac)}</div>`:''}
+      <span class="ocard-pill ${pillCls(e)}">${esc(pillTxt(e))}</span>
+    </div>`;
+  }
+
+  // Level classification by designation + YOE
+  const isL1=e=>/director/i.test(e.desig||'');
+  const isL2=e=>!isL1(e)&&(/sr\.?\s*staff\s*engineer|senior staff engineer|staff engineer|program manager/i.test(e.desig||''))&&Number(e.yoe||0)>=7;
+  const isL3=e=>!isL1(e)&&!isL2(e)&&(/senior engineer|technical writer|ci\s*\/?\s*cd/i.test(e.desig||'')||/consultant/i.test(e.desig||''));
+
+  const l1=ALL.filter(isL1);
+  const l2=ALL.filter(isL2);
+  const l3=ALL.filter(isL3);
+  const upperIds=new Set([...l1,...l2,...l3].map(e=>e.id));
+  // L4 = filtered view minus upper levels, minus onsite
+  const l4=emps.filter(e=>!upperIds.has(e.id)&&e.status!=='Onsite');
+
+  // L2 colour: Buffer/UnBilled→blue, otherwise teal
+  const l2cls=e=>e.status==='Buffer'||e.status==='UnBilled'||e.status==='Bench'?'oc-l2f':'oc-l2b';
+
+  // Group L4 by practice
+  const l4byPrac={};
+  l4.forEach(e=>{ const p=e.practice||'Other'; (l4byPrac[p]=l4byPrac[p]||[]).push(e); });
+  const l4pracOrder=PRACTICE_ORDER.filter(p=>l4byPrac[p]);
+  // also catch anything not in PRACTICE_ORDER
+  Object.keys(l4byPrac).forEach(p=>{ if(!l4pracOrder.includes(p)) l4pracOrder.push(p); });
+
+  let html='';
+
+  if(l1.length)
+    html+=`<div class="org-level">
+      <div class="org-level-hdr">L1 — Executive Directors <span>(${l1.length})</span></div>
+      <div class="org-row">${l1.map(e=>ocard(e,'oc-l1',false)).join('')}</div>
+    </div><div class="org-connector"></div>`;
+
+  if(l2.length)
+    html+=`<div class="org-level">
+      <div class="org-level-hdr">L2 — Practice Leads &amp; Program Managers <span>(${l2.length})</span></div>
+      <div class="org-row">${l2.map(e=>ocard(e,l2cls(e),true)).join('')}</div>
+    </div><div class="org-connector"></div>`;
+
+  if(l3.length)
+    html+=`<div class="org-level">
+      <div class="org-level-hdr">L3 — Senior Engineers &amp; Sub-Leads <span>(${l3.length})</span></div>
+      <div class="org-row">${l3.map(e=>ocard(e,'oc-l3',true)).join('')}</div>
+    </div><div class="org-connector"></div>`;
+
+  if(l4pracOrder.length)
+    html+=`<div class="org-level">
+      <div class="org-level-hdr">L4 — Engineers I &amp; II <span>(${l4.length})</span></div>
+      ${l4pracOrder.map(p=>`<div class="org-subhdr">${esc(p)}</div><div class="org-row">${l4byPrac[p].map(e=>ocard(e,'oc-l4',false)).join('')}</div>`).join('')}
+    </div>`;
+
+  $('org-wrap').innerHTML=html||'<div class="card" style="color:#999;text-align:center">No one matches the current filters.</div>';
+}
+
+function renderMatrix(emps){
+  const pracs=PRACTICE_ORDER.filter(p=>emps.some(e=>e.practice===p));
+  const projs=PROJ_ORDER.filter(p=>emps.some(e=>e.proj===p));
+  let html='<tr><th class="prac-hdr">Practice \\ Project</th>'+projs.map(p=>`<th>${esc(PROJ_DEFS[p].label.replace(/[ /]/g,'\n'))}</th>`).join('')+'<th>TOTAL</th></tr>';
+  pracs.forEach(pr=>{
+    const inPrac=emps.filter(e=>e.practice===pr);
+    const kRow=reg(`${pr} — all`,'',inPrac);
+    html+=`<tr><td class="pname" onclick="openList('${kRow}')">${esc(pr)}</td>`;
+    projs.forEach(pj=>{
+      const cell=inPrac.filter(e=>e.proj===pj);
+      if(!cell.length){ html+='<td><span class="cx-nil">·</span></td>'; return; }
+      const chips=STATUS_ORDER.map(st=>{
+        const sub=cell.filter(e=>e.status===st);
+        if(!sub.length) return '';
+        const k=reg(`${pr} × ${PROJ_DEFS[pj].label} — ${st==='UnBilled'?'Bench':st}`,'',sub);
+        return `<span class="cx ${ST_CX[st]}" onclick="openList('${k}')">${sub.length}</span>`;
+      }).join('');
+      html+=`<td>${chips}</td>`;
+    });
+    const kTot=reg(`${pr} — all`,'',inPrac);
+    html+=`<td class="tot" onclick="openList('${kTot}')">${inPrac.length}</td></tr>`;
+  });
+  // totals row
+  html+=`<tr class="tot-row"><td class="pname" onclick="openList('${reg('Everyone','',emps)}')">TOTAL</td>`;
+  projs.forEach(pj=>{
+    const col=emps.filter(e=>e.proj===pj);
+    html+=`<td onclick="openList('${reg(PROJ_DEFS[pj].label+' — full team','',col)}')">${col.length}</td>`;
+  });
+  html+=`<td onclick="openList('${reg('Everyone','',emps)}')">${emps.length}</td></tr>`;
+  $('mx-table').innerHTML=html;
+}
+
+function projRisk(pj,members){
+  const cliffs=members.filter(e=>e.cliff&&e.status!=='UnBilled');
+  if(pj==='FSP') return {cls:'w',txt:'⏳ Billing start pending ("next week" per sheet)'};
+  if(pj==='FUSA') return {cls:'w',txt:'⏳ Unbilled since Apr 7 — resumes Jul 1'};
+  if(pj==='BENCH') return {cls:'r',txt:'Non-billable — staffing needed'};
+  if(pj==='ONSITE') return {cls:'ok',txt:'At client site'};
+  if(cliffs.length){
+    const minM=Math.min(...cliffs.map(e=>e.cliff.m));
+    const lbl=cliffs.find(e=>e.cliff.m===minM).cliff.label;
+    const n=cliffs.filter(e=>e.cliff.m===minM).length;
+    return {cls:minM<=6?'r':minM<=8?'w':'ok',txt:`Billing ${minM<=7?'ends':'confirmed to'} ${lbl} · ${n} HC`};
+  }
+  const billed=members.filter(e=>e.status==='Billed').length;
+  if(billed) return {cls:'ok',txt:'No end date recorded — running'};
+  return {cls:'w',txt:'No billing yet'};
+}
+function renderProjects(emps){
+  const groups=[['🏢 Client Projects',p=>!['Internal','—','Onsite'].includes(PROJ_DEFS[p].client)],
+                ['🔧 Internal Products & Platforms',p=>PROJ_DEFS[p].client==='Internal'],
+                ['⏸ Bench & Onsite',p=>['—','Onsite'].includes(PROJ_DEFS[p].client)]];
+  $('own-wrap').innerHTML=groups.map(([title,pred])=>{
+    const cards=PROJ_ORDER.filter(p=>pred(p)&&emps.some(e=>e.proj===p)).map(pj=>{
+      const m=emps.filter(e=>e.proj===pj);
+      const cnt=s=>m.filter(e=>e.status===s).length;
+      const leads={}; m.forEach(e=>{ if(e.lead) leads[e.lead]=(leads[e.lead]||0)+1; });
+      const lead=Object.entries(leads).sort((a,b)=>b[1]-a[1])[0];
+      const risk=projRisk(pj,m);
+      const k=reg(PROJ_DEFS[pj].label+' — full team',PROJ_DEFS[pj].client,m);
+      const split=[['sp-g',cnt('Billed'),'billed'],['sp-y',cnt('Buffer'),'buffer'],['sp-r',cnt('UnBilled'),'bench'],['sp-o',cnt('Onsite'),'onsite']]
+        .filter(x=>x[1]).map(x=>`<span class="split-pill ${x[0]}">${x[1]} ${x[2]}</span>`).join('');
+      return `<div class="own-card" onclick="openList('${k}')">
+        <div class="own-hc">${m.length}</div>
+        <div class="own-proj">${esc(PROJ_DEFS[pj].label)}</div>
+        <div class="own-client">Client: ${esc(PROJ_DEFS[pj].client)}</div>
+        <div class="own-owner">Lead: ${lead?esc(lead[0]):'—'}</div>
+        <div class="own-split">${split}</div>
+        <div class="own-risk ${risk.cls}">${risk.txt}</div>
+      </div>`;
+    }).join('');
+    return cards?`<div class="own-hdr">${title}</div><div class="own-grid">${cards}</div>`:'';
+  }).join('')||'<div class="card" style="color:#999;text-align:center">No projects match the current filters.</div>';
+}
+
+function renderHealth(emps){
+  const s=summarize(emps);
+  const arc=$('gauge-arc'), L=Math.PI*55;
+  arc.setAttribute('stroke-dasharray',`${(s.util/100*L).toFixed(1)},220`);
+  arc.setAttribute('stroke',s.util>=75?'#6FA84F':s.util>=65?'#E6AC00':'#C00000');
+  $('util-pct').textContent=s.util+'%';
+  $('util-sub').textContent=`${s.billed} of ${s.total-s.onsite} offshore people are billed. ${s.buffer} on buffer (parked, no invoice yet), ${s.bench} on bench (pure cost).`;
+  $('util-pills').innerHTML=[['pl-g',s.billed,'Billed','Billed'],['pl-y',s.buffer,'Buffer','Buffer'],['pl-r',s.bench,'Bench','UnBilled'],['pl-o',s.onsite,'Onsite','Onsite']]
+    .map(([c,n,l,st])=>`<span class="pill ${c}" onclick="openList('${reg(l,'',emps.filter(e=>e.status===st))}')">${n} ${l}</span>`).join('');
+
+  // practice stacked bars
+  const pracs=PRACTICE_ORDER.filter(p=>emps.some(e=>e.practice===p));
+  $('practice-stacks').innerHTML=pracs.map(pr=>{
+    const m=emps.filter(e=>e.practice===pr); const tot=m.length;
+    const seg=(st,cls)=>{const n=m.filter(e=>e.status===st).length; if(!n)return '';
+      const w=n/tot*100; return `<div class="stk-seg ${cls}" style="width:${w}%">${w>9?n:''}</div>`;};
+    const k=reg(pr+' — all','',m);
+    return `<div class="stk-row" onclick="openList('${k}')"><div class="stk-lbl">${esc(pr)}</div>
+      <div class="stk-track">${seg('Billed','seg-g')}${seg('Buffer','seg-y')}${seg('UnBilled','seg-r')}${seg('Onsite','seg-o')}</div>
+      <div class="stk-n">${tot}</div></div>`;
+  }).join('');
+
+  // client concentration
+  const billedExt=emps.filter(e=>e.status==='Billed'&&!['Internal','—','Onsite'].includes(e.client));
+  const byC={}; billedExt.forEach(e=>byC[e.client]=(byC[e.client]||0)+1);
+  const entries=Object.entries(byC).sort((a,b)=>b[1]-a[1]);
+  const max=entries.length?entries[0][1]:1;
+  const top2=entries.slice(0,2);
+  const top2pct=billedExt.length?Math.round(top2.reduce((a,t)=>a+t[1],0)/billedExt.length*100):0;
+  $('conc-hint').innerHTML=billedExt.length?`<b style="color:#C00000">${top2.map(t=>t[0]).join(' + ')} = ${top2pct}%</b> of external billed headcount. Above ~50% in two clients is high concentration risk.`:'No external billed HC under current filters.';
+  $('conc-bars').innerHTML=entries.map(([c,n])=>{
+    const share=Math.round(n/billedExt.length*100);
+    const k=reg(c+' — billed engineers','',billedExt.filter(e=>e.client===c));
+    return `<div class="conc-row" onclick="openList('${k}')"><div class="stk-lbl">${esc(c)}</div>
+      <div style="flex:1"><div class="conc-fill" style="width:${Math.max(9,n/max*100)}%">${n} HC · ${share}%</div></div></div>`;
+  }).join('');
+
+  // billing cliff cards
+  const billed=emps.filter(e=>e.status==='Billed');
+  const buckets=[
+    ['cc-r',billed.filter(e=>e.cliff&&e.cliff.m<=6),'Ends in June','ORCA Jun 15 · Gen5 / Renesas Main / NPU end-June'],
+    ['cc-y',billed.filter(e=>e.cliff&&e.cliff.m===7),'Ends in July','SmartSoC-ADI billed upto July'],
+    ['cc-g',billed.filter(e=>e.cliff&&e.cliff.m>=8),'Aug or later','Kandou ~Aug · ZPS to ~Nov'],
+    ['cc-b',billed.filter(e=>!e.cliff),'No end date recorded','treated as ongoing — confirm with leads'],
+  ];
+  $('cliff-cards').innerHTML=buckets.map(([cls,list,lbl,sub])=>
+    `<div class="cliff-card ${cls}" onclick="openList('${reg('Billed — '+lbl,sub,list)}')">
+      <div class="cc-val">${list.length}</div><div class="cc-lbl">${lbl}</div><div class="cc-sub">${sub}</div></div>`).join('');
+}
+
+function renderPlanning(emps){
+  // ── gantt
+  const pos=c=>c.mid?c.m+0.5:c.m+1;          // bar end position on Jun(6)→Dec(12) scale
+  const x=p=>Math.min(100,Math.max(0,(p-6)/6*100));
+  const rows=[];
+  PROJ_ORDER.forEach(pj=>{
+    const m=emps.filter(e=>e.proj===pj&&e.status!=='Onsite');
+    const withCliff=m.filter(e=>e.cliff);
+    if(pj==='FSP'&&m.length){ rows.push({pj,label:'Renesas FSP',n:m.length,start:6.4,end:12,cls:'gb-b',txt:`start pending · ${m.length} HC`,sort:5.9,emps:m}); return; }
+    if(pj==='FUSA'&&m.length){ rows.push({pj,label:'Renesas FUSA',n:m.length,start:7,end:12,cls:'gb-b',txt:`resumes Jul 1 · ${m.length} HC`,sort:7,emps:m}); return; }
+    if(!withCliff.length) return;
+    const end=Math.max(...withCliff.map(e=>pos(e.cliff)));
+    const lbl=withCliff.find(e=>pos(e.cliff)===end).cliff.label;
+    rows.push({pj,label:PROJ_DEFS[pj].label,n:withCliff.length,start:6,end,
+      cls:end<=7?'gb-r':end<=9?'gb-y':'gb-g',txt:`${withCliff.length} HC · billing to ${lbl}`,sort:end,emps:m,marker:end<=8});
+  });
+  rows.sort((a,b)=>a.sort-b.sort);
+  $('gantt').innerHTML=rows.length?
+    `<div class="g-scale"><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span></div>`+
+    rows.map(r=>{
+      const k=reg(r.label+' — team','',r.emps);
+      const left=x(r.start), width=Math.max(7,x(r.end)-left);
+      return `<div class="g-row" onclick="openList('${k}')"><div class="g-lbl">${esc(r.label)}</div>
+        <div class="g-track"><div class="g-bar ${r.cls}" style="left:${left}%;width:${width}%">${r.txt}</div>
+        ${r.marker?`<div class="g-end" style="left:${left+width}%"></div>`:''}</div></div>`;
+    }).join('')
+    :'<div style="color:#999;font-size:11px">No billing end-dates recorded under current filters.</div>';
+
+  // ── hiring requirements
+  $('req-list').innerHTML=REQUIREMENTS.map(r=>
+    `<div class="req-row"><span class="req-badge ${r.urg==='urgent'?'req-urgent':'req-soon'}">${r.eta}</span>
+     <div class="req-info"><div class="ri-proj">${esc(r.proj)}</div><div class="ri-detail">${esc(r.role)}</div></div>
+     <div class="req-count">${r.count}</div></div>`).join('')+
+    `<div style="font-size:9.5px;color:#aaa;margin-top:8px">Source: Requirements block in the SystemC sheet tab. Edit REQUIREMENTS in this file (or move it into the sheet) to update.</div>`;
+
+  // ── roll-off list
+  const groups={};
+  emps.filter(e=>e.cliff&&e.status!=='Onsite').forEach(e=>{
+    const key=e.proj+'|'+e.cliff.label; (groups[key]=groups[key]||{proj:e.proj,label:e.cliff.label,m:e.cliff.m,mid:e.cliff.mid,emps:[]}).emps.push(e);
+  });
+  const roll=Object.values(groups).sort((a,b)=>(a.m+(a.mid?0:0.5))-(b.m+(b.mid?0:0.5)));
+  $('rolloff-list').innerHTML=roll.map(g=>{
+    const k=reg(`${PROJ_DEFS[g.proj].label} — billing to ${g.label}`,'',g.emps);
+    return `<div class="req-row" style="cursor:pointer" onclick="openList('${k}')">
+      <span class="req-badge ${g.m<=6?'req-urgent':'req-soon'}">${esc(g.label)}</span>
+      <div class="req-info"><div class="ri-proj">${esc(PROJ_DEFS[g.proj].label)}</div>
+      <div class="ri-detail">${g.emps.map(e=>e.name.split(/\s+/)[0]).slice(0,5).join(', ')}${g.emps.length>5?' +'+(g.emps.length-5):''}</div></div>
+      <div class="req-count">${g.emps.length}</div></div>`;
+  }).join('')+
+  `<div class="req-row"><span class="req-badge req-soon">Jul 1</span><div class="req-info"><div class="ri-proj">Renesas FUSA — billing resumes</div><div class="ri-detail">2 HC unbilled since Apr 7 return to billing</div></div><div class="req-count">+2</div></div>`;
+
+  // ── forecast
+  const billed=emps.filter(e=>e.status==='Billed');
+  const fusaN=emps.filter(e=>e.proj==='FUSA').length;
+  const months=[['Today (10 Jun)',5.9],['End of June',6],['End of July',7],['End of August',8],['End of September',9]];
+  let prev=null;
+  const rowsF=months.map(([lbl,m])=>{
+    const lost=billed.filter(e=>e.cliff&&e.cliff.m<=m);
+    const gained=m>=7?fusaN:0;
+    const proj=billed.length-lost.length+gained;
+    const delta=prev==null?'':(proj-prev===0?'<span class="trend-flat" style="color:#7A5000">—</span>':proj-prev>0?`<span style="color:#375623">▲ +${proj-prev}</span>`:`<span style="color:#C00000">▼ ${proj-prev}</span>`);
+    const ends=[...new Set(billed.filter(e=>e.cliff&&e.cliff.m===Math.floor(m)&&e.cliff.m<=m).map(e=>PROJ_DEFS[e.proj].label))];
+    const note=m===5.9?'current billed HC':(ends.length?`${ends.join(', ')} end${gained&&m===7?' · FUSA +2 resumes':''}`:(gained&&m===7?'FUSA +2 resumes':'no confirmed changes'));
+    prev=proj;
+    return `<tr><td><b>${lbl}</b></td><td style="font-size:14px;font-weight:700;color:#1F3864">${proj}</td><td>${delta}</td><td style="color:#777;font-size:10px">${note}</td></tr>`;
+  }).join('');
+  $('forecast-table').innerHTML=`<thead><tr><th>Point in time</th><th>Confirmed billed HC</th><th>Change</th><th>What changes</th></tr></thead><tbody>${rowsF}</tbody>`;
+  $('forecast-hint').innerHTML=`Worst-case view: assumes <b>no extensions, no new wins</b>. Gen5 / Renesas Main are marked "Project May Extend" in the sheet — if they extend, most of the June drop disappears. FSP start ("next week") is excluded until billing is confirmed.`;
+
+  // ── bench pipeline
+  const bench=emps.filter(e=>e.status==='UnBilled'||e.status==='Bench');
+  $('bench-table').innerHTML=`<thead><tr><th>ID</th><th>Name</th><th>Practice</th><th>YOE</th><th>Parked at</th><th>Current task</th><th>Plan in sheet</th></tr></thead><tbody>`+
+    bench.map(e=>`<tr class="clickable" onclick="openPerson('${esc(e.id)}')">
+      <td>${idBadge(e.id)}</td><td><b>${esc(e.name)}</b></td><td>${esc(e.practice)}</td><td>${esc(e.yoe||'—')}</td>
+      <td>${esc(e.projLabel)}</td><td style="font-size:10px;color:#777">${esc(e.task||'—')}</td>
+      <td>${e.plan?`<span class="st-badge stb-Buffer">${esc(e.plan)}</span>`:'<span style="color:#C00000;font-size:10px">⚠ no plan</span>'}</td></tr>`).join('')+
+    `</tbody>`;
+}
+
+function renderAll(){
+  LISTS={}; regId=0;
+  const emps=filtered();
+  $('filter-count').textContent=emps.length===ALL.length?`Showing all ${ALL.length} people`:`Showing ${emps.length} of ${ALL.length}`;
+  renderKPIs(emps); renderAlerts(); renderOrg(emps); renderMatrix(emps);
+  renderProjects(emps); renderHealth(emps); renderPlanning(emps);
+}
+
+// ════════════════════════════════════════════════════════════
+// BOOT — live fetch with snapshot fallback
+// ════════════════════════════════════════════════════════════
+function fillFilters(){
+  const pr=$('f-practice'); pr.length=1;
+  PRACTICE_ORDER.filter(p=>ALL.some(e=>e.practice===p)).forEach(p=>pr.add(new Option(p,p)));
+  const fc=$('f-client'); fc.length=1;
+  [...new Set(PROJ_ORDER.map(p=>PROJ_DEFS[p].client))].filter(c=>ALL.some(e=>e.client===c)).forEach(c=>fc.add(new Option(c==='—'?'Bench (no client)':c,c)));
+}
+async function fetchWithTimeout(url,ms){
+  const ctl=new AbortController(); const t=setTimeout(()=>ctl.abort(),ms);
+  try{ const r=await fetch(url,{signal:ctl.signal}); clearTimeout(t); return r; }
+  catch(e){ clearTimeout(t); throw e; }
+}
+async function boot(force){
+  const bar=$('srcbar');
+  bar.className='srcbar loading';
+  $('src-text').textContent='Connecting to data source…';
+  $('src-help-btn').style.display='none';
+  let people=null, srcLabel='', lastErr='';
+
+  // 1) Apps Script web app (best — works even from a local file)
+  if(WEBAPP_URL){
+    try{
+      const r=await fetchWithTimeout(WEBAPP_URL+(WEBAPP_URL.includes('?')?'&':'?')+'t='+Date.now(),12000);
+      const txt=await r.text();
+      const j=JSON.parse(txt);
+      const arr=Array.isArray(j)?j:j.people;
+      const mapped=(arr||[]).map(fromMaster).filter(Boolean);
+      if(mapped.length){ people=mapped; srcLabel='Apps Script web app'; }
+      else lastErr='web app returned no rows';
+    }catch(e){ lastErr='web app: '+(e.name==='AbortError'?'timed out':e.message||'failed'); }
+  }
+
+  // 2) Published-to-web CSV (works when the dashboard is hosted at a real web address)
+  if(!people){
+    const urls=[`https://docs.google.com/spreadsheets/d/e/2PACX-1vTGKpXllqYJrHeCI_9-Z9wT6TReZzZs2jGulrirNgDbBoBAVpONGFEJWxDS63H4dzwVvw2tgzohkzUE/pubhtml}/pub?output=csv`,
+                `https://docs.google.com/spreadsheets/d/e/2PACX-1vTGKpXllqYJrHeCI_9-Z9wT6TReZzZs2jGulrirNgDbBoBAVpONGFEJWxDS63H4dzwVvw2tgzohkzUE/pubhtml}/pub?output=csv`];
+    SHEET_NAME_CANDIDATES.forEach(n=>urls.push(`https://docs.google.com/spreadsheets/d/e/2PACX-1vTGKpXllqYJrHeCI_9-Z9wT6TReZzZs2jGulrirNgDbBoBAVpONGFEJWxDS63H4dzwVvw2tgzohkzUE/pubhtml}/pub?output=csv/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(n)}`));
+    for(const u of urls){
+      try{
+        const r=await fetchWithTimeout(u,9000);
+        if(!r.ok){ lastErr='HTTP '+r.status; continue; }
+        const txt=await r.text();
+        if(txt.trim().startsWith('<')||!/emp\s*id/i.test(txt.slice(0,400))){ lastErr='sheet not reachable'; continue; }
+        people=normalize(parseCSV(txt)); srcLabel='published CSV'; break;
+      }catch(e){ lastErr=e.name==='AbortError'?'timed out':'network blocked'; }
+    }
+  }
+
+  // 3) Embedded snapshot (always works)
+  try{
+    if(people){
+      ALL=people; SRC='live';
+      bar.className='srcbar live';
+      $('src-text').innerHTML=`<b>LIVE</b> — ${ALL.length} people from ${srcLabel} · ${new Date().toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'})}. Edit the sheet, then hit Refresh.`;
+    }else{
+      ALL=normalize(parseCSV(SNAPSHOT_CSV)); SRC='snap';
+      bar.className='srcbar snap';
+      $('src-text').innerHTML=`<b>SNAPSHOT</b> — couldn't reach live data (${esc(lastErr)}). Showing built-in copy from ${SNAPSHOT_DATE} (${ALL.length} people).`;
+      $('src-help-btn').style.display='inline-block';
+    }
+  }catch(err){
+    ALL=normalize(parseCSV(SNAPSHOT_CSV)); SRC='snap';
+    bar.className='srcbar snap';
+    $('src-text').textContent='Parse problem — showing snapshot of '+SNAPSHOT_DATE+'.';
+  }
+  $('footer').textContent=`VConnecTech Systems · Workforce Intelligence v3 · Confidential · Source: ${SRC==='live'?srcLabel+' (live)':'embedded snapshot '+SNAPSHOT_DATE}`;
+  fillFilters(); renderAll();
+}
+if(typeof document!=='undefined'){ boot(); }
+
+</script>
+</body>
+</html>
