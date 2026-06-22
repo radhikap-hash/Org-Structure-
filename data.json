@@ -1,0 +1,3265 @@
+{
+ "generatedAt": "2026-06-22T15:25:09.981643Z",
+ "months": [
+  "April",
+  "Current"
+ ],
+ "employees": [
+  {
+   "EmpID": "VC_099",
+   "Name": "Srikanth Neelam",
+   "Practice": "",
+   "Designation": "Director",
+   "YOE": "24",
+   "ReportsTo": "",
+   "Project": "FLC",
+   "Status": "Billed",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "",
+     "Project": "FLC",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "",
+     "Project": "FLC",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_116",
+   "Name": "Abhishek Vulapu",
+   "Practice": "Program Manager",
+   "Designation": "Program Manager",
+   "YOE": "14",
+   "ReportsTo": "Srikanth",
+   "Project": "Renesas",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Srikanth",
+     "Project": "Renesas",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Srikanth",
+     "Project": "Renesas",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_112",
+   "Name": "Prithvi Nagilla",
+   "Practice": "Program Manager",
+   "Designation": "Program Manager",
+   "YOE": "14",
+   "ReportsTo": "Shyam",
+   "Project": "Smart IP Camera",
+   "Status": "Buffer",
+   "Allocation": "70",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Shyam",
+     "Project": "Smart IP Camera",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Shyam",
+     "Project": "Smart IP Camera",
+     "Status": "Buffer"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_104",
+   "Name": "Aravind Kumar Goud Kurra",
+   "Practice": "SystemC Modelling",
+   "Designation": "Staff Engineer",
+   "YOE": "8",
+   "ReportsTo": "Srikanth",
+   "Project": "SmartSoC-ADI",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Srikanth",
+     "Project": "SmartSoC-ADI",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Srikanth",
+     "Project": "SmartSoC-ADI",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_191",
+   "Name": "Sollapuram Kishore Reddy",
+   "Practice": "SystemC Modelling",
+   "Designation": "Engineer I",
+   "YOE": "1.1",
+   "ReportsTo": "Aravind",
+   "Project": "SmartSoC-ADI",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "July",
+   "Plan": "",
+   "CurrentTask": "Supporting DLI models",
+   "Remarks": "Need 4 engineers with 3-4 years of experience from August. Need 3 buffers(Trainees) for existing engineers.",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Aravind",
+     "Project": "SmartSoC-ADI",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Aravind",
+     "Project": "SmartSoC-ADI",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_218",
+   "Name": "Kota Poojitha",
+   "Practice": "SystemC Modelling",
+   "Designation": "Engineer I",
+   "YOE": "0.9",
+   "ReportsTo": "Aravind",
+   "Project": "SmartSoC-ADI",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "July",
+   "Plan": "",
+   "CurrentTask": "Supporting DLI models",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Aravind",
+     "Project": "SmartSoC-ADI",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Aravind",
+     "Project": "SmartSoC-ADI",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_192",
+   "Name": "Sudeep B Channalli",
+   "Practice": "SystemC Modelling",
+   "Designation": "Engineer I",
+   "YOE": "1.1",
+   "ReportsTo": "Aravind",
+   "Project": "SmartSoC-ADI",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "Supporting DLI models",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Aravind",
+     "Project": "SmartSoC-ADI",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Aravind",
+     "Project": "SmartSoC-ADI",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_194",
+   "Name": "Yepuri Karthikeya",
+   "Practice": "SystemC Modelling",
+   "Designation": "Engineer I",
+   "YOE": "1.1",
+   "ReportsTo": "Aravind",
+   "Project": "FLC IP Modelling",
+   "Status": "Buffer Billed",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "FLC Chip top modelling",
+   "Remarks": "Aravind will ask srikanth",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Aravind",
+     "Project": "FLC IP Modelling",
+     "Status": "Buffer Billed"
+    },
+    "April": {
+     "ReportsTo": "Aravind",
+     "Project": "FLC IP Modelling",
+     "Status": "BufferBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_225",
+   "Name": "G Sudarshan Reddy",
+   "Practice": "SystemC Modelling",
+   "Designation": "Engineer I",
+   "YOE": "0.7",
+   "ReportsTo": "Aravind",
+   "Project": "FLC IP Modelling",
+   "Status": "Buffer",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "QEMU bringup",
+   "Remarks": "Aravind will ask srikanth",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Aravind",
+     "Project": "FLC IP Modelling",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Aravind",
+     "Project": "FLC IP Modelling",
+     "Status": "Buffer"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_226",
+   "Name": "Kanturi Jeevan Sai",
+   "Practice": "SystemC Modelling",
+   "Designation": "Engineer I",
+   "YOE": "0.7",
+   "ReportsTo": "Aravind",
+   "Project": "DLI Soc Modelling",
+   "Status": "Buffer",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "Security IP modelling",
+   "Remarks": "Billing plan?",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Aravind",
+     "Project": "DLI Soc Modelling",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Aravind",
+     "Project": "DLI Soc Modelling",
+     "Status": "Buffer"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_213",
+   "Name": "Mutakoduru Sowmya",
+   "Practice": "SystemC Modelling",
+   "Designation": "Engineer I",
+   "YOE": "0.6",
+   "ReportsTo": "Aravind",
+   "Project": "DLI Soc Modelling",
+   "Status": "Buffer",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "Security IP modelling",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Aravind",
+     "Project": "DLI Soc Modelling",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Aravind",
+     "Project": "DLI Soc Modelling",
+     "Status": "Buffer"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_217",
+   "Name": "Balijepalli Anil Kumar",
+   "Practice": "SystemC Modelling",
+   "Designation": "Trainee II",
+   "YOE": "0.4",
+   "ReportsTo": "Aravind",
+   "Project": "DLI Soc Modelling",
+   "Status": "Buffer",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "DMA model",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Aravind",
+     "Project": "DLI Soc Modelling",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Aravind",
+     "Project": "DLI Soc Modelling",
+     "Status": "Buffer"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_122",
+   "Name": "Charan Raj Bommadeni",
+   "Practice": "FPGA",
+   "Designation": "Senior Engineer",
+   "YOE": "5.1",
+   "ReportsTo": "Aravind",
+   "Project": "DLI Soc",
+   "Status": "UnBilled",
+   "Allocation": "0",
+   "BilledUpto": "",
+   "Plan": "Staffing",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Aravind",
+     "Project": "DLI Soc",
+     "Status": "UnBilled"
+    },
+    "April": {
+     "ReportsTo": "Aravind",
+     "Project": "DLI Soc",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_126",
+   "Name": "Sreekanth. Arati",
+   "Practice": "FPGA",
+   "Designation": "Senior Engineer",
+   "YOE": "5.5",
+   "ReportsTo": "Aravind",
+   "Project": "DLI Soc",
+   "Status": "Billed",
+   "Allocation": "0",
+   "BilledUpto": "",
+   "Plan": "Staffing",
+   "CurrentTask": "",
+   "Remarks": "Billed in FLC",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Aravind",
+     "Project": "DLI Soc",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Aravind",
+     "Project": "DLI Soc",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_136",
+   "Name": "Itla Sai Bharadwaj",
+   "Practice": "FPGA",
+   "Designation": "Senior Engineer",
+   "YOE": "4.1",
+   "ReportsTo": "Aravind",
+   "Project": "FLC",
+   "Status": "Billed",
+   "Allocation": "0",
+   "BilledUpto": "",
+   "Plan": "Staffing",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Aravind",
+     "Project": "FLC",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Aravind",
+     "Project": "FLC",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_238",
+   "Name": "Tejeswara Rao Padda",
+   "Practice": "FPGA",
+   "Designation": "Engineer I",
+   "YOE": "2.1",
+   "ReportsTo": "Aravind",
+   "Project": "DLI Soc",
+   "Status": "UnBilled",
+   "Allocation": "0",
+   "BilledUpto": "",
+   "Plan": "Staffing",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Aravind",
+     "Project": "DLI Soc",
+     "Status": "UnBilled"
+    },
+    "April": {
+     "ReportsTo": "Aravind",
+     "Project": "DLI Soc",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_133",
+   "Name": "Mahammad Vaheed Pasha",
+   "Practice": "FPGA",
+   "Designation": "Engineer II",
+   "YOE": "2",
+   "ReportsTo": "Aravind",
+   "Project": "DLI Soc",
+   "Status": "UnBilled",
+   "Allocation": "0",
+   "BilledUpto": "",
+   "Plan": "Staffing",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Aravind",
+     "Project": "DLI Soc",
+     "Status": "UnBilled"
+    },
+    "April": {
+     "ReportsTo": "Aravind",
+     "Project": "DLI Soc",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_227",
+   "Name": "Borusu Bala Satya Phaneendra",
+   "Practice": "FPGA",
+   "Designation": "Engineer I",
+   "YOE": "0.8",
+   "ReportsTo": "Aravind",
+   "Project": "DLI Soc",
+   "Status": "UnBilled",
+   "Allocation": "0",
+   "BilledUpto": "",
+   "Plan": "Staffing",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Aravind",
+     "Project": "DLI Soc",
+     "Status": "UnBilled"
+    },
+    "April": {
+     "ReportsTo": "Aravind",
+     "Project": "DLI Soc",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_204",
+   "Name": "Swarna Latha Jakka",
+   "Practice": "DV",
+   "Designation": "Senior Staff Engineer",
+   "YOE": "15",
+   "ReportsTo": "Srikanth",
+   "Project": "",
+   "Status": "UnBilled",
+   "Allocation": "0",
+   "BilledUpto": "",
+   "Plan": "New Project",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Srikanth",
+     "Project": "",
+     "Status": "UnBilled"
+    },
+    "April": {
+     "ReportsTo": "Srikanth",
+     "Project": "",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_149",
+   "Name": "Haridasu Rudra Bhupathi Naidu",
+   "Practice": "DV",
+   "Designation": "Engineer II",
+   "YOE": "1.11",
+   "ReportsTo": "Swarna Latha",
+   "Project": "ORCA",
+   "Status": "Billed",
+   "Allocation": "30",
+   "BilledUpto": "June 15th",
+   "Plan": "",
+   "CurrentTask": "Drop_c.1 release and code coverage",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Swarna Latha",
+     "Project": "ORCA",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Swarna Latha",
+     "Project": "ORCA",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_188",
+   "Name": "Rayidi Luhitha",
+   "Practice": "DV",
+   "Designation": "Engineer I",
+   "YOE": "1.1",
+   "ReportsTo": "Swarna Latha",
+   "Project": "ORCA",
+   "Status": "Billed",
+   "Allocation": "30",
+   "BilledUpto": "June 15th",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Swarna Latha",
+     "Project": "ORCA",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Swarna Latha",
+     "Project": "ORCA",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_189",
+   "Name": "Chittimadha Anil",
+   "Practice": "DV",
+   "Designation": "Engineer I",
+   "YOE": "1.1",
+   "ReportsTo": "Swarna Latha",
+   "Project": "ORCA",
+   "Status": "Buffer",
+   "Allocation": "30",
+   "BilledUpto": "",
+   "Plan": "New Project",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Swarna Latha",
+     "Project": "ORCA",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Swarna Latha",
+     "Project": "ORCA",
+     "Status": "Buffer"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_190",
+   "Name": "Pothula Bhargav Sai",
+   "Practice": "DV",
+   "Designation": "Engineer I",
+   "YOE": "1.1",
+   "ReportsTo": "Swarna Latha",
+   "Project": "ORCA",
+   "Status": "Buffer Billed",
+   "Allocation": "30",
+   "BilledUpto": "June 15th",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Swarna Latha",
+     "Project": "ORCA",
+     "Status": "Buffer Billed"
+    },
+    "April": {
+     "ReportsTo": "Swarna Latha",
+     "Project": "ORCA",
+     "Status": "BufferBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_193",
+   "Name": "Tammana Viswanadha Muralidhar",
+   "Practice": "DV",
+   "Designation": "Engineer I",
+   "YOE": "1.1",
+   "ReportsTo": "Swarna Latha",
+   "Project": "ORCA",
+   "Status": "Billed",
+   "Allocation": "30",
+   "BilledUpto": "June 15th",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Swarna Latha",
+     "Project": "ORCA",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Swarna Latha",
+     "Project": "ORCA",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_220",
+   "Name": "Mudragada Sri Venkata Ram Pavan",
+   "Practice": "DV",
+   "Designation": "Engineer I",
+   "YOE": "0.9",
+   "ReportsTo": "Swarna Latha",
+   "Project": "ORCA",
+   "Status": "Buffer",
+   "Allocation": "30",
+   "BilledUpto": "",
+   "Plan": "New Project",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Swarna Latha",
+     "Project": "ORCA",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Swarna Latha",
+     "Project": "ORCA",
+     "Status": "Buffer"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_150",
+   "Name": "Mani Gopi Nalajala",
+   "Practice": "DV",
+   "Designation": "Engineer II",
+   "YOE": "1.11",
+   "ReportsTo": "Srikanth",
+   "Project": "FLC",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Srikanth",
+     "Project": "FLC",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Srikanth",
+     "Project": "FLC",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_203",
+   "Name": "Aadesh Gonda",
+   "Practice": "DV",
+   "Designation": "Engineer I",
+   "YOE": "3.1",
+   "ReportsTo": "Swarna Latha",
+   "Project": "Zerro Power systems",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "6 Months from May 2026",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Swarna Latha",
+     "Project": "Zerro Power systems",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Swarna Latha",
+     "Project": "Zerro Power systems",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_221",
+   "Name": "A.V.S.Padma Sri",
+   "Practice": "DV",
+   "Designation": "Engineer I",
+   "YOE": "0.7",
+   "ReportsTo": "Swarna Latha",
+   "Project": "DLI Soc",
+   "Status": "UnBilled",
+   "Allocation": "0",
+   "BilledUpto": "",
+   "Plan": "Staffing",
+   "CurrentTask": "EMAC Bit file generation",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Swarna Latha",
+     "Project": "DLI Soc",
+     "Status": "UnBilled"
+    },
+    "April": {
+     "ReportsTo": "Swarna Latha",
+     "Project": "DLI Soc",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_223",
+   "Name": "Anasuri durgabhavani",
+   "Practice": "DV",
+   "Designation": "Engineer I",
+   "YOE": "0.6",
+   "ReportsTo": "Swarna Latha",
+   "Project": "DLI Soc",
+   "Status": "UnBilled",
+   "Allocation": "0",
+   "BilledUpto": "",
+   "Plan": "Staffing",
+   "CurrentTask": "FPGA Bit file generation",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Swarna Latha",
+     "Project": "DLI Soc",
+     "Status": "UnBilled"
+    },
+    "April": {
+     "ReportsTo": "Swarna Latha",
+     "Project": "DLI Soc",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_228",
+   "Name": "Kona Sri Devi",
+   "Practice": "DV",
+   "Designation": "Engineer I",
+   "YOE": "0.6",
+   "ReportsTo": "Swarna Latha",
+   "Project": "DLI Soc",
+   "Status": "UnBilled",
+   "Allocation": "0",
+   "BilledUpto": "",
+   "Plan": "Staffing",
+   "CurrentTask": "USB Bit file generation",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Swarna Latha",
+     "Project": "DLI Soc",
+     "Status": "UnBilled"
+    },
+    "April": {
+     "ReportsTo": "Swarna Latha",
+     "Project": "DLI Soc",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_105",
+   "Name": "AV Rajesh",
+   "Practice": "Hardware",
+   "Designation": "Director",
+   "YOE": "24",
+   "ReportsTo": "Srikanth",
+   "Project": "FLC, SmartSoc(ProbeASIC)",
+   "Status": "Billed",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Srikanth",
+     "Project": "FLC, SmartSoc(ProbeASIC)",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Srikanth",
+     "Project": "FLC, SmartSoc(ProbeASIC)",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_101",
+   "Name": "Srinivasa Rao Supuri",
+   "Practice": "Hardware",
+   "Designation": "Senior Engineer",
+   "YOE": "7+",
+   "ReportsTo": "Rajesh",
+   "Project": "FLC",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Rajesh",
+     "Project": "FLC",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Rajesh",
+     "Project": "FLC",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_124",
+   "Name": "Galipothu.Sunil Kumar",
+   "Practice": "Hardware",
+   "Designation": "Senior Staff Engineer",
+   "YOE": "18",
+   "ReportsTo": "Rajesh",
+   "Project": "FLC",
+   "Status": "Billed",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Rajesh",
+     "Project": "FLC",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Rajesh",
+     "Project": "FLC",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_176",
+   "Name": "Jampani Samudralankaiah",
+   "Practice": "Hardware",
+   "Designation": "Senior Engineer",
+   "YOE": "6.1",
+   "ReportsTo": "Rajesh",
+   "Project": "FLC",
+   "Status": "Billed",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Rajesh",
+     "Project": "FLC",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Rajesh",
+     "Project": "FLC",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_183",
+   "Name": "Varimadla Anjaneyulu",
+   "Practice": "Hardware",
+   "Designation": "Engineer II",
+   "YOE": "7.10",
+   "ReportsTo": "Rajesh",
+   "Project": "FLC/TRS/Internal",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Rajesh",
+     "Project": "FLC/TRS/Internal",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Rajesh",
+     "Project": "FLC/TRS/Internal",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_224",
+   "Name": "Chintha Vivek Sai",
+   "Practice": "Hardware",
+   "Designation": "Engineer I",
+   "YOE": "0.7",
+   "ReportsTo": "Rajesh",
+   "Project": "FLC",
+   "Status": "Buffer",
+   "Allocation": "75",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Rajesh",
+     "Project": "FLC",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Rajesh",
+     "Project": "FLC",
+     "Status": "Buffer"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_161",
+   "Name": "Veeresh Meeniga",
+   "Practice": "Hardware",
+   "Designation": "Engineer I",
+   "YOE": "2.4",
+   "ReportsTo": "Rajesh",
+   "Project": "FLC",
+   "Status": "Buffer",
+   "Allocation": "25",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Rajesh",
+     "Project": "FLC",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Rajesh",
+     "Project": "FLC",
+     "Status": "Buffer"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_141",
+   "Name": "Ravada Ramesh",
+   "Practice": "Hardware",
+   "Designation": "Engineer II",
+   "YOE": "3.11",
+   "ReportsTo": "Rajesh",
+   "Project": "TRS",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Rajesh",
+     "Project": "TRS",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Rajesh",
+     "Project": "TRS",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_163",
+   "Name": "Ruka Nandi Vardhan Reddy",
+   "Practice": "Hardware",
+   "Designation": "Engineer I",
+   "YOE": "2.4",
+   "ReportsTo": "Rajesh",
+   "Project": "TRS",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Rajesh",
+     "Project": "TRS",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Rajesh",
+     "Project": "TRS",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_196",
+   "Name": "Keerthi Sepana",
+   "Practice": "Hardware",
+   "Designation": "Associate Engineer",
+   "YOE": "1",
+   "ReportsTo": "Rajesh",
+   "Project": "TRS",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Rajesh",
+     "Project": "TRS",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Rajesh",
+     "Project": "TRS",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_200",
+   "Name": "Harika Kunduru",
+   "Practice": "Hardware",
+   "Designation": "Engineer II",
+   "YOE": "3.9",
+   "ReportsTo": "Rajesh",
+   "Project": "Smart IP Camera",
+   "Status": "Billed",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Rajesh",
+     "Project": "Smart IP Camera",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Rajesh",
+     "Project": "Smart IP Camera",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_229",
+   "Name": "Bommi Sandhya",
+   "Practice": "Hardware",
+   "Designation": "Engineer I",
+   "YOE": "0.7",
+   "ReportsTo": "Rajesh",
+   "Project": "Voila Tech",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Rajesh",
+     "Project": "Voila Tech",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Rajesh",
+     "Project": "Voila Tech",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VCIN_43",
+   "Name": "Jayadev Lokanadham",
+   "Practice": "Hardware",
+   "Designation": "Intern I",
+   "YOE": "",
+   "ReportsTo": "Rajesh",
+   "Project": "Smart IP Camera",
+   "Status": "UnBilled",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Rajesh",
+     "Project": "Smart IP Camera",
+     "Status": "UnBilled"
+    },
+    "April": {
+     "ReportsTo": "Rajesh",
+     "Project": "Smart IP Camera",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VCIN_26",
+   "Name": "Naveen",
+   "Practice": "Hardware",
+   "Designation": "Consultant",
+   "YOE": "",
+   "ReportsTo": "Rajesh",
+   "Project": "Voila Tech",
+   "Status": "Buffer",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Rajesh",
+     "Project": "Voila Tech",
+     "Status": "Buffer"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_110",
+   "Name": "Shyam Kumar Thella",
+   "Practice": "Embedded - Linux",
+   "Designation": "Senior Staff Engineer",
+   "YOE": "11",
+   "ReportsTo": "Srikanth",
+   "Project": "FLC, Renesas (NPU), Smart IP Camera",
+   "Status": "Billed",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Srikanth",
+     "Project": "FLC, Renesas (NPU), Smart IP Camera",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Srikanth",
+     "Project": "FLC, Renesas (NPU), Smart IP Camera",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_119",
+   "Name": "Buneboyina.Pavan Kalyan",
+   "Practice": "Embedded - Linux",
+   "Designation": "Engineer II",
+   "YOE": "2.3",
+   "ReportsTo": "Sasikanth",
+   "Project": "Kandou",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "3 Months",
+   "Plan": "",
+   "CurrentTask": "E21 , ANDES Bring up",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Sasikanth",
+     "Project": "Kandou",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Sasikanth",
+     "Project": "Kandou",
+     "Status": "BufferBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_134",
+   "Name": "Yeshwanth Namburi",
+   "Practice": "Embedded - Linux",
+   "Designation": "Engineer II",
+   "YOE": "2",
+   "ReportsTo": "Kameswara rao",
+   "Project": "FLC",
+   "Status": "Buffer",
+   "Allocation": "70",
+   "BilledUpto": "",
+   "Plan": "FLC",
+   "CurrentTask": "FLC hand off",
+   "Remarks": "Buffer Billed for shyam to replace Pavan B",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Kameswara rao",
+     "Project": "FLC",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Kameswara rao",
+     "Project": "FLC",
+     "Status": "Buffer"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_138",
+   "Name": "Gunupuru Pavan Kalyan",
+   "Practice": "Embedded - Linux",
+   "Designation": "Senior Engineer",
+   "YOE": "4.2",
+   "ReportsTo": "Shyam",
+   "Project": "Edge",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "3 months",
+   "Plan": "Edge",
+   "CurrentTask": "DDR",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Shyam",
+     "Project": "Edge",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Shyam",
+     "Project": "Edge",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_209",
+   "Name": "Naveen Namburi",
+   "Practice": "Embedded - Linux",
+   "Designation": "Senior Engineer",
+   "YOE": "6.8",
+   "ReportsTo": "Sasikanth",
+   "Project": "Kandou",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Sasikanth",
+     "Project": "Kandou",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Sasikanth",
+     "Project": "Kandou",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_214",
+   "Name": "Kiran Allada",
+   "Practice": "Embedded - Linux",
+   "Designation": "Senior Engineer",
+   "YOE": "5.5",
+   "ReportsTo": "Teja",
+   "Project": "Gen5",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "Billed in place off venkatesh nookatattu",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Teja",
+     "Project": "Gen5",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Teja",
+     "Project": "Gen5",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_186",
+   "Name": "Inampudi Phani Kumar",
+   "Practice": "Embedded - Linux",
+   "Designation": "Engineer I",
+   "YOE": "1.2",
+   "ReportsTo": "Shyam",
+   "Project": "Renesas NPU",
+   "Status": "Buffer Billed",
+   "Allocation": "100",
+   "BilledUpto": "June",
+   "Plan": "",
+   "CurrentTask": "NPU Validation",
+   "Remarks": "Customer has plan till Dec, not officially confirmed",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Shyam",
+     "Project": "Renesas NPU",
+     "Status": "Buffer Billed"
+    },
+    "April": {
+     "ReportsTo": "Shyam",
+     "Project": "Renesas NPU",
+     "Status": "BufferBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_187",
+   "Name": "Bali Harsha Vardhan",
+   "Practice": "Embedded - Linux",
+   "Designation": "Engineer I",
+   "YOE": "1.1",
+   "ReportsTo": "Shyam",
+   "Project": "Smart IP Camera",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "Camera Sensor",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Shyam",
+     "Project": "Smart IP Camera",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Shyam",
+     "Project": "Smart IP Camera",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_219",
+   "Name": "S Vishnu Vardhan Reddy",
+   "Practice": "Embedded - Linux",
+   "Designation": "Engineer I",
+   "YOE": "0.9",
+   "ReportsTo": "Shyam",
+   "Project": "Smart IP Camera",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "Optimization Pipelines",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Shyam",
+     "Project": "Smart IP Camera",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Shyam",
+     "Project": "Smart IP Camera",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_205",
+   "Name": "Veleparampil Limin",
+   "Practice": "Embedded - Linux",
+   "Designation": "Engineer I",
+   "YOE": "0.9",
+   "ReportsTo": "Shyam",
+   "Project": "Smart IP Camera",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "Server app sensors",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Shyam",
+     "Project": "Smart IP Camera",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Shyam",
+     "Project": "Smart IP Camera",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VCIN_47",
+   "Name": "Menuga Sai Swetha Sri",
+   "Practice": "Embedded - Linux",
+   "Designation": "Intern II",
+   "YOE": "",
+   "ReportsTo": "Shyam",
+   "Project": "Smart IP Camera",
+   "Status": "Buffer",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "Training",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Shyam",
+     "Project": "Smart IP Camera",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Shyam",
+     "Project": "Smart IP Camera",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_106",
+   "Name": "SriTeja Allani",
+   "Practice": "Embedded - S/W",
+   "Designation": "Staff Engineer",
+   "YOE": "7",
+   "ReportsTo": "Srikanth",
+   "Project": "Renesas",
+   "Status": "Billed",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Srikanth",
+     "Project": "Renesas",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Srikanth",
+     "Project": "Renesas",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_107",
+   "Name": "Hardik",
+   "Practice": "Embedded - S/W",
+   "Designation": "",
+   "YOE": "",
+   "ReportsTo": "Teja",
+   "Project": "Gen5",
+   "Status": "Billed",
+   "Allocation": "80",
+   "BilledUpto": "June",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "Project May Extend - May 29th",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Teja",
+     "Project": "Gen5",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Teja",
+     "Project": "Gen5",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_103",
+   "Name": "Deepika Vandana",
+   "Practice": "Embedded - S/W",
+   "Designation": "Engineer I",
+   "YOE": "2.8",
+   "ReportsTo": "Sasikanth",
+   "Project": "DLI Soc",
+   "Status": "UnBilled",
+   "Allocation": "30",
+   "BilledUpto": "",
+   "Plan": "Staffing",
+   "CurrentTask": "Infra development for DLI IPs, automating tests for low speed peripherals",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Sasikanth",
+     "Project": "DLI Soc",
+     "Status": "UnBilled"
+    },
+    "April": {
+     "ReportsTo": "Sasikanth",
+     "Project": "DLI Soc",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_118",
+   "Name": "Panchangam. Sai Vinodh",
+   "Practice": "Embedded - S/W",
+   "Designation": "Engineer II",
+   "YOE": "2.3",
+   "ReportsTo": "Teja",
+   "Project": "Renesas",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "June",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "Project May Extend - May 29th",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Teja",
+     "Project": "Renesas",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Teja",
+     "Project": "Renesas",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_120",
+   "Name": "S Noor Mahammad",
+   "Practice": "Embedded - S/W",
+   "Designation": "Engineer II",
+   "YOE": "2.3",
+   "ReportsTo": "Teja",
+   "Project": "Renesas",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "June",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "Project May Extend - May 29th",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Teja",
+     "Project": "Renesas",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Teja",
+     "Project": "Renesas",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_123",
+   "Name": "Bhimineni.Pravallika",
+   "Practice": "Embedded - S/W",
+   "Designation": "Engineer II",
+   "YOE": "2.3",
+   "ReportsTo": "Kiran Allada",
+   "Project": "Internal ( Delivery Robot )",
+   "Status": "UnBilled",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Kiran Allada",
+     "Project": "Internal ( Delivery Robot )",
+     "Status": "UnBilled"
+    },
+    "April": {
+     "ReportsTo": "Kiran Allada",
+     "Project": "Internal ( Delivery Robot )",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_127",
+   "Name": "Mallikharjun Palasa",
+   "Practice": "Embedded - S/W",
+   "Designation": "Engineer II",
+   "YOE": "4.5",
+   "ReportsTo": "Teja",
+   "Project": "Renesas",
+   "Status": "Billed",
+   "Allocation": "60 ( Ramping up Parallel )",
+   "BilledUpto": "June",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "Project May Extend - May 29th",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Teja",
+     "Project": "Renesas",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Teja",
+     "Project": "Renesas",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_131",
+   "Name": "Tappeta Sai Lakshmi Geetha",
+   "Practice": "Embedded - S/W",
+   "Designation": "Engineer II",
+   "YOE": "2",
+   "ReportsTo": "Kiran Allada",
+   "Project": "Internal ( Delivery Robot )",
+   "Status": "UnBilled",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Kiran Allada",
+     "Project": "Internal ( Delivery Robot )",
+     "Status": "UnBilled"
+    },
+    "April": {
+     "ReportsTo": "Kiran Allada",
+     "Project": "Internal ( Delivery Robot )",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_132",
+   "Name": "Ullangula Aparna",
+   "Practice": "Embedded - S/W",
+   "Designation": "Engineer II",
+   "YOE": "2",
+   "ReportsTo": "Kameswara rao",
+   "Project": "FLC",
+   "Status": "Buffer",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "Backup for Poorna in FLC, poorna will move to Kandou",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Kameswara rao",
+     "Project": "FLC",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Kameswara rao",
+     "Project": "FLC",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_139",
+   "Name": "Chandaka Srinivasarao",
+   "Practice": "Embedded - S/W",
+   "Designation": "Senior Engineer",
+   "YOE": "3.11",
+   "ReportsTo": "Kameswara rao",
+   "Project": "Renesas FSP",
+   "Status": "Buffer",
+   "Allocation": "100",
+   "BilledUpto": "Dont know",
+   "Plan": "",
+   "CurrentTask": "Preparation for Reneses MCU",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Kameswara rao",
+     "Project": "Renesas FSP",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Kameswara rao",
+     "Project": "Renesas FSP",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_148",
+   "Name": "Nokatattu Venkatesh",
+   "Practice": "Embedded - S/W",
+   "Designation": "Senior Engineer",
+   "YOE": "5.1",
+   "ReportsTo": "Teja",
+   "Project": "Gen5",
+   "Status": "Buffer",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "Back up for naveen namburi in Gen5",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Teja",
+     "Project": "Gen5",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Teja",
+     "Project": "Gen5",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_152",
+   "Name": "Akhila Reddy Addula",
+   "Practice": "Embedded - S/W",
+   "Designation": "Senior Engineer",
+   "YOE": "6.10",
+   "ReportsTo": "Teja",
+   "Project": "Gen5",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "June",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "Project May Extend - May 29th",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Teja",
+     "Project": "Gen5",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Teja",
+     "Project": "Gen5",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_162",
+   "Name": "Subramanyam G",
+   "Practice": "Embedded - S/W",
+   "Designation": "Engineer I",
+   "YOE": "1.11",
+   "ReportsTo": "Shyam",
+   "Project": "Parking, Edge",
+   "Status": "Buffer",
+   "Allocation": "50 + 50",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "LoRa gateway change for 8 channels",
+   "Remarks": "Srikanth",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Shyam",
+     "Project": "Parking, Edge",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Shyam",
+     "Project": "Parking, Edge",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_165",
+   "Name": "Yaswanth E",
+   "Practice": "Embedded - S/W",
+   "Designation": "Engineer I",
+   "YOE": "1.9",
+   "ReportsTo": "Sasikanth",
+   "Project": "DLI Soc",
+   "Status": "UnBilled",
+   "Allocation": "30",
+   "BilledUpto": "",
+   "Plan": "Staffing",
+   "CurrentTask": "bluetootha, wifi spec, drivers understanding",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Sasikanth",
+     "Project": "DLI Soc",
+     "Status": "UnBilled"
+    },
+    "April": {
+     "ReportsTo": "Sasikanth",
+     "Project": "DLI Soc",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_167",
+   "Name": "Geetha Mounika V",
+   "Practice": "Embedded - S/W",
+   "Designation": "Engineer I",
+   "YOE": "1.11",
+   "ReportsTo": "Teja",
+   "Project": "Gen5",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "June",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "Project May Extend - May 29th",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Teja",
+     "Project": "Gen5",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Teja",
+     "Project": "Gen5",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_168",
+   "Name": "Chandrika K",
+   "Practice": "Embedded - S/W",
+   "Designation": "Engineer I",
+   "YOE": "1.11",
+   "ReportsTo": "Kameswara rao",
+   "Project": "Renesas FSP",
+   "Status": "Buffer",
+   "Allocation": "100",
+   "BilledUpto": "Dont know",
+   "Plan": "",
+   "CurrentTask": "Preparation for Reneses MCU",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Kameswara rao",
+     "Project": "Renesas FSP",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Kameswara rao",
+     "Project": "Renesas FSP",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_170",
+   "Name": "Pavani D S",
+   "Practice": "Embedded - S/W",
+   "Designation": "Engineer I",
+   "YOE": "1.11",
+   "ReportsTo": "Teja",
+   "Project": "Gen5",
+   "Status": "Buffer",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Teja",
+     "Project": "Gen5",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Teja",
+     "Project": "Gen5",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_171",
+   "Name": "Hari Chandana K",
+   "Practice": "Embedded - S/W",
+   "Designation": "Engineer I",
+   "YOE": "1.11",
+   "ReportsTo": "Teja",
+   "Project": "Gen5",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "June",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "Project May Extend - May 29th",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Teja",
+     "Project": "Gen5",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Teja",
+     "Project": "Gen5",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_198",
+   "Name": "Pujitha Uttharkar",
+   "Practice": "Embedded - S/W",
+   "Designation": "Engineer II",
+   "YOE": "2.11",
+   "ReportsTo": "Teja",
+   "Project": "Gen5",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "June",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "Project May Extend - May 29th",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Teja",
+     "Project": "Gen5",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Teja",
+     "Project": "Gen5",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_181",
+   "Name": "Kantipudi Sri Sai Kiran",
+   "Practice": "Embedded - S/W",
+   "Designation": "Engineer I",
+   "YOE": "1.2",
+   "ReportsTo": "Teja",
+   "Project": "Renesas",
+   "Status": "Buffer",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Teja",
+     "Project": "Renesas",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Teja",
+     "Project": "Renesas",
+     "Status": "Buffer"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_185",
+   "Name": "T Harish",
+   "Practice": "Embedded - S/W",
+   "Designation": "Engineer I",
+   "YOE": "1.1",
+   "ReportsTo": "Sasikanth",
+   "Project": "DLI Soc",
+   "Status": "UnBilled",
+   "Allocation": "50",
+   "BilledUpto": "",
+   "Plan": "Staffing",
+   "CurrentTask": "Bood code development is completed, working on bringup of USB",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Sasikanth",
+     "Project": "DLI Soc",
+     "Status": "UnBilled"
+    },
+    "April": {
+     "ReportsTo": "Sasikanth",
+     "Project": "DLI Soc",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_243",
+   "Name": "Kolapalli Vyshnavi Sai",
+   "Practice": "Embedded - S/W",
+   "Designation": "Engineer I",
+   "YOE": "3.1",
+   "ReportsTo": "Kameswara rao",
+   "Project": "FLC",
+   "Status": "Buffer",
+   "Allocation": "50",
+   "BilledUpto": "",
+   "Plan": "Buffer in place of Pavan G for FLC",
+   "CurrentTask": "-",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Kameswara rao",
+     "Project": "FLC",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Kameswara rao",
+     "Project": "FLC",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_206",
+   "Name": "Gorli Poorna Lakshmi Praneeth",
+   "Practice": "Embedded - S/W",
+   "Designation": "Engineer I",
+   "YOE": "0.9",
+   "ReportsTo": "Kameswara rao",
+   "Project": "Renesas FSP",
+   "Status": "Buffer",
+   "Allocation": "100",
+   "BilledUpto": "Dont know",
+   "Plan": "",
+   "CurrentTask": "Preparation for Reneses MCU",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Kameswara rao",
+     "Project": "Renesas FSP",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Kameswara rao",
+     "Project": "Renesas FSP",
+     "Status": "Buffer"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_222",
+   "Name": "Undamatla Santhoshi Mani",
+   "Practice": "Embedded - S/W",
+   "Designation": "Engineer I",
+   "YOE": "0.9",
+   "ReportsTo": "Shyam",
+   "Project": "Smart IP Camera",
+   "Status": "Buffer",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "Tuning and Caliberation",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Shyam",
+     "Project": "Smart IP Camera",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Shyam",
+     "Project": "Smart IP Camera",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VCC_113",
+   "Name": "Ambika Vallandas",
+   "Practice": "Embedded - S/W",
+   "Designation": "Consultant",
+   "YOE": "",
+   "ReportsTo": "Sasikanth",
+   "Project": "Kandou",
+   "Status": "UnBilled",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "Kandou",
+   "CurrentTask": "",
+   "Remarks": "Kranthi",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Sasikanth",
+     "Project": "Kandou",
+     "Status": "UnBilled"
+    },
+    "April": {
+     "ReportsTo": "Sasikanth",
+     "Project": "Kandou",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_240",
+   "Name": "Sudheer Reddy",
+   "Practice": "Embedded - S/W",
+   "Designation": "",
+   "YOE": "",
+   "ReportsTo": "Kameswara rao",
+   "Project": "Renesas FSP",
+   "Status": "Buffer",
+   "Allocation": "100",
+   "BilledUpto": "Dont know",
+   "Plan": "",
+   "CurrentTask": "Preparation for Reneses MCU",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Kameswara rao",
+     "Project": "Renesas FSP",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Kameswara rao",
+     "Project": "Renesas FSP",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_113",
+   "Name": "SasiKanth Golla",
+   "Practice": "Embedded - Validation",
+   "Designation": "Senior Staff Engineer",
+   "YOE": "14",
+   "ReportsTo": "Srikanth",
+   "Project": "Kandou",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "Kandou",
+   "CurrentTask": "",
+   "Remarks": "Billed in FLC",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Srikanth",
+     "Project": "Kandou",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Srikanth",
+     "Project": "Kandou",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_125",
+   "Name": "Jithendran Ponnusamy",
+   "Practice": "Embedded - Validation",
+   "Designation": "Senior Engineer",
+   "YOE": "4.1",
+   "ReportsTo": "Srikanth",
+   "Project": "Renesas",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Srikanth",
+     "Project": "Renesas",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Srikanth",
+     "Project": "Renesas",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_130",
+   "Name": "Kamasani Poorna",
+   "Practice": "Embedded - Validation",
+   "Designation": "Engineer II",
+   "YOE": "2.2",
+   "ReportsTo": "Sasikanth",
+   "Project": "Kandou",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "D2D",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Sasikanth",
+     "Project": "Kandou",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Sasikanth",
+     "Project": "Kandou",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_155",
+   "Name": "LingaSwamy Shyaga",
+   "Practice": "Embedded - Validation",
+   "Designation": "Senior Engineer",
+   "YOE": "7.9",
+   "ReportsTo": "Shyam",
+   "Project": "Renesas NPU",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "June",
+   "Plan": "Customer has plan till Dec, not officially confirmed",
+   "CurrentTask": "NPU Validation",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Shyam",
+     "Project": "Renesas NPU",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Shyam",
+     "Project": "Renesas NPU",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_164",
+   "Name": "Akash R",
+   "Practice": "Embedded - Validation",
+   "Designation": "Engineer I",
+   "YOE": "1.11",
+   "ReportsTo": "Teja",
+   "Project": "Gen5",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "June",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Teja",
+     "Project": "Gen5",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Teja",
+     "Project": "Gen5",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_166",
+   "Name": "Sai Gandhi A",
+   "Practice": "Embedded - Validation",
+   "Designation": "Engineer I",
+   "YOE": "1.11",
+   "ReportsTo": "Kameswara rao",
+   "Project": "FLC",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "IPM, RC",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Kameswara rao",
+     "Project": "FLC",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "Kameswara rao",
+     "Project": "FLC",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_169",
+   "Name": "Yeshasri. S",
+   "Practice": "Embedded - Validation",
+   "Designation": "Engineer I",
+   "YOE": "1.11",
+   "ReportsTo": "Teja",
+   "Project": "Gen5",
+   "Status": "Buffer",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Teja",
+     "Project": "Gen5",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Teja",
+     "Project": "Gen5",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_215",
+   "Name": "Kameswara rao Dasari",
+   "Practice": "Embedded - Validation",
+   "Designation": "Senior Staff Engineer",
+   "YOE": "11+",
+   "ReportsTo": "Srikanth",
+   "Project": "Renesas FSP",
+   "Status": "Buffer",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Srikanth",
+     "Project": "Renesas FSP",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Srikanth",
+     "Project": "Renesas FSP",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_129",
+   "Name": "Hemanth Aare",
+   "Practice": "Embedded - Validation",
+   "Designation": "Engineer I",
+   "YOE": "2.1",
+   "ReportsTo": "Sasikanth",
+   "Project": "Self Learning",
+   "Status": "UnBilled",
+   "Allocation": "0",
+   "BilledUpto": "",
+   "Plan": "New Project",
+   "CurrentTask": "-",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Sasikanth",
+     "Project": "Self Learning",
+     "Status": "UnBilled"
+    },
+    "April": {
+     "ReportsTo": "Sasikanth",
+     "Project": "Self Learning",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_178",
+   "Name": "Battula Venu Madhav",
+   "Practice": "Embedded - Validation",
+   "Designation": "Engineer I",
+   "YOE": "1.1",
+   "ReportsTo": "Sasikanth",
+   "Project": "FLC",
+   "Status": "Buffer",
+   "Allocation": "50",
+   "BilledUpto": "",
+   "Plan": "New Project",
+   "CurrentTask": "Power, Boot from SPI, Boot from SD",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Sasikanth",
+     "Project": "FLC",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Sasikanth",
+     "Project": "FLC",
+     "Status": "Buffer"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_179",
+   "Name": "Maganti Raviteja",
+   "Practice": "Embedded - Validation",
+   "Designation": "Engineer I",
+   "YOE": "1.2",
+   "ReportsTo": "Sasikanth",
+   "Project": "DLI Soc",
+   "Status": "UnBilled",
+   "Allocation": "50",
+   "BilledUpto": "",
+   "Plan": "Staffing",
+   "CurrentTask": "Camera- Completed, Security, HSM-study",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Sasikanth",
+     "Project": "DLI Soc",
+     "Status": "UnBilled"
+    },
+    "April": {
+     "ReportsTo": "Sasikanth",
+     "Project": "DLI Soc",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_180",
+   "Name": "Saahith Chandra Geela",
+   "Practice": "Embedded - Validation",
+   "Designation": "Engineer I",
+   "YOE": "1.2",
+   "ReportsTo": "Kameswara rao",
+   "Project": "FLC",
+   "Status": "Buffer",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "Backup for Poorna in FLC, poorna will move to Kandou",
+   "CurrentTask": "RISC-V, D2D",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Kameswara rao",
+     "Project": "FLC",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Kameswara rao",
+     "Project": "FLC",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_182",
+   "Name": "Singireddi Mohan Rao",
+   "Practice": "Embedded - Validation",
+   "Designation": "Engineer I",
+   "YOE": "1.2",
+   "ReportsTo": "Kameswara rao",
+   "Project": "Renesas FSP",
+   "Status": "Buffer",
+   "Allocation": "100",
+   "BilledUpto": "Dont know",
+   "Plan": "",
+   "CurrentTask": "Preparation for Reneses MCU",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Kameswara rao",
+     "Project": "Renesas FSP",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Kameswara rao",
+     "Project": "Renesas FSP",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_184",
+   "Name": "Sanaka Venkata Karthikeya",
+   "Practice": "Embedded - Validation",
+   "Designation": "Engineer I",
+   "YOE": "1.2",
+   "ReportsTo": "Sasikanth",
+   "Project": "FLC",
+   "Status": "Buffer",
+   "Allocation": "60",
+   "BilledUpto": "",
+   "Plan": "New Project",
+   "CurrentTask": "FLC1, FLC2,OSPI, SMC",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Sasikanth",
+     "Project": "FLC",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Sasikanth",
+     "Project": "FLC",
+     "Status": "Buffer"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_208",
+   "Name": "Arepu Naga Sai Nikhitha",
+   "Practice": "Embedded - Validation",
+   "Designation": "Engineer I",
+   "YOE": "0.9",
+   "ReportsTo": "Kameswara rao",
+   "Project": "Renesas FSP",
+   "Status": "UnBilled",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "Renesas FSP",
+   "CurrentTask": "Ethernet- Completed",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Kameswara rao",
+     "Project": "Renesas FSP",
+     "Status": "UnBilled"
+    },
+    "April": {
+     "ReportsTo": "Kameswara rao",
+     "Project": "Renesas FSP",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_207",
+   "Name": "Rupaji Rithika",
+   "Practice": "Embedded - Validation",
+   "Designation": "Engineer I",
+   "YOE": "0.9",
+   "ReportsTo": "Kameswara rao",
+   "Project": "Renesas FSP",
+   "Status": "UnBilled",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "Renesas FSP",
+   "CurrentTask": "NVMe",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Kameswara rao",
+     "Project": "Renesas FSP",
+     "Status": "UnBilled"
+    },
+    "April": {
+     "ReportsTo": "Kameswara rao",
+     "Project": "Renesas FSP",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_233",
+   "Name": "Mahmad Ameerullah",
+   "Practice": "Software",
+   "Designation": "Engineer I",
+   "YOE": "0.8",
+   "ReportsTo": "Teja",
+   "Project": "Renesas",
+   "Status": "Buffer",
+   "Allocation": "80",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Teja",
+     "Project": "Renesas",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Teja",
+     "Project": "Renesas",
+     "Status": "Buffer"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_235",
+   "Name": "Gandla Vaishnavi",
+   "Practice": "Software",
+   "Designation": "Engineer I",
+   "YOE": "1.1",
+   "ReportsTo": "George",
+   "Project": "RLCC",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "George",
+     "Project": "RLCC",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "George",
+     "Project": "RLCC",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_232",
+   "Name": "Sai Charan Siddhanthi Thyadi",
+   "Practice": "Software",
+   "Designation": "Engineer I",
+   "YOE": "0.8",
+   "ReportsTo": "George",
+   "Project": "RLCC",
+   "Status": "Billed",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "George",
+     "Project": "RLCC",
+     "Status": "Billed"
+    },
+    "April": {
+     "ReportsTo": "George",
+     "Project": "RLCC",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_231",
+   "Name": "Gonthina Lakshmana Swami",
+   "Practice": "Software",
+   "Designation": "Engineer I",
+   "YOE": "0.8",
+   "ReportsTo": "George",
+   "Project": "RLCC",
+   "Status": "Buffer",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "George",
+     "Project": "RLCC",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "George",
+     "Project": "RLCC",
+     "Status": "Buffer"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_230",
+   "Name": "Thota Chaithra",
+   "Practice": "Software",
+   "Designation": "Engineer I",
+   "YOE": "0.8",
+   "ReportsTo": "Shyam",
+   "Project": "Smart IP Camera",
+   "Status": "UnBilled",
+   "Allocation": "0",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Shyam",
+     "Project": "Smart IP Camera",
+     "Status": "UnBilled"
+    },
+    "April": {
+     "ReportsTo": "Shyam",
+     "Project": "Smart IP Camera",
+     "Status": "Buffer"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_234",
+   "Name": "Roopini Gorle",
+   "Practice": "Software",
+   "Designation": "Software Trainee II",
+   "YOE": "0.5",
+   "ReportsTo": "Shyam",
+   "Project": "Smart IP Camera",
+   "Status": "UnBilled",
+   "Allocation": "0",
+   "BilledUpto": "",
+   "Plan": "NPU is low priority in camera, need to plan tasks",
+   "CurrentTask": "NPU models",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Shyam",
+     "Project": "Smart IP Camera",
+     "Status": "UnBilled"
+    },
+    "April": {
+     "ReportsTo": "Shyam",
+     "Project": "Smart IP Camera",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VCIN_44",
+   "Name": "Kiranmai Battu",
+   "Practice": "Software",
+   "Designation": "Trainee III",
+   "YOE": "0.2",
+   "ReportsTo": "George",
+   "Project": "RLCC",
+   "Status": "UnBilled",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "NPU is low priority in camera, need to plan tasks",
+   "CurrentTask": "NPU models",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "George",
+     "Project": "RLCC",
+     "Status": "UnBilled"
+    },
+    "April": {
+     "ReportsTo": "George",
+     "Project": "RLCC",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VCIN_51",
+   "Name": "Yogeshwar Reddy Meda",
+   "Practice": "Software",
+   "Designation": "Software Intern II",
+   "YOE": "",
+   "ReportsTo": "Srikanth",
+   "Project": "",
+   "Status": "UnBilled",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Srikanth",
+     "Project": "",
+     "Status": "UnBilled"
+    },
+    "April": {
+     "ReportsTo": "Srikanth",
+     "Project": "",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VCIN_49",
+   "Name": "Praddumna Rajendra Raut",
+   "Practice": "Product Engineers",
+   "Designation": "Product Management Intern",
+   "YOE": "",
+   "ReportsTo": "Srikanth",
+   "Project": "Smart IP Camera",
+   "Status": "Buffer",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Srikanth",
+     "Project": "Smart IP Camera",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Srikanth",
+     "Project": "Smart IP Camera",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VCIN_53",
+   "Name": "Durga R",
+   "Practice": "Product Engineers",
+   "Designation": "Product Management Intern",
+   "YOE": "",
+   "ReportsTo": "Srikanth",
+   "Project": "Edge",
+   "Status": "Buffer",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Srikanth",
+     "Project": "Edge",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Srikanth",
+     "Project": "Edge",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VCIN_54",
+   "Name": "Bharath Mamidi",
+   "Practice": "Product Engineers",
+   "Designation": "Product Management Intern",
+   "YOE": "",
+   "ReportsTo": "Venkata Kiran",
+   "Project": "Server",
+   "Status": "Buffer",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Venkata Kiran",
+     "Project": "Server",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Venkata Kiran",
+     "Project": "Server",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_159",
+   "Name": "Sriram Ungatla",
+   "Practice": "CI/ CD Automation Engineer",
+   "Designation": "CI/CD Automation Engineer",
+   "YOE": "2.1",
+   "ReportsTo": "Mounika",
+   "Project": "Website",
+   "Status": "UnBilled",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Mounika",
+     "Project": "Website",
+     "Status": "UnBilled"
+    },
+    "April": {
+     "ReportsTo": "Mounika",
+     "Project": "Website",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_177",
+   "Name": "Abhishek Begari",
+   "Practice": "Technical Writer",
+   "Designation": "Technical Writer",
+   "YOE": "4.8",
+   "ReportsTo": "Srikanth",
+   "Project": "Internal ( Vconnectech Website )",
+   "Status": "Buffer",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Srikanth",
+     "Project": "Internal ( Vconnectech Website )",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Srikanth",
+     "Project": "Internal ( Vconnectech Website )",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VCC_112",
+   "Name": "Venkata Kiran Venigalla",
+   "Practice": "Program Manager",
+   "Designation": "Consultant",
+   "YOE": "",
+   "ReportsTo": "Srikanth",
+   "Project": "Edge",
+   "Status": "Buffer",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Srikanth",
+     "Project": "Edge",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Srikanth",
+     "Project": "Edge",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_210",
+   "Name": "Supriya Kallepelli",
+   "Practice": "DV",
+   "Designation": "",
+   "YOE": "",
+   "ReportsTo": "",
+   "Project": "On Site",
+   "Status": "",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "",
+     "Project": "On Site",
+     "Status": ""
+    }
+   }
+  },
+  {
+   "EmpID": "VC_212",
+   "Name": "Balachandra Anguru",
+   "Practice": "DV",
+   "Designation": "",
+   "YOE": "",
+   "ReportsTo": "",
+   "Project": "On Site",
+   "Status": "",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "",
+     "Project": "On Site",
+     "Status": ""
+    }
+   }
+  },
+  {
+   "EmpID": "VCC_100",
+   "Name": "Koppurothu Subash",
+   "Practice": "Physical Design",
+   "Designation": "",
+   "YOE": "",
+   "ReportsTo": "",
+   "Project": "FLC",
+   "Status": "",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "",
+     "Project": "FLC",
+     "Status": ""
+    }
+   }
+  },
+  {
+   "EmpID": "VCC_101",
+   "Name": "Yedla Suryaarjuna rao",
+   "Practice": "Physical Design",
+   "Designation": "",
+   "YOE": "",
+   "ReportsTo": "",
+   "Project": "FLC",
+   "Status": "",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "",
+     "Project": "FLC",
+     "Status": ""
+    }
+   }
+  },
+  {
+   "EmpID": "VCC_102",
+   "Name": "Shinagam Chanti",
+   "Practice": "Physical Design",
+   "Designation": "",
+   "YOE": "",
+   "ReportsTo": "",
+   "Project": "FLC",
+   "Status": "",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "",
+     "Project": "FLC",
+     "Status": ""
+    }
+   }
+  },
+  {
+   "EmpID": "VCC_103",
+   "Name": "Duragasi Venkatesh",
+   "Practice": "Physical Design",
+   "Designation": "",
+   "YOE": "",
+   "ReportsTo": "",
+   "Project": "FLC",
+   "Status": "",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "",
+     "Project": "FLC",
+     "Status": ""
+    }
+   }
+  },
+  {
+   "EmpID": "VCC_115",
+   "Name": "Chinni Murali Krishna",
+   "Practice": "Embedded - Validation",
+   "Designation": "",
+   "YOE": "",
+   "ReportsTo": "",
+   "Project": "AMD",
+   "Status": "",
+   "Allocation": "100",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "",
+     "Project": "AMD",
+     "Status": ""
+    }
+   }
+  },
+  {
+   "EmpID": "VCIN_52",
+   "Name": "Attuluri Venkat Dhanush",
+   "Practice": "Software",
+   "Designation": "",
+   "YOE": "",
+   "ReportsTo": "Srikanth",
+   "Project": "",
+   "Status": "UnBilled",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Srikanth",
+     "Project": "",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_197",
+   "Name": "MukeshKumar Rajkumar Pasi",
+   "Practice": "Embedded - S/W",
+   "Designation": "Engineer II",
+   "YOE": "3.3",
+   "ReportsTo": "Srikanth",
+   "Project": "Renesas (FUSA)",
+   "Status": "UnBilled",
+   "Allocation": "",
+   "BilledUpto": "Billed from July 1st",
+   "Plan": "",
+   "CurrentTask": "UnBilled from April 7th",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Srikanth",
+     "Project": "Renesas (FUSA)",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_201",
+   "Name": "Vidhu Shekhar Singh",
+   "Practice": "Functional Safety",
+   "Designation": "Senior Staff Engineer",
+   "YOE": "14+",
+   "ReportsTo": "Srikanth",
+   "Project": "Renesas (FUSA)",
+   "Status": "UnBilled",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "UnBilled from April 7th",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Srikanth",
+     "Project": "Renesas (FUSA)",
+     "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VCC_104",
+   "Name": "Anil Kumar Gedela",
+   "Practice": "Physical Design",
+   "Designation": "",
+   "YOE": "",
+   "ReportsTo": "",
+   "Project": "FLC",
+   "Status": "",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "",
+     "Project": "FLC",
+     "Status": ""
+    }
+   }
+  },
+  {
+   "EmpID": "VCC_116",
+   "Name": "Kshitij Varma Pinnamaraju",
+   "Practice": "Software",
+   "Designation": "",
+   "YOE": "",
+   "ReportsTo": "",
+   "Project": "",
+   "Status": "UnBilled",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "",
+     "Project": "",
+     "Status": "UnBilled"
+    }
+   }
+  }
+ ]
+}
