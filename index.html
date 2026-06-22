@@ -265,7 +265,7 @@ table.mx tr.tot-row td.pname{background:var(--navy);color:#fff}
 <div class="topbar">
   <div>
     <div class="title">VConnecTech Systems — Workforce Intelligence <span class="vpill">v3.0 LIVE</span></div>
-    <div class="sub">Org · Allocation · Projects · Business Health · Planning &nbsp;·&nbsp; FY 2026–27</div>
+    <div class="sub">Org · Allocation · Projects · Business Health &nbsp;·&nbsp; FY 2026–27</div>
   </div>
   <div class="topbar-right"><div class="logo">VCT</div><div style="margin-top:2px">Confidential</div></div>
 </div>
@@ -299,7 +299,6 @@ table.mx tr.tot-row td.pname{background:var(--navy);color:#fff}
   <button class="tab" data-pane="matrix" onclick="showTab('matrix',this)">📊 Allocation Matrix</button>
   <button class="tab" data-pane="projects" onclick="showTab('projects',this)">📋 Projects</button>
   <button class="tab" data-pane="health" onclick="showTab('health',this)">💚 Business Health</button>
-  <button class="tab" data-pane="planning" onclick="showTab('planning',this)">🗓 Planning</button>
 </div>
 
 <div class="pane active" id="pane-org">
@@ -342,48 +341,8 @@ table.mx tr.tot-row td.pname{background:var(--navy);color:#fff}
       <div id="practice-stacks"></div>
     </div>
   </div>
-  <div class="grid2">
-    <div class="card">
-      <h4>Client Concentration — % of Billed Headcount</h4>
-      <div class="hint" id="conc-hint"></div>
-      <div id="conc-bars"></div>
-    </div>
-    <div class="card">
-      <h4>Billing Cliff — How Long Is Revenue Confirmed?</h4>
-      <div class="hint">Of currently billed engineers, when does their confirmed billing end? Click a card for names.</div>
-      <div class="cliff-grid" id="cliff-cards"></div>
-    </div>
-  </div>
 </div>
 
-<div class="pane" id="pane-planning">
-  <div class="pane-cap">The next 6 months on one screen — billing cliffs, hiring needs and the bench pipeline. Click anything for details.</div>
-  <div class="card">
-    <h4>Billing Timeline — Jun → Dec 2026</h4>
-    <div class="hint">Each bar = how long that engagement's billing is confirmed. Red edge = confirmed end with no successor. Blue = billing not yet started.</div>
-    <div class="gantt" id="gantt"></div>
-  </div>
-  <div class="grid2">
-    <div class="card">
-      <h4>🔴 Open Hiring Requirements (from sheet)</h4>
-      <div id="req-list"></div>
-    </div>
-    <div class="card">
-      <h4>⚠️ Roll-offs & Billing Gaps</h4>
-      <div id="rolloff-list"></div>
-    </div>
-  </div>
-  <div class="card">
-    <h4>📅 Billed Headcount Forecast (no new wins assumed)</h4>
-    <div class="hint" id="forecast-hint"></div>
-    <div style="overflow-x:auto"><table class="tbl" id="forecast-table"></table></div>
-  </div>
-  <div class="card">
-    <h4>🔄 Bench → Staffing Pipeline</h4>
-    <div class="hint">Everyone currently unbilled, with the plan recorded in the sheet. Click a row for full detail.</div>
-    <div style="overflow-x:auto"><table class="tbl" id="bench-table"></table></div>
-  </div>
-</div>
 
 <div class="footer" id="footer">VConnecTech Systems · Workforce Intelligence v3 · Confidential</div>
 </div>
@@ -581,6 +540,7 @@ const PRACTICE_RULES=[
   [/software/i,'Software'],
 ];
 const PRACTICE_ORDER=['SystemC','FPGA','DV','Hardware','Embedded Linux','Embedded SW','Embedded Validation','Software','Physical Design','Functional Safety','Program Mgmt','Product Mgmt','Operations','Leadership'];
+const PRAC_CODE={SystemC:'SYSC',FPGA:'FPGA',DV:'DV',Hardware:'HW','Embedded Linux':'EMBL','Embedded SW':'EMSW','Embedded Validation':'EMVL',Software:'APPSW','Physical Design':'PD','Functional Safety':'FUSA','Program Mgmt':'PGM','Product Mgmt':'PDM',Operations:'OPS',Leadership:'LEAD',Other:'OTH'};
 
 const PROJ_DEFS={
   FLC:    {label:'FLC',              client:'FLC'},
@@ -776,6 +736,7 @@ function openPerson(id){
     ${row('Status',e.status+(e.bufferBilled?' (Buffer Billed in sheet — revenue-generating)':'')+(e.assumed?' (assumed — blank in sheet)':''))}
     ${row('Project',e.projLabel+(e.projRaw&&e.projRaw.trim()!==e.projLabel?` — sheet says: "${e.projRaw.trim()}"`:''))}
     ${row('Client',e.client)}
+    ${row('Codes (Domain / Project)', (PRAC_CODE[e.practice]||'OTH')+' / '+(e.proj||'BENCH'))}
     ${row('Reports to',e.lead)}
     ${row('Experience',e.yoe)}
     ${row('Allocation',e.bw)}
@@ -875,7 +836,7 @@ const pillTxt=e=>{
   if(l4pracOrder.length)
     html+=`<div class="org-level">
       <div class="org-level-hdr">L4 — Engineers I &amp; II <span>(${l4.length})</span></div>
-      ${l4pracOrder.map(p=>`<div class="org-subhdr">${esc(p)}</div><div class="org-row">${l4byPrac[p].map(e=>ocard(e,'oc-l4',false)).join('')}</div>`).join('')}
+      ${l4pracOrder.map(p=>`<div class="org-subhdr">${esc(p)} <span style="color:#888;font-weight:400">(${l4byPrac[p].length})</span></div><div class="org-row">${l4byPrac[p].map(e=>ocard(e,'oc-l4',false)).join('')}</div>`).join('')}
     </div>`;
 
   $('org-wrap').innerHTML=html||'<div class="card" style="color:#999;text-align:center">No one matches the current filters.</div>';
@@ -977,112 +938,6 @@ function renderHealth(emps){
       <div class="stk-track">${seg('Billed','seg-g')}${seg('Buffer','seg-y')}${seg('UnBilled','seg-r')}${seg('Onsite','seg-o')}</div>
       <div class="stk-n">${tot}</div></div>`;
   }).join('');
-
-  // client concentration
-  const billedExt=emps.filter(e=>e.status==='Billed'&&!['Internal','—','Onsite'].includes(e.client));
-  const byC={}; billedExt.forEach(e=>byC[e.client]=(byC[e.client]||0)+1);
-  const entries=Object.entries(byC).sort((a,b)=>b[1]-a[1]);
-  const max=entries.length?entries[0][1]:1;
-  const top2=entries.slice(0,2);
-  const top2pct=billedExt.length?Math.round(top2.reduce((a,t)=>a+t[1],0)/billedExt.length*100):0;
-  $('conc-hint').innerHTML=billedExt.length?`<b style="color:#C00000">${top2.map(t=>t[0]).join(' + ')} = ${top2pct}%</b> of external billed headcount. Above ~50% in two clients is high concentration risk.`:'No external billed HC under current filters.';
-  $('conc-bars').innerHTML=entries.map(([c,n])=>{
-    const share=Math.round(n/billedExt.length*100);
-    const k=reg(c+' — billed engineers','',billedExt.filter(e=>e.client===c));
-    return `<div class="conc-row" onclick="openList('${k}')"><div class="stk-lbl">${esc(c)}</div>
-      <div style="flex:1"><div class="conc-fill" style="width:${Math.max(9,n/max*100)}%">${n} HC · ${share}%</div></div></div>`;
-  }).join('');
-
-  // billing cliff cards
-  const billed=emps.filter(e=>e.status==='Billed');
-  const buckets=[
-    ['cc-r',billed.filter(e=>e.cliff&&e.cliff.m<=6),'Ends in June','ORCA Jun 15 · Gen5 / Renesas Main / NPU end-June'],
-    ['cc-y',billed.filter(e=>e.cliff&&e.cliff.m===7),'Ends in July','SmartSoC-ADI billed upto July'],
-    ['cc-g',billed.filter(e=>e.cliff&&e.cliff.m>=8),'Aug or later','Kandou ~Aug · ZPS to ~Nov'],
-    ['cc-b',billed.filter(e=>!e.cliff),'No end date recorded','treated as ongoing — confirm with leads'],
-  ];
-  $('cliff-cards').innerHTML=buckets.map(([cls,list,lbl,sub])=>
-    `<div class="cliff-card ${cls}" onclick="openList('${reg('Billed — '+lbl,sub,list)}')">
-      <div class="cc-val">${list.length}</div><div class="cc-lbl">${lbl}</div><div class="cc-sub">${sub}</div></div>`).join('');
-}
-
-function renderPlanning(emps){
-  // ── gantt
-  const pos=c=>c.mid?c.m+0.5:c.m+1;          // bar end position on Jun(6)→Dec(12) scale
-  const x=p=>Math.min(100,Math.max(0,(p-6)/6*100));
-  const rows=[];
-  PROJ_ORDER.forEach(pj=>{
-    const m=emps.filter(e=>e.proj===pj&&e.status!=='Onsite');
-    const withCliff=m.filter(e=>e.cliff);
-    if(pj==='FSP'&&m.length){ rows.push({pj,label:'Renesas FSP',n:m.length,start:6.4,end:12,cls:'gb-b',txt:`start pending · ${m.length} HC`,sort:5.9,emps:m}); return; }
-    if(pj==='FUSA'&&m.length){ rows.push({pj,label:'Renesas FUSA',n:m.length,start:7,end:12,cls:'gb-b',txt:`resumes Jul 1 · ${m.length} HC`,sort:7,emps:m}); return; }
-    if(!withCliff.length) return;
-    const end=Math.max(...withCliff.map(e=>pos(e.cliff)));
-    const lbl=withCliff.find(e=>pos(e.cliff)===end).cliff.label;
-    rows.push({pj,label:PROJ_DEFS[pj].label,n:withCliff.length,start:6,end,
-      cls:end<=7?'gb-r':end<=9?'gb-y':'gb-g',txt:`${withCliff.length} HC · billing to ${lbl}`,sort:end,emps:m,marker:end<=8});
-  });
-  rows.sort((a,b)=>a.sort-b.sort);
-  $('gantt').innerHTML=rows.length?
-    `<div class="g-scale"><span>Jun</span><span>Jul</span><span>Aug</span><span>Sep</span><span>Oct</span><span>Nov</span></div>`+
-    rows.map(r=>{
-      const k=reg(r.label+' — team','',r.emps);
-      const left=x(r.start), width=Math.max(7,x(r.end)-left);
-      return `<div class="g-row" onclick="openList('${k}')"><div class="g-lbl">${esc(r.label)}</div>
-        <div class="g-track"><div class="g-bar ${r.cls}" style="left:${left}%;width:${width}%">${r.txt}</div>
-        ${r.marker?`<div class="g-end" style="left:${left+width}%"></div>`:''}</div></div>`;
-    }).join('')
-    :'<div style="color:#999;font-size:11px">No billing end-dates recorded under current filters.</div>';
-
-  // ── hiring requirements
-  $('req-list').innerHTML=REQUIREMENTS.map(r=>
-    `<div class="req-row"><span class="req-badge ${r.urg==='urgent'?'req-urgent':'req-soon'}">${r.eta}</span>
-     <div class="req-info"><div class="ri-proj">${esc(r.proj)}</div><div class="ri-detail">${esc(r.role)}</div></div>
-     <div class="req-count">${r.count}</div></div>`).join('')+
-    `<div style="font-size:9.5px;color:#aaa;margin-top:8px">Source: Requirements block in the SystemC sheet tab. Edit REQUIREMENTS in this file (or move it into the sheet) to update.</div>`;
-
-  // ── roll-off list
-  const groups={};
-  emps.filter(e=>e.cliff&&e.status!=='Onsite').forEach(e=>{
-    const key=e.proj+'|'+e.cliff.label; (groups[key]=groups[key]||{proj:e.proj,label:e.cliff.label,m:e.cliff.m,mid:e.cliff.mid,emps:[]}).emps.push(e);
-  });
-  const roll=Object.values(groups).sort((a,b)=>(a.m+(a.mid?0:0.5))-(b.m+(b.mid?0:0.5)));
-  $('rolloff-list').innerHTML=roll.map(g=>{
-    const k=reg(`${PROJ_DEFS[g.proj].label} — billing to ${g.label}`,'',g.emps);
-    return `<div class="req-row" style="cursor:pointer" onclick="openList('${k}')">
-      <span class="req-badge ${g.m<=6?'req-urgent':'req-soon'}">${esc(g.label)}</span>
-      <div class="req-info"><div class="ri-proj">${esc(PROJ_DEFS[g.proj].label)}</div>
-      <div class="ri-detail">${g.emps.map(e=>e.name.split(/\s+/)[0]).slice(0,5).join(', ')}${g.emps.length>5?' +'+(g.emps.length-5):''}</div></div>
-      <div class="req-count">${g.emps.length}</div></div>`;
-  }).join('')+
-  `<div class="req-row"><span class="req-badge req-soon">Jul 1</span><div class="req-info"><div class="ri-proj">Renesas FUSA — billing resumes</div><div class="ri-detail">2 HC unbilled since Apr 7 return to billing</div></div><div class="req-count">+2</div></div>`;
-
-  // ── forecast
-  const billed=emps.filter(e=>e.status==='Billed');
-  const fusaN=emps.filter(e=>e.proj==='FUSA').length;
-  const months=[['Today (10 Jun)',5.9],['End of June',6],['End of July',7],['End of August',8],['End of September',9]];
-  let prev=null;
-  const rowsF=months.map(([lbl,m])=>{
-    const lost=billed.filter(e=>e.cliff&&e.cliff.m<=m);
-    const gained=m>=7?fusaN:0;
-    const proj=billed.length-lost.length+gained;
-    const delta=prev==null?'':(proj-prev===0?'<span class="trend-flat" style="color:#7A5000">—</span>':proj-prev>0?`<span style="color:#375623">▲ +${proj-prev}</span>`:`<span style="color:#C00000">▼ ${proj-prev}</span>`);
-    const ends=[...new Set(billed.filter(e=>e.cliff&&e.cliff.m===Math.floor(m)&&e.cliff.m<=m).map(e=>PROJ_DEFS[e.proj].label))];
-    const note=m===5.9?'current billed HC':(ends.length?`${ends.join(', ')} end${gained&&m===7?' · FUSA +2 resumes':''}`:(gained&&m===7?'FUSA +2 resumes':'no confirmed changes'));
-    prev=proj;
-    return `<tr><td><b>${lbl}</b></td><td style="font-size:14px;font-weight:700;color:#1F3864">${proj}</td><td>${delta}</td><td style="color:#777;font-size:10px">${note}</td></tr>`;
-  }).join('');
-  $('forecast-table').innerHTML=`<thead><tr><th>Point in time</th><th>Confirmed billed HC</th><th>Change</th><th>What changes</th></tr></thead><tbody>${rowsF}</tbody>`;
-  $('forecast-hint').innerHTML=`Worst-case view: assumes <b>no extensions, no new wins</b>. Gen5 / Renesas Main are marked "Project May Extend" in the sheet — if they extend, most of the June drop disappears. FSP start ("next week") is excluded until billing is confirmed.`;
-
-  // ── bench pipeline
-  const bench=emps.filter(e=>e.status==='UnBilled'||e.status==='Bench');
-  $('bench-table').innerHTML=`<thead><tr><th>ID</th><th>Name</th><th>Practice</th><th>YOE</th><th>Parked at</th><th>Current task</th><th>Plan in sheet</th></tr></thead><tbody>`+
-    bench.map(e=>`<tr class="clickable" onclick="openPerson('${esc(e.id)}')">
-      <td>${idBadge(e.id)}</td><td><b>${esc(e.name)}</b></td><td>${esc(e.practice)}</td><td>${esc(e.yoe||'—')}</td>
-      <td>${esc(e.projLabel)}</td><td style="font-size:10px;color:#777">${esc(e.task||'—')}</td>
-      <td>${e.plan?`<span class="st-badge stb-Buffer">${esc(e.plan)}</span>`:'<span style="color:#C00000;font-size:10px">⚠ no plan</span>'}</td></tr>`).join('')+
-    `</tbody>`;
 }
 
 function renderAll(){
@@ -1090,7 +945,7 @@ function renderAll(){
   const emps=filtered();
   $('filter-count').textContent=emps.length===ALL.length?`Showing all ${ALL.length} people`:`Showing ${emps.length} of ${ALL.length}`;
   renderKPIs(emps); renderAlerts(); renderOrg(emps); renderMatrix(emps);
-  renderProjects(emps); renderHealth(emps); renderPlanning(emps);
+  renderProjects(emps); renderHealth(emps);
 }
 
 // ════════════════════════════════════════════════════════════
