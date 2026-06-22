@@ -1,7 +1,7 @@
 {
- "generatedAt": "2026-06-22T15:25:09.981643Z",
+ "generatedAt": "2026-06-22T15:36:22.112599+00:00",
  "months": [
-  "April",
+  "April 2026",
   "Current"
  ],
  "employees": [
@@ -19,13 +19,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "LEAD",
+   "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "",
      "Project": "FLC",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "",
      "Project": "FLC",
      "Status": "Billed"
@@ -46,13 +48,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "PGM",
+   "ProjectCode": "REN",
    "byMonth": {
     "Current": {
      "ReportsTo": "Srikanth",
      "Project": "Renesas",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Srikanth",
      "Project": "Renesas",
      "Status": "Billed"
@@ -73,13 +77,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "PGM",
+   "ProjectCode": "CAM",
    "byMonth": {
     "Current": {
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "Buffer"
@@ -100,13 +106,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "SYSC",
+   "ProjectCode": "ADI",
    "byMonth": {
     "Current": {
      "ReportsTo": "Srikanth",
      "Project": "SmartSoC-ADI",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Srikanth",
      "Project": "SmartSoC-ADI",
      "Status": "Billed"
@@ -127,13 +135,15 @@
    "Plan": "",
    "CurrentTask": "Supporting DLI models",
    "Remarks": "Need 4 engineers with 3-4 years of experience from August. Need 3 buffers(Trainees) for existing engineers.",
+   "DomainCode": "SYSC",
+   "ProjectCode": "ADI",
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
      "Project": "SmartSoC-ADI",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Aravind",
      "Project": "SmartSoC-ADI",
      "Status": "Billed"
@@ -154,13 +164,15 @@
    "Plan": "",
    "CurrentTask": "Supporting DLI models",
    "Remarks": "",
+   "DomainCode": "SYSC",
+   "ProjectCode": "ADI",
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
      "Project": "SmartSoC-ADI",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Aravind",
      "Project": "SmartSoC-ADI",
      "Status": "Billed"
@@ -181,13 +193,15 @@
    "Plan": "",
    "CurrentTask": "Supporting DLI models",
    "Remarks": "",
+   "DomainCode": "SYSC",
+   "ProjectCode": "ADI",
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
      "Project": "SmartSoC-ADI",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Aravind",
      "Project": "SmartSoC-ADI",
      "Status": "Billed"
@@ -208,13 +222,15 @@
    "Plan": "",
    "CurrentTask": "FLC Chip top modelling",
    "Remarks": "Aravind will ask srikanth",
+   "DomainCode": "SYSC",
+   "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
      "Project": "FLC IP Modelling",
      "Status": "Buffer Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Aravind",
      "Project": "FLC IP Modelling",
      "Status": "BufferBilled"
@@ -235,13 +251,15 @@
    "Plan": "",
    "CurrentTask": "QEMU bringup",
    "Remarks": "Aravind will ask srikanth",
+   "DomainCode": "SYSC",
+   "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
      "Project": "FLC IP Modelling",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Aravind",
      "Project": "FLC IP Modelling",
      "Status": "Buffer"
@@ -262,13 +280,15 @@
    "Plan": "",
    "CurrentTask": "Security IP modelling",
    "Remarks": "Billing plan?",
+   "DomainCode": "SYSC",
+   "ProjectCode": "DLI",
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
      "Project": "DLI Soc Modelling",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Aravind",
      "Project": "DLI Soc Modelling",
      "Status": "Buffer"
@@ -289,13 +309,15 @@
    "Plan": "",
    "CurrentTask": "Security IP modelling",
    "Remarks": "",
+   "DomainCode": "SYSC",
+   "ProjectCode": "DLI",
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
      "Project": "DLI Soc Modelling",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Aravind",
      "Project": "DLI Soc Modelling",
      "Status": "Buffer"
@@ -316,13 +338,15 @@
    "Plan": "",
    "CurrentTask": "DMA model",
    "Remarks": "",
+   "DomainCode": "SYSC",
+   "ProjectCode": "DLI",
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
      "Project": "DLI Soc Modelling",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Aravind",
      "Project": "DLI Soc Modelling",
      "Status": "Buffer"
@@ -343,13 +367,15 @@
    "Plan": "Staffing",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "FPGA",
+   "ProjectCode": "DLI",
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
      "Project": "DLI Soc",
      "Status": "UnBilled"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Aravind",
      "Project": "DLI Soc",
      "Status": "UnBilled"
@@ -370,13 +396,15 @@
    "Plan": "Staffing",
    "CurrentTask": "",
    "Remarks": "Billed in FLC",
+   "DomainCode": "FPGA",
+   "ProjectCode": "DLI",
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
      "Project": "DLI Soc",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Aravind",
      "Project": "DLI Soc",
      "Status": "Billed"
@@ -397,13 +425,15 @@
    "Plan": "Staffing",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "FPGA",
+   "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
      "Project": "FLC",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Aravind",
      "Project": "FLC",
      "Status": "Billed"
@@ -424,13 +454,15 @@
    "Plan": "Staffing",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "FPGA",
+   "ProjectCode": "DLI",
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
      "Project": "DLI Soc",
      "Status": "UnBilled"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Aravind",
      "Project": "DLI Soc",
      "Status": "UnBilled"
@@ -451,13 +483,15 @@
    "Plan": "Staffing",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "FPGA",
+   "ProjectCode": "DLI",
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
      "Project": "DLI Soc",
      "Status": "UnBilled"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Aravind",
      "Project": "DLI Soc",
      "Status": "UnBilled"
@@ -478,13 +512,15 @@
    "Plan": "Staffing",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "FPGA",
+   "ProjectCode": "DLI",
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
      "Project": "DLI Soc",
      "Status": "UnBilled"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Aravind",
      "Project": "DLI Soc",
      "Status": "UnBilled"
@@ -505,13 +541,15 @@
    "Plan": "New Project",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "DV",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "Srikanth",
      "Project": "",
      "Status": "UnBilled"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Srikanth",
      "Project": "",
      "Status": "Billed"
@@ -532,13 +570,15 @@
    "Plan": "",
    "CurrentTask": "Drop_c.1 release and code coverage",
    "Remarks": "",
+   "DomainCode": "DV",
+   "ProjectCode": "ORCA",
    "byMonth": {
     "Current": {
      "ReportsTo": "Swarna Latha",
      "Project": "ORCA",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Swarna Latha",
      "Project": "ORCA",
      "Status": "Billed"
@@ -559,13 +599,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "DV",
+   "ProjectCode": "ORCA",
    "byMonth": {
     "Current": {
      "ReportsTo": "Swarna Latha",
      "Project": "ORCA",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Swarna Latha",
      "Project": "ORCA",
      "Status": "Billed"
@@ -586,13 +628,15 @@
    "Plan": "New Project",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "DV",
+   "ProjectCode": "ORCA",
    "byMonth": {
     "Current": {
      "ReportsTo": "Swarna Latha",
      "Project": "ORCA",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Swarna Latha",
      "Project": "ORCA",
      "Status": "Buffer"
@@ -613,13 +657,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "DV",
+   "ProjectCode": "ORCA",
    "byMonth": {
     "Current": {
      "ReportsTo": "Swarna Latha",
      "Project": "ORCA",
      "Status": "Buffer Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Swarna Latha",
      "Project": "ORCA",
      "Status": "BufferBilled"
@@ -640,13 +686,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "DV",
+   "ProjectCode": "ORCA",
    "byMonth": {
     "Current": {
      "ReportsTo": "Swarna Latha",
      "Project": "ORCA",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Swarna Latha",
      "Project": "ORCA",
      "Status": "Billed"
@@ -667,13 +715,15 @@
    "Plan": "New Project",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "DV",
+   "ProjectCode": "ORCA",
    "byMonth": {
     "Current": {
      "ReportsTo": "Swarna Latha",
      "Project": "ORCA",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Swarna Latha",
      "Project": "ORCA",
      "Status": "Buffer"
@@ -694,13 +744,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "DV",
+   "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "Srikanth",
      "Project": "FLC",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Srikanth",
      "Project": "FLC",
      "Status": "Billed"
@@ -721,13 +773,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "DV",
+   "ProjectCode": "ZPS",
    "byMonth": {
     "Current": {
      "ReportsTo": "Swarna Latha",
      "Project": "Zerro Power systems",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Swarna Latha",
      "Project": "Zerro Power systems",
      "Status": "Billed"
@@ -748,13 +802,15 @@
    "Plan": "Staffing",
    "CurrentTask": "EMAC Bit file generation",
    "Remarks": "",
+   "DomainCode": "DV",
+   "ProjectCode": "DLI",
    "byMonth": {
     "Current": {
      "ReportsTo": "Swarna Latha",
      "Project": "DLI Soc",
      "Status": "UnBilled"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Swarna Latha",
      "Project": "DLI Soc",
      "Status": "UnBilled"
@@ -775,13 +831,15 @@
    "Plan": "Staffing",
    "CurrentTask": "FPGA Bit file generation",
    "Remarks": "",
+   "DomainCode": "DV",
+   "ProjectCode": "DLI",
    "byMonth": {
     "Current": {
      "ReportsTo": "Swarna Latha",
      "Project": "DLI Soc",
      "Status": "UnBilled"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Swarna Latha",
      "Project": "DLI Soc",
      "Status": "UnBilled"
@@ -802,13 +860,15 @@
    "Plan": "Staffing",
    "CurrentTask": "USB Bit file generation",
    "Remarks": "",
+   "DomainCode": "DV",
+   "ProjectCode": "DLI",
    "byMonth": {
     "Current": {
      "ReportsTo": "Swarna Latha",
      "Project": "DLI Soc",
      "Status": "UnBilled"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Swarna Latha",
      "Project": "DLI Soc",
      "Status": "UnBilled"
@@ -829,13 +889,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "HW",
+   "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "Srikanth",
      "Project": "FLC, SmartSoc(ProbeASIC)",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Srikanth",
      "Project": "FLC, SmartSoc(ProbeASIC)",
      "Status": "Billed"
@@ -856,13 +918,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "HW",
+   "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "Rajesh",
      "Project": "FLC",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Rajesh",
      "Project": "FLC",
      "Status": "Billed"
@@ -883,13 +947,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "HW",
+   "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "Rajesh",
      "Project": "FLC",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Rajesh",
      "Project": "FLC",
      "Status": "Billed"
@@ -910,13 +976,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "HW",
+   "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "Rajesh",
      "Project": "FLC",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Rajesh",
      "Project": "FLC",
      "Status": "Billed"
@@ -937,13 +1005,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "HW",
+   "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "Rajesh",
      "Project": "FLC/TRS/Internal",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Rajesh",
      "Project": "FLC/TRS/Internal",
      "Status": "Billed"
@@ -964,13 +1034,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "HW",
+   "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "Rajesh",
      "Project": "FLC",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Rajesh",
      "Project": "FLC",
      "Status": "Buffer"
@@ -991,13 +1063,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "HW",
+   "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "Rajesh",
      "Project": "FLC",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Rajesh",
      "Project": "FLC",
      "Status": "Buffer"
@@ -1018,13 +1092,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "HW",
+   "ProjectCode": "TRS",
    "byMonth": {
     "Current": {
      "ReportsTo": "Rajesh",
      "Project": "TRS",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Rajesh",
      "Project": "TRS",
      "Status": "Billed"
@@ -1045,13 +1121,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "HW",
+   "ProjectCode": "TRS",
    "byMonth": {
     "Current": {
      "ReportsTo": "Rajesh",
      "Project": "TRS",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Rajesh",
      "Project": "TRS",
      "Status": "Billed"
@@ -1072,13 +1150,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "HW",
+   "ProjectCode": "TRS",
    "byMonth": {
     "Current": {
      "ReportsTo": "Rajesh",
      "Project": "TRS",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Rajesh",
      "Project": "TRS",
      "Status": "Billed"
@@ -1099,13 +1179,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "HW",
+   "ProjectCode": "CAM",
    "byMonth": {
     "Current": {
      "ReportsTo": "Rajesh",
      "Project": "Smart IP Camera",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Rajesh",
      "Project": "Smart IP Camera",
      "Status": "Billed"
@@ -1126,13 +1208,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "HW",
+   "ProjectCode": "VLT",
    "byMonth": {
     "Current": {
      "ReportsTo": "Rajesh",
      "Project": "Voila Tech",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Rajesh",
      "Project": "Voila Tech",
      "Status": "Billed"
@@ -1153,13 +1237,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "HW",
+   "ProjectCode": "CAM",
    "byMonth": {
     "Current": {
      "ReportsTo": "Rajesh",
      "Project": "Smart IP Camera",
      "Status": "UnBilled"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Rajesh",
      "Project": "Smart IP Camera",
      "Status": "UnBilled"
@@ -1180,6 +1266,8 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "HW",
+   "ProjectCode": "VLT",
    "byMonth": {
     "Current": {
      "ReportsTo": "Rajesh",
@@ -1202,13 +1290,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "EMBL",
+   "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "Srikanth",
      "Project": "FLC, Renesas (NPU), Smart IP Camera",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Srikanth",
      "Project": "FLC, Renesas (NPU), Smart IP Camera",
      "Status": "Billed"
@@ -1229,13 +1319,15 @@
    "Plan": "",
    "CurrentTask": "E21 , ANDES Bring up",
    "Remarks": "",
+   "DomainCode": "EMBL",
+   "ProjectCode": "KAN",
    "byMonth": {
     "Current": {
      "ReportsTo": "Sasikanth",
      "Project": "Kandou",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Sasikanth",
      "Project": "Kandou",
      "Status": "BufferBilled"
@@ -1256,13 +1348,15 @@
    "Plan": "FLC",
    "CurrentTask": "FLC hand off",
    "Remarks": "Buffer Billed for shyam to replace Pavan B",
+   "DomainCode": "EMBL",
+   "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "Kameswara rao",
      "Project": "FLC",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Kameswara rao",
      "Project": "FLC",
      "Status": "Buffer"
@@ -1283,13 +1377,15 @@
    "Plan": "Edge",
    "CurrentTask": "DDR",
    "Remarks": "",
+   "DomainCode": "EMBL",
+   "ProjectCode": "EDGE",
    "byMonth": {
     "Current": {
      "ReportsTo": "Shyam",
      "Project": "Edge",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Shyam",
      "Project": "Edge",
      "Status": "Billed"
@@ -1310,13 +1406,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "EMBL",
+   "ProjectCode": "KAN",
    "byMonth": {
     "Current": {
      "ReportsTo": "Sasikanth",
      "Project": "Kandou",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Sasikanth",
      "Project": "Kandou",
      "Status": "Billed"
@@ -1337,13 +1435,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "Billed in place off venkatesh nookatattu",
+   "DomainCode": "EMBL",
+   "ProjectCode": "GEN5",
    "byMonth": {
     "Current": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "UnBilled"
@@ -1364,13 +1464,15 @@
    "Plan": "",
    "CurrentTask": "NPU Validation",
    "Remarks": "Customer has plan till Dec, not officially confirmed",
+   "DomainCode": "EMBL",
+   "ProjectCode": "NPU",
    "byMonth": {
     "Current": {
      "ReportsTo": "Shyam",
      "Project": "Renesas NPU",
      "Status": "Buffer Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Shyam",
      "Project": "Renesas NPU",
      "Status": "BufferBilled"
@@ -1391,13 +1493,15 @@
    "Plan": "",
    "CurrentTask": "Camera Sensor",
    "Remarks": "",
+   "DomainCode": "EMBL",
+   "ProjectCode": "CAM",
    "byMonth": {
     "Current": {
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "UnBilled"
@@ -1418,13 +1522,15 @@
    "Plan": "",
    "CurrentTask": "Optimization Pipelines",
    "Remarks": "",
+   "DomainCode": "EMBL",
+   "ProjectCode": "CAM",
    "byMonth": {
     "Current": {
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "UnBilled"
@@ -1445,13 +1551,15 @@
    "Plan": "",
    "CurrentTask": "Server app sensors",
    "Remarks": "",
+   "DomainCode": "EMBL",
+   "ProjectCode": "CAM",
    "byMonth": {
     "Current": {
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "UnBilled"
@@ -1472,13 +1580,15 @@
    "Plan": "",
    "CurrentTask": "Training",
    "Remarks": "",
+   "DomainCode": "EMBL",
+   "ProjectCode": "CAM",
    "byMonth": {
     "Current": {
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "UnBilled"
@@ -1499,13 +1609,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "EMSW",
+   "ProjectCode": "REN",
    "byMonth": {
     "Current": {
      "ReportsTo": "Srikanth",
      "Project": "Renesas",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Srikanth",
      "Project": "Renesas",
      "Status": "Billed"
@@ -1526,13 +1638,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "Project May Extend - May 29th",
+   "DomainCode": "EMSW",
+   "ProjectCode": "GEN5",
    "byMonth": {
     "Current": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "Billed"
@@ -1553,13 +1667,15 @@
    "Plan": "Staffing",
    "CurrentTask": "Infra development for DLI IPs, automating tests for low speed peripherals",
    "Remarks": "",
+   "DomainCode": "EMSW",
+   "ProjectCode": "DLI",
    "byMonth": {
     "Current": {
      "ReportsTo": "Sasikanth",
      "Project": "DLI Soc",
      "Status": "UnBilled"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Sasikanth",
      "Project": "DLI Soc",
      "Status": "UnBilled"
@@ -1580,13 +1696,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "Project May Extend - May 29th",
+   "DomainCode": "EMSW",
+   "ProjectCode": "REN",
    "byMonth": {
     "Current": {
      "ReportsTo": "Teja",
      "Project": "Renesas",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Teja",
      "Project": "Renesas",
      "Status": "Billed"
@@ -1607,13 +1725,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "Project May Extend - May 29th",
+   "DomainCode": "EMSW",
+   "ProjectCode": "REN",
    "byMonth": {
     "Current": {
      "ReportsTo": "Teja",
      "Project": "Renesas",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Teja",
      "Project": "Renesas",
      "Status": "Billed"
@@ -1634,13 +1754,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "EMSW",
+   "ProjectCode": "DBOT",
    "byMonth": {
     "Current": {
      "ReportsTo": "Kiran Allada",
      "Project": "Internal ( Delivery Robot )",
      "Status": "UnBilled"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Kiran Allada",
      "Project": "Internal ( Delivery Robot )",
      "Status": "UnBilled"
@@ -1661,13 +1783,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "Project May Extend - May 29th",
+   "DomainCode": "EMSW",
+   "ProjectCode": "REN",
    "byMonth": {
     "Current": {
      "ReportsTo": "Teja",
      "Project": "Renesas",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Teja",
      "Project": "Renesas",
      "Status": "Billed"
@@ -1688,13 +1812,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "EMSW",
+   "ProjectCode": "DBOT",
    "byMonth": {
     "Current": {
      "ReportsTo": "Kiran Allada",
      "Project": "Internal ( Delivery Robot )",
      "Status": "UnBilled"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Kiran Allada",
      "Project": "Internal ( Delivery Robot )",
      "Status": "UnBilled"
@@ -1715,13 +1841,15 @@
    "Plan": "Backup for Poorna in FLC, poorna will move to Kandou",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "EMSW",
+   "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "Kameswara rao",
      "Project": "FLC",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Kameswara rao",
      "Project": "FLC",
      "Status": "Billed"
@@ -1742,13 +1870,15 @@
    "Plan": "",
    "CurrentTask": "Preparation for Reneses MCU",
    "Remarks": "",
+   "DomainCode": "EMSW",
+   "ProjectCode": "FSP",
    "byMonth": {
     "Current": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
      "Status": "UnBilled"
@@ -1769,13 +1899,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "Back up for naveen namburi in Gen5",
+   "DomainCode": "EMSW",
+   "ProjectCode": "GEN5",
    "byMonth": {
     "Current": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "UnBilled"
@@ -1796,13 +1928,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "Project May Extend - May 29th",
+   "DomainCode": "EMSW",
+   "ProjectCode": "GEN5",
    "byMonth": {
     "Current": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "UnBilled"
@@ -1823,13 +1957,15 @@
    "Plan": "",
    "CurrentTask": "LoRa gateway change for 8 channels",
    "Remarks": "Srikanth",
+   "DomainCode": "EMSW",
+   "ProjectCode": "EDGE",
    "byMonth": {
     "Current": {
      "ReportsTo": "Shyam",
      "Project": "Parking, Edge",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Shyam",
      "Project": "Parking, Edge",
      "Status": "UnBilled"
@@ -1850,13 +1986,15 @@
    "Plan": "Staffing",
    "CurrentTask": "bluetootha, wifi spec, drivers understanding",
    "Remarks": "",
+   "DomainCode": "EMSW",
+   "ProjectCode": "DLI",
    "byMonth": {
     "Current": {
      "ReportsTo": "Sasikanth",
      "Project": "DLI Soc",
      "Status": "UnBilled"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Sasikanth",
      "Project": "DLI Soc",
      "Status": "UnBilled"
@@ -1877,13 +2015,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "Project May Extend - May 29th",
+   "DomainCode": "EMSW",
+   "ProjectCode": "GEN5",
    "byMonth": {
     "Current": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "Billed"
@@ -1904,13 +2044,15 @@
    "Plan": "",
    "CurrentTask": "Preparation for Reneses MCU",
    "Remarks": "",
+   "DomainCode": "EMSW",
+   "ProjectCode": "FSP",
    "byMonth": {
     "Current": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
      "Status": "UnBilled"
@@ -1931,13 +2073,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "EMSW",
+   "ProjectCode": "GEN5",
    "byMonth": {
     "Current": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "Billed"
@@ -1958,13 +2102,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "Project May Extend - May 29th",
+   "DomainCode": "EMSW",
+   "ProjectCode": "GEN5",
    "byMonth": {
     "Current": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "Billed"
@@ -1985,13 +2131,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "Project May Extend - May 29th",
+   "DomainCode": "EMSW",
+   "ProjectCode": "GEN5",
    "byMonth": {
     "Current": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "Billed"
@@ -2012,13 +2160,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "EMSW",
+   "ProjectCode": "REN",
    "byMonth": {
     "Current": {
      "ReportsTo": "Teja",
      "Project": "Renesas",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Teja",
      "Project": "Renesas",
      "Status": "Buffer"
@@ -2039,13 +2189,15 @@
    "Plan": "Staffing",
    "CurrentTask": "Bood code development is completed, working on bringup of USB",
    "Remarks": "",
+   "DomainCode": "EMSW",
+   "ProjectCode": "DLI",
    "byMonth": {
     "Current": {
      "ReportsTo": "Sasikanth",
      "Project": "DLI Soc",
      "Status": "UnBilled"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Sasikanth",
      "Project": "DLI Soc",
      "Status": "UnBilled"
@@ -2066,13 +2218,15 @@
    "Plan": "Buffer in place of Pavan G for FLC",
    "CurrentTask": "-",
    "Remarks": "",
+   "DomainCode": "EMSW",
+   "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "Kameswara rao",
      "Project": "FLC",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Kameswara rao",
      "Project": "FLC",
      "Status": "UnBilled"
@@ -2093,13 +2247,15 @@
    "Plan": "",
    "CurrentTask": "Preparation for Reneses MCU",
    "Remarks": "",
+   "DomainCode": "EMSW",
+   "ProjectCode": "FSP",
    "byMonth": {
     "Current": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
      "Status": "Buffer"
@@ -2120,13 +2276,15 @@
    "Plan": "",
    "CurrentTask": "Tuning and Caliberation",
    "Remarks": "",
+   "DomainCode": "EMSW",
+   "ProjectCode": "CAM",
    "byMonth": {
     "Current": {
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "UnBilled"
@@ -2147,13 +2305,15 @@
    "Plan": "Kandou",
    "CurrentTask": "",
    "Remarks": "Kranthi",
+   "DomainCode": "EMSW",
+   "ProjectCode": "KAN",
    "byMonth": {
     "Current": {
      "ReportsTo": "Sasikanth",
      "Project": "Kandou",
      "Status": "UnBilled"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Sasikanth",
      "Project": "Kandou",
      "Status": "UnBilled"
@@ -2174,13 +2334,15 @@
    "Plan": "",
    "CurrentTask": "Preparation for Reneses MCU",
    "Remarks": "",
+   "DomainCode": "EMSW",
+   "ProjectCode": "FSP",
    "byMonth": {
     "Current": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
      "Status": "UnBilled"
@@ -2201,13 +2363,15 @@
    "Plan": "Kandou",
    "CurrentTask": "",
    "Remarks": "Billed in FLC",
+   "DomainCode": "EMVL",
+   "ProjectCode": "KAN",
    "byMonth": {
     "Current": {
      "ReportsTo": "Srikanth",
      "Project": "Kandou",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Srikanth",
      "Project": "Kandou",
      "Status": "Billed"
@@ -2228,13 +2392,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "EMVL",
+   "ProjectCode": "REN",
    "byMonth": {
     "Current": {
      "ReportsTo": "Srikanth",
      "Project": "Renesas",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Srikanth",
      "Project": "Renesas",
      "Status": "Billed"
@@ -2255,13 +2421,15 @@
    "Plan": "",
    "CurrentTask": "D2D",
    "Remarks": "",
+   "DomainCode": "EMVL",
+   "ProjectCode": "KAN",
    "byMonth": {
     "Current": {
      "ReportsTo": "Sasikanth",
      "Project": "Kandou",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Sasikanth",
      "Project": "Kandou",
      "Status": "Billed"
@@ -2282,13 +2450,15 @@
    "Plan": "Customer has plan till Dec, not officially confirmed",
    "CurrentTask": "NPU Validation",
    "Remarks": "",
+   "DomainCode": "EMVL",
+   "ProjectCode": "NPU",
    "byMonth": {
     "Current": {
      "ReportsTo": "Shyam",
      "Project": "Renesas NPU",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Shyam",
      "Project": "Renesas NPU",
      "Status": "Billed"
@@ -2309,13 +2479,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "EMVL",
+   "ProjectCode": "GEN5",
    "byMonth": {
     "Current": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "Billed"
@@ -2336,13 +2508,15 @@
    "Plan": "",
    "CurrentTask": "IPM, RC",
    "Remarks": "",
+   "DomainCode": "EMVL",
+   "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "Kameswara rao",
      "Project": "FLC",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Kameswara rao",
      "Project": "FLC",
      "Status": "Billed"
@@ -2363,13 +2537,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "EMVL",
+   "ProjectCode": "GEN5",
    "byMonth": {
     "Current": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "UnBilled"
@@ -2390,13 +2566,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "EMVL",
+   "ProjectCode": "FSP",
    "byMonth": {
     "Current": {
      "ReportsTo": "Srikanth",
      "Project": "Renesas FSP",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Srikanth",
      "Project": "Renesas FSP",
      "Status": "UnBilled"
@@ -2417,13 +2595,15 @@
    "Plan": "New Project",
    "CurrentTask": "-",
    "Remarks": "",
+   "DomainCode": "EMVL",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "Sasikanth",
      "Project": "Self Learning",
      "Status": "UnBilled"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Sasikanth",
      "Project": "Self Learning",
      "Status": "UnBilled"
@@ -2444,13 +2624,15 @@
    "Plan": "New Project",
    "CurrentTask": "Power, Boot from SPI, Boot from SD",
    "Remarks": "",
+   "DomainCode": "EMVL",
+   "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "Sasikanth",
      "Project": "FLC",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Sasikanth",
      "Project": "FLC",
      "Status": "Buffer"
@@ -2471,13 +2653,15 @@
    "Plan": "Staffing",
    "CurrentTask": "Camera- Completed, Security, HSM-study",
    "Remarks": "",
+   "DomainCode": "EMVL",
+   "ProjectCode": "DLI",
    "byMonth": {
     "Current": {
      "ReportsTo": "Sasikanth",
      "Project": "DLI Soc",
      "Status": "UnBilled"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Sasikanth",
      "Project": "DLI Soc",
      "Status": "UnBilled"
@@ -2498,13 +2682,15 @@
    "Plan": "Backup for Poorna in FLC, poorna will move to Kandou",
    "CurrentTask": "RISC-V, D2D",
    "Remarks": "",
+   "DomainCode": "EMVL",
+   "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "Kameswara rao",
      "Project": "FLC",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Kameswara rao",
      "Project": "FLC",
      "Status": "UnBilled"
@@ -2525,13 +2711,15 @@
    "Plan": "",
    "CurrentTask": "Preparation for Reneses MCU",
    "Remarks": "",
+   "DomainCode": "EMVL",
+   "ProjectCode": "FSP",
    "byMonth": {
     "Current": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
      "Status": "UnBilled"
@@ -2552,13 +2740,15 @@
    "Plan": "New Project",
    "CurrentTask": "FLC1, FLC2,OSPI, SMC",
    "Remarks": "",
+   "DomainCode": "EMVL",
+   "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "Sasikanth",
      "Project": "FLC",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Sasikanth",
      "Project": "FLC",
      "Status": "Buffer"
@@ -2579,13 +2769,15 @@
    "Plan": "Renesas FSP",
    "CurrentTask": "Ethernet- Completed",
    "Remarks": "",
+   "DomainCode": "EMVL",
+   "ProjectCode": "FSP",
    "byMonth": {
     "Current": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
      "Status": "UnBilled"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
      "Status": "UnBilled"
@@ -2606,13 +2798,15 @@
    "Plan": "Renesas FSP",
    "CurrentTask": "NVMe",
    "Remarks": "",
+   "DomainCode": "EMVL",
+   "ProjectCode": "FSP",
    "byMonth": {
     "Current": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
      "Status": "UnBilled"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
      "Status": "UnBilled"
@@ -2633,13 +2827,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "APPSW",
+   "ProjectCode": "REN",
    "byMonth": {
     "Current": {
      "ReportsTo": "Teja",
      "Project": "Renesas",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Teja",
      "Project": "Renesas",
      "Status": "Buffer"
@@ -2660,13 +2856,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "APPSW",
+   "ProjectCode": "RLCC",
    "byMonth": {
     "Current": {
      "ReportsTo": "George",
      "Project": "RLCC",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "George",
      "Project": "RLCC",
      "Status": "Billed"
@@ -2687,13 +2885,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "APPSW",
+   "ProjectCode": "RLCC",
    "byMonth": {
     "Current": {
      "ReportsTo": "George",
      "Project": "RLCC",
      "Status": "Billed"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "George",
      "Project": "RLCC",
      "Status": "Billed"
@@ -2714,13 +2914,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "APPSW",
+   "ProjectCode": "RLCC",
    "byMonth": {
     "Current": {
      "ReportsTo": "George",
      "Project": "RLCC",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "George",
      "Project": "RLCC",
      "Status": "Buffer"
@@ -2741,13 +2943,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "APPSW",
+   "ProjectCode": "CAM",
    "byMonth": {
     "Current": {
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "UnBilled"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "Buffer"
@@ -2768,13 +2972,15 @@
    "Plan": "NPU is low priority in camera, need to plan tasks",
    "CurrentTask": "NPU models",
    "Remarks": "",
+   "DomainCode": "APPSW",
+   "ProjectCode": "CAM",
    "byMonth": {
     "Current": {
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "UnBilled"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "UnBilled"
@@ -2795,13 +3001,15 @@
    "Plan": "NPU is low priority in camera, need to plan tasks",
    "CurrentTask": "NPU models",
    "Remarks": "",
+   "DomainCode": "APPSW",
+   "ProjectCode": "RLCC",
    "byMonth": {
     "Current": {
      "ReportsTo": "George",
      "Project": "RLCC",
      "Status": "UnBilled"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "George",
      "Project": "RLCC",
      "Status": "UnBilled"
@@ -2822,13 +3030,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "APPSW",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "Srikanth",
      "Project": "",
      "Status": "UnBilled"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Srikanth",
      "Project": "",
      "Status": "UnBilled"
@@ -2849,13 +3059,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "PDM",
+   "ProjectCode": "CAM",
    "byMonth": {
     "Current": {
      "ReportsTo": "Srikanth",
      "Project": "Smart IP Camera",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Srikanth",
      "Project": "Smart IP Camera",
      "Status": "UnBilled"
@@ -2876,13 +3088,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "PDM",
+   "ProjectCode": "EDGE",
    "byMonth": {
     "Current": {
      "ReportsTo": "Srikanth",
      "Project": "Edge",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Srikanth",
      "Project": "Edge",
      "Status": "UnBilled"
@@ -2903,13 +3117,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "PDM",
+   "ProjectCode": "SERVER",
    "byMonth": {
     "Current": {
      "ReportsTo": "Venkata Kiran",
      "Project": "Server",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Venkata Kiran",
      "Project": "Server",
      "Status": "UnBilled"
@@ -2930,13 +3146,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "OPS",
+   "ProjectCode": "INT",
    "byMonth": {
     "Current": {
      "ReportsTo": "Mounika",
      "Project": "Website",
      "Status": "UnBilled"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Mounika",
      "Project": "Website",
      "Status": "UnBilled"
@@ -2957,13 +3175,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "OPS",
+   "ProjectCode": "INT",
    "byMonth": {
     "Current": {
      "ReportsTo": "Srikanth",
      "Project": "Internal ( Vconnectech Website )",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Srikanth",
      "Project": "Internal ( Vconnectech Website )",
      "Status": "UnBilled"
@@ -2984,13 +3204,15 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "PGM",
+   "ProjectCode": "EDGE",
    "byMonth": {
     "Current": {
      "ReportsTo": "Srikanth",
      "Project": "Edge",
      "Status": "Buffer"
     },
-    "April": {
+    "April 2026": {
      "ReportsTo": "Srikanth",
      "Project": "Edge",
      "Status": "UnBilled"
@@ -3011,6 +3233,8 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "DV",
+   "ProjectCode": "ONSITE",
    "byMonth": {
     "Current": {
      "ReportsTo": "",
@@ -3033,6 +3257,8 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "DV",
+   "ProjectCode": "ONSITE",
    "byMonth": {
     "Current": {
      "ReportsTo": "",
@@ -3055,6 +3281,8 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "PD",
+   "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "",
@@ -3077,6 +3305,8 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "PD",
+   "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "",
@@ -3099,6 +3329,8 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "PD",
+   "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "",
@@ -3121,6 +3353,8 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "PD",
+   "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "",
@@ -3143,6 +3377,8 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "EMVL",
+   "ProjectCode": "AMD",
    "byMonth": {
     "Current": {
      "ReportsTo": "",
@@ -3165,6 +3401,8 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "APPSW",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "Srikanth",
@@ -3187,6 +3425,8 @@
    "Plan": "",
    "CurrentTask": "UnBilled from April 7th",
    "Remarks": "",
+   "DomainCode": "EMSW",
+   "ProjectCode": "FUSA",
    "byMonth": {
     "Current": {
      "ReportsTo": "Srikanth",
@@ -3209,6 +3449,8 @@
    "Plan": "",
    "CurrentTask": "UnBilled from April 7th",
    "Remarks": "",
+   "DomainCode": "FUSA",
+   "ProjectCode": "FUSA",
    "byMonth": {
     "Current": {
      "ReportsTo": "Srikanth",
@@ -3231,6 +3473,8 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "PD",
+   "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "",
@@ -3253,6 +3497,8 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
+   "DomainCode": "APPSW",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "",
