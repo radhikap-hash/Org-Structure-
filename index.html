@@ -286,6 +286,7 @@ table.mx tr.tot-row td.pname{background:var(--navy);color:#fff}
 
 
 <div class="filterbar">
+  <label>Month</label><select id="f-month" onchange="applyMonth()"><option>Current</option></select>
   <label>Practice</label><select id="f-practice" onchange="renderAll()"><option value="">All</option></select>
   <label>Status</label><select id="f-status" onchange="renderAll()"><option value="">All</option><option>Billed</option><option>Buffer</option><option>UnBilled</option><option>Bench</option><option>Onsite</option></select>
   <label>Client</label><select id="f-client" onchange="renderAll()"><option value="">All</option></select>
@@ -407,6 +408,8 @@ const WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbxSbXaYmTkLaOBeOEHND
 const SHEET_ID = '1mnOK_Ui4EATsbwkacDCodhrYO1aKu3THXMQTqdwuebc';
 const SHEET_NAME_CANDIDATES = ['Employee List 2026- 27','Employee List 2026-27','Employee List 2026 - 27','Employee List'];
 const SNAPSHOT_DATE = '10 Jun 2026';
+const DATA_JSON = 'data.json'; // committed by Apps Script; primary, month-aware source on GitHub Pages
+let RAW=[], MONTHS=['Current'], MONTH='Current';
 
 // Hiring requirements — from the "Requirements" block in the SystemC sheet tab.
 // Edit here (or move into the sheet later) when requirements change.
@@ -1099,6 +1102,31 @@ function fillFilters(){
   const fc=$('f-client'); fc.length=1;
   [...new Set(PROJ_ORDER.map(p=>PROJ_DEFS[p].client))].filter(c=>ALL.some(e=>e.client===c)).forEach(c=>fc.add(new Option(c==='—'?'Bench (no client)':c,c)));
 }
+function monthRow(e,month){
+  const m=(e.byMonth&&e.byMonth[month])||{};
+  const has=k=>m[k]!=null&&m[k]!=='';
+  return {EmpID:e.EmpID,Name:e.Name,Practice:e.Practice,Designation:e.Designation,YOE:e.YOE,
+    ReportsTo:has('ReportsTo')?m.ReportsTo:e.ReportsTo,
+    Project:has('Project')?m.Project:e.Project,
+    Status:(m.Status!=null)?m.Status:e.Status,
+    Allocation:e.Allocation,BilledUpto:e.BilledUpto,Plan:e.Plan,CurrentTask:e.CurrentTask,Remarks:e.Remarks};
+}
+function buildMonthSelect(){
+  const sel=$('f-month'); if(!sel) return; sel.length=0;
+  MONTHS.forEach(m=>sel.add(new Option(m==='Current'?'Current (live)':m,m)));
+  sel.value=MONTH;
+}
+function applyMonth(){
+  if(!RAW.length) return renderAll();
+  MONTH=$('f-month').value||'Current';
+  const fp=$('f-practice').value, fs=$('f-status').value, fc=$('f-client').value;
+  ALL=RAW.map(e=>fromMaster(monthRow(e,MONTH))).filter(Boolean);
+  fillFilters();
+  if([...$('f-practice').options].some(o=>o.value===fp)) $('f-practice').value=fp;
+  $('f-status').value=fs;
+  if([...$('f-client').options].some(o=>o.value===fc)) $('f-client').value=fc;
+  renderAll();
+}
 async function fetchWithTimeout(url,ms){
   const ctl=new AbortController(); const t=setTimeout(()=>ctl.abort(),ms);
   try{ const r=await fetch(url,{signal:ctl.signal}); clearTimeout(t); return r; }
@@ -1111,8 +1139,23 @@ async function boot(force){
   $('src-help-btn').style.display='none';
   let people=null, srcLabel='', lastErr='';
 
+  // 0) Committed month-keyed JSON (primary; refreshed by Apps Script via the GitHub API)
+  try{
+    const r=await fetchWithTimeout(DATA_JSON+'?t='+Date.now(),9000);
+    if(r.ok){
+      const j=await r.json();
+      if(j&&Array.isArray(j.employees)&&j.employees.length){
+        RAW=j.employees; MONTHS=(j.months&&j.months.length)?j.months:['Current'];
+        MONTH=MONTHS.includes('Current')?'Current':MONTHS[MONTHS.length-1];
+        buildMonthSelect();
+        people=RAW.map(e=>fromMaster(monthRow(e,MONTH))).filter(Boolean);
+        srcLabel='data.json (GitHub)';
+      }
+    }
+  }catch(e){ lastErr='data.json: '+(e.name==='AbortError'?'timed out':e.message||'failed'); }
+
   // 1) Apps Script web app (best — works even from a local file)
-  if(WEBAPP_URL){
+  if(!people && WEBAPP_URL){
     try{
       const r=await fetchWithTimeout(WEBAPP_URL+(WEBAPP_URL.includes('?')?'&':'?')+'t='+Date.now(),12000);
       const txt=await r.text();
