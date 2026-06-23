@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-23T09:04:43.869Z",
+ "generatedAt": "2026-06-23T10:04:44.267Z",
  "months": [
   "April",
   "May",
@@ -366,7 +366,7 @@
    "Designation": "Senior Engineer",
    "YOE": 5.1,
    "ReportsTo": "Aravind",
-   "Project": "DLI Soc   ",
+   "Project": "HSM/ RISCV",
    "Status": "UnBilled",
    "Allocation": 0,
    "BilledUpto": "NA",
@@ -374,16 +374,16 @@
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "FPGA",
-   "ProjectCode": "DLI",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
-     "Project": "DLI Soc   ",
+     "Project": "HSM/ RISCV",
      "Status": "UnBilled"
     },
     "April": {
      "ReportsTo": "Aravind",
-     "Project": "DLI Soc   ",
+     "Project": "HSM/ RISCV",
      "Status": "UnBilled"
     }
    }
@@ -395,7 +395,7 @@
    "Designation": "Senior Engineer",
    "YOE": 5.5,
    "ReportsTo": "Aravind",
-   "Project": "DLI Soc   ",
+   "Project": "HSM/ RISCV",
    "Status": "Billed",
    "Allocation": 0,
    "BilledUpto": "",
@@ -403,16 +403,16 @@
    "CurrentTask": "",
    "Remarks": "Billed in FLC",
    "DomainCode": "FPGA",
-   "ProjectCode": "DLI",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
-     "Project": "DLI Soc   ",
+     "Project": "HSM/ RISCV",
      "Status": "Billed"
     },
     "April": {
      "ReportsTo": "Aravind",
-     "Project": "DLI Soc   ",
+     "Project": "HSM/ RISCV",
      "Status": "Billed"
     }
    }
@@ -453,7 +453,7 @@
    "Designation": "Engineer I",
    "YOE": 2.1,
    "ReportsTo": "Aravind",
-   "Project": "DLI Soc   ",
+   "Project": "HSM/ RISCV",
    "Status": "UnBilled",
    "Allocation": 0,
    "BilledUpto": "NA",
@@ -461,16 +461,16 @@
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "FPGA",
-   "ProjectCode": "DLI",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
-     "Project": "DLI Soc   ",
+     "Project": "HSM/ RISCV",
      "Status": "UnBilled"
     },
     "April": {
      "ReportsTo": "Aravind",
-     "Project": "DLI Soc   ",
+     "Project": "HSM/ RISCV",
      "Status": "UnBilled"
     }
    }
@@ -482,7 +482,7 @@
    "Designation": "Engineer II",
    "YOE": 2,
    "ReportsTo": "Aravind",
-   "Project": "DLI Soc   ",
+   "Project": "HSM/ RISCV",
    "Status": "UnBilled",
    "Allocation": 0,
    "BilledUpto": "NA",
@@ -490,16 +490,16 @@
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "FPGA",
-   "ProjectCode": "DLI",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
-     "Project": "DLI Soc   ",
+     "Project": "HSM/ RISCV",
      "Status": "UnBilled"
     },
     "April": {
      "ReportsTo": "Aravind",
-     "Project": "DLI Soc   ",
+     "Project": "HSM/ RISCV",
      "Status": "UnBilled"
     }
    }
@@ -511,7 +511,7 @@
    "Designation": "Engineer I",
    "YOE": 0.8,
    "ReportsTo": "Aravind",
-   "Project": "DLI Soc   ",
+   "Project": "HSM/ RISCV",
    "Status": "UnBilled",
    "Allocation": 0,
    "BilledUpto": "NA",
@@ -519,16 +519,16 @@
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "FPGA",
-   "ProjectCode": "DLI",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
-     "Project": "DLI Soc   ",
+     "Project": "HSM/ RISCV",
      "Status": "UnBilled"
     },
     "April": {
      "ReportsTo": "Aravind",
-     "Project": "DLI Soc   ",
+     "Project": "HSM/ RISCV",
      "Status": "UnBilled"
     }
    }
