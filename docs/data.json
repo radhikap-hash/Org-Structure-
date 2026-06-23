@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-23T11:04:44.720Z",
+ "generatedAt": "2026-06-23T12:04:44.006Z",
  "months": [
   "April",
   "May",
@@ -1354,7 +1354,7 @@
    "ReportsTo": "Kameswara rao",
    "Project": "FLC",
    "Status": "Buffer Billed",
-   "Allocation": 0.7,
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "FLC hand off",
