@@ -785,6 +785,7 @@ const pillTxt=e=>{
     const prac=showPrac&&e.practice&&e.practice!=='Leadership'?e.practice:'';
     return `<div class="ocard ${lvlCls}" onclick="openPerson('${esc(e.id)}')">
       <div class="ocard-name">${esc(first2)}</div>
+      <div style="margin-top:2px"><span style="font:600 9px ui-monospace,SFMono-Regular,monospace;color:#2E5FAC;background:#eef2fb;border:1px solid #d6e0f5;border-radius:4px;padding:1px 5px;letter-spacing:.3px">${esc((PRAC_CODE[e.practice]||'OTH')+' · '+(e.proj||'BENCH'))}</span></div>
       ${desigYoe?`<div class="ocard-sub">${esc(desigYoe)}</div>`:''}
       ${prac?`<div class="ocard-prac">${esc(prac)}</div>`:''}
       <span class="ocard-pill ${pillCls(e)}">${esc(pillTxt(e))}</span>
