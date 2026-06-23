@@ -1,7 +1,8 @@
 {
- "generatedAt": "2026-06-22T15:36:22.112599+00:00",
+ "generatedAt": "2026-06-23T05:04:45.557Z",
  "months": [
-  "April 2026",
+  "April",
+  "May",
   "Current"
  ],
  "employees": [
@@ -10,11 +11,11 @@
    "Name": "Srikanth Neelam",
    "Practice": "",
    "Designation": "Director",
-   "YOE": "24",
+   "YOE": 24,
    "ReportsTo": "",
    "Project": "FLC",
-   "Status": "Billed",
-   "Allocation": "",
+   "Status": "Billed  ",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
@@ -25,12 +26,17 @@
     "Current": {
      "ReportsTo": "",
      "Project": "FLC",
-     "Status": "Billed"
+     "Status": "Billed  "
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "",
      "Project": "FLC",
      "Status": "Billed"
+    },
+    "May": {
+     "ReportsTo": "",
+     "Project": "FLC",
+     "Status": "Billed "
     }
    }
   },
@@ -39,11 +45,11 @@
    "Name": "Abhishek Vulapu",
    "Practice": "Program Manager",
    "Designation": "Program Manager",
-   "YOE": "14",
+   "YOE": 14,
    "ReportsTo": "Srikanth",
    "Project": "Renesas",
    "Status": "Billed",
-   "Allocation": "100",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
@@ -56,7 +62,7 @@
      "Project": "Renesas",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Srikanth",
      "Project": "Renesas",
      "Status": "Billed"
@@ -68,11 +74,11 @@
    "Name": "Prithvi Nagilla",
    "Practice": "Program Manager",
    "Designation": "Program Manager",
-   "YOE": "14",
+   "YOE": 14,
    "ReportsTo": "Shyam",
    "Project": "Smart IP Camera",
    "Status": "Buffer",
-   "Allocation": "70",
+   "Allocation": 0.7,
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
@@ -85,7 +91,7 @@
      "Project": "Smart IP Camera",
      "Status": "Buffer"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "Buffer"
@@ -97,11 +103,11 @@
    "Name": "Aravind Kumar Goud Kurra",
    "Practice": "SystemC Modelling",
    "Designation": "Staff Engineer",
-   "YOE": "8",
+   "YOE": 8,
    "ReportsTo": "Srikanth",
    "Project": "SmartSoC-ADI",
    "Status": "Billed",
-   "Allocation": "100",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
@@ -114,7 +120,7 @@
      "Project": "SmartSoC-ADI",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Srikanth",
      "Project": "SmartSoC-ADI",
      "Status": "Billed"
@@ -126,15 +132,15 @@
    "Name": "Sollapuram Kishore Reddy",
    "Practice": "SystemC Modelling",
    "Designation": "Engineer I",
-   "YOE": "1.1",
+   "YOE": 1.1,
    "ReportsTo": "Aravind",
    "Project": "SmartSoC-ADI",
    "Status": "Billed",
-   "Allocation": "100",
+   "Allocation": 1,
    "BilledUpto": "July",
-   "Plan": "",
+   "Plan": "Project May Extend",
    "CurrentTask": "Supporting DLI models",
-   "Remarks": "Need 4 engineers with 3-4 years of experience from August. Need 3 buffers(Trainees) for existing engineers.",
+   "Remarks": "Need 3 buffers(Trainees) for existing engineers",
    "DomainCode": "SYSC",
    "ProjectCode": "ADI",
    "byMonth": {
@@ -143,7 +149,7 @@
      "Project": "SmartSoC-ADI",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Aravind",
      "Project": "SmartSoC-ADI",
      "Status": "Billed"
@@ -152,16 +158,16 @@
   },
   {
    "EmpID": "VC_218",
-   "Name": "Kota Poojitha",
+   "Name": "Kota Poojitha ",
    "Practice": "SystemC Modelling",
    "Designation": "Engineer I",
-   "YOE": "0.9",
+   "YOE": 0.9,
    "ReportsTo": "Aravind",
    "Project": "SmartSoC-ADI",
    "Status": "Billed",
-   "Allocation": "100",
+   "Allocation": 1,
    "BilledUpto": "July",
-   "Plan": "",
+   "Plan": "Project May Extend",
    "CurrentTask": "Supporting DLI models",
    "Remarks": "",
    "DomainCode": "SYSC",
@@ -172,7 +178,7 @@
      "Project": "SmartSoC-ADI",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Aravind",
      "Project": "SmartSoC-ADI",
      "Status": "Billed"
@@ -184,13 +190,13 @@
    "Name": "Sudeep B Channalli",
    "Practice": "SystemC Modelling",
    "Designation": "Engineer I",
-   "YOE": "1.1",
+   "YOE": 1.1,
    "ReportsTo": "Aravind",
    "Project": "SmartSoC-ADI",
    "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
+   "Allocation": 1,
+   "BilledUpto": "July",
+   "Plan": "Project May Extend",
    "CurrentTask": "Supporting DLI models",
    "Remarks": "",
    "DomainCode": "SYSC",
@@ -201,7 +207,7 @@
      "Project": "SmartSoC-ADI",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Aravind",
      "Project": "SmartSoC-ADI",
      "Status": "Billed"
@@ -213,15 +219,15 @@
    "Name": "Yepuri Karthikeya",
    "Practice": "SystemC Modelling",
    "Designation": "Engineer I",
-   "YOE": "1.1",
+   "YOE": 1.1,
    "ReportsTo": "Aravind",
    "Project": "FLC IP Modelling",
    "Status": "Buffer Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
+   "Allocation": 1,
+   "BilledUpto": "August",
+   "Plan": "Project May Extend",
    "CurrentTask": "FLC Chip top modelling",
-   "Remarks": "Aravind will ask srikanth",
+   "Remarks": "Project Extension will know by July 1",
    "DomainCode": "SYSC",
    "ProjectCode": "FLC",
    "byMonth": {
@@ -230,7 +236,7 @@
      "Project": "FLC IP Modelling",
      "Status": "Buffer Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Aravind",
      "Project": "FLC IP Modelling",
      "Status": "BufferBilled"
@@ -242,27 +248,27 @@
    "Name": "G Sudarshan Reddy",
    "Practice": "SystemC Modelling",
    "Designation": "Engineer I",
-   "YOE": "0.7",
+   "YOE": 0.7,
    "ReportsTo": "Aravind",
    "Project": "FLC IP Modelling",
-   "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
+   "Status": "Buffer Billed",
+   "Allocation": 1,
+   "BilledUpto": "August",
+   "Plan": "Project May Extend",
    "CurrentTask": "QEMU bringup",
-   "Remarks": "Aravind will ask srikanth",
+   "Remarks": "Project Extension will know by July 1",
    "DomainCode": "SYSC",
    "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
      "Project": "FLC IP Modelling",
-     "Status": "Buffer"
+     "Status": "Buffer Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Aravind",
      "Project": "FLC IP Modelling",
-     "Status": "Buffer"
+     "Status": "BufferBilled"
     }
    }
   },
@@ -271,15 +277,15 @@
    "Name": "Kanturi Jeevan Sai",
    "Practice": "SystemC Modelling",
    "Designation": "Engineer I",
-   "YOE": "0.7",
+   "YOE": 0.7,
    "ReportsTo": "Aravind",
    "Project": "DLI Soc Modelling",
    "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
+   "Allocation": 1,
+   "BilledUpto": "NA",
+   "Plan": "System C Modelling Ramp Up",
    "CurrentTask": "Security IP modelling",
-   "Remarks": "Billing plan?",
+   "Remarks": "In House Development",
    "DomainCode": "SYSC",
    "ProjectCode": "DLI",
    "byMonth": {
@@ -288,7 +294,7 @@
      "Project": "DLI Soc Modelling",
      "Status": "Buffer"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Aravind",
      "Project": "DLI Soc Modelling",
      "Status": "Buffer"
@@ -300,15 +306,15 @@
    "Name": "Mutakoduru Sowmya",
    "Practice": "SystemC Modelling",
    "Designation": "Engineer I",
-   "YOE": "0.6",
+   "YOE": 0.6,
    "ReportsTo": "Aravind",
    "Project": "DLI Soc Modelling",
    "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
+   "Allocation": 1,
+   "BilledUpto": "NA",
+   "Plan": "System C Modelling Ramp Up",
    "CurrentTask": "Security IP modelling",
-   "Remarks": "",
+   "Remarks": "In House Development",
    "DomainCode": "SYSC",
    "ProjectCode": "DLI",
    "byMonth": {
@@ -317,7 +323,7 @@
      "Project": "DLI Soc Modelling",
      "Status": "Buffer"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Aravind",
      "Project": "DLI Soc Modelling",
      "Status": "Buffer"
@@ -329,15 +335,15 @@
    "Name": "Balijepalli Anil Kumar",
    "Practice": "SystemC Modelling",
    "Designation": "Trainee II",
-   "YOE": "0.4",
+   "YOE": 0.4,
    "ReportsTo": "Aravind",
    "Project": "DLI Soc Modelling",
    "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
+   "Allocation": 1,
+   "BilledUpto": "NA",
+   "Plan": "System C Modelling Ramp Up",
    "CurrentTask": "DMA model",
-   "Remarks": "",
+   "Remarks": "In House Development",
    "DomainCode": "SYSC",
    "ProjectCode": "DLI",
    "byMonth": {
@@ -346,7 +352,7 @@
      "Project": "DLI Soc Modelling",
      "Status": "Buffer"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Aravind",
      "Project": "DLI Soc Modelling",
      "Status": "Buffer"
@@ -358,13 +364,13 @@
    "Name": "Charan Raj Bommadeni",
    "Practice": "FPGA",
    "Designation": "Senior Engineer",
-   "YOE": "5.1",
+   "YOE": 5.1,
    "ReportsTo": "Aravind",
-   "Project": "DLI Soc",
+   "Project": "DLI Soc   ",
    "Status": "UnBilled",
-   "Allocation": "0",
-   "BilledUpto": "",
-   "Plan": "Staffing",
+   "Allocation": 0,
+   "BilledUpto": "NA",
+   "Plan": "HSM / RISCV Tasks",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "FPGA",
@@ -372,12 +378,12 @@
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
-     "Project": "DLI Soc",
+     "Project": "DLI Soc   ",
      "Status": "UnBilled"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Aravind",
-     "Project": "DLI Soc",
+     "Project": "DLI Soc   ",
      "Status": "UnBilled"
     }
    }
@@ -387,13 +393,13 @@
    "Name": "Sreekanth. Arati",
    "Practice": "FPGA",
    "Designation": "Senior Engineer",
-   "YOE": "5.5",
+   "YOE": 5.5,
    "ReportsTo": "Aravind",
-   "Project": "DLI Soc",
+   "Project": "DLI Soc   ",
    "Status": "Billed",
-   "Allocation": "0",
+   "Allocation": 0,
    "BilledUpto": "",
-   "Plan": "Staffing",
+   "Plan": "HSM / RISCV Tasks",
    "CurrentTask": "",
    "Remarks": "Billed in FLC",
    "DomainCode": "FPGA",
@@ -401,12 +407,12 @@
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
-     "Project": "DLI Soc",
+     "Project": "DLI Soc   ",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Aravind",
-     "Project": "DLI Soc",
+     "Project": "DLI Soc   ",
      "Status": "Billed"
     }
    }
@@ -416,13 +422,13 @@
    "Name": "Itla Sai Bharadwaj",
    "Practice": "FPGA",
    "Designation": "Senior Engineer",
-   "YOE": "4.1",
+   "YOE": 4.1,
    "ReportsTo": "Aravind",
    "Project": "FLC",
    "Status": "Billed",
-   "Allocation": "0",
+   "Allocation": 1,
    "BilledUpto": "",
-   "Plan": "Staffing",
+   "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "FPGA",
@@ -433,7 +439,7 @@
      "Project": "FLC",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Aravind",
      "Project": "FLC",
      "Status": "Billed"
@@ -445,13 +451,13 @@
    "Name": "Tejeswara Rao Padda",
    "Practice": "FPGA",
    "Designation": "Engineer I",
-   "YOE": "2.1",
+   "YOE": 2.1,
    "ReportsTo": "Aravind",
-   "Project": "DLI Soc",
+   "Project": "DLI Soc   ",
    "Status": "UnBilled",
-   "Allocation": "0",
-   "BilledUpto": "",
-   "Plan": "Staffing",
+   "Allocation": 0,
+   "BilledUpto": "NA",
+   "Plan": "HSM / RISCV Tasks",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "FPGA",
@@ -459,12 +465,12 @@
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
-     "Project": "DLI Soc",
+     "Project": "DLI Soc   ",
      "Status": "UnBilled"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Aravind",
-     "Project": "DLI Soc",
+     "Project": "DLI Soc   ",
      "Status": "UnBilled"
     }
    }
@@ -474,13 +480,13 @@
    "Name": "Mahammad Vaheed Pasha",
    "Practice": "FPGA",
    "Designation": "Engineer II",
-   "YOE": "2",
+   "YOE": 2,
    "ReportsTo": "Aravind",
-   "Project": "DLI Soc",
+   "Project": "DLI Soc   ",
    "Status": "UnBilled",
-   "Allocation": "0",
-   "BilledUpto": "",
-   "Plan": "Staffing",
+   "Allocation": 0,
+   "BilledUpto": "NA",
+   "Plan": "HSM / RISCV Tasks",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "FPGA",
@@ -488,12 +494,12 @@
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
-     "Project": "DLI Soc",
+     "Project": "DLI Soc   ",
      "Status": "UnBilled"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Aravind",
-     "Project": "DLI Soc",
+     "Project": "DLI Soc   ",
      "Status": "UnBilled"
     }
    }
@@ -503,13 +509,13 @@
    "Name": "Borusu Bala Satya Phaneendra",
    "Practice": "FPGA",
    "Designation": "Engineer I",
-   "YOE": "0.8",
+   "YOE": 0.8,
    "ReportsTo": "Aravind",
-   "Project": "DLI Soc",
+   "Project": "DLI Soc   ",
    "Status": "UnBilled",
-   "Allocation": "0",
-   "BilledUpto": "",
-   "Plan": "Staffing",
+   "Allocation": 0,
+   "BilledUpto": "NA",
+   "Plan": "HSM / RISCV Tasks",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "FPGA",
@@ -517,28 +523,28 @@
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
-     "Project": "DLI Soc",
+     "Project": "DLI Soc   ",
      "Status": "UnBilled"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Aravind",
-     "Project": "DLI Soc",
+     "Project": "DLI Soc   ",
      "Status": "UnBilled"
     }
    }
   },
   {
-   "EmpID": "VC_204",
+   "EmpID": "VC_204 ",
    "Name": "Swarna Latha Jakka",
    "Practice": "DV",
    "Designation": "Senior Staff Engineer",
-   "YOE": "15",
+   "YOE": 15,
    "ReportsTo": "Srikanth",
    "Project": "",
    "Status": "UnBilled",
-   "Allocation": "0",
+   "Allocation": 0,
    "BilledUpto": "",
-   "Plan": "New Project",
+   "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "DV",
@@ -549,7 +555,7 @@
      "Project": "",
      "Status": "UnBilled"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Srikanth",
      "Project": "",
      "Status": "Billed"
@@ -561,12 +567,12 @@
    "Name": "Haridasu Rudra Bhupathi Naidu",
    "Practice": "DV",
    "Designation": "Engineer II",
-   "YOE": "1.11",
+   "YOE": 1.11,
    "ReportsTo": "Swarna Latha",
    "Project": "ORCA",
    "Status": "Billed",
-   "Allocation": "30",
-   "BilledUpto": "June 15th",
+   "Allocation": 1,
+   "BilledUpto": "2026-07-31T18:30:00.000Z",
    "Plan": "",
    "CurrentTask": "Drop_c.1 release and code coverage",
    "Remarks": "",
@@ -578,7 +584,7 @@
      "Project": "ORCA",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Swarna Latha",
      "Project": "ORCA",
      "Status": "Billed"
@@ -590,26 +596,26 @@
    "Name": "Rayidi Luhitha",
    "Practice": "DV",
    "Designation": "Engineer I",
-   "YOE": "1.1",
+   "YOE": 1.1,
    "ReportsTo": "Swarna Latha",
-   "Project": "ORCA",
-   "Status": "Billed",
-   "Allocation": "30",
-   "BilledUpto": "June 15th",
-   "Plan": "",
+   "Project": "Protocol Verification",
+   "Status": "UnBilled",
+   "Allocation": 0,
+   "BilledUpto": "",
+   "Plan": "Protocol Verification",
    "CurrentTask": "",
-   "Remarks": "",
+   "Remarks": "UnBilled from June 16th, New Project may come , we will know by July end",
    "DomainCode": "DV",
-   "ProjectCode": "ORCA",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "Swarna Latha",
-     "Project": "ORCA",
-     "Status": "Billed"
+     "Project": "Protocol Verification",
+     "Status": "UnBilled"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Swarna Latha",
-     "Project": "ORCA",
+     "Project": "Protocol Verification",
      "Status": "Billed"
     }
    }
@@ -619,26 +625,26 @@
    "Name": "Chittimadha Anil",
    "Practice": "DV",
    "Designation": "Engineer I",
-   "YOE": "1.1",
+   "YOE": 1.1,
    "ReportsTo": "Swarna Latha",
-   "Project": "ORCA",
-   "Status": "Buffer",
-   "Allocation": "30",
+   "Project": "Protocol Verification",
+   "Status": "UnBilled",
+   "Allocation": 0,
    "BilledUpto": "",
-   "Plan": "New Project",
+   "Plan": "Protocol Verification",
    "CurrentTask": "",
-   "Remarks": "",
+   "Remarks": "UnBilled from June 16th, New Project may come , we will know by July end",
    "DomainCode": "DV",
-   "ProjectCode": "ORCA",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "Swarna Latha",
-     "Project": "ORCA",
-     "Status": "Buffer"
+     "Project": "Protocol Verification",
+     "Status": "UnBilled"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Swarna Latha",
-     "Project": "ORCA",
+     "Project": "Protocol Verification",
      "Status": "Buffer"
     }
    }
@@ -648,26 +654,26 @@
    "Name": "Pothula Bhargav Sai",
    "Practice": "DV",
    "Designation": "Engineer I",
-   "YOE": "1.1",
+   "YOE": 1.1,
    "ReportsTo": "Swarna Latha",
-   "Project": "ORCA",
-   "Status": "Buffer Billed",
-   "Allocation": "30",
-   "BilledUpto": "June 15th",
-   "Plan": "",
+   "Project": "Protocol Verification",
+   "Status": "UnBilled",
+   "Allocation": 0,
+   "BilledUpto": "",
+   "Plan": "Protocol Verification",
    "CurrentTask": "",
-   "Remarks": "",
+   "Remarks": "UnBilled from June 16th, New Project may come , we will know by July end",
    "DomainCode": "DV",
-   "ProjectCode": "ORCA",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "Swarna Latha",
-     "Project": "ORCA",
-     "Status": "Buffer Billed"
+     "Project": "Protocol Verification",
+     "Status": "UnBilled"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Swarna Latha",
-     "Project": "ORCA",
+     "Project": "Protocol Verification",
      "Status": "BufferBilled"
     }
    }
@@ -677,12 +683,41 @@
    "Name": "Tammana Viswanadha Muralidhar",
    "Practice": "DV",
    "Designation": "Engineer I",
-   "YOE": "1.1",
+   "YOE": 1.1,
+   "ReportsTo": "Swarna Latha",
+   "Project": "Protocol Verification",
+   "Status": "UnBilled",
+   "Allocation": 0,
+   "BilledUpto": "",
+   "Plan": "Protocol Verification",
+   "CurrentTask": "",
+   "Remarks": "UnBilled from June 16th, New Project may come , we will know by July end",
+   "DomainCode": "DV",
+   "ProjectCode": "BENCH",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "Swarna Latha",
+     "Project": "Protocol Verification",
+     "Status": "UnBilled"
+    },
+    "April": {
+     "ReportsTo": "Swarna Latha",
+     "Project": "Protocol Verification",
+     "Status": "Billed"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_220",
+   "Name": "Mudragada Sri Venkata Ram Pavan",
+   "Practice": "DV",
+   "Designation": "Engineer I",
+   "YOE": 0.9,
    "ReportsTo": "Swarna Latha",
    "Project": "ORCA",
    "Status": "Billed",
-   "Allocation": "30",
-   "BilledUpto": "June 15th",
+   "Allocation": 1,
+   "BilledUpto": "2026-07-31T18:30:00.000Z",
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
@@ -694,36 +729,7 @@
      "Project": "ORCA",
      "Status": "Billed"
     },
-    "April 2026": {
-     "ReportsTo": "Swarna Latha",
-     "Project": "ORCA",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_220",
-   "Name": "Mudragada Sri Venkata Ram Pavan",
-   "Practice": "DV",
-   "Designation": "Engineer I",
-   "YOE": "0.9",
-   "ReportsTo": "Swarna Latha",
-   "Project": "ORCA",
-   "Status": "Buffer",
-   "Allocation": "30",
-   "BilledUpto": "",
-   "Plan": "New Project",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "DV",
-   "ProjectCode": "ORCA",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Swarna Latha",
-     "Project": "ORCA",
-     "Status": "Buffer"
-    },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Swarna Latha",
      "Project": "ORCA",
      "Status": "Buffer"
@@ -735,11 +741,11 @@
    "Name": "Mani Gopi Nalajala",
    "Practice": "DV",
    "Designation": "Engineer II",
-   "YOE": "1.11",
+   "YOE": 1.11,
    "ReportsTo": "Srikanth",
    "Project": "FLC",
    "Status": "Billed",
-   "Allocation": "100",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
@@ -752,7 +758,7 @@
      "Project": "FLC",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Srikanth",
      "Project": "FLC",
      "Status": "Billed"
@@ -764,12 +770,12 @@
    "Name": "Aadesh Gonda",
    "Practice": "DV",
    "Designation": "Engineer I",
-   "YOE": "3.1",
+   "YOE": 3.1,
    "ReportsTo": "Swarna Latha",
    "Project": "Zerro Power systems",
    "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "6 Months from May 2026",
+   "Allocation": 1,
+   "BilledUpto": "2026-10-31T18:30:00.000Z",
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
@@ -781,7 +787,7 @@
      "Project": "Zerro Power systems",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Swarna Latha",
      "Project": "Zerro Power systems",
      "Status": "Billed"
@@ -793,26 +799,26 @@
    "Name": "A.V.S.Padma Sri",
    "Practice": "DV",
    "Designation": "Engineer I",
-   "YOE": "0.7",
+   "YOE": 0.7,
    "ReportsTo": "Swarna Latha",
-   "Project": "DLI Soc",
+   "Project": "Protocol Verification",
    "Status": "UnBilled",
-   "Allocation": "0",
+   "Allocation": 0,
    "BilledUpto": "",
-   "Plan": "Staffing",
-   "CurrentTask": "EMAC Bit file generation",
+   "Plan": "Protocol Verification",
+   "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "DV",
-   "ProjectCode": "DLI",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "Swarna Latha",
-     "Project": "DLI Soc",
+     "Project": "Protocol Verification",
      "Status": "UnBilled"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Swarna Latha",
-     "Project": "DLI Soc",
+     "Project": "Protocol Verification",
      "Status": "UnBilled"
     }
    }
@@ -822,14 +828,14 @@
    "Name": "Anasuri durgabhavani",
    "Practice": "DV",
    "Designation": "Engineer I",
-   "YOE": "0.6",
+   "YOE": 0.6,
    "ReportsTo": "Swarna Latha",
    "Project": "DLI Soc",
    "Status": "UnBilled",
-   "Allocation": "0",
+   "Allocation": 0,
    "BilledUpto": "",
-   "Plan": "Staffing",
-   "CurrentTask": "FPGA Bit file generation",
+   "Plan": "Protocol Verification",
+   "CurrentTask": "SPI UVM verification",
    "Remarks": "",
    "DomainCode": "DV",
    "ProjectCode": "DLI",
@@ -839,7 +845,7 @@
      "Project": "DLI Soc",
      "Status": "UnBilled"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Swarna Latha",
      "Project": "DLI Soc",
      "Status": "UnBilled"
@@ -851,25 +857,25 @@
    "Name": "Kona Sri Devi",
    "Practice": "DV",
    "Designation": "Engineer I",
-   "YOE": "0.6",
-   "ReportsTo": "Swarna Latha",
+   "YOE": 0.6,
+   "ReportsTo": "Swarna Latha ",
    "Project": "DLI Soc",
    "Status": "UnBilled",
-   "Allocation": "0",
+   "Allocation": 0,
    "BilledUpto": "",
-   "Plan": "Staffing",
-   "CurrentTask": "USB Bit file generation",
+   "Plan": "Protocol Verification",
+   "CurrentTask": "USB 2.0",
    "Remarks": "",
    "DomainCode": "DV",
    "ProjectCode": "DLI",
    "byMonth": {
     "Current": {
-     "ReportsTo": "Swarna Latha",
+     "ReportsTo": "Swarna Latha ",
      "Project": "DLI Soc",
      "Status": "UnBilled"
     },
-    "April 2026": {
-     "ReportsTo": "Swarna Latha",
+    "April": {
+     "ReportsTo": "Swarna Latha ",
      "Project": "DLI Soc",
      "Status": "UnBilled"
     }
@@ -880,11 +886,11 @@
    "Name": "AV Rajesh",
    "Practice": "Hardware",
    "Designation": "Director",
-   "YOE": "24",
+   "YOE": 24,
    "ReportsTo": "Srikanth",
    "Project": "FLC, SmartSoc(ProbeASIC)",
    "Status": "Billed",
-   "Allocation": "",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
@@ -897,7 +903,7 @@
      "Project": "FLC, SmartSoc(ProbeASIC)",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Srikanth",
      "Project": "FLC, SmartSoc(ProbeASIC)",
      "Status": "Billed"
@@ -913,11 +919,11 @@
    "ReportsTo": "Rajesh",
    "Project": "FLC",
    "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
+   "Allocation": 1,
+   "BilledUpto": "June End",
+   "Plan": "Belly Camera",
    "CurrentTask": "",
-   "Remarks": "",
+   "Remarks": "Billed in Belly Cam",
    "DomainCode": "HW",
    "ProjectCode": "FLC",
    "byMonth": {
@@ -926,7 +932,7 @@
      "Project": "FLC",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Rajesh",
      "Project": "FLC",
      "Status": "Billed"
@@ -938,13 +944,13 @@
    "Name": "Galipothu.Sunil Kumar",
    "Practice": "Hardware",
    "Designation": "Senior Staff Engineer",
-   "YOE": "18",
+   "YOE": 18,
    "ReportsTo": "Rajesh",
-   "Project": "FLC",
+   "Project": "FLC, Smart IP Camera, TRS",
    "Status": "Billed",
-   "Allocation": "",
-   "BilledUpto": "",
-   "Plan": "",
+   "Allocation": "40% + 30%+ 30%",
+   "BilledUpto": "June End",
+   "Plan": "Smart IP Camera, PVC Card",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "HW",
@@ -952,12 +958,12 @@
    "byMonth": {
     "Current": {
      "ReportsTo": "Rajesh",
-     "Project": "FLC",
+     "Project": "FLC, Smart IP Camera, TRS",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Rajesh",
-     "Project": "FLC",
+     "Project": "FLC, Smart IP Camera, TRS",
      "Status": "Billed"
     }
    }
@@ -967,26 +973,26 @@
    "Name": "Jampani Samudralankaiah",
    "Practice": "Hardware",
    "Designation": "Senior Engineer",
-   "YOE": "6.1",
+   "YOE": 6.1,
    "ReportsTo": "Rajesh",
-   "Project": "FLC",
+   "Project": "FLC, ZMD Edge, Belly Camera",
    "Status": "Billed",
-   "Allocation": "",
-   "BilledUpto": "",
-   "Plan": "",
+   "Allocation": "40% + 30%+ 30%",
+   "BilledUpto": "June End",
+   "Plan": "Belly Camera, ZMD Edge",
    "CurrentTask": "",
-   "Remarks": "",
+   "Remarks": "Billed in Belly Cam, FLC",
    "DomainCode": "HW",
    "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "Rajesh",
-     "Project": "FLC",
+     "Project": "FLC, ZMD Edge, Belly Camera",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Rajesh",
-     "Project": "FLC",
+     "Project": "FLC, ZMD Edge, Belly Camera",
      "Status": "Billed"
     }
    }
@@ -996,13 +1002,13 @@
    "Name": "Varimadla Anjaneyulu",
    "Practice": "Hardware",
    "Designation": "Engineer II",
-   "YOE": "7.10",
+   "YOE": 7.1,
    "ReportsTo": "Rajesh",
-   "Project": "FLC/TRS/Internal",
+   "Project": "FLC/TRS/Internal, RCI ITS",
    "Status": "Billed",
-   "Allocation": "100",
+   "Allocation": 1,
    "BilledUpto": "",
-   "Plan": "",
+   "Plan": "Support to all Projects",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "HW",
@@ -1010,12 +1016,12 @@
    "byMonth": {
     "Current": {
      "ReportsTo": "Rajesh",
-     "Project": "FLC/TRS/Internal",
+     "Project": "FLC/TRS/Internal, RCI ITS",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Rajesh",
-     "Project": "FLC/TRS/Internal",
+     "Project": "FLC/TRS/Internal, RCI ITS",
      "Status": "Billed"
     }
    }
@@ -1025,26 +1031,26 @@
    "Name": "Chintha Vivek Sai",
    "Practice": "Hardware",
    "Designation": "Engineer I",
-   "YOE": "0.7",
+   "YOE": 0.7,
    "ReportsTo": "Rajesh",
-   "Project": "FLC",
-   "Status": "Buffer",
-   "Allocation": "75",
-   "BilledUpto": "",
-   "Plan": "",
+   "Project": "FLC, DVRU/PVC/Belly Camera, TRS",
+   "Status": "Billed",
+   "Allocation": "70% + 30%",
+   "BilledUpto": "2026-08-31T18:30:00.000Z",
+   "Plan": "need to discuss in August",
    "CurrentTask": "",
-   "Remarks": "",
+   "Remarks": "Billed in Belly Cam",
    "DomainCode": "HW",
    "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "Rajesh",
-     "Project": "FLC",
-     "Status": "Buffer"
+     "Project": "FLC, DVRU/PVC/Belly Camera, TRS",
+     "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Rajesh",
-     "Project": "FLC",
+     "Project": "FLC, DVRU/PVC/Belly Camera, TRS",
      "Status": "Buffer"
     }
    }
@@ -1054,26 +1060,26 @@
    "Name": "Veeresh Meeniga",
    "Practice": "Hardware",
    "Designation": "Engineer I",
-   "YOE": "2.4",
+   "YOE": 2.4,
    "ReportsTo": "Rajesh",
-   "Project": "FLC",
-   "Status": "Buffer",
-   "Allocation": "25",
-   "BilledUpto": "",
-   "Plan": "",
+   "Project": "FLC, RCI ITS, RFSOC",
+   "Status": "Billed",
+   "Allocation": "25% + 50% + 25%",
+   "BilledUpto": "2026-11-30T18:30:00.000Z",
+   "Plan": "need to discuss in Nov",
    "CurrentTask": "",
-   "Remarks": "",
+   "Remarks": "Billed in RCI",
    "DomainCode": "HW",
    "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
      "ReportsTo": "Rajesh",
-     "Project": "FLC",
-     "Status": "Buffer"
+     "Project": "FLC, RCI ITS, RFSOC",
+     "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Rajesh",
-     "Project": "FLC",
+     "Project": "FLC, RCI ITS, RFSOC",
      "Status": "Buffer"
     }
    }
@@ -1083,13 +1089,13 @@
    "Name": "Ravada Ramesh",
    "Practice": "Hardware",
    "Designation": "Engineer II",
-   "YOE": "3.11",
+   "YOE": 3.11,
    "ReportsTo": "Rajesh",
    "Project": "TRS",
    "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
+   "Allocation": 1,
+   "BilledUpto": "2026-08-31T18:30:00.000Z",
+   "Plan": "need to discuss in August",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "HW",
@@ -1100,7 +1106,7 @@
      "Project": "TRS",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Rajesh",
      "Project": "TRS",
      "Status": "Billed"
@@ -1112,13 +1118,13 @@
    "Name": "Ruka Nandi Vardhan Reddy",
    "Practice": "Hardware",
    "Designation": "Engineer I",
-   "YOE": "2.4",
+   "YOE": 2.4,
    "ReportsTo": "Rajesh",
-   "Project": "TRS",
+   "Project": "TRS, ZMD Server, Voila Tech",
    "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
+   "Allocation": "50% + 25% +25%",
+   "BilledUpto": "2026-08-31T18:30:00.000Z",
+   "Plan": "need to discuss in August",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "HW",
@@ -1126,12 +1132,12 @@
    "byMonth": {
     "Current": {
      "ReportsTo": "Rajesh",
-     "Project": "TRS",
+     "Project": "TRS, ZMD Server, Voila Tech",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Rajesh",
-     "Project": "TRS",
+     "Project": "TRS, ZMD Server, Voila Tech",
      "Status": "Billed"
     }
    }
@@ -1141,13 +1147,13 @@
    "Name": "Keerthi Sepana",
    "Practice": "Hardware",
    "Designation": "Associate Engineer",
-   "YOE": "1",
+   "YOE": 1,
    "ReportsTo": "Rajesh",
-   "Project": "TRS",
+   "Project": "TRS, Voila Technologies",
    "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
+   "Allocation": "50% + 50%",
+   "BilledUpto": "2026-08-31T18:30:00.000Z",
+   "Plan": "need to discuss in August",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "HW",
@@ -1155,12 +1161,12 @@
    "byMonth": {
     "Current": {
      "ReportsTo": "Rajesh",
-     "Project": "TRS",
+     "Project": "TRS, Voila Technologies",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Rajesh",
-     "Project": "TRS",
+     "Project": "TRS, Voila Technologies",
      "Status": "Billed"
     }
    }
@@ -1170,11 +1176,11 @@
    "Name": "Harika Kunduru",
    "Practice": "Hardware",
    "Designation": "Engineer II",
-   "YOE": "3.9",
+   "YOE": 3.9,
    "ReportsTo": "Rajesh",
    "Project": "Smart IP Camera",
    "Status": "Billed",
-   "Allocation": "",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
@@ -1187,7 +1193,7 @@
      "Project": "Smart IP Camera",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Rajesh",
      "Project": "Smart IP Camera",
      "Status": "Billed"
@@ -1199,26 +1205,26 @@
    "Name": "Bommi Sandhya",
    "Practice": "Hardware",
    "Designation": "Engineer I",
-   "YOE": "0.7",
+   "YOE": 0.7,
    "ReportsTo": "Rajesh",
-   "Project": "Voila Tech",
+   "Project": "Voila Tech, Belly Camera, ZMD Edge, RCI ITS",
    "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
+   "Allocation": "40% + 20% + 20%+ 20%",
+   "BilledUpto": "2026-08-31T18:30:00.000Z",
+   "Plan": "need to discuss in August",
    "CurrentTask": "",
-   "Remarks": "",
+   "Remarks": "Billed in Voila Tech, RCI ITS, Belly Cam",
    "DomainCode": "HW",
    "ProjectCode": "VLT",
    "byMonth": {
     "Current": {
      "ReportsTo": "Rajesh",
-     "Project": "Voila Tech",
+     "Project": "Voila Tech, Belly Camera, ZMD Edge, RCI ITS",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Rajesh",
-     "Project": "Voila Tech",
+     "Project": "Voila Tech, Belly Camera, ZMD Edge, RCI ITS",
      "Status": "Billed"
     }
    }
@@ -1231,10 +1237,10 @@
    "YOE": "",
    "ReportsTo": "Rajesh",
    "Project": "Smart IP Camera",
-   "Status": "UnBilled",
-   "Allocation": "",
+   "Status": "Buffer",
+   "Allocation": 1,
    "BilledUpto": "",
-   "Plan": "",
+   "Plan": "Smart IP Camera",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "HW",
@@ -1243,9 +1249,9 @@
     "Current": {
      "ReportsTo": "Rajesh",
      "Project": "Smart IP Camera",
-     "Status": "UnBilled"
+     "Status": "Buffer"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Rajesh",
      "Project": "Smart IP Camera",
      "Status": "UnBilled"
@@ -1259,33 +1265,38 @@
    "Designation": "Consultant",
    "YOE": "",
    "ReportsTo": "Rajesh",
-   "Project": "Voila Tech",
+   "Project": "Voila Tech, TRS",
    "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
+   "Allocation": "50% + 50%",
+   "BilledUpto": "NA",
+   "Plan": "Voila Tech",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "HW",
-   "ProjectCode": "VLT",
+   "ProjectCode": "TRS",
    "byMonth": {
     "Current": {
      "ReportsTo": "Rajesh",
-     "Project": "Voila Tech",
+     "Project": "Voila Tech, TRS",
+     "Status": "Buffer"
+    },
+    "April": {
+     "ReportsTo": "Rajesh",
+     "Project": "Voila Tech, TRS",
      "Status": "Buffer"
     }
    }
   },
   {
    "EmpID": "VC_110",
-   "Name": "Shyam Kumar Thella",
+   "Name": "Shyam Kumar Thella  ",
    "Practice": "Embedded - Linux",
    "Designation": "Senior Staff Engineer",
-   "YOE": "11",
+   "YOE": 11,
    "ReportsTo": "Srikanth",
    "Project": "FLC, Renesas (NPU), Smart IP Camera",
    "Status": "Billed",
-   "Allocation": "",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
@@ -1298,7 +1309,7 @@
      "Project": "FLC, Renesas (NPU), Smart IP Camera",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Srikanth",
      "Project": "FLC, Renesas (NPU), Smart IP Camera",
      "Status": "Billed"
@@ -1310,13 +1321,13 @@
    "Name": "Buneboyina.Pavan Kalyan",
    "Practice": "Embedded - Linux",
    "Designation": "Engineer II",
-   "YOE": "2.3",
+   "YOE": 2.3,
    "ReportsTo": "Sasikanth",
    "Project": "Kandou",
    "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "3 Months",
-   "Plan": "",
+   "Allocation": 1,
+   "BilledUpto": "2026-08-31T18:30:00.000Z",
+   "Plan": "Project May Extend",
    "CurrentTask": "E21 , ANDES Bring up",
    "Remarks": "",
    "DomainCode": "EMBL",
@@ -1327,7 +1338,7 @@
      "Project": "Kandou",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Sasikanth",
      "Project": "Kandou",
      "Status": "BufferBilled"
@@ -1339,13 +1350,13 @@
    "Name": "Yeshwanth Namburi",
    "Practice": "Embedded - Linux",
    "Designation": "Engineer II",
-   "YOE": "2",
+   "YOE": 2,
    "ReportsTo": "Kameswara rao",
    "Project": "FLC",
-   "Status": "Buffer",
-   "Allocation": "70",
+   "Status": "Buffer Billed",
+   "Allocation": 0.7,
    "BilledUpto": "",
-   "Plan": "FLC",
+   "Plan": "",
    "CurrentTask": "FLC hand off",
    "Remarks": "Buffer Billed for shyam to replace Pavan B",
    "DomainCode": "EMBL",
@@ -1354,9 +1365,9 @@
     "Current": {
      "ReportsTo": "Kameswara rao",
      "Project": "FLC",
-     "Status": "Buffer"
+     "Status": "Buffer Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Kameswara rao",
      "Project": "FLC",
      "Status": "Buffer"
@@ -1368,13 +1379,13 @@
    "Name": "Gunupuru Pavan Kalyan",
    "Practice": "Embedded - Linux",
    "Designation": "Senior Engineer",
-   "YOE": "4.2",
+   "YOE": 4.2,
    "ReportsTo": "Shyam",
    "Project": "Edge",
    "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "3 months",
-   "Plan": "Edge",
+   "Allocation": 1,
+   "BilledUpto": "2026-07-31T18:30:00.000Z",
+   "Plan": "",
    "CurrentTask": "DDR",
    "Remarks": "",
    "DomainCode": "EMBL",
@@ -1385,7 +1396,7 @@
      "Project": "Edge",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Shyam",
      "Project": "Edge",
      "Status": "Billed"
@@ -1397,13 +1408,13 @@
    "Name": "Naveen Namburi",
    "Practice": "Embedded - Linux",
    "Designation": "Senior Engineer",
-   "YOE": "6.8",
+   "YOE": 6.8,
    "ReportsTo": "Sasikanth",
    "Project": "Kandou",
    "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
+   "Allocation": 1,
+   "BilledUpto": "2026-08-31T18:30:00.000Z",
+   "Plan": "Project May Extend",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "EMBL",
@@ -1414,7 +1425,7 @@
      "Project": "Kandou",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Sasikanth",
      "Project": "Kandou",
      "Status": "Billed"
@@ -1426,14 +1437,14 @@
    "Name": "Kiran Allada",
    "Practice": "Embedded - Linux",
    "Designation": "Senior Engineer",
-   "YOE": "5.5",
+   "YOE": 5.5,
    "ReportsTo": "Teja",
    "Project": "Gen5",
    "Status": "Billed",
-   "Allocation": "100",
+   "Allocation": 1,
    "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
+   "Plan": "Gen5",
+   "CurrentTask": "IT test development",
    "Remarks": "Billed in place off venkatesh nookatattu",
    "DomainCode": "EMBL",
    "ProjectCode": "GEN5",
@@ -1443,7 +1454,7 @@
      "Project": "Gen5",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "UnBilled"
@@ -1455,12 +1466,12 @@
    "Name": "Inampudi Phani Kumar",
    "Practice": "Embedded - Linux",
    "Designation": "Engineer I",
-   "YOE": "1.2",
+   "YOE": 1.2,
    "ReportsTo": "Shyam",
    "Project": "Renesas NPU",
    "Status": "Buffer Billed",
-   "Allocation": "100",
-   "BilledUpto": "June",
+   "Allocation": 1,
+   "BilledUpto": "2026-05-31T18:30:00.000Z",
    "Plan": "",
    "CurrentTask": "NPU Validation",
    "Remarks": "Customer has plan till Dec, not officially confirmed",
@@ -1472,7 +1483,7 @@
      "Project": "Renesas NPU",
      "Status": "Buffer Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Shyam",
      "Project": "Renesas NPU",
      "Status": "BufferBilled"
@@ -1484,12 +1495,12 @@
    "Name": "Bali Harsha Vardhan",
    "Practice": "Embedded - Linux",
    "Designation": "Engineer I",
-   "YOE": "1.1",
+   "YOE": 1.1,
    "ReportsTo": "Shyam",
    "Project": "Smart IP Camera",
    "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
+   "Allocation": 1,
+   "BilledUpto": "2026-11-30T18:30:00.000Z",
    "Plan": "",
    "CurrentTask": "Camera Sensor",
    "Remarks": "",
@@ -1501,7 +1512,7 @@
      "Project": "Smart IP Camera",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "UnBilled"
@@ -1510,15 +1521,15 @@
   },
   {
    "EmpID": "VC_219",
-   "Name": "S Vishnu Vardhan Reddy",
+   "Name": "S Vishnu Vardhan Reddy ",
    "Practice": "Embedded - Linux",
    "Designation": "Engineer I",
-   "YOE": "0.9",
+   "YOE": 0.9,
    "ReportsTo": "Shyam",
    "Project": "Smart IP Camera",
    "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
+   "Allocation": 1,
+   "BilledUpto": "2026-11-30T18:30:00.000Z",
    "Plan": "",
    "CurrentTask": "Optimization Pipelines",
    "Remarks": "",
@@ -1530,7 +1541,7 @@
      "Project": "Smart IP Camera",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "UnBilled"
@@ -1542,12 +1553,12 @@
    "Name": "Veleparampil Limin",
    "Practice": "Embedded - Linux",
    "Designation": "Engineer I",
-   "YOE": "0.9",
+   "YOE": 0.9,
    "ReportsTo": "Shyam",
    "Project": "Smart IP Camera",
    "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
+   "Allocation": 1,
+   "BilledUpto": "2026-11-30T18:30:00.000Z",
    "Plan": "",
    "CurrentTask": "Server app sensors",
    "Remarks": "",
@@ -1559,7 +1570,7 @@
      "Project": "Smart IP Camera",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "UnBilled"
@@ -1575,9 +1586,9 @@
    "ReportsTo": "Shyam",
    "Project": "Smart IP Camera",
    "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
+   "Allocation": 1,
+   "BilledUpto": "NA",
+   "Plan": "Smart IP Camera",
    "CurrentTask": "Training",
    "Remarks": "",
    "DomainCode": "EMBL",
@@ -1588,7 +1599,7 @@
      "Project": "Smart IP Camera",
      "Status": "Buffer"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "UnBilled"
@@ -1600,11 +1611,11 @@
    "Name": "SriTeja Allani",
    "Practice": "Embedded - S/W",
    "Designation": "Staff Engineer",
-   "YOE": "7",
+   "YOE": 7,
    "ReportsTo": "Srikanth",
    "Project": "Renesas",
    "Status": "Billed",
-   "Allocation": "",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
@@ -1617,7 +1628,7 @@
      "Project": "Renesas",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Srikanth",
      "Project": "Renesas",
      "Status": "Billed"
@@ -1632,9 +1643,9 @@
    "YOE": "",
    "ReportsTo": "Teja",
    "Project": "Gen5",
-   "Status": "Billed",
-   "Allocation": "80",
-   "BilledUpto": "June",
+   "Status": "UnBilled",
+   "Allocation": 0,
+   "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "Project May Extend - May 29th",
@@ -1644,9 +1655,9 @@
     "Current": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
-     "Status": "Billed"
+     "Status": "UnBilled"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "Billed"
@@ -1658,26 +1669,26 @@
    "Name": "Deepika Vandana",
    "Practice": "Embedded - S/W",
    "Designation": "Engineer I",
-   "YOE": "2.8",
-   "ReportsTo": "Sasikanth",
-   "Project": "DLI Soc",
-   "Status": "UnBilled",
-   "Allocation": "30",
-   "BilledUpto": "",
-   "Plan": "Staffing",
+   "YOE": 2.8,
+   "ReportsTo": "Shyam",
+   "Project": "Smart IP Camera",
+   "Status": "Billed",
+   "Allocation": 1,
+   "BilledUpto": "2026-11-30T18:30:00.000Z",
+   "Plan": "",
    "CurrentTask": "Infra development for DLI IPs, automating tests for low speed peripherals",
    "Remarks": "",
    "DomainCode": "EMSW",
-   "ProjectCode": "DLI",
+   "ProjectCode": "CAM",
    "byMonth": {
     "Current": {
-     "ReportsTo": "Sasikanth",
-     "Project": "DLI Soc",
-     "Status": "UnBilled"
+     "ReportsTo": "Shyam",
+     "Project": "Smart IP Camera",
+     "Status": "Billed"
     },
-    "April 2026": {
-     "ReportsTo": "Sasikanth",
-     "Project": "DLI Soc",
+    "April": {
+     "ReportsTo": "Shyam",
+     "Project": "Smart IP Camera",
      "Status": "UnBilled"
     }
    }
@@ -1687,26 +1698,26 @@
    "Name": "Panchangam. Sai Vinodh",
    "Practice": "Embedded - S/W",
    "Designation": "Engineer II",
-   "YOE": "2.3",
+   "YOE": 2.3,
    "ReportsTo": "Teja",
-   "Project": "Renesas",
+   "Project": "Renesas ( ISP )",
    "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "June",
+   "Allocation": 0.05,
+   "BilledUpto": "2026-11-30T18:30:00.000Z",
    "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "Project May Extend - May 29th",
+   "CurrentTask": "Support in meetings/JIRA updates",
+   "Remarks": "Can be used for other projects, only need to join weekly meeting of ISP",
    "DomainCode": "EMSW",
    "ProjectCode": "REN",
    "byMonth": {
     "Current": {
      "ReportsTo": "Teja",
-     "Project": "Renesas",
+     "Project": "Renesas ( ISP )",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Teja",
-     "Project": "Renesas",
+     "Project": "Renesas ( ISP )",
      "Status": "Billed"
     }
    }
@@ -1716,26 +1727,26 @@
    "Name": "S Noor Mahammad",
    "Practice": "Embedded - S/W",
    "Designation": "Engineer II",
-   "YOE": "2.3",
+   "YOE": 2.3,
    "ReportsTo": "Teja",
-   "Project": "Renesas",
+   "Project": "Renesas ( ISP )",
    "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "June",
+   "Allocation": 0.25,
+   "BilledUpto": "2026-11-30T18:30:00.000Z",
    "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "Project May Extend - May 29th",
+   "CurrentTask": "Support Sai Kiran and Ameer in CISP development and in meetings/JIRA updates",
+   "Remarks": "Is responsible for reviewing Sai Kiran's work and Ameer's work and guiding them to continue ISP development",
    "DomainCode": "EMSW",
    "ProjectCode": "REN",
    "byMonth": {
     "Current": {
      "ReportsTo": "Teja",
-     "Project": "Renesas",
+     "Project": "Renesas ( ISP )",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Teja",
-     "Project": "Renesas",
+     "Project": "Renesas ( ISP )",
      "Status": "Billed"
     }
    }
@@ -1745,7 +1756,7 @@
    "Name": "Bhimineni.Pravallika",
    "Practice": "Embedded - S/W",
    "Designation": "Engineer II",
-   "YOE": "2.3",
+   "YOE": 2.3,
    "ReportsTo": "Kiran Allada",
    "Project": "Internal ( Delivery Robot )",
    "Status": "UnBilled",
@@ -1762,7 +1773,7 @@
      "Project": "Internal ( Delivery Robot )",
      "Status": "UnBilled"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Kiran Allada",
      "Project": "Internal ( Delivery Robot )",
      "Status": "UnBilled"
@@ -1774,26 +1785,26 @@
    "Name": "Mallikharjun Palasa",
    "Practice": "Embedded - S/W",
    "Designation": "Engineer II",
-   "YOE": "4.5",
+   "YOE": 4.5,
    "ReportsTo": "Teja",
-   "Project": "Renesas",
-   "Status": "Billed",
-   "Allocation": "60 ( Ramping up Parallel )",
-   "BilledUpto": "June",
+   "Project": "",
+   "Status": "UnBilled",
+   "Allocation": 0,
+   "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
-   "Remarks": "Project May Extend - May 29th",
+   "Remarks": "UnBilled from June 22",
    "DomainCode": "EMSW",
-   "ProjectCode": "REN",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "Teja",
-     "Project": "Renesas",
-     "Status": "Billed"
+     "Project": "",
+     "Status": "UnBilled"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Teja",
-     "Project": "Renesas",
+     "Project": "",
      "Status": "Billed"
     }
    }
@@ -1803,7 +1814,7 @@
    "Name": "Tappeta Sai Lakshmi Geetha",
    "Practice": "Embedded - S/W",
    "Designation": "Engineer II",
-   "YOE": "2",
+   "YOE": 2,
    "ReportsTo": "Kiran Allada",
    "Project": "Internal ( Delivery Robot )",
    "Status": "UnBilled",
@@ -1820,7 +1831,7 @@
      "Project": "Internal ( Delivery Robot )",
      "Status": "UnBilled"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Kiran Allada",
      "Project": "Internal ( Delivery Robot )",
      "Status": "UnBilled"
@@ -1832,11 +1843,11 @@
    "Name": "Ullangula Aparna",
    "Practice": "Embedded - S/W",
    "Designation": "Engineer II",
-   "YOE": "2",
+   "YOE": 2,
    "ReportsTo": "Kameswara rao",
    "Project": "FLC",
-   "Status": "Buffer",
-   "Allocation": "100",
+   "Status": "Buffer Billed",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "Backup for Poorna in FLC, poorna will move to Kandou",
    "CurrentTask": "",
@@ -1847,9 +1858,9 @@
     "Current": {
      "ReportsTo": "Kameswara rao",
      "Project": "FLC",
-     "Status": "Buffer"
+     "Status": "Buffer Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Kameswara rao",
      "Project": "FLC",
      "Status": "Billed"
@@ -1861,15 +1872,15 @@
    "Name": "Chandaka Srinivasarao",
    "Practice": "Embedded - S/W",
    "Designation": "Senior Engineer",
-   "YOE": "3.11",
+   "YOE": 3.11,
    "ReportsTo": "Kameswara rao",
    "Project": "Renesas FSP",
    "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "Dont know",
-   "Plan": "",
-   "CurrentTask": "Preparation for Reneses MCU",
-   "Remarks": "",
+   "Allocation": 1,
+   "BilledUpto": "2026-08-31T18:30:00.000Z",
+   "Plan": "FSP",
+   "CurrentTask": "Preparation for Reneses FSP",
+   "Remarks": "Billing Depends on Tasks done",
    "DomainCode": "EMSW",
    "ProjectCode": "FSP",
    "byMonth": {
@@ -1878,7 +1889,7 @@
      "Project": "Renesas FSP",
      "Status": "Buffer"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
      "Status": "UnBilled"
@@ -1890,24 +1901,24 @@
    "Name": "Nokatattu Venkatesh",
    "Practice": "Embedded - S/W",
    "Designation": "Senior Engineer",
-   "YOE": "5.1",
+   "YOE": 5.1,
    "ReportsTo": "Teja",
    "Project": "Gen5",
-   "Status": "Buffer",
-   "Allocation": "100",
+   "Status": "UnBilled",
+   "Allocation": 0,
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
-   "Remarks": "Back up for naveen namburi in Gen5",
+   "Remarks": "Unbilled from June 8",
    "DomainCode": "EMSW",
    "ProjectCode": "GEN5",
    "byMonth": {
     "Current": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
-     "Status": "Buffer"
+     "Status": "UnBilled"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "UnBilled"
@@ -1919,15 +1930,15 @@
    "Name": "Akhila Reddy Addula",
    "Practice": "Embedded - S/W",
    "Designation": "Senior Engineer",
-   "YOE": "6.10",
+   "YOE": 6.1,
    "ReportsTo": "Teja",
    "Project": "Gen5",
    "Status": "Billed",
-   "Allocation": "100",
+   "Allocation": 1,
    "BilledUpto": "June",
    "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "Project May Extend - May 29th",
+   "CurrentTask": "Lead for Gen5 IT, L1 reviews and debug",
+   "Remarks": "",
    "DomainCode": "EMSW",
    "ProjectCode": "GEN5",
    "byMonth": {
@@ -1936,7 +1947,7 @@
      "Project": "Gen5",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "UnBilled"
@@ -1948,26 +1959,26 @@
    "Name": "Subramanyam G",
    "Practice": "Embedded - S/W",
    "Designation": "Engineer I",
-   "YOE": "1.11",
+   "YOE": 1.11,
    "ReportsTo": "Shyam",
-   "Project": "Parking, Edge",
-   "Status": "Buffer",
-   "Allocation": "50 + 50",
+   "Project": "Parking",
+   "Status": "Billed",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "LoRa gateway change for 8 channels",
-   "Remarks": "Srikanth",
+   "Remarks": "",
    "DomainCode": "EMSW",
    "ProjectCode": "EDGE",
    "byMonth": {
     "Current": {
      "ReportsTo": "Shyam",
-     "Project": "Parking, Edge",
-     "Status": "Buffer"
+     "Project": "Parking",
+     "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Shyam",
-     "Project": "Parking, Edge",
+     "Project": "Parking",
      "Status": "UnBilled"
     }
    }
@@ -1977,13 +1988,13 @@
    "Name": "Yaswanth E",
    "Practice": "Embedded - S/W",
    "Designation": "Engineer I",
-   "YOE": "1.9",
+   "YOE": 1.1,
    "ReportsTo": "Sasikanth",
-   "Project": "DLI Soc",
+   "Project": "DLI Soc   ",
    "Status": "UnBilled",
-   "Allocation": "30",
-   "BilledUpto": "",
-   "Plan": "Staffing",
+   "Allocation": 0.3,
+   "BilledUpto": "NA",
+   "Plan": "",
    "CurrentTask": "bluetootha, wifi spec, drivers understanding",
    "Remarks": "",
    "DomainCode": "EMSW",
@@ -1991,12 +2002,12 @@
    "byMonth": {
     "Current": {
      "ReportsTo": "Sasikanth",
-     "Project": "DLI Soc",
+     "Project": "DLI Soc   ",
      "Status": "UnBilled"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Sasikanth",
-     "Project": "DLI Soc",
+     "Project": "DLI Soc   ",
      "Status": "UnBilled"
     }
    }
@@ -2006,15 +2017,15 @@
    "Name": "Geetha Mounika V",
    "Practice": "Embedded - S/W",
    "Designation": "Engineer I",
-   "YOE": "1.11",
+   "YOE": 1.11,
    "ReportsTo": "Teja",
    "Project": "Gen5",
    "Status": "Billed",
-   "Allocation": "100",
+   "Allocation": 1,
    "BilledUpto": "June",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "Project May Extend - May 29th",
+   "Plan": "Gen5",
+   "CurrentTask": "Sample app development",
+   "Remarks": "",
    "DomainCode": "EMSW",
    "ProjectCode": "GEN5",
    "byMonth": {
@@ -2023,7 +2034,7 @@
      "Project": "Gen5",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "Billed"
@@ -2035,15 +2046,15 @@
    "Name": "Chandrika K",
    "Practice": "Embedded - S/W",
    "Designation": "Engineer I",
-   "YOE": "1.11",
+   "YOE": 1.11,
    "ReportsTo": "Kameswara rao",
    "Project": "Renesas FSP",
    "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "Dont know",
-   "Plan": "",
-   "CurrentTask": "Preparation for Reneses MCU",
-   "Remarks": "",
+   "Allocation": 1,
+   "BilledUpto": "2026-08-31T18:30:00.000Z",
+   "Plan": "FSP",
+   "CurrentTask": "Preparation for Reneses FSP",
+   "Remarks": "Billing Depends on Tasks done",
    "DomainCode": "EMSW",
    "ProjectCode": "FSP",
    "byMonth": {
@@ -2052,7 +2063,7 @@
      "Project": "Renesas FSP",
      "Status": "Buffer"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
      "Status": "UnBilled"
@@ -2064,14 +2075,14 @@
    "Name": "Pavani D S",
    "Practice": "Embedded - S/W",
    "Designation": "Engineer I",
-   "YOE": "1.11",
+   "YOE": 1.11,
    "ReportsTo": "Teja",
    "Project": "Gen5",
    "Status": "Buffer",
-   "Allocation": "100",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "",
-   "CurrentTask": "",
+   "CurrentTask": "Buffer for Kiran",
    "Remarks": "",
    "DomainCode": "EMSW",
    "ProjectCode": "GEN5",
@@ -2081,7 +2092,7 @@
      "Project": "Gen5",
      "Status": "Buffer"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "Billed"
@@ -2093,15 +2104,15 @@
    "Name": "Hari Chandana K",
    "Practice": "Embedded - S/W",
    "Designation": "Engineer I",
-   "YOE": "1.11",
+   "YOE": 1.11,
    "ReportsTo": "Teja",
    "Project": "Gen5",
    "Status": "Billed",
-   "Allocation": "100",
+   "Allocation": 1,
    "BilledUpto": "June",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "Project May Extend - May 29th",
+   "Plan": "Gen5",
+   "CurrentTask": "IT development",
+   "Remarks": "",
    "DomainCode": "EMSW",
    "ProjectCode": "GEN5",
    "byMonth": {
@@ -2110,7 +2121,7 @@
      "Project": "Gen5",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "Billed"
@@ -2122,15 +2133,15 @@
    "Name": "Pujitha Uttharkar",
    "Practice": "Embedded - S/W",
    "Designation": "Engineer II",
-   "YOE": "2.11",
+   "YOE": 2.11,
    "ReportsTo": "Teja",
    "Project": "Gen5",
    "Status": "Billed",
-   "Allocation": "100",
+   "Allocation": 1,
    "BilledUpto": "June",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "Project May Extend - May 29th",
+   "Plan": "Gen5",
+   "CurrentTask": "IT development",
+   "Remarks": "",
    "DomainCode": "EMSW",
    "ProjectCode": "GEN5",
    "byMonth": {
@@ -2139,7 +2150,7 @@
      "Project": "Gen5",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "Billed"
@@ -2151,26 +2162,26 @@
    "Name": "Kantipudi Sri Sai Kiran",
    "Practice": "Embedded - S/W",
    "Designation": "Engineer I",
-   "YOE": "1.2",
+   "YOE": 1.2,
    "ReportsTo": "Teja",
-   "Project": "Renesas",
-   "Status": "Buffer",
-   "Allocation": "100",
+   "Project": "Renesas ( ISP )",
+   "Status": "Buffer Billed",
+   "Allocation": 1,
    "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
+   "Plan": "Ramp-up on ISP",
+   "CurrentTask": "ISP IT testing and development",
+   "Remarks": "Buffer Billed in Place of Vinodh from June 22",
    "DomainCode": "EMSW",
    "ProjectCode": "REN",
    "byMonth": {
     "Current": {
      "ReportsTo": "Teja",
-     "Project": "Renesas",
-     "Status": "Buffer"
+     "Project": "Renesas ( ISP )",
+     "Status": "Buffer Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Teja",
-     "Project": "Renesas",
+     "Project": "Renesas ( ISP )",
      "Status": "Buffer"
     }
    }
@@ -2180,26 +2191,26 @@
    "Name": "T Harish",
    "Practice": "Embedded - S/W",
    "Designation": "Engineer I",
-   "YOE": "1.1",
-   "ReportsTo": "Sasikanth",
-   "Project": "DLI Soc",
+   "YOE": 1.1,
+   "ReportsTo": "Kameswara rao",
+   "Project": "Renesas FSP",
    "Status": "UnBilled",
-   "Allocation": "50",
-   "BilledUpto": "",
-   "Plan": "Staffing",
-   "CurrentTask": "Bood code development is completed, working on bringup of USB",
-   "Remarks": "",
+   "Allocation": 1,
+   "BilledUpto": "NA",
+   "Plan": "Ready for Client Exposure",
+   "CurrentTask": "Preparation for Reneses FSP",
+   "Remarks": "Billing Depends on Tasks Done in FSP Project",
    "DomainCode": "EMSW",
-   "ProjectCode": "DLI",
+   "ProjectCode": "FSP",
    "byMonth": {
     "Current": {
-     "ReportsTo": "Sasikanth",
-     "Project": "DLI Soc",
+     "ReportsTo": "Kameswara rao",
+     "Project": "Renesas FSP",
      "Status": "UnBilled"
     },
-    "April 2026": {
-     "ReportsTo": "Sasikanth",
-     "Project": "DLI Soc",
+    "April": {
+     "ReportsTo": "Kameswara rao",
+     "Project": "Renesas FSP",
      "Status": "UnBilled"
     }
    }
@@ -2209,13 +2220,13 @@
    "Name": "Kolapalli Vyshnavi Sai",
    "Practice": "Embedded - S/W",
    "Designation": "Engineer I",
-   "YOE": "3.1",
+   "YOE": 3.1,
    "ReportsTo": "Kameswara rao",
    "Project": "FLC",
-   "Status": "Buffer",
-   "Allocation": "50",
+   "Status": "Buffer Billed",
+   "Allocation": 0.5,
    "BilledUpto": "",
-   "Plan": "Buffer in place of Pavan G for FLC",
+   "Plan": "",
    "CurrentTask": "-",
    "Remarks": "",
    "DomainCode": "EMSW",
@@ -2224,9 +2235,9 @@
     "Current": {
      "ReportsTo": "Kameswara rao",
      "Project": "FLC",
-     "Status": "Buffer"
+     "Status": "Buffer Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Kameswara rao",
      "Project": "FLC",
      "Status": "UnBilled"
@@ -2238,15 +2249,15 @@
    "Name": "Gorli Poorna Lakshmi Praneeth",
    "Practice": "Embedded - S/W",
    "Designation": "Engineer I",
-   "YOE": "0.9",
+   "YOE": 0.9,
    "ReportsTo": "Kameswara rao",
    "Project": "Renesas FSP",
    "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "Dont know",
-   "Plan": "",
-   "CurrentTask": "Preparation for Reneses MCU",
-   "Remarks": "",
+   "Allocation": 1,
+   "BilledUpto": "2026-08-31T18:30:00.000Z",
+   "Plan": "FSP",
+   "CurrentTask": "Preparation for Reneses FSP",
+   "Remarks": "Billing Depends on Tasks done",
    "DomainCode": "EMSW",
    "ProjectCode": "FSP",
    "byMonth": {
@@ -2255,7 +2266,7 @@
      "Project": "Renesas FSP",
      "Status": "Buffer"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
      "Status": "Buffer"
@@ -2264,17 +2275,17 @@
   },
   {
    "EmpID": "VC_222",
-   "Name": "Undamatla Santhoshi Mani",
+   "Name": "Undamatla Santhoshi Mani ",
    "Practice": "Embedded - S/W",
    "Designation": "Engineer I",
-   "YOE": "0.9",
+   "YOE": 0.9,
    "ReportsTo": "Shyam",
    "Project": "Smart IP Camera",
-   "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "",
+   "Status": "Billed",
+   "Allocation": 1,
+   "BilledUpto": "2026-11-30T18:30:00.000Z",
    "Plan": "",
-   "CurrentTask": "Tuning and Caliberation",
+   "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "EMSW",
    "ProjectCode": "CAM",
@@ -2282,9 +2293,9 @@
     "Current": {
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
-     "Status": "Buffer"
+     "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "UnBilled"
@@ -2299,21 +2310,21 @@
    "YOE": "",
    "ReportsTo": "Sasikanth",
    "Project": "Kandou",
-   "Status": "UnBilled",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "Kandou",
+   "Status": "Billed",
+   "Allocation": 1,
+   "BilledUpto": "2026-08-31T18:30:00.000Z",
+   "Plan": "Project May Extend",
    "CurrentTask": "",
-   "Remarks": "Kranthi",
+   "Remarks": "",
    "DomainCode": "EMSW",
    "ProjectCode": "KAN",
    "byMonth": {
     "Current": {
      "ReportsTo": "Sasikanth",
      "Project": "Kandou",
-     "Status": "UnBilled"
+     "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Sasikanth",
      "Project": "Kandou",
      "Status": "UnBilled"
@@ -2329,11 +2340,11 @@
    "ReportsTo": "Kameswara rao",
    "Project": "Renesas FSP",
    "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "Dont know",
-   "Plan": "",
-   "CurrentTask": "Preparation for Reneses MCU",
-   "Remarks": "",
+   "Allocation": 1,
+   "BilledUpto": "2026-08-31T18:30:00.000Z",
+   "Plan": "FSP",
+   "CurrentTask": "Preparation for Reneses FSP",
+   "Remarks": "Billing Depends on Tasks done",
    "DomainCode": "EMSW",
    "ProjectCode": "FSP",
    "byMonth": {
@@ -2342,7 +2353,7 @@
      "Project": "Renesas FSP",
      "Status": "Buffer"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
      "Status": "UnBilled"
@@ -2354,11 +2365,11 @@
    "Name": "SasiKanth Golla",
    "Practice": "Embedded - Validation",
    "Designation": "Senior Staff Engineer",
-   "YOE": "14",
+   "YOE": 14,
    "ReportsTo": "Srikanth",
    "Project": "Kandou",
    "Status": "Billed",
-   "Allocation": "100",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "Kandou",
    "CurrentTask": "",
@@ -2371,7 +2382,7 @@
      "Project": "Kandou",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Srikanth",
      "Project": "Kandou",
      "Status": "Billed"
@@ -2383,11 +2394,11 @@
    "Name": "Jithendran Ponnusamy",
    "Practice": "Embedded - Validation",
    "Designation": "Senior Engineer",
-   "YOE": "4.1",
+   "YOE": 4.1,
    "ReportsTo": "Srikanth",
    "Project": "Renesas",
    "Status": "Billed",
-   "Allocation": "100",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
@@ -2400,7 +2411,7 @@
      "Project": "Renesas",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Srikanth",
      "Project": "Renesas",
      "Status": "Billed"
@@ -2412,13 +2423,13 @@
    "Name": "Kamasani Poorna",
    "Practice": "Embedded - Validation",
    "Designation": "Engineer II",
-   "YOE": "2.2",
+   "YOE": 2.2,
    "ReportsTo": "Sasikanth",
    "Project": "Kandou",
    "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
+   "Allocation": 1,
+   "BilledUpto": "2026-08-31T18:30:00.000Z",
+   "Plan": "Project May Extend",
    "CurrentTask": "D2D",
    "Remarks": "",
    "DomainCode": "EMVL",
@@ -2429,7 +2440,7 @@
      "Project": "Kandou",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Sasikanth",
      "Project": "Kandou",
      "Status": "Billed"
@@ -2441,15 +2452,15 @@
    "Name": "LingaSwamy Shyaga",
    "Practice": "Embedded - Validation",
    "Designation": "Senior Engineer",
-   "YOE": "7.9",
+   "YOE": 7.9,
    "ReportsTo": "Shyam",
    "Project": "Renesas NPU",
    "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "June",
-   "Plan": "Customer has plan till Dec, not officially confirmed",
+   "Allocation": 1,
+   "BilledUpto": "2026-05-31T18:30:00.000Z",
+   "Plan": "",
    "CurrentTask": "NPU Validation",
-   "Remarks": "",
+   "Remarks": "Customer has plan till Dec, not officially confirmed",
    "DomainCode": "EMVL",
    "ProjectCode": "NPU",
    "byMonth": {
@@ -2458,7 +2469,7 @@
      "Project": "Renesas NPU",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Shyam",
      "Project": "Renesas NPU",
      "Status": "Billed"
@@ -2470,14 +2481,14 @@
    "Name": "Akash R",
    "Practice": "Embedded - Validation",
    "Designation": "Engineer I",
-   "YOE": "1.11",
+   "YOE": 1.11,
    "ReportsTo": "Teja",
    "Project": "Gen5",
    "Status": "Billed",
-   "Allocation": "100",
+   "Allocation": 1,
    "BilledUpto": "June",
-   "Plan": "",
-   "CurrentTask": "",
+   "Plan": "Gen5",
+   "CurrentTask": "IT, UT development and testing",
    "Remarks": "",
    "DomainCode": "EMVL",
    "ProjectCode": "GEN5",
@@ -2487,7 +2498,7 @@
      "Project": "Gen5",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "Billed"
@@ -2499,11 +2510,11 @@
    "Name": "Sai Gandhi A",
    "Practice": "Embedded - Validation",
    "Designation": "Engineer I",
-   "YOE": "1.11",
+   "YOE": 1.11,
    "ReportsTo": "Kameswara rao",
    "Project": "FLC",
    "Status": "Billed",
-   "Allocation": "100",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "IPM, RC",
@@ -2516,7 +2527,7 @@
      "Project": "FLC",
      "Status": "Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Kameswara rao",
      "Project": "FLC",
      "Status": "Billed"
@@ -2528,14 +2539,14 @@
    "Name": "Yeshasri. S",
    "Practice": "Embedded - Validation",
    "Designation": "Engineer I",
-   "YOE": "1.11",
+   "YOE": 1.11,
    "ReportsTo": "Teja",
    "Project": "Gen5",
    "Status": "Buffer",
-   "Allocation": "100",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "",
-   "CurrentTask": "",
+   "CurrentTask": "Buffer for IT testing",
    "Remarks": "",
    "DomainCode": "EMVL",
    "ProjectCode": "GEN5",
@@ -2545,7 +2556,7 @@
      "Project": "Gen5",
      "Status": "Buffer"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "UnBilled"
@@ -2561,7 +2572,7 @@
    "ReportsTo": "Srikanth",
    "Project": "Renesas FSP",
    "Status": "Buffer",
-   "Allocation": "",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
@@ -2574,7 +2585,7 @@
      "Project": "Renesas FSP",
      "Status": "Buffer"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Srikanth",
      "Project": "Renesas FSP",
      "Status": "UnBilled"
@@ -2586,26 +2597,26 @@
    "Name": "Hemanth Aare",
    "Practice": "Embedded - Validation",
    "Designation": "Engineer I",
-   "YOE": "2.1",
-   "ReportsTo": "Sasikanth",
-   "Project": "Self Learning",
+   "YOE": 2.1,
+   "ReportsTo": "Kameswara rao",
+   "Project": "Renesas FSP",
    "Status": "UnBilled",
-   "Allocation": "0",
-   "BilledUpto": "",
-   "Plan": "New Project",
-   "CurrentTask": "-",
-   "Remarks": "",
+   "Allocation": 1,
+   "BilledUpto": "NA",
+   "Plan": "Ready for Client Exposure",
+   "CurrentTask": "Preparation for Reneses FSP",
+   "Remarks": "Billing Depends on Tasks done in FSP Project",
    "DomainCode": "EMVL",
-   "ProjectCode": "BENCH",
+   "ProjectCode": "FSP",
    "byMonth": {
     "Current": {
-     "ReportsTo": "Sasikanth",
-     "Project": "Self Learning",
+     "ReportsTo": "Kameswara rao",
+     "Project": "Renesas FSP",
      "Status": "UnBilled"
     },
-    "April 2026": {
-     "ReportsTo": "Sasikanth",
-     "Project": "Self Learning",
+    "April": {
+     "ReportsTo": "Kameswara rao",
+     "Project": "Renesas FSP",
      "Status": "UnBilled"
     }
    }
@@ -2615,26 +2626,26 @@
    "Name": "Battula Venu Madhav",
    "Practice": "Embedded - Validation",
    "Designation": "Engineer I",
-   "YOE": "1.1",
-   "ReportsTo": "Sasikanth",
-   "Project": "FLC",
+   "YOE": 1.1,
+   "ReportsTo": "Shyam",
+   "Project": "Smart IP Camera",
    "Status": "Buffer",
-   "Allocation": "50",
+   "Allocation": 1,
    "BilledUpto": "",
-   "Plan": "New Project",
-   "CurrentTask": "Power, Boot from SPI, Boot from SD",
+   "Plan": "Smart IP Camera",
+   "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "EMVL",
-   "ProjectCode": "FLC",
+   "ProjectCode": "CAM",
    "byMonth": {
     "Current": {
-     "ReportsTo": "Sasikanth",
-     "Project": "FLC",
+     "ReportsTo": "Shyam",
+     "Project": "Smart IP Camera",
      "Status": "Buffer"
     },
-    "April 2026": {
-     "ReportsTo": "Sasikanth",
-     "Project": "FLC",
+    "April": {
+     "ReportsTo": "Shyam",
+     "Project": "Smart IP Camera",
      "Status": "Buffer"
     }
    }
@@ -2644,26 +2655,26 @@
    "Name": "Maganti Raviteja",
    "Practice": "Embedded - Validation",
    "Designation": "Engineer I",
-   "YOE": "1.2",
-   "ReportsTo": "Sasikanth",
-   "Project": "DLI Soc",
+   "YOE": 1.2,
+   "ReportsTo": "Shyam",
+   "Project": "Smart IP Camera",
    "Status": "UnBilled",
-   "Allocation": "50",
+   "Allocation": 1,
    "BilledUpto": "",
-   "Plan": "Staffing",
-   "CurrentTask": "Camera- Completed, Security, HSM-study",
+   "Plan": "Smart IP Camera",
+   "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "EMVL",
-   "ProjectCode": "DLI",
+   "ProjectCode": "CAM",
    "byMonth": {
     "Current": {
-     "ReportsTo": "Sasikanth",
-     "Project": "DLI Soc",
+     "ReportsTo": "Shyam",
+     "Project": "Smart IP Camera",
      "Status": "UnBilled"
     },
-    "April 2026": {
-     "ReportsTo": "Sasikanth",
-     "Project": "DLI Soc",
+    "April": {
+     "ReportsTo": "Shyam",
+     "Project": "Smart IP Camera",
      "Status": "UnBilled"
     }
    }
@@ -2673,13 +2684,13 @@
    "Name": "Saahith Chandra Geela",
    "Practice": "Embedded - Validation",
    "Designation": "Engineer I",
-   "YOE": "1.2",
+   "YOE": 1.2,
    "ReportsTo": "Kameswara rao",
    "Project": "FLC",
    "Status": "Buffer",
-   "Allocation": "100",
+   "Allocation": 1,
    "BilledUpto": "",
-   "Plan": "Backup for Poorna in FLC, poorna will move to Kandou",
+   "Plan": "",
    "CurrentTask": "RISC-V, D2D",
    "Remarks": "",
    "DomainCode": "EMVL",
@@ -2690,7 +2701,7 @@
      "Project": "FLC",
      "Status": "Buffer"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Kameswara rao",
      "Project": "FLC",
      "Status": "UnBilled"
@@ -2702,15 +2713,15 @@
    "Name": "Singireddi Mohan Rao",
    "Practice": "Embedded - Validation",
    "Designation": "Engineer I",
-   "YOE": "1.2",
+   "YOE": 1.2,
    "ReportsTo": "Kameswara rao",
    "Project": "Renesas FSP",
    "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "Dont know",
-   "Plan": "",
-   "CurrentTask": "Preparation for Reneses MCU",
-   "Remarks": "",
+   "Allocation": 1,
+   "BilledUpto": "2026-08-31T18:30:00.000Z",
+   "Plan": "FSP",
+   "CurrentTask": "Preparation for Reneses FSP",
+   "Remarks": "Billing Depends on Tasks done",
    "DomainCode": "EMVL",
    "ProjectCode": "FSP",
    "byMonth": {
@@ -2719,7 +2730,7 @@
      "Project": "Renesas FSP",
      "Status": "Buffer"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
      "Status": "UnBilled"
@@ -2731,26 +2742,26 @@
    "Name": "Sanaka Venkata Karthikeya",
    "Practice": "Embedded - Validation",
    "Designation": "Engineer I",
-   "YOE": "1.2",
-   "ReportsTo": "Sasikanth",
-   "Project": "FLC",
+   "YOE": 1.2,
+   "ReportsTo": "Shyam",
+   "Project": "Smart IP Camera",
    "Status": "Buffer",
-   "Allocation": "60",
+   "Allocation": 1,
    "BilledUpto": "",
-   "Plan": "New Project",
-   "CurrentTask": "FLC1, FLC2,OSPI, SMC",
+   "Plan": "Smart IP Camera",
+   "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "EMVL",
-   "ProjectCode": "FLC",
+   "ProjectCode": "CAM",
    "byMonth": {
     "Current": {
-     "ReportsTo": "Sasikanth",
-     "Project": "FLC",
+     "ReportsTo": "Shyam",
+     "Project": "Smart IP Camera",
      "Status": "Buffer"
     },
-    "April 2026": {
-     "ReportsTo": "Sasikanth",
-     "Project": "FLC",
+    "April": {
+     "ReportsTo": "Shyam",
+     "Project": "Smart IP Camera",
      "Status": "Buffer"
     }
    }
@@ -2760,15 +2771,15 @@
    "Name": "Arepu Naga Sai Nikhitha",
    "Practice": "Embedded - Validation",
    "Designation": "Engineer I",
-   "YOE": "0.9",
+   "YOE": 0.9,
    "ReportsTo": "Kameswara rao",
    "Project": "Renesas FSP",
    "Status": "UnBilled",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "Renesas FSP",
-   "CurrentTask": "Ethernet- Completed",
-   "Remarks": "",
+   "Allocation": 1,
+   "BilledUpto": "NA",
+   "Plan": "Ready for Client Exposure",
+   "CurrentTask": "Preparation for Reneses FSP",
+   "Remarks": "Billing Depends on Tasks done",
    "DomainCode": "EMVL",
    "ProjectCode": "FSP",
    "byMonth": {
@@ -2777,7 +2788,7 @@
      "Project": "Renesas FSP",
      "Status": "UnBilled"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
      "Status": "UnBilled"
@@ -2789,15 +2800,15 @@
    "Name": "Rupaji Rithika",
    "Practice": "Embedded - Validation",
    "Designation": "Engineer I",
-   "YOE": "0.9",
+   "YOE": 0.9,
    "ReportsTo": "Kameswara rao",
    "Project": "Renesas FSP",
    "Status": "UnBilled",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "Renesas FSP",
-   "CurrentTask": "NVMe",
-   "Remarks": "",
+   "Allocation": 1,
+   "BilledUpto": "NA",
+   "Plan": "Ready for Client Exposure",
+   "CurrentTask": "Preparation for Reneses FSP",
+   "Remarks": "Billing Depends on Tasks done",
    "DomainCode": "EMVL",
    "ProjectCode": "FSP",
    "byMonth": {
@@ -2806,7 +2817,7 @@
      "Project": "Renesas FSP",
      "Status": "UnBilled"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
      "Status": "UnBilled"
@@ -2816,28 +2827,28 @@
   {
    "EmpID": "VC_233",
    "Name": "Mahmad Ameerullah",
-   "Practice": "Software",
+   "Practice": "Application Software",
    "Designation": "Engineer I",
-   "YOE": "0.8",
+   "YOE": 0.8,
    "ReportsTo": "Teja",
-   "Project": "Renesas",
-   "Status": "Buffer",
-   "Allocation": "80",
+   "Project": "Renesas ( ISP )",
+   "Status": "Buffer Billed",
+   "Allocation": 1,
    "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
+   "Plan": "Ramp-up on ISP",
+   "CurrentTask": "ISP IT testing and development",
+   "Remarks": "Buffer Billed in Place of Noor from June 22",
    "DomainCode": "APPSW",
    "ProjectCode": "REN",
    "byMonth": {
     "Current": {
      "ReportsTo": "Teja",
-     "Project": "Renesas",
-     "Status": "Buffer"
+     "Project": "Renesas ( ISP )",
+     "Status": "Buffer Billed"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Teja",
-     "Project": "Renesas",
+     "Project": "Renesas ( ISP )",
      "Status": "Buffer"
     }
    }
@@ -2845,28 +2856,28 @@
   {
    "EmpID": "VC_235",
    "Name": "Gandla Vaishnavi",
-   "Practice": "Software",
+   "Practice": "Application Software",
    "Designation": "Engineer I",
-   "YOE": "1.1",
+   "YOE": 1.1,
    "ReportsTo": "George",
-   "Project": "RLCC",
-   "Status": "Billed",
-   "Allocation": "100",
+   "Project": "CV Intelligence",
+   "Status": "Buffer",
+   "Allocation": 1,
    "BilledUpto": "",
-   "Plan": "",
+   "Plan": "CV Intelligence",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "APPSW",
-   "ProjectCode": "RLCC",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "George",
-     "Project": "RLCC",
-     "Status": "Billed"
+     "Project": "CV Intelligence",
+     "Status": "Buffer"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "George",
-     "Project": "RLCC",
+     "Project": "CV Intelligence",
      "Status": "Billed"
     }
    }
@@ -2874,28 +2885,28 @@
   {
    "EmpID": "VC_232",
    "Name": "Sai Charan Siddhanthi Thyadi",
-   "Practice": "Software",
+   "Practice": "Application Software",
    "Designation": "Engineer I",
-   "YOE": "0.8",
+   "YOE": 0.8,
    "ReportsTo": "George",
-   "Project": "RLCC",
-   "Status": "Billed",
-   "Allocation": "100",
+   "Project": "CV Intelligence",
+   "Status": "Buffer",
+   "Allocation": 1,
    "BilledUpto": "",
-   "Plan": "",
+   "Plan": "CV Intelligence",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "APPSW",
-   "ProjectCode": "RLCC",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "George",
-     "Project": "RLCC",
-     "Status": "Billed"
+     "Project": "CV Intelligence",
+     "Status": "Buffer"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "George",
-     "Project": "RLCC",
+     "Project": "CV Intelligence",
      "Status": "Billed"
     }
    }
@@ -2903,28 +2914,28 @@
   {
    "EmpID": "VC_231",
    "Name": "Gonthina Lakshmana Swami",
-   "Practice": "Software",
+   "Practice": "Application Software",
    "Designation": "Engineer I",
-   "YOE": "0.8",
+   "YOE": 0.8,
    "ReportsTo": "George",
-   "Project": "RLCC",
+   "Project": "CV Intelligence",
    "Status": "Buffer",
-   "Allocation": "100",
+   "Allocation": 1,
    "BilledUpto": "",
-   "Plan": "",
+   "Plan": "CV Intelligence",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "APPSW",
-   "ProjectCode": "RLCC",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "George",
-     "Project": "RLCC",
+     "Project": "CV Intelligence",
      "Status": "Buffer"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "George",
-     "Project": "RLCC",
+     "Project": "CV Intelligence",
      "Status": "Buffer"
     }
    }
@@ -2932,15 +2943,15 @@
   {
    "EmpID": "VC_230",
    "Name": "Thota Chaithra",
-   "Practice": "Software",
+   "Practice": "Application Software",
    "Designation": "Engineer I",
-   "YOE": "0.8",
+   "YOE": 0.8,
    "ReportsTo": "Shyam",
    "Project": "Smart IP Camera",
    "Status": "UnBilled",
-   "Allocation": "0",
-   "BilledUpto": "",
-   "Plan": "",
+   "Allocation": 1,
+   "BilledUpto": "NA",
+   "Plan": "Smart IP Camera",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "APPSW",
@@ -2951,7 +2962,7 @@
      "Project": "Smart IP Camera",
      "Status": "UnBilled"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "Buffer"
@@ -2961,15 +2972,15 @@
   {
    "EmpID": "VC_234",
    "Name": "Roopini Gorle",
-   "Practice": "Software",
+   "Practice": "Application Software",
    "Designation": "Software Trainee II",
-   "YOE": "0.5",
+   "YOE": 0.5,
    "ReportsTo": "Shyam",
    "Project": "Smart IP Camera",
    "Status": "UnBilled",
-   "Allocation": "0",
-   "BilledUpto": "",
-   "Plan": "NPU is low priority in camera, need to plan tasks",
+   "Allocation": 1,
+   "BilledUpto": "NA",
+   "Plan": "Smart IP Camera",
    "CurrentTask": "NPU models",
    "Remarks": "",
    "DomainCode": "APPSW",
@@ -2980,7 +2991,7 @@
      "Project": "Smart IP Camera",
      "Status": "UnBilled"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "UnBilled"
@@ -2990,28 +3001,28 @@
   {
    "EmpID": "VCIN_44",
    "Name": "Kiranmai Battu",
-   "Practice": "Software",
+   "Practice": "Application Software",
    "Designation": "Trainee III",
-   "YOE": "0.2",
+   "YOE": 0.2,
    "ReportsTo": "George",
-   "Project": "RLCC",
-   "Status": "UnBilled",
-   "Allocation": "100",
+   "Project": "CV Intelligence",
+   "Status": "Buffer",
+   "Allocation": 1,
    "BilledUpto": "",
-   "Plan": "NPU is low priority in camera, need to plan tasks",
+   "Plan": "CV Intelligence",
    "CurrentTask": "NPU models",
    "Remarks": "",
    "DomainCode": "APPSW",
-   "ProjectCode": "RLCC",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "George",
-     "Project": "RLCC",
-     "Status": "UnBilled"
+     "Project": "CV Intelligence",
+     "Status": "Buffer"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "George",
-     "Project": "RLCC",
+     "Project": "CV Intelligence",
      "Status": "UnBilled"
     }
    }
@@ -3019,28 +3030,28 @@
   {
    "EmpID": "VCIN_51",
    "Name": "Yogeshwar Reddy Meda",
-   "Practice": "Software",
+   "Practice": "Application Software",
    "Designation": "Software Intern II",
    "YOE": "",
-   "ReportsTo": "Srikanth",
-   "Project": "",
+   "ReportsTo": "Sriram",
+   "Project": "VCTS Website",
    "Status": "UnBilled",
-   "Allocation": "",
+   "Allocation": 1,
    "BilledUpto": "",
-   "Plan": "",
+   "Plan": "VCTS Website",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "APPSW",
-   "ProjectCode": "BENCH",
+   "ProjectCode": "INT",
    "byMonth": {
     "Current": {
-     "ReportsTo": "Srikanth",
-     "Project": "",
+     "ReportsTo": "Sriram",
+     "Project": "VCTS Website",
      "Status": "UnBilled"
     },
-    "April 2026": {
-     "ReportsTo": "Srikanth",
-     "Project": "",
+    "April": {
+     "ReportsTo": "Sriram",
+     "Project": "VCTS Website",
      "Status": "UnBilled"
     }
    }
@@ -3067,7 +3078,7 @@
      "Project": "Smart IP Camera",
      "Status": "Buffer"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Srikanth",
      "Project": "Smart IP Camera",
      "Status": "UnBilled"
@@ -3096,7 +3107,7 @@
      "Project": "Edge",
      "Status": "Buffer"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Srikanth",
      "Project": "Edge",
      "Status": "UnBilled"
@@ -3125,7 +3136,7 @@
      "Project": "Server",
      "Status": "Buffer"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Venkata Kiran",
      "Project": "Server",
      "Status": "UnBilled"
@@ -3137,26 +3148,26 @@
    "Name": "Sriram Ungatla",
    "Practice": "CI/ CD Automation Engineer",
    "Designation": "CI/CD Automation Engineer",
-   "YOE": "2.1",
-   "ReportsTo": "Mounika",
-   "Project": "Website",
-   "Status": "UnBilled",
-   "Allocation": "100",
+   "YOE": 2.1,
+   "ReportsTo": "Sudha",
+   "Project": "Zoho Books Portal",
+   "Status": "Buffer",
+   "Allocation": 1,
    "BilledUpto": "",
-   "Plan": "",
+   "Plan": "Working on Own Zoho Books Portal",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "OPS",
-   "ProjectCode": "INT",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
-     "ReportsTo": "Mounika",
-     "Project": "Website",
-     "Status": "UnBilled"
+     "ReportsTo": "Sudha",
+     "Project": "Zoho Books Portal",
+     "Status": "Buffer"
     },
-    "April 2026": {
-     "ReportsTo": "Mounika",
-     "Project": "Website",
+    "April": {
+     "ReportsTo": "Sudha",
+     "Project": "Zoho Books Portal",
      "Status": "UnBilled"
     }
    }
@@ -3166,26 +3177,26 @@
    "Name": "Abhishek Begari",
    "Practice": "Technical Writer",
    "Designation": "Technical Writer",
-   "YOE": "4.8",
+   "YOE": 4.8,
    "ReportsTo": "Srikanth",
-   "Project": "Internal ( Vconnectech Website )",
+   "Project": "",
    "Status": "Buffer",
-   "Allocation": "100",
+   "Allocation": 0,
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
-   "Remarks": "",
+   "Remarks": "Supporting ORCA & Renesas ( ISP )",
    "DomainCode": "OPS",
-   "ProjectCode": "INT",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "Srikanth",
-     "Project": "Internal ( Vconnectech Website )",
+     "Project": "",
      "Status": "Buffer"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Srikanth",
-     "Project": "Internal ( Vconnectech Website )",
+     "Project": "",
      "Status": "UnBilled"
     }
    }
@@ -3199,7 +3210,7 @@
    "ReportsTo": "Srikanth",
    "Project": "Edge",
    "Status": "Buffer",
-   "Allocation": "",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
@@ -3212,7 +3223,7 @@
      "Project": "Edge",
      "Status": "Buffer"
     },
-    "April 2026": {
+    "April": {
      "ReportsTo": "Srikanth",
      "Project": "Edge",
      "Status": "UnBilled"
@@ -3227,8 +3238,8 @@
    "YOE": "",
    "ReportsTo": "",
    "Project": "On Site",
-   "Status": "",
-   "Allocation": "100",
+   "Status": "Billed",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
@@ -3239,7 +3250,7 @@
     "Current": {
      "ReportsTo": "",
      "Project": "On Site",
-     "Status": ""
+     "Status": "Billed"
     }
    }
   },
@@ -3251,8 +3262,8 @@
    "YOE": "",
    "ReportsTo": "",
    "Project": "On Site",
-   "Status": "",
-   "Allocation": "100",
+   "Status": "Billed",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
@@ -3263,7 +3274,7 @@
     "Current": {
      "ReportsTo": "",
      "Project": "On Site",
-     "Status": ""
+     "Status": "Billed"
     }
    }
   },
@@ -3275,8 +3286,8 @@
    "YOE": "",
    "ReportsTo": "",
    "Project": "FLC",
-   "Status": "",
-   "Allocation": "",
+   "Status": "Billed",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
@@ -3287,7 +3298,7 @@
     "Current": {
      "ReportsTo": "",
      "Project": "FLC",
-     "Status": ""
+     "Status": "Billed"
     }
    }
   },
@@ -3299,8 +3310,8 @@
    "YOE": "",
    "ReportsTo": "",
    "Project": "FLC",
-   "Status": "",
-   "Allocation": "",
+   "Status": "Billed",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
@@ -3311,7 +3322,7 @@
     "Current": {
      "ReportsTo": "",
      "Project": "FLC",
-     "Status": ""
+     "Status": "Billed"
     }
    }
   },
@@ -3323,8 +3334,8 @@
    "YOE": "",
    "ReportsTo": "",
    "Project": "FLC",
-   "Status": "",
-   "Allocation": "",
+   "Status": "Billed",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
@@ -3335,7 +3346,7 @@
     "Current": {
      "ReportsTo": "",
      "Project": "FLC",
-     "Status": ""
+     "Status": "Billed"
     }
    }
   },
@@ -3347,8 +3358,8 @@
    "YOE": "",
    "ReportsTo": "",
    "Project": "FLC",
-   "Status": "",
-   "Allocation": "",
+   "Status": "Billed",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
@@ -3359,7 +3370,7 @@
     "Current": {
      "ReportsTo": "",
      "Project": "FLC",
-     "Status": ""
+     "Status": "Billed"
     }
    }
   },
@@ -3370,43 +3381,43 @@
    "Designation": "",
    "YOE": "",
    "ReportsTo": "",
-   "Project": "AMD",
-   "Status": "",
-   "Allocation": "100",
+   "Project": "On Site ",
+   "Status": "Billed",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "EMVL",
-   "ProjectCode": "AMD",
+   "ProjectCode": "ONSITE",
    "byMonth": {
     "Current": {
      "ReportsTo": "",
-     "Project": "AMD",
-     "Status": ""
+     "Project": "On Site ",
+     "Status": "Billed"
     }
    }
   },
   {
    "EmpID": "VCIN_52",
    "Name": "Attuluri Venkat Dhanush",
-   "Practice": "Software",
+   "Practice": "Application Software",
    "Designation": "",
    "YOE": "",
-   "ReportsTo": "Srikanth",
-   "Project": "",
+   "ReportsTo": "Sriram",
+   "Project": "VCTS Website",
    "Status": "UnBilled",
-   "Allocation": "",
+   "Allocation": 1,
    "BilledUpto": "",
-   "Plan": "",
+   "Plan": "VCTS Website",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "APPSW",
-   "ProjectCode": "BENCH",
+   "ProjectCode": "INT",
    "byMonth": {
     "Current": {
-     "ReportsTo": "Srikanth",
-     "Project": "",
+     "ReportsTo": "Sriram",
+     "Project": "VCTS Website",
      "Status": "UnBilled"
     }
    }
@@ -3416,14 +3427,14 @@
    "Name": "MukeshKumar Rajkumar Pasi",
    "Practice": "Embedded - S/W",
    "Designation": "Engineer II",
-   "YOE": "3.3",
+   "YOE": 3.3,
    "ReportsTo": "Srikanth",
    "Project": "Renesas (FUSA)",
    "Status": "UnBilled",
    "Allocation": "",
    "BilledUpto": "Billed from July 1st",
    "Plan": "",
-   "CurrentTask": "UnBilled from April 7th",
+   "CurrentTask": "UnBilled from April 7th ",
    "Remarks": "",
    "DomainCode": "EMSW",
    "ProjectCode": "FUSA",
@@ -3447,7 +3458,7 @@
    "Allocation": "",
    "BilledUpto": "",
    "Plan": "",
-   "CurrentTask": "UnBilled from April 7th",
+   "CurrentTask": "UnBilled from April 7th ",
    "Remarks": "",
    "DomainCode": "FUSA",
    "ProjectCode": "FUSA",
