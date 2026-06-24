@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-24T11:04:29.532Z",
+ "generatedAt": "2026-06-24T11:27:58.638Z",
  "months": [
   "April",
   "May",
@@ -3150,7 +3150,7 @@
    "Designation": "CI/CD Automation Engineer",
    "YOE": 2.1,
    "ReportsTo": "Sudha",
-   "Project": "Zoho Books Portal",
+   "Project": "Purchase Poral , VCTS Website",
    "Status": "Buffer",
    "Allocation": 1,
    "BilledUpto": "",
@@ -3158,16 +3158,16 @@
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "OPS",
-   "ProjectCode": "BENCH",
+   "ProjectCode": "INT",
    "byMonth": {
     "Current": {
      "ReportsTo": "Sudha",
-     "Project": "Zoho Books Portal",
+     "Project": "Purchase Poral , VCTS Website",
      "Status": "Buffer"
     },
     "April": {
      "ReportsTo": "Sudha",
-     "Project": "Zoho Books Portal",
+     "Project": "Purchase Poral , VCTS Website",
      "Status": "UnBilled"
     }
    }
