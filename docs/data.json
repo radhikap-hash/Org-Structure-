@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-24T05:31:29.853Z",
+ "generatedAt": "2026-06-24T05:35:33.369Z",
  "months": [
   "April",
   "May",
@@ -1995,7 +1995,7 @@
    "Allocation": 0.3,
    "BilledUpto": "NA",
    "Plan": "Staffing",
-   "CurrentTask": "bluetootha, wifi spec, drivers understanding",
+   "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "EMSW",
    "ProjectCode": "DLI",
