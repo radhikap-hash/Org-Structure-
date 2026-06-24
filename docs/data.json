@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-24T05:35:33.369Z",
+ "generatedAt": "2026-06-24T05:39:58.684Z",
  "months": [
   "April",
   "May",
@@ -1758,7 +1758,7 @@
    "Designation": "Engineer II",
    "YOE": 2.3,
    "ReportsTo": "Kiran Allada",
-   "Project": "Internal ( Delivery Robot )",
+   "Project": "FUSA - Broadcom",
    "Status": "UnBilled",
    "Allocation": "",
    "BilledUpto": "",
@@ -1766,16 +1766,16 @@
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "EMSW",
-   "ProjectCode": "DBOT",
+   "ProjectCode": "FUSA",
    "byMonth": {
     "Current": {
      "ReportsTo": "Kiran Allada",
-     "Project": "Internal ( Delivery Robot )",
+     "Project": "FUSA - Broadcom",
      "Status": "UnBilled"
     },
     "April": {
      "ReportsTo": "Kiran Allada",
-     "Project": "Internal ( Delivery Robot )",
+     "Project": "FUSA - Broadcom",
      "Status": "UnBilled"
     }
    }
