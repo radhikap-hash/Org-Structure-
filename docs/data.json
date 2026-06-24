@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-24T05:21:50.010Z",
+ "generatedAt": "2026-06-24T05:22:23.404Z",
  "months": [
   "April",
   "May",
@@ -36,7 +36,7 @@
     "May": {
      "ReportsTo": "",
      "Project": "FLC",
-     "Status": "Billed"
+     "Status": "Billed "
     }
    }
   },
@@ -63,11 +63,6 @@
      "Status": "Billed"
     },
     "April": {
-     "ReportsTo": "Srikanth",
-     "Project": "Renesas",
-     "Status": "Billed"
-    },
-    "May": {
      "ReportsTo": "Srikanth",
      "Project": "Renesas",
      "Status": "Billed"
@@ -100,11 +95,6 @@
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "Buffer"
-    },
-    "May": {
-     "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
-     "Status": "Buffer"
     }
    }
   },
@@ -131,11 +121,6 @@
      "Status": "Billed"
     },
     "April": {
-     "ReportsTo": "Srikanth",
-     "Project": "SmartSoC-ADI",
-     "Status": "Billed"
-    },
-    "May": {
      "ReportsTo": "Srikanth",
      "Project": "SmartSoC-ADI",
      "Status": "Billed"
@@ -458,11 +443,6 @@
      "ReportsTo": "Aravind",
      "Project": "FLC",
      "Status": "Billed"
-    },
-    "May": {
-     "ReportsTo": "Aravind",
-     "Project": "FLC",
-     "Status": "Billed"
     }
    }
   },
@@ -576,11 +556,6 @@
      "Status": "UnBilled"
     },
     "April": {
-     "ReportsTo": "Srikanth",
-     "Project": "",
-     "Status": "Billed"
-    },
-    "May": {
      "ReportsTo": "Srikanth",
      "Project": "",
      "Status": "Billed"
@@ -787,11 +762,6 @@
      "ReportsTo": "Srikanth",
      "Project": "FLC",
      "Status": "Billed"
-    },
-    "May": {
-     "ReportsTo": "Srikanth",
-     "Project": "FLC",
-     "Status": "Billed"
     }
    }
   },
@@ -818,11 +788,6 @@
      "Status": "Billed"
     },
     "April": {
-     "ReportsTo": "Swarna Latha",
-     "Project": "Zerro Power systems",
-     "Status": "Billed"
-    },
-    "May": {
      "ReportsTo": "Swarna Latha",
      "Project": "Zerro Power systems",
      "Status": "Billed"
@@ -939,11 +904,6 @@
      "Status": "Billed"
     },
     "April": {
-     "ReportsTo": "Srikanth",
-     "Project": "FLC, SmartSoc(ProbeASIC)",
-     "Status": "Billed"
-    },
-    "May": {
      "ReportsTo": "Srikanth",
      "Project": "FLC, SmartSoc(ProbeASIC)",
      "Status": "Billed"
@@ -1353,11 +1313,6 @@
      "ReportsTo": "Srikanth",
      "Project": "FLC, Renesas (NPU), Smart IP Camera",
      "Status": "Billed"
-    },
-    "May": {
-     "ReportsTo": "Srikanth",
-     "Project": "FLC, Renesas (NPU), Smart IP Camera",
-     "Status": "Billed"
     }
    }
   },
@@ -1416,11 +1371,6 @@
      "ReportsTo": "Kameswara rao",
      "Project": "FLC",
      "Status": "Buffer"
-    },
-    "May": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "FLC",
-     "Status": "Buffer"
     }
    }
   },
@@ -1447,11 +1397,6 @@
      "Status": "Billed"
     },
     "April": {
-     "ReportsTo": "Shyam",
-     "Project": "Edge",
-     "Status": "Billed"
-    },
-    "May": {
      "ReportsTo": "Shyam",
      "Project": "Edge",
      "Status": "Billed"
@@ -1539,11 +1484,6 @@
      "Status": "Buffer Billed"
     },
     "April": {
-     "ReportsTo": "Shyam",
-     "Project": "Renesas NPU",
-     "Status": "BufferBilled"
-    },
-    "May": {
      "ReportsTo": "Shyam",
      "Project": "Renesas NPU",
      "Status": "BufferBilled"
@@ -1692,11 +1632,6 @@
      "ReportsTo": "Srikanth",
      "Project": "Renesas",
      "Status": "Billed"
-    },
-    "May": {
-     "ReportsTo": "Srikanth",
-     "Project": "Renesas",
-     "Status": "Billed"
     }
    }
   },
@@ -1723,11 +1658,6 @@
      "Status": "UnBilled"
     },
     "April": {
-     "ReportsTo": "Teja",
-     "Project": "Gen5",
-     "Status": "Billed"
-    },
-    "May": {
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "Billed"
@@ -1789,11 +1719,6 @@
      "ReportsTo": "Teja",
      "Project": "Renesas ( ISP )",
      "Status": "Billed"
-    },
-    "May": {
-     "ReportsTo": "Teja",
-     "Project": "Renesas ( ISP )",
-     "Status": "Billed"
     }
    }
   },
@@ -1820,11 +1745,6 @@
      "Status": "Billed"
     },
     "April": {
-     "ReportsTo": "Teja",
-     "Project": "Renesas ( ISP )",
-     "Status": "Billed"
-    },
-    "May": {
      "ReportsTo": "Teja",
      "Project": "Renesas ( ISP )",
      "Status": "Billed"
@@ -1857,11 +1777,6 @@
      "ReportsTo": "Kiran Allada",
      "Project": "Internal ( Delivery Robot )",
      "Status": "UnBilled"
-    },
-    "May": {
-     "ReportsTo": "Kiran Allada",
-     "Project": "Internal ( Delivery Robot )",
-     "Status": "UnBilled"
     }
    }
   },
@@ -1891,11 +1806,6 @@
      "ReportsTo": "Teja",
      "Project": "",
      "Status": "Billed"
-    },
-    "May": {
-     "ReportsTo": "Teja",
-     "Project": "",
-     "Status": "Billed"
     }
    }
   },
@@ -1922,11 +1832,6 @@
      "Status": "UnBilled"
     },
     "April": {
-     "ReportsTo": "Kiran Allada",
-     "Project": "Internal ( Delivery Robot )",
-     "Status": "UnBilled"
-    },
-    "May": {
      "ReportsTo": "Kiran Allada",
      "Project": "Internal ( Delivery Robot )",
      "Status": "UnBilled"
@@ -2017,11 +1922,6 @@
      "ReportsTo": "Teja",
      "Project": "Gen5",
      "Status": "UnBilled"
-    },
-    "May": {
-     "ReportsTo": "Teja",
-     "Project": "Gen5",
-     "Status": "UnBilled"
     }
    }
   },
@@ -2080,11 +1980,6 @@
      "ReportsTo": "Shyam",
      "Project": "Parking",
      "Status": "UnBilled"
-    },
-    "May": {
-     "ReportsTo": "Shyam",
-     "Project": "Parking",
-     "Status": "UnBilled"
     }
    }
   },
@@ -2111,11 +2006,6 @@
      "Status": "UnBilled"
     },
     "April": {
-     "ReportsTo": "Sasikanth",
-     "Project": "DLI Soc / Staffing",
-     "Status": "UnBilled"
-    },
-    "May": {
      "ReportsTo": "Sasikanth",
      "Project": "DLI Soc / Staffing",
      "Status": "UnBilled"
@@ -2351,11 +2241,6 @@
      "ReportsTo": "Kameswara rao",
      "Project": "FLC",
      "Status": "UnBilled"
-    },
-    "May": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "FLC",
-     "Status": "UnBilled"
     }
    }
   },
@@ -2530,11 +2415,6 @@
      "ReportsTo": "Srikanth",
      "Project": "Renesas",
      "Status": "Billed"
-    },
-    "May": {
-     "ReportsTo": "Srikanth",
-     "Project": "Renesas",
-     "Status": "Billed"
     }
    }
   },
@@ -2590,11 +2470,6 @@
      "Status": "Billed"
     },
     "April": {
-     "ReportsTo": "Shyam",
-     "Project": "Renesas NPU",
-     "Status": "Billed"
-    },
-    "May": {
      "ReportsTo": "Shyam",
      "Project": "Renesas NPU",
      "Status": "Billed"
@@ -2656,11 +2531,6 @@
      "ReportsTo": "Kameswara rao",
      "Project": "FLC",
      "Status": "Billed"
-    },
-    "May": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "FLC",
-     "Status": "Billed"
     }
    }
   },
@@ -2716,11 +2586,6 @@
      "Status": "Buffer"
     },
     "April": {
-     "ReportsTo": "Srikanth",
-     "Project": "Renesas FSP",
-     "Status": "UnBilled"
-    },
-    "May": {
      "ReportsTo": "Srikanth",
      "Project": "Renesas FSP",
      "Status": "UnBilled"
@@ -2837,11 +2702,6 @@
      "Status": "Buffer"
     },
     "April": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "FLC",
-     "Status": "UnBilled"
-    },
-    "May": {
      "ReportsTo": "Kameswara rao",
      "Project": "FLC",
      "Status": "UnBilled"
@@ -3251,11 +3111,6 @@
      "ReportsTo": "Srikanth",
      "Project": "Edge",
      "Status": "UnBilled"
-    },
-    "May": {
-     "ReportsTo": "Srikanth",
-     "Project": "Edge",
-     "Status": "UnBilled"
     }
    }
   },
@@ -3282,11 +3137,6 @@
      "Status": "Buffer"
     },
     "April": {
-     "ReportsTo": "Venkata Kiran",
-     "Project": "Server",
-     "Status": "UnBilled"
-    },
-    "May": {
      "ReportsTo": "Venkata Kiran",
      "Project": "Server",
      "Status": "UnBilled"
@@ -3348,11 +3198,6 @@
      "ReportsTo": "Srikanth",
      "Project": "VConnectech Overview PPT",
      "Status": "UnBilled"
-    },
-    "May": {
-     "ReportsTo": "Srikanth",
-     "Project": "VConnectech Overview PPT",
-     "Status": "UnBilled"
     }
    }
   },
@@ -3379,11 +3224,6 @@
      "Status": "Buffer"
     },
     "April": {
-     "ReportsTo": "Srikanth",
-     "Project": "Edge",
-     "Status": "UnBilled"
-    },
-    "May": {
      "ReportsTo": "Srikanth",
      "Project": "Edge",
      "Status": "UnBilled"
