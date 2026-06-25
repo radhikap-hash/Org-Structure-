@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-25T09:30:10.531Z",
+ "generatedAt": "2026-06-25T10:04:24.225Z",
  "months": [
   "April",
   "May",
@@ -1702,7 +1702,7 @@
    "ReportsTo": "Teja",
    "Project": "Renesas ( ISP )",
    "Status": "Billed",
-   "Allocation": 0.05,
+   "Allocation": 0.1,
    "BilledUpto": "2026-11-30T18:30:00.000Z",
    "Plan": "",
    "CurrentTask": "Support in meetings/JIRA updates",
