@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-26T06:18:03.789Z",
+ "generatedAt": "2026-06-26T06:18:37.440Z",
  "months": [
   "April",
   "May",
@@ -2628,7 +2628,7 @@
    "Designation": "Engineer I",
    "YOE": 1.1,
    "ReportsTo": "Shyam",
-   "Project": "NPU",
+   "Project": "Renesas NPU",
    "Status": "Buffer",
    "Allocation": 1,
    "BilledUpto": "",
@@ -2640,12 +2640,12 @@
    "byMonth": {
     "Current": {
      "ReportsTo": "Shyam",
-     "Project": "NPU",
+     "Project": "Renesas NPU",
      "Status": "Buffer"
     },
     "April": {
      "ReportsTo": "Shyam",
-     "Project": "NPU",
+     "Project": "Renesas NPU",
      "Status": "Buffer"
     }
    }
@@ -2657,7 +2657,7 @@
    "Designation": "Engineer I",
    "YOE": 1.2,
    "ReportsTo": "Shyam",
-   "Project": "Smart IP Camera",
+   "Project": "Smart IP Camera ( REL )",
    "Status": "Buffer",
    "Allocation": 1,
    "BilledUpto": "",
@@ -2669,12 +2669,12 @@
    "byMonth": {
     "Current": {
      "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
+     "Project": "Smart IP Camera ( REL )",
      "Status": "Buffer"
     },
     "April": {
      "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
+     "Project": "Smart IP Camera ( REL )",
      "Status": "UnBilled"
     }
    }
