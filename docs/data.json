@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-26T06:29:11.442Z",
+ "generatedAt": "2026-06-26T06:30:27.311Z",
  "months": [
   "April",
   "May",
@@ -2629,7 +2629,7 @@
    "YOE": 1.1,
    "ReportsTo": "Shyam",
    "Project": "Renesas NPU",
-   "Status": "Buffer",
+   "Status": "Buffer Billed",
    "Allocation": 1,
    "BilledUpto": "",
    "Plan": "Smart IP Camera",
@@ -2641,7 +2641,7 @@
     "Current": {
      "ReportsTo": "Shyam",
      "Project": "Renesas NPU",
-     "Status": "Buffer"
+     "Status": "Buffer Billed"
     },
     "April": {
      "ReportsTo": "Shyam",
