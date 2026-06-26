@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-26T06:18:56.456Z",
+ "generatedAt": "2026-06-26T06:19:12.571Z",
  "months": [
   "April",
   "May",
@@ -1473,7 +1473,7 @@
    "Allocation": "",
    "BilledUpto": "2026-05-31T18:30:00.000Z",
    "Plan": "",
-   "CurrentTask": "NPU Validation",
+   "CurrentTask": "",
    "Remarks": "Customer has plan till Dec, not officially confirmed",
    "DomainCode": "EMBL",
    "ProjectCode": "INT",
