@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-26T06:28:20.650Z",
+ "generatedAt": "2026-06-26T06:28:33.028Z",
  "months": [
   "April",
   "May",
@@ -1468,24 +1468,24 @@
    "Designation": "Engineer I",
    "YOE": 1.2,
    "ReportsTo": "Shyam",
-   "Project": "",
-   "Status": "Buffer Billed",
+   "Project": "Smart IP Camera ( Novotec )",
+   "Status": "Buffer",
    "Allocation": "",
    "BilledUpto": "2026-05-31T18:30:00.000Z",
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "Customer has plan till Dec, not officially confirmed",
    "DomainCode": "EMBL",
-   "ProjectCode": "BENCH",
+   "ProjectCode": "CAM",
    "byMonth": {
     "Current": {
      "ReportsTo": "Shyam",
-     "Project": "",
-     "Status": "Buffer Billed"
+     "Project": "Smart IP Camera ( Novotec )",
+     "Status": "Buffer"
     },
     "April": {
      "ReportsTo": "Shyam",
-     "Project": "",
+     "Project": "Smart IP Camera ( Novotec )",
      "Status": "BufferBilled"
     }
    }
