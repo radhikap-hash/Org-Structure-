@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-26T06:19:25.159Z",
+ "generatedAt": "2026-06-26T06:28:20.650Z",
  "months": [
   "April",
   "May",
@@ -1468,7 +1468,7 @@
    "Designation": "Engineer I",
    "YOE": 1.2,
    "ReportsTo": "Shyam",
-   "Project": "Internal",
+   "Project": "",
    "Status": "Buffer Billed",
    "Allocation": "",
    "BilledUpto": "2026-05-31T18:30:00.000Z",
@@ -1476,16 +1476,16 @@
    "CurrentTask": "",
    "Remarks": "Customer has plan till Dec, not officially confirmed",
    "DomainCode": "EMBL",
-   "ProjectCode": "INT",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "Shyam",
-     "Project": "Internal",
+     "Project": "",
      "Status": "Buffer Billed"
     },
     "April": {
      "ReportsTo": "Shyam",
-     "Project": "Internal",
+     "Project": "",
      "Status": "BufferBilled"
     }
    }
