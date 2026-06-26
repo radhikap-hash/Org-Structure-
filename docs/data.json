@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-26T06:18:37.440Z",
+ "generatedAt": "2026-06-26T06:18:54.509Z",
  "months": [
   "April",
   "May",
@@ -1468,24 +1468,24 @@
    "Designation": "Engineer I",
    "YOE": 1.2,
    "ReportsTo": "Shyam",
-   "Project": "Renesas NPU",
+   "Project": "Internal",
    "Status": "Buffer Billed",
-   "Allocation": 1,
+   "Allocation": "",
    "BilledUpto": "2026-05-31T18:30:00.000Z",
    "Plan": "",
    "CurrentTask": "NPU Validation",
    "Remarks": "Customer has plan till Dec, not officially confirmed",
    "DomainCode": "EMBL",
-   "ProjectCode": "NPU",
+   "ProjectCode": "INT",
    "byMonth": {
     "Current": {
      "ReportsTo": "Shyam",
-     "Project": "Renesas NPU",
+     "Project": "Internal",
      "Status": "Buffer Billed"
     },
     "April": {
      "ReportsTo": "Shyam",
-     "Project": "Renesas NPU",
+     "Project": "Internal",
      "Status": "BufferBilled"
     }
    }
