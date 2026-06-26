@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-26T06:04:30.702Z",
+ "generatedAt": "2026-06-26T06:18:03.789Z",
  "months": [
   "April",
   "May",
@@ -2628,7 +2628,7 @@
    "Designation": "Engineer I",
    "YOE": 1.1,
    "ReportsTo": "Shyam",
-   "Project": "Smart IP Camera",
+   "Project": "NPU",
    "Status": "Buffer",
    "Allocation": 1,
    "BilledUpto": "",
@@ -2636,16 +2636,16 @@
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "EMVL",
-   "ProjectCode": "CAM",
+   "ProjectCode": "NPU",
    "byMonth": {
     "Current": {
      "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
+     "Project": "NPU",
      "Status": "Buffer"
     },
     "April": {
      "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
+     "Project": "NPU",
      "Status": "Buffer"
     }
    }
