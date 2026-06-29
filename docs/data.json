@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-29T08:04:29.679Z",
+ "generatedAt": "2026-06-29T08:07:37.231Z",
  "months": [
   "April",
   "May",
@@ -2890,7 +2890,7 @@
    "YOE": 0.8,
    "ReportsTo": "George",
    "Project": "CV Intelligence",
-   "Status": "Buffer",
+   "Status": "Billed",
    "Allocation": 1,
    "BilledUpto": "",
    "Plan": "CV Intelligence",
@@ -2902,7 +2902,7 @@
     "Current": {
      "ReportsTo": "George",
      "Project": "CV Intelligence",
-     "Status": "Buffer"
+     "Status": "Billed"
     },
     "April": {
      "ReportsTo": "George",
