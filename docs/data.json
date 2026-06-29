@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-29T09:15:32.427Z",
+ "generatedAt": "2026-06-29T09:16:10.133Z",
  "months": [
   "April",
   "May",
@@ -3240,7 +3240,7 @@
    "Name": "Supriya Kallepelli",
    "Practice": "DV",
    "Designation": "",
-   "YOE": "",
+   "YOE": 4.1,
    "ReportsTo": "",
    "Project": "On Site",
    "Status": "Billed",
@@ -3264,7 +3264,7 @@
    "Name": "Balachandra Anguru",
    "Practice": "DV",
    "Designation": "",
-   "YOE": "",
+   "YOE": 4.8,
    "ReportsTo": "",
    "Project": "On Site",
    "Status": "Billed",
