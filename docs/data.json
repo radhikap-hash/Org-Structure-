@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-29T11:04:29.130Z",
+ "generatedAt": "2026-06-29T11:56:29.091Z",
  "months": [
   "April",
   "May",
@@ -76,7 +76,7 @@
    "Designation": "Program Manager",
    "YOE": 14,
    "ReportsTo": "Shyam",
-   "Project": "Smart IP Camera",
+   "Project": "Smart IP Camera, ORCA, Renesas, Novotek",
    "Status": "Buffer",
    "Allocation": 0.5,
    "BilledUpto": "",
@@ -84,16 +84,16 @@
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "PGM",
-   "ProjectCode": "CAM",
+   "ProjectCode": "ORCA",
    "byMonth": {
     "Current": {
      "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
+     "Project": "Smart IP Camera, ORCA, Renesas, Novotek",
      "Status": "Buffer"
     },
     "April": {
      "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
+     "Project": "Smart IP Camera, ORCA, Renesas, Novotek",
      "Status": "Buffer"
     }
    }
