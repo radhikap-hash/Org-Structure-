@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-29T08:07:37.231Z",
+ "generatedAt": "2026-06-29T08:07:52.370Z",
  "months": [
   "April",
   "May",
@@ -2861,7 +2861,7 @@
    "YOE": 1.1,
    "ReportsTo": "George",
    "Project": "CV Intelligence",
-   "Status": "Buffer",
+   "Status": "Billed",
    "Allocation": 1,
    "BilledUpto": "",
    "Plan": "CV Intelligence",
@@ -2873,7 +2873,7 @@
     "Current": {
      "ReportsTo": "George",
      "Project": "CV Intelligence",
-     "Status": "Buffer"
+     "Status": "Billed"
     },
     "April": {
      "ReportsTo": "George",
@@ -2919,7 +2919,7 @@
    "YOE": 0.8,
    "ReportsTo": "George",
    "Project": "CV Intelligence",
-   "Status": "Buffer",
+   "Status": "Billed",
    "Allocation": 1,
    "BilledUpto": "",
    "Plan": "CV Intelligence",
@@ -2931,7 +2931,7 @@
     "Current": {
      "ReportsTo": "George",
      "Project": "CV Intelligence",
-     "Status": "Buffer"
+     "Status": "Billed"
     },
     "April": {
      "ReportsTo": "George",
