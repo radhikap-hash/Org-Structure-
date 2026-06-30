@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-30T09:08:54.173Z",
+ "generatedAt": "2026-06-30T09:11:51.036Z",
  "months": [
   "April",
   "May",
@@ -3181,7 +3181,7 @@
    "ReportsTo": "Srikanth",
    "Project": "Documentation work ( Gen5 or FSP )",
    "Status": "Buffer",
-   "Allocation": 0.5,
+   "Allocation": "",
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
