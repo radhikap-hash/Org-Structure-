@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-30T09:08:34.492Z",
+ "generatedAt": "2026-06-30T09:08:54.173Z",
  "months": [
   "April",
   "May",
@@ -3179,7 +3179,7 @@
    "Designation": "Technical Writer",
    "YOE": 4.8,
    "ReportsTo": "Srikanth",
-   "Project": "",
+   "Project": "Documentation work ( Gen5 or FSP )",
    "Status": "Buffer",
    "Allocation": 0.5,
    "BilledUpto": "",
@@ -3187,21 +3187,21 @@
    "CurrentTask": "",
    "Remarks": "Supporting ORCA & Renesas ( ISP )",
    "DomainCode": "OPS",
-   "ProjectCode": "BENCH",
+   "ProjectCode": "GEN5",
    "byMonth": {
     "Current": {
      "ReportsTo": "Srikanth",
-     "Project": "",
+     "Project": "Documentation work ( Gen5 or FSP )",
      "Status": "Buffer"
     },
     "April": {
      "ReportsTo": "Srikanth",
-     "Project": "",
+     "Project": "Documentation work ( Gen5 or FSP )",
      "Status": "UnBilled"
     },
     "May": {
      "ReportsTo": "Srikanth",
-     "Project": "",
+     "Project": "Documentation work ( Gen5 or FSP )",
      "Status": "Unbilled "
     }
    }
