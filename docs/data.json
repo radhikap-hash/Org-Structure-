@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-30T10:04:29.973Z",
+ "generatedAt": "2026-06-30T10:12:06.896Z",
  "months": [
   "April",
   "May",
@@ -2194,7 +2194,7 @@
    "YOE": 1.1,
    "ReportsTo": "Kameswara rao",
    "Project": "Renesas FSP",
-   "Status": "UnBilled",
+   "Status": "Buffer",
    "Allocation": 1,
    "BilledUpto": "NA",
    "Plan": "Ready for Client Exposure",
@@ -2206,7 +2206,7 @@
     "Current": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
-     "Status": "UnBilled"
+     "Status": "Buffer"
     },
     "April": {
      "ReportsTo": "Kameswara rao",
@@ -2600,7 +2600,7 @@
    "YOE": 2.1,
    "ReportsTo": "Kameswara rao",
    "Project": "Renesas FSP",
-   "Status": "UnBilled",
+   "Status": "Buffer",
    "Allocation": 1,
    "BilledUpto": "NA",
    "Plan": "Ready for Client Exposure",
@@ -2612,7 +2612,7 @@
     "Current": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
-     "Status": "UnBilled"
+     "Status": "Buffer"
     },
     "April": {
      "ReportsTo": "Kameswara rao",
@@ -2774,7 +2774,7 @@
    "YOE": 0.9,
    "ReportsTo": "Kameswara rao",
    "Project": "Renesas FSP",
-   "Status": "UnBilled",
+   "Status": "Buffer",
    "Allocation": 1,
    "BilledUpto": "NA",
    "Plan": "Ready for Client Exposure",
@@ -2786,7 +2786,7 @@
     "Current": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
-     "Status": "UnBilled"
+     "Status": "Buffer"
     },
     "April": {
      "ReportsTo": "Kameswara rao",
@@ -2803,7 +2803,7 @@
    "YOE": 0.9,
    "ReportsTo": "Kameswara rao",
    "Project": "Renesas FSP",
-   "Status": "UnBilled",
+   "Status": "Buffer",
    "Allocation": 1,
    "BilledUpto": "NA",
    "Plan": "Ready for Client Exposure",
@@ -2815,7 +2815,7 @@
     "Current": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
-     "Status": "UnBilled"
+     "Status": "Buffer"
     },
     "April": {
      "ReportsTo": "Kameswara rao",
