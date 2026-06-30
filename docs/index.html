@@ -202,7 +202,7 @@ table.mx tr.tot-row td.pname{background:var(--navy);color:#fff}
 .lb-chip{display:inline-block;width:10px;height:10px;border-radius:2px;vertical-align:middle;margin-right:3px}
 .lb-chip.g{background:var(--g-bg);border:1px solid var(--gbar)}.lb-chip.y{background:var(--y-bg);border:1px solid var(--ybar)}.lb-chip.r{background:var(--r-bg);border:1px solid var(--rbar)}
 .lead-tbl-wrap{overflow-x:auto;border:1px solid #dde3ef;border-radius:6px}
-.lead-tbl{border-collapse:collapse;width:100%;min-width:1180px;font-size:11px}
+.lead-tbl{border-collapse:collapse;width:100%;min-width:880px;font-size:11px}
 .lead-tbl th{background:var(--blue);color:#fff;font-weight:700;padding:7px 8px;text-align:center;border:1px solid #2851a0;font-size:10px;line-height:1.3;position:sticky;top:0;white-space:nowrap}
 .lead-tbl th.lt-lead{background:var(--navy);text-align:left;min-width:118px;position:sticky;left:0;z-index:3}
 .lead-tbl td{padding:6px 8px;text-align:center;border:1px solid #e3e8f2;vertical-align:middle}
@@ -213,12 +213,8 @@ table.mx tr.tot-row td.pname{background:var(--navy);color:#fff}
 .lead-tbl td.pc{font-weight:700}
 .pc.g{background:var(--g-bg)!important;color:var(--g)}.pc.y{background:var(--y-bg)!important;color:var(--y)}
 .pc.r{background:var(--r-bg)!important;color:var(--r)}.pc.b{background:var(--b-bg)!important;color:var(--b)}
-.lead-tbl td.lt-note{text-align:left;min-width:150px;max-width:210px;font-size:10px;color:#444;cursor:text;background:#fffef9!important}
-.lead-tbl td.lt-note:empty::before{content:'+ add note';color:#bbb;font-style:italic}
-.lead-tbl td.lt-note:focus{outline:2px solid var(--blue);outline-offset:-2px;background:#fff!important}
 .lead-tbl tr.lt-overall td{background:var(--navy)!important;color:#fff;font-weight:700;border-color:#2851a0}
 .lead-tbl tr.lt-overall td.pc{color:#fff}
-.lead-tbl tr.lt-overall td.lt-note{background:#2a3f66!important;color:#cdd8ee}
 .conc-row{display:flex;align-items:center;gap:8px;margin-bottom:6px;cursor:pointer}
 .conc-row:hover .stk-lbl{color:var(--navy);font-weight:700}
 .conc-fill{height:17px;border-radius:3px;background:linear-gradient(90deg,#2E5FAC,#1F7A8C);display:flex;align-items:center;padding:0 7px;color:#fff;font-size:9.5px;font-weight:700;min-width:30px}
@@ -371,7 +367,7 @@ table.mx tr.tot-row td.pname{background:var(--navy);color:#fff}
       <span class="lb-key"><span class="lb-chip y"></span>Near Target</span>
       <span class="lb-key"><span class="lb-chip r"></span>Below Target</span>
     </div>
-    <div class="hint">One row per Team Lead. Counts respect the current Month + filters. The two note columns are editable — click and type; they save in this browser. Click a lead name for the full team list.</div>
+    <div class="hint">One row per Team Lead. Counts respect the current Month + filters. Click a lead name for the full team list.</div>
     <div class="lead-tbl-wrap"><table class="lead-tbl" id="lead-table"></table></div>
   </div>
 </div>
@@ -721,16 +717,43 @@ const reg=(title,sub,emps)=>{const k='k'+(regId++);LISTS[k]={title,sub,emps};ret
 const STATUS_ORDER=['Billed','Buffer','UnBilled','Bench','Onsite'];
 const ST_DOT={Billed:'g',Buffer:'y',UnBilled:'r',Bench:'k',Onsite:'o'};
 const ST_CX={Billed:'cx-b',Buffer:'cx-f',UnBilled:'cx-u',Bench:'cx-k',Onsite:'cx-o'};
+
+// YOE buckets — junior granularity (the sheet uses 0.x / 1.11 style values).
+const YOE_BUCKETS=[
+  ['<1','< 1 year',    y=>y<1],
+  ['1-2','1–2 years',  y=>y>=1&&y<2],
+  ['2-3','2–3 years',  y=>y>=2&&y<3],
+  ['3-4','3–4 years',  y=>y>=3&&y<4],
+  ['4-5','4–5 years',  y=>y>=4&&y<5],
+  ['5-10','5–10 years',y=>y>=5&&y<10],
+  ['10+','10+ years',  y=>y>=10],
+];
+// token (ReportsTo) -> employee id of the lead themselves, best-effort by name match.
+let LEAD_EMP={};
+function buildLeadMap(){
+  LEAD_EMP={};
+  [...new Set(ALL.map(e=>e.lead).filter(Boolean))].forEach(tok=>{
+    const t=tok.toLowerCase();
+    let cand=ALL.filter(e=>e.name.toLowerCase().includes(t));
+    if(!cand.length){
+      const fw=t.split(/\s+/)[0];
+      cand=ALL.filter(e=>(e.name.toLowerCase().split(/\s+/)[0]||'')===fw);
+    }
+    if(cand.length){ cand.sort((a,b)=>(parseFloat(b.yoe)||0)-(parseFloat(a.yoe)||0)); LEAD_EMP[tok]=cand[0].id; }
+  });
+}
+
 function filtered(){
   const fp=$('f-practice').value, fs=$('f-status').value, fc=$('f-client').value,
         fl=$('f-lead').value, fd=$('f-desig').value, fy=$('f-yoe').value, fpj=$('f-project').value;
+  const yb=fy?YOE_BUCKETS.find(b=>b[0]===fy):null;
   return ALL.filter(e=>
     (!fp||e.practice===fp)&&
     (!fs||e.status===fs)&&
     (!fc||e.client===fc)&&
     (!fl||e.lead===fl)&&
     (!fd||(e.desig||'')===fd)&&
-    (!fy||String(e.yoe||'')===fy)&&
+    (!yb||(()=>{const v=parseFloat(e.yoe);return !isNaN(v)&&yb[2](v);})())&&
     (!fpj||e.proj===fpj)
   );
 }
@@ -843,12 +866,21 @@ const pillTxt=e=>{
   const isL2=e=>!isL1(e)&&(/sr\.?\s*staff\s*engineer|senior staff engineer|staff engineer|program manager/i.test(e.desig||''))&&Number(e.yoe||0)>=7;
   const isL3=e=>!isL1(e)&&!isL2(e)&&(/senior engineer|technical writer|ci\s*\/?\s*cd/i.test(e.desig||'')||/consultant/i.test(e.desig||''));
 
-  const l1=ALL.filter(isL1);
-  const l2=ALL.filter(isL2);
-  const l3=ALL.filter(isL3);
+  // Working set = the filtered people. When a Team Lead is selected, also bring in
+  // the lead themselves so the view reads "lead + their team".
+  let people=emps.slice();
+  const flSel=$('f-lead').value;
+  if(flSel && LEAD_EMP[flSel]){
+    const le=ALL.find(e=>e.id===LEAD_EMP[flSel]);
+    if(le && !people.some(e=>e.id===le.id)) people=[le,...people];
+  }
+
+  const l1=people.filter(isL1);
+  const l2=people.filter(isL2);
+  const l3=people.filter(isL3);
   const upperIds=new Set([...l1,...l2,...l3].map(e=>e.id));
-  // L4 = filtered view minus upper levels, minus onsite
-  const l4=emps.filter(e=>!upperIds.has(e.id)&&e.status!=='Onsite');
+  // L4 = remaining people, minus onsite
+  const l4=people.filter(e=>!upperIds.has(e.id)&&e.status!=='Onsite');
 
   // L2 colour: Buffer/UnBilled→blue, otherwise teal
   const l2cls=e=>e.status==='Buffer'||e.status==='UnBilled'||e.status==='Bench'?'oc-l2f':'oc-l2b';
@@ -979,12 +1011,6 @@ function renderHealth(emps){
 }
 
 // ── Team Lead billing table ──────────────────────────────────
-// Editable note persistence (works on GitHub Pages; keyed per lead).
-function noteKey(lead,slot){ return 'vct_leadnote::'+slot+'::'+lead; }
-function getNote(lead,slot){ try{ return localStorage.getItem(noteKey(lead,slot))||''; }catch(_){ return ''; } }
-function saveNote(el){
-  try{ localStorage.setItem(noteKey(el.dataset.lead,el.dataset.slot), el.textContent.trim()); }catch(_){}
-}
 function pctCls(kind,v){
   if(kind==='billed') return v>=70?'g':v>=60?'y':'r';
   if(kind==='buffer') return v>30?'y':v>=10?'g':'b';
@@ -1027,15 +1053,12 @@ function renderLeadTable(emps){
     <th>Billed %<br>(≥70%)</th>
     <th>Buffer %<br>(≈20%)</th>
     <th>UnBilled %<br>(≤10%)</th>
-    <th>Plan / Buffer Note</th>
-    <th>Action / Remarks</th>
   </tr>`;
 
   const fmt=v=>v.toFixed(1)+'%';
   const rows=leadNames.map(L=>{
     const st=leadStats(groups[L]);
     const k=reg(L+' — team','Team Lead view',groups[L]);
-    const pl=esc(getNote(L,'plan')), rm=esc(getNote(L,'rmk'));
     return `<tr>
       <td class="lt-lead" onclick="openList('${k}')">${esc(L)}</td>
       <td>${st.total}</td>
@@ -1047,8 +1070,6 @@ function renderLeadTable(emps){
       <td class="pc ${pctCls('billed',st.billedPct)}">${fmt(st.billedPct)}</td>
       <td class="pc ${pctCls('buffer',st.bufferPct)}">${fmt(st.bufferPct)}</td>
       <td class="pc ${pctCls('unbilled',st.unbilledPct)}">${fmt(st.unbilledPct)}</td>
-      <td class="lt-note" contenteditable="true" data-lead="${esc(L)}" data-slot="plan" onblur="saveNote(this)">${pl}</td>
-      <td class="lt-note" contenteditable="true" data-lead="${esc(L)}" data-slot="rmk" onblur="saveNote(this)">${rm}</td>
     </tr>`;
   }).join('');
 
@@ -1061,8 +1082,6 @@ function renderLeadTable(emps){
     <td class="pc">${fmt(o.billedPct)}</td>
     <td class="pc">${fmt(o.bufferPct)}</td>
     <td class="pc">${fmt(o.unbilledPct)}</td>
-    <td class="lt-note" style="cursor:default" contenteditable="false"></td>
-    <td class="lt-note" style="cursor:default" contenteditable="false"></td>
   </tr>`;
 
   tbl.innerHTML=head+(rows||'')+overall;
@@ -1093,15 +1112,16 @@ function fillFilters(){
   const fd=$('f-desig'); fd.length=1;
   [...new Set(ALL.map(e=>e.desig).filter(Boolean))].sort((a,b)=>a.localeCompare(b)).forEach(d=>fd.add(new Option(d,d)));
 
-  // YOE — distinct exact values, numeric sort
+  // YOE — bucketed ranges (only show buckets that have people)
   const fy=$('f-yoe'); fy.length=1;
-  [...new Set(ALL.map(e=>String(e.yoe||'').trim()).filter(Boolean))]
-    .sort((a,b)=>(parseFloat(a)||0)-(parseFloat(b)||0))
-    .forEach(y=>fy.add(new Option(y,y)));
+  YOE_BUCKETS.filter(b=>ALL.some(e=>{const v=parseFloat(e.yoe);return !isNaN(v)&&b[2](v);}))
+    .forEach(b=>fy.add(new Option(b[1],b[0])));
 
   // Project — in canonical order, labelled
   const fpj=$('f-project'); fpj.length=1;
   PROJ_ORDER.filter(p=>ALL.some(e=>e.proj===p)).forEach(p=>fpj.add(new Option(PROJ_DEFS[p].label,p)));
+
+  buildLeadMap();
 }
 function monthRow(e,month){
   const m=(e.byMonth&&e.byMonth[month])||{};
