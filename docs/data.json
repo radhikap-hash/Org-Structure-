@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-30T08:04:30.410Z",
+ "generatedAt": "2026-06-30T08:37:47.247Z",
  "months": [
   "April",
   "May",
@@ -424,7 +424,7 @@
    "Designation": "Senior Engineer",
    "YOE": 4.1,
    "ReportsTo": "Aravind",
-   "Project": "FLC",
+   "Project": "FLC, DLI",
    "Status": "Billed",
    "Allocation": 1,
    "BilledUpto": "",
@@ -436,12 +436,12 @@
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
-     "Project": "FLC",
+     "Project": "FLC, DLI",
      "Status": "Billed"
     },
     "April": {
      "ReportsTo": "Aravind",
-     "Project": "FLC",
+     "Project": "FLC, DLI",
      "Status": "Billed"
     }
    }
