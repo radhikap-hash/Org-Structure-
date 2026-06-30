@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-30T09:11:51.036Z",
+ "generatedAt": "2026-06-30T09:13:20.667Z",
  "months": [
   "April",
   "May",
@@ -511,7 +511,7 @@
    "Designation": "Engineer I",
    "YOE": 0.8,
    "ReportsTo": "Aravind",
-   "Project": "",
+   "Project": "DLI Soc Modelling",
    "Status": "UnBilled",
    "Allocation": "",
    "BilledUpto": "NA",
@@ -519,16 +519,16 @@
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "FPGA",
-   "ProjectCode": "BENCH",
+   "ProjectCode": "DLI",
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
-     "Project": "",
+     "Project": "DLI Soc Modelling",
      "Status": "UnBilled"
     },
     "April": {
      "ReportsTo": "Aravind",
-     "Project": "",
+     "Project": "DLI Soc Modelling",
      "Status": "UnBilled"
     }
    }
