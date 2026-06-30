@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-30T12:04:30.539Z",
+ "generatedAt": "2026-06-30T12:25:02.863Z",
  "months": [
   "April",
   "May",
@@ -47,7 +47,7 @@
    "Designation": "Program Manager",
    "YOE": 14,
    "ReportsTo": "Srikanth",
-   "Project": "Renesas",
+   "Project": "Renesas ( ISP )",
    "Status": "Billed",
    "Allocation": 1,
    "BilledUpto": "",
@@ -59,12 +59,12 @@
    "byMonth": {
     "Current": {
      "ReportsTo": "Srikanth",
-     "Project": "Renesas",
+     "Project": "Renesas ( ISP )",
      "Status": "Billed"
     },
     "April": {
      "ReportsTo": "Srikanth",
-     "Project": "Renesas",
+     "Project": "Renesas ( ISP )",
      "Status": "Billed"
     }
    }
