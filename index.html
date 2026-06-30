@@ -284,8 +284,7 @@ table.mx tr.tot-row td.pname{background:var(--navy);color:#fff}
 
 <div class="topbar">
   <div>
-    <div class="title">VConnecTech Systems — Workforce Intelligence <span class="vpill">v3.0 LIVE</span></div>
-    <div class="sub">Org · Allocation · Projects · Business Health &nbsp;·&nbsp; FY 2026–27</div>
+    <div class="title">VConnecTech Systems — Workforce Intelligence <span class="vpill">LIVE</span></div>
   </div>
   <div class="topbar-right"><div class="logo">VCT</div><div style="margin-top:2px">Confidential</div></div>
 </div>
@@ -747,7 +746,7 @@ function filtered(){
   const fp=$('f-practice').value, fs=$('f-status').value, fc=$('f-client').value,
         fl=$('f-lead').value, fd=$('f-desig').value, fy=$('f-yoe').value, fpj=$('f-project').value;
   const yb=fy?YOE_BUCKETS.find(b=>b[0]===fy):null;
-  return ALL.filter(e=>
+  let out=ALL.filter(e=>
     (!fp||e.practice===fp)&&
     (!fs||e.status===fs)&&
     (!fc||e.client===fc)&&
@@ -756,6 +755,13 @@ function filtered(){
     (!yb||(()=>{const v=parseFloat(e.yoe);return !isNaN(v)&&yb[2](v);})())&&
     (!fpj||e.proj===fpj)
   );
+  // When a Team Lead is selected, also bring in the lead themselves so every tab
+  // (org, matrix, projects, health) reads "lead + their team".
+  if(fl && LEAD_EMP[fl]){
+    const le=ALL.find(e=>e.id===LEAD_EMP[fl]);
+    if(le && !out.some(e=>e.id===le.id)) out=[le,...out];
+  }
+  return out;
 }
 function resetFilters(){
   ['f-practice','f-status','f-client','f-lead','f-desig','f-yoe','f-project'].forEach(id=>{const el=$(id); if(el) el.value='';});
@@ -866,14 +872,9 @@ const pillTxt=e=>{
   const isL2=e=>!isL1(e)&&(/sr\.?\s*staff\s*engineer|senior staff engineer|staff engineer|program manager/i.test(e.desig||''))&&Number(e.yoe||0)>=7;
   const isL3=e=>!isL1(e)&&!isL2(e)&&(/senior engineer|technical writer|ci\s*\/?\s*cd/i.test(e.desig||'')||/consultant/i.test(e.desig||''));
 
-  // Working set = the filtered people. When a Team Lead is selected, also bring in
-  // the lead themselves so the view reads "lead + their team".
-  let people=emps.slice();
-  const flSel=$('f-lead').value;
-  if(flSel && LEAD_EMP[flSel]){
-    const le=ALL.find(e=>e.id===LEAD_EMP[flSel]);
-    if(le && !people.some(e=>e.id===le.id)) people=[le,...people];
-  }
+  // Working set = the filtered people (filtered() already includes the selected
+  // Team Lead themselves so the view reads "lead + their team").
+  const people=emps;
 
   const l1=people.filter(isL1);
   const l2=people.filter(isL2);
@@ -1037,10 +1038,14 @@ function renderLeadTable(emps){
   // group by lead (trimmed); blank lead → "(No Lead / Director)"
   const groups={};
   emps.forEach(e=>{ const L=e.lead||'(No Lead / Director)'; (groups[L]=groups[L]||[]).push(e); });
-  const leadNames=Object.keys(groups).sort((a,b)=>{
+  let leadNames=Object.keys(groups).sort((a,b)=>{
     if(a.startsWith('(')) return 1; if(b.startsWith('(')) return -1;
     return a.localeCompare(b);
   });
+  // If a specific Team Lead is selected, show just that lead's row
+  // (skip the stray boss-row created by including the lead themselves).
+  const flSel=$('f-lead').value;
+  if(flSel) leadNames=leadNames.filter(L=>L===flSel);
 
   const head=`<tr>
     <th class="lt-lead">Team Lead</th>
@@ -1073,8 +1078,9 @@ function renderLeadTable(emps){
     </tr>`;
   }).join('');
 
-  // OVERALL row
-  const o=leadStats(emps);
+  // OVERALL row — computed from the rows actually shown, so it always reconciles
+  const shownEmps=leadNames.flatMap(L=>groups[L]||[]);
+  const o=leadStats(shownEmps);
   const overall=`<tr class="lt-overall">
     <td class="lt-lead" style="position:sticky;left:0">OVERALL</td>
     <td>${o.total}</td><td>${o.pureBilled}</td><td>${o.bufBilled}</td>
@@ -1212,7 +1218,7 @@ async function boot(force){
     if(people){
       ALL=people; SRC='live';
       bar.className='srcbar live';
-      $('src-text').innerHTML=`<b>LIVE</b> — ${ALL.length} people from ${srcLabel} · ${new Date().toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'})}. Edit the sheet, then hit Refresh.`;
+      $('src-text').innerHTML=`<b>LIVE</b> — Last updated at ${new Date().toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'})} · Hit Refresh for new data.`;
     }else{
       ALL=normalize(parseCSV(SNAPSHOT_CSV)); SRC='snap';
       bar.className='srcbar snap';
