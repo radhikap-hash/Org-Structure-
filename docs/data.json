@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-30T10:16:50.519Z",
+ "generatedAt": "2026-06-30T10:29:55.453Z",
  "months": [
   "April",
   "May",
@@ -1786,7 +1786,7 @@
    "Practice": "Embedded - S/W",
    "Designation": "Engineer II",
    "YOE": 4.5,
-   "ReportsTo": "Teja",
+   "ReportsTo": "KeerthI Pratap",
    "Project": "",
    "Status": "UnBilled",
    "Allocation": 0,
@@ -1798,12 +1798,12 @@
    "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
-     "ReportsTo": "Teja",
+     "ReportsTo": "KeerthI Pratap",
      "Project": "",
      "Status": "UnBilled"
     },
     "April": {
-     "ReportsTo": "Teja",
+     "ReportsTo": "KeerthI Pratap",
      "Project": "",
      "Status": "Billed"
     }
@@ -1902,7 +1902,7 @@
    "Practice": "Embedded - S/W",
    "Designation": "Senior Engineer",
    "YOE": 5.1,
-   "ReportsTo": "Teja",
+   "ReportsTo": "KeerthI Pratap",
    "Project": "Gen5",
    "Status": "UnBilled",
    "Allocation": 0,
@@ -1914,12 +1914,12 @@
    "ProjectCode": "GEN5",
    "byMonth": {
     "Current": {
-     "ReportsTo": "Teja",
+     "ReportsTo": "KeerthI Pratap",
      "Project": "Gen5",
      "Status": "UnBilled"
     },
     "April": {
-     "ReportsTo": "Teja",
+     "ReportsTo": "KeerthI Pratap",
      "Project": "Gen5",
      "Status": "UnBilled"
     }
