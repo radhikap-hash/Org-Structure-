@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-30T10:29:58.138Z",
+ "generatedAt": "2026-06-30T10:31:21.653Z",
  "months": [
   "April",
   "May",
@@ -1470,7 +1470,7 @@
    "ReportsTo": "Shyam",
    "Project": "Smart IP Camera ( Novotec )",
    "Status": "Buffer",
-   "Allocation": "",
+   "Allocation": 1,
    "BilledUpto": "2026-05-31T18:30:00.000Z",
    "Plan": "",
    "CurrentTask": "",
