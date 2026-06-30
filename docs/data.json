@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-30T09:13:20.667Z",
+ "generatedAt": "2026-06-30T09:13:44.920Z",
  "months": [
   "April",
   "May",
@@ -511,9 +511,9 @@
    "Designation": "Engineer I",
    "YOE": 0.8,
    "ReportsTo": "Aravind",
-   "Project": "DLI Soc Modelling",
+   "Project": "DLI",
    "Status": "UnBilled",
-   "Allocation": "",
+   "Allocation": 1,
    "BilledUpto": "NA",
    "Plan": "HSM / RISCV Tasks",
    "CurrentTask": "",
@@ -523,12 +523,12 @@
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
-     "Project": "DLI Soc Modelling",
+     "Project": "DLI",
      "Status": "UnBilled"
     },
     "April": {
      "ReportsTo": "Aravind",
-     "Project": "DLI Soc Modelling",
+     "Project": "DLI",
      "Status": "UnBilled"
     }
    }
