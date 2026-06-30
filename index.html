@@ -195,6 +195,30 @@ table.mx tr.tot-row td.pname{background:var(--navy);color:#fff}
 .stk-seg{height:100%;display:flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700;min-width:0;white-space:nowrap;overflow:hidden}
 .seg-g{background:var(--gbar);color:#fff}.seg-y{background:var(--ybar);color:#5a3c00}.seg-r{background:var(--rbar);color:#fff}.seg-o{background:#b9bfcc;color:#fff}
 .stk-n{font-size:10px;color:#888;min-width:28px}
+
+/* TEAM LEAD BILLING TABLE */
+.lead-benchmarks{font-size:10.5px;color:#7a6000;background:#FFF8E6;border:1px solid #F0D98C;border-radius:6px;padding:7px 11px;margin-bottom:10px;line-height:1.7}
+.lead-benchmarks .lb-key{display:inline-block;margin-left:8px;color:#555}
+.lb-chip{display:inline-block;width:10px;height:10px;border-radius:2px;vertical-align:middle;margin-right:3px}
+.lb-chip.g{background:var(--g-bg);border:1px solid var(--gbar)}.lb-chip.y{background:var(--y-bg);border:1px solid var(--ybar)}.lb-chip.r{background:var(--r-bg);border:1px solid var(--rbar)}
+.lead-tbl-wrap{overflow-x:auto;border:1px solid #dde3ef;border-radius:6px}
+.lead-tbl{border-collapse:collapse;width:100%;min-width:1180px;font-size:11px}
+.lead-tbl th{background:var(--blue);color:#fff;font-weight:700;padding:7px 8px;text-align:center;border:1px solid #2851a0;font-size:10px;line-height:1.3;position:sticky;top:0;white-space:nowrap}
+.lead-tbl th.lt-lead{background:var(--navy);text-align:left;min-width:118px;position:sticky;left:0;z-index:3}
+.lead-tbl td{padding:6px 8px;text-align:center;border:1px solid #e3e8f2;vertical-align:middle}
+.lead-tbl td.lt-lead{text-align:left;font-weight:700;color:var(--navy);background:#f5f7fc;cursor:pointer;position:sticky;left:0;z-index:1}
+.lead-tbl td.lt-lead:hover{background:#e9effb}
+.lead-tbl tr:nth-child(even) td{background:#fafbfe}
+.lead-tbl tr:nth-child(even) td.lt-lead{background:#eef1f9}
+.lead-tbl td.pc{font-weight:700}
+.pc.g{background:var(--g-bg)!important;color:var(--g)}.pc.y{background:var(--y-bg)!important;color:var(--y)}
+.pc.r{background:var(--r-bg)!important;color:var(--r)}.pc.b{background:var(--b-bg)!important;color:var(--b)}
+.lead-tbl td.lt-note{text-align:left;min-width:150px;max-width:210px;font-size:10px;color:#444;cursor:text;background:#fffef9!important}
+.lead-tbl td.lt-note:empty::before{content:'+ add note';color:#bbb;font-style:italic}
+.lead-tbl td.lt-note:focus{outline:2px solid var(--blue);outline-offset:-2px;background:#fff!important}
+.lead-tbl tr.lt-overall td{background:var(--navy)!important;color:#fff;font-weight:700;border-color:#2851a0}
+.lead-tbl tr.lt-overall td.pc{color:#fff}
+.lead-tbl tr.lt-overall td.lt-note{background:#2a3f66!important;color:#cdd8ee}
 .conc-row{display:flex;align-items:center;gap:8px;margin-bottom:6px;cursor:pointer}
 .conc-row:hover .stk-lbl{color:var(--navy);font-weight:700}
 .conc-fill{height:17px;border-radius:3px;background:linear-gradient(90deg,#2E5FAC,#1F7A8C);display:flex;align-items:center;padding:0 7px;color:#fff;font-size:9.5px;font-weight:700;min-width:30px}
@@ -287,7 +311,11 @@ table.mx tr.tot-row td.pname{background:var(--navy);color:#fff}
 
 <div class="filterbar">
   <label>Month</label><select id="f-month" onchange="applyMonth()"><option>Current</option></select>
-  <label>Practice</label><select id="f-practice" onchange="renderAll()"><option value="">All</option></select>
+  <label>Domain</label><select id="f-practice" onchange="renderAll()"><option value="">All</option></select>
+  <label>Team Lead</label><select id="f-lead" onchange="renderAll()"><option value="">All</option></select>
+  <label>Designation</label><select id="f-desig" onchange="renderAll()"><option value="">All</option></select>
+  <label>YOE</label><select id="f-yoe" onchange="renderAll()"><option value="">All</option></select>
+  <label>Project</label><select id="f-project" onchange="renderAll()"><option value="">All</option></select>
   <label>Status</label><select id="f-status" onchange="renderAll()"><option value="">All</option><option>Billed</option><option>Buffer</option><option>UnBilled</option><option>Bench</option><option>Onsite</option></select>
   <label>Client</label><select id="f-client" onchange="renderAll()"><option value="">All</option></select>
   <span class="filter-count" id="filter-count"></span>
@@ -307,7 +335,7 @@ table.mx tr.tot-row td.pname{background:var(--navy);color:#fff}
 </div>
 
 <div class="pane" id="pane-matrix">
-  <div class="pane-cap">Who is staffed where — practices × projects. Click any cell, row total, column total or the grand total to see names.</div>
+  <div class="pane-cap">Who is staffed where — domains × projects. Click any cell, row total, column total or the grand total to see names.</div>
   <div class="matrix-wrap"><table class="mx" id="mx-table"></table></div>
 </div>
 
@@ -317,29 +345,34 @@ table.mx tr.tot-row td.pname{background:var(--navy);color:#fff}
 </div>
 
 <div class="pane" id="pane-health">
-  <div class="pane-cap">Headcount-based health metrics only — no estimated rupees. Everything here is computed directly from the sheet.</div>
-  <div class="grid2">
-    <div class="card">
-      <h4>Core Utilization</h4>
-      <div class="gauge-wrap">
-        <svg viewBox="0 0 120 70" width="135">
-          <path d="M10,65 A55,55 0 0,1 110,65" fill="none" stroke="#eee" stroke-width="10" stroke-linecap="round"/>
-          <path id="gauge-arc" d="M10,65 A55,55 0 0,1 110,65" fill="none" stroke="#2E5FAC" stroke-width="10" stroke-linecap="round" stroke-dasharray="0,200"/>
-        </svg>
-        <div>
-          <div class="gi-val" id="util-pct">—</div>
-          <div class="gi-lbl">Billed ÷ (Total − Onsite)</div>
-          <div class="gi-sub" id="util-sub"></div>
-        </div>
+  <div class="pane-cap">Headcount-based health metrics only — no estimated rupees. Everything here is computed directly from the sheet and respects the filters above.</div>
+  <div class="card">
+    <h4>Core Utilization</h4>
+    <div class="gauge-wrap">
+      <svg viewBox="0 0 120 70" width="135">
+        <path d="M10,65 A55,55 0 0,1 110,65" fill="none" stroke="#eee" stroke-width="10" stroke-linecap="round"/>
+        <path id="gauge-arc" d="M10,65 A55,55 0 0,1 110,65" fill="none" stroke="#2E5FAC" stroke-width="10" stroke-linecap="round" stroke-dasharray="0,200"/>
+      </svg>
+      <div>
+        <div class="gi-val" id="util-pct">—</div>
+        <div class="gi-lbl">Billed ÷ (Total − Onsite)</div>
+        <div class="gi-sub" id="util-sub"></div>
       </div>
-      <div class="pills" id="util-pills"></div>
-      <div style="font-size:10px;color:#888;margin-top:10px">Healthy range for a services firm: <b>75–85%</b>. Below 65% is a margin warning.</div>
     </div>
-    <div class="card">
-      <h4>Practice Health — Billed / Buffer / Bench</h4>
-      <div class="hint">One bar per practice. Green earns, amber is parked, red costs. Click a bar for names.</div>
-      <div id="practice-stacks"></div>
+    <div class="pills" id="util-pills"></div>
+    <div style="font-size:10px;color:#888;margin-top:10px">Healthy range for a services firm: <b>75–85%</b>. Below 65% is a margin warning.</div>
+  </div>
+
+  <div class="card">
+    <h4>Team Lead-wise Billing Analysis &nbsp;·&nbsp; <span id="lead-fy" style="font-weight:400;color:#888">FY 2026–27</span></h4>
+    <div class="lead-benchmarks">
+      Benchmarks: Billed (incl. Buffer Billed) ≥ 70% &nbsp;|&nbsp; Buffer ≈ 20% &nbsp;|&nbsp; UnBilled ≤ 10%
+      &nbsp;&nbsp;<span class="lb-key"><span class="lb-chip g"></span>On/Above Target</span>
+      <span class="lb-key"><span class="lb-chip y"></span>Near Target</span>
+      <span class="lb-key"><span class="lb-chip r"></span>Below Target</span>
     </div>
+    <div class="hint">One row per Team Lead. Counts respect the current Month + filters. The two note columns are editable — click and type; they save in this browser. Click a lead name for the full team list.</div>
+    <div class="lead-tbl-wrap"><table class="lead-tbl" id="lead-table"></table></div>
   </div>
 </div>
 
@@ -610,6 +643,7 @@ function parseUpto(u){
 // Shared per-employee derivation — used by both the CSV path and the Apps Script JSON path.
 function finalizeEmp(e){
   e.domainRaw=e.domainRaw||''; e.statusRaw=e.statusRaw||''; e.projRaw=e.projRaw||''; e.bw=e.bw||'';
+  e.lead=(e.lead||'').trim();
 
   if(!e.practice){
     if(PRACTICE_ORDER.includes(e.domainRaw)) e.practice=e.domainRaw;     // already-clean (Master sheet)
@@ -688,10 +722,22 @@ const STATUS_ORDER=['Billed','Buffer','UnBilled','Bench','Onsite'];
 const ST_DOT={Billed:'g',Buffer:'y',UnBilled:'r',Bench:'k',Onsite:'o'};
 const ST_CX={Billed:'cx-b',Buffer:'cx-f',UnBilled:'cx-u',Bench:'cx-k',Onsite:'cx-o'};
 function filtered(){
-  const fp=$('f-practice').value, fs=$('f-status').value, fc=$('f-client').value;
-  return ALL.filter(e=>(!fp||e.practice===fp)&&(!fs||e.status===fs)&&(!fc||e.client===fc));
+  const fp=$('f-practice').value, fs=$('f-status').value, fc=$('f-client').value,
+        fl=$('f-lead').value, fd=$('f-desig').value, fy=$('f-yoe').value, fpj=$('f-project').value;
+  return ALL.filter(e=>
+    (!fp||e.practice===fp)&&
+    (!fs||e.status===fs)&&
+    (!fc||e.client===fc)&&
+    (!fl||e.lead===fl)&&
+    (!fd||(e.desig||'')===fd)&&
+    (!fy||String(e.yoe||'')===fy)&&
+    (!fpj||e.proj===fpj)
+  );
 }
-function resetFilters(){ $('f-practice').value=''; $('f-status').value=''; $('f-client').value=''; renderAll(); }
+function resetFilters(){
+  ['f-practice','f-status','f-client','f-lead','f-desig','f-yoe','f-project'].forEach(id=>{const el=$(id); if(el) el.value='';});
+  renderAll();
+}
 function showTab(name,btn){
   document.querySelectorAll('.pane').forEach(p=>p.classList.remove('active'));
   document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
@@ -724,7 +770,7 @@ function openList(k){
   <td>${esc(e.yoe||'—')}</td><td><span class="st-badge stb-${e.status}">${e.status}</span></td>
     <td>${esc(e.projLabel)}${e.alloc!=null&&e.alloc<100?` <span style="color:#C00000;font-size:9px">⚠ ${e.alloc}%</span>`:''}</td>
     <td style="font-size:10px;color:#777;max-width:260px">${esc(notesOf(e))||'—'}</td></tr>`).join('');
-  $('modal-body').innerHTML=`<table class="tbl"><thead><tr><th>ID</th><th>Name</th><th>Practice</th><th>YOE</th><th>Status</th><th>Project</th><th>Notes</th></tr></thead><tbody>${rows||'<tr><td colspan=7 style="color:#999;text-align:center;padding:18px">No one matches.</td></tr>'}</tbody></table>`;
+  $('modal-body').innerHTML=`<table class="tbl"><thead><tr><th>ID</th><th>Name</th><th>Domain</th><th>YOE</th><th>Status</th><th>Project</th><th>Notes</th></tr></thead><tbody>${rows||'<tr><td colspan=7 style="color:#999;text-align:center;padding:18px">No one matches.</td></tr>'}</tbody></table>`;
   $('modal').classList.add('open');
 }
 function openPerson(id){
@@ -824,7 +870,7 @@ const pillTxt=e=>{
 
   if(l2.length)
     html+=`<div class="org-level">
-      <div class="org-level-hdr">L2 — Practice Leads &amp; Program Managers <span>(${l2.length})</span></div>
+      <div class="org-level-hdr">L2 — Domain Leads &amp; Program Managers <span>(${l2.length})</span></div>
       <div class="org-row">${l2.map(e=>ocard(e,l2cls(e),true)).join('')}</div>
     </div><div class="org-connector"></div>`;
 
@@ -846,7 +892,7 @@ const pillTxt=e=>{
 function renderMatrix(emps){
   const pracs=PRACTICE_ORDER.filter(p=>emps.some(e=>e.practice===p));
   const projs=PROJ_ORDER.filter(p=>emps.some(e=>e.proj===p));
-  let html='<tr><th class="prac-hdr">Practice \\ Project</th>'+projs.map(p=>`<th>${esc(PROJ_DEFS[p].label.replace(/[ /]/g,'\n'))}</th>`).join('')+'<th>TOTAL</th></tr>';
+  let html='<tr><th class="prac-hdr">Domain \\ Project</th>'+projs.map(p=>`<th>${esc(PROJ_DEFS[p].label.replace(/[ /]/g,'\n'))}</th>`).join('')+'<th>TOTAL</th></tr>';
   pracs.forEach(pr=>{
     const inPrac=emps.filter(e=>e.practice===pr);
     const kRow=reg(`${pr} — all`,'',inPrac);
@@ -928,17 +974,98 @@ function renderHealth(emps){
   $('util-pills').innerHTML=[['pl-g',s.billed,'Billed','Billed'],['pl-y',s.buffer,'Buffer','Buffer'],['pl-r',s.bench,'Bench','UnBilled'],['pl-o',s.onsite,'Onsite','Onsite']]
     .map(([c,n,l,st])=>`<span class="pill ${c}" onclick="openList('${reg(l,'',emps.filter(e=>e.status===st))}')">${n} ${l}</span>`).join('');
 
-  // practice stacked bars
-  const pracs=PRACTICE_ORDER.filter(p=>emps.some(e=>e.practice===p));
-  $('practice-stacks').innerHTML=pracs.map(pr=>{
-    const m=emps.filter(e=>e.practice===pr); const tot=m.length;
-    const seg=(st,cls)=>{const n=m.filter(e=>e.status===st).length; if(!n)return '';
-      const w=n/tot*100; return `<div class="stk-seg ${cls}" style="width:${w}%">${w>9?n:''}</div>`;};
-    const k=reg(pr+' — all','',m);
-    return `<div class="stk-row" onclick="openList('${k}')"><div class="stk-lbl">${esc(pr)}</div>
-      <div class="stk-track">${seg('Billed','seg-g')}${seg('Buffer','seg-y')}${seg('UnBilled','seg-r')}${seg('Onsite','seg-o')}</div>
-      <div class="stk-n">${tot}</div></div>`;
+  // Team Lead-wise billing analysis table
+  renderLeadTable(emps);
+}
+
+// ── Team Lead billing table ──────────────────────────────────
+// Editable note persistence (works on GitHub Pages; keyed per lead).
+function noteKey(lead,slot){ return 'vct_leadnote::'+slot+'::'+lead; }
+function getNote(lead,slot){ try{ return localStorage.getItem(noteKey(lead,slot))||''; }catch(_){ return ''; } }
+function saveNote(el){
+  try{ localStorage.setItem(noteKey(el.dataset.lead,el.dataset.slot), el.textContent.trim()); }catch(_){}
+}
+function pctCls(kind,v){
+  if(kind==='billed') return v>=70?'g':v>=60?'y':'r';
+  if(kind==='buffer') return v>30?'y':v>=10?'g':'b';
+  if(kind==='unbilled') return v<=10?'g':v<20?'y':'r';
+  return '';
+}
+function leadStats(m){
+  const c=s=>m.filter(e=>e.status===s).length;
+  const total=m.length;
+  const billed=c('Billed');                 // incl. buffer-billed (folded into Billed)
+  const bufBilled=m.filter(e=>e.bufferBilled).length;
+  const pureBilled=billed-bufBilled;
+  const buffer=c('Buffer');
+  const unbilled=c('UnBilled')+c('Bench');
+  const onsite=c('Onsite');
+  const den=total||1;
+  return {total,billed,bufBilled,pureBilled,buffer,unbilled,onsite,
+    billedPct:billed/den*100, bufferPct:buffer/den*100, unbilledPct:unbilled/den*100};
+}
+function renderLeadTable(emps){
+  const tbl=$('lead-table'); if(!tbl) return;
+  $('lead-fy').textContent='FY 2026–27  ·  '+(MONTH==='Current'?'Current (live)':MONTH);
+
+  // group by lead (trimmed); blank lead → "(No Lead / Director)"
+  const groups={};
+  emps.forEach(e=>{ const L=e.lead||'(No Lead / Director)'; (groups[L]=groups[L]||[]).push(e); });
+  const leadNames=Object.keys(groups).sort((a,b)=>{
+    if(a.startsWith('(')) return 1; if(b.startsWith('(')) return -1;
+    return a.localeCompare(b);
+  });
+
+  const head=`<tr>
+    <th class="lt-lead">Team Lead</th>
+    <th>Total<br>Emp.</th>
+    <th>Billed<br>(Count)</th>
+    <th>Buffer<br>Billed</th>
+    <th>Billed +<br>Buffer Billed</th>
+    <th>Buffer<br>(Count)</th>
+    <th>UnBilled<br>(Count)</th>
+    <th>Billed %<br>(≥70%)</th>
+    <th>Buffer %<br>(≈20%)</th>
+    <th>UnBilled %<br>(≤10%)</th>
+    <th>Plan / Buffer Note</th>
+    <th>Action / Remarks</th>
+  </tr>`;
+
+  const fmt=v=>v.toFixed(1)+'%';
+  const rows=leadNames.map(L=>{
+    const st=leadStats(groups[L]);
+    const k=reg(L+' — team','Team Lead view',groups[L]);
+    const pl=esc(getNote(L,'plan')), rm=esc(getNote(L,'rmk'));
+    return `<tr>
+      <td class="lt-lead" onclick="openList('${k}')">${esc(L)}</td>
+      <td>${st.total}</td>
+      <td>${st.pureBilled}</td>
+      <td>${st.bufBilled}</td>
+      <td><b>${st.billed}</b></td>
+      <td>${st.buffer}</td>
+      <td>${st.unbilled}</td>
+      <td class="pc ${pctCls('billed',st.billedPct)}">${fmt(st.billedPct)}</td>
+      <td class="pc ${pctCls('buffer',st.bufferPct)}">${fmt(st.bufferPct)}</td>
+      <td class="pc ${pctCls('unbilled',st.unbilledPct)}">${fmt(st.unbilledPct)}</td>
+      <td class="lt-note" contenteditable="true" data-lead="${esc(L)}" data-slot="plan" onblur="saveNote(this)">${pl}</td>
+      <td class="lt-note" contenteditable="true" data-lead="${esc(L)}" data-slot="rmk" onblur="saveNote(this)">${rm}</td>
+    </tr>`;
   }).join('');
+
+  // OVERALL row
+  const o=leadStats(emps);
+  const overall=`<tr class="lt-overall">
+    <td class="lt-lead" style="position:sticky;left:0">OVERALL</td>
+    <td>${o.total}</td><td>${o.pureBilled}</td><td>${o.bufBilled}</td>
+    <td>${o.billed}</td><td>${o.buffer}</td><td>${o.unbilled}</td>
+    <td class="pc">${fmt(o.billedPct)}</td>
+    <td class="pc">${fmt(o.bufferPct)}</td>
+    <td class="pc">${fmt(o.unbilledPct)}</td>
+    <td class="lt-note" style="cursor:default" contenteditable="false"></td>
+    <td class="lt-note" style="cursor:default" contenteditable="false"></td>
+  </tr>`;
+
+  tbl.innerHTML=head+(rows||'')+overall;
 }
 
 function renderAll(){
@@ -957,6 +1084,24 @@ function fillFilters(){
   PRACTICE_ORDER.filter(p=>ALL.some(e=>e.practice===p)).forEach(p=>pr.add(new Option(p,p)));
   const fc=$('f-client'); fc.length=1;
   [...new Set(PROJ_ORDER.map(p=>PROJ_DEFS[p].client))].filter(c=>ALL.some(e=>e.client===c)).forEach(c=>fc.add(new Option(c==='—'?'Bench (no client)':c,c)));
+
+  // Team Lead — sorted, trimmed, de-duped
+  const fl=$('f-lead'); fl.length=1;
+  [...new Set(ALL.map(e=>e.lead).filter(Boolean))].sort((a,b)=>a.localeCompare(b)).forEach(l=>fl.add(new Option(l,l)));
+
+  // Designation — sorted
+  const fd=$('f-desig'); fd.length=1;
+  [...new Set(ALL.map(e=>e.desig).filter(Boolean))].sort((a,b)=>a.localeCompare(b)).forEach(d=>fd.add(new Option(d,d)));
+
+  // YOE — distinct exact values, numeric sort
+  const fy=$('f-yoe'); fy.length=1;
+  [...new Set(ALL.map(e=>String(e.yoe||'').trim()).filter(Boolean))]
+    .sort((a,b)=>(parseFloat(a)||0)-(parseFloat(b)||0))
+    .forEach(y=>fy.add(new Option(y,y)));
+
+  // Project — in canonical order, labelled
+  const fpj=$('f-project'); fpj.length=1;
+  PROJ_ORDER.filter(p=>ALL.some(e=>e.proj===p)).forEach(p=>fpj.add(new Option(PROJ_DEFS[p].label,p)));
 }
 function monthRow(e,month){
   const m=(e.byMonth&&e.byMonth[month])||{};
@@ -975,12 +1120,15 @@ function buildMonthSelect(){
 function applyMonth(){
   if(!RAW.length) return renderAll();
   MONTH=$('f-month').value||'Current';
-  const fp=$('f-practice').value, fs=$('f-status').value, fc=$('f-client').value;
+  const prev={};
+  ['f-practice','f-lead','f-desig','f-yoe','f-project','f-status','f-client'].forEach(id=>{const el=$(id); if(el) prev[id]=el.value;});
   ALL=RAW.map(e=>fromMaster(monthRow(e,MONTH))).filter(Boolean);
   fillFilters();
-  if([...$('f-practice').options].some(o=>o.value===fp)) $('f-practice').value=fp;
-  $('f-status').value=fs;
-  if([...$('f-client').options].some(o=>o.value===fc)) $('f-client').value=fc;
+  // restore any selection that still exists for this month
+  Object.entries(prev).forEach(([id,val])=>{
+    const el=$(id); if(!el||!val) return;
+    if([...el.options].some(o=>o.value===val)) el.value=val;
+  });
   renderAll();
 }
 async function fetchWithTimeout(url,ms){
