@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-30T10:12:53.713Z",
+ "generatedAt": "2026-06-30T10:12:58.624Z",
  "months": [
   "April",
   "May",
@@ -1875,7 +1875,7 @@
    "YOE": 3.11,
    "ReportsTo": "Kameswara rao",
    "Project": "Renesas FSP",
-   "Status": "Buffer",
+   "Status": "Billed",
    "Allocation": 1,
    "BilledUpto": "2026-08-31T18:30:00.000Z",
    "Plan": "FSP",
@@ -1887,7 +1887,7 @@
     "Current": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
-     "Status": "Buffer"
+     "Status": "Billed"
     },
     "April": {
      "ReportsTo": "Kameswara rao",
@@ -2049,7 +2049,7 @@
    "YOE": 1.11,
    "ReportsTo": "Kameswara rao",
    "Project": "Renesas FSP",
-   "Status": "Buffer",
+   "Status": "Billed",
    "Allocation": 1,
    "BilledUpto": "2026-08-31T18:30:00.000Z",
    "Plan": "FSP",
@@ -2061,7 +2061,7 @@
     "Current": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
-     "Status": "Buffer"
+     "Status": "Billed"
     },
     "April": {
      "ReportsTo": "Kameswara rao",
