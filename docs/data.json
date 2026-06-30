@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-30T09:05:31.659Z",
+ "generatedAt": "2026-06-30T09:08:34.492Z",
  "months": [
   "April",
   "May",
@@ -3179,7 +3179,7 @@
    "Designation": "Technical Writer",
    "YOE": 4.8,
    "ReportsTo": "Srikanth",
-   "Project": "VConnectech Overview PPT",
+   "Project": "",
    "Status": "Buffer",
    "Allocation": 0.5,
    "BilledUpto": "",
@@ -3191,17 +3191,17 @@
    "byMonth": {
     "Current": {
      "ReportsTo": "Srikanth",
-     "Project": "VConnectech Overview PPT",
+     "Project": "",
      "Status": "Buffer"
     },
     "April": {
      "ReportsTo": "Srikanth",
-     "Project": "VConnectech Overview PPT",
+     "Project": "",
      "Status": "UnBilled"
     },
     "May": {
      "ReportsTo": "Srikanth",
-     "Project": "VConnectech Overview PPT",
+     "Project": "",
      "Status": "Unbilled "
     }
    }
