@@ -98,6 +98,15 @@ body{font-family:'Segoe UI',Arial,sans-serif;font-size:13px;background:#F0F3F8;c
 /* sub-group label (e.g. SystemC) */
 .org-subhdr{font-size:10px;font-weight:700;color:#555;margin:8px 0 5px;padding-left:2px;text-transform:uppercase;letter-spacing:.05em;width:100%}
 
+/* NESTED REPORTING TREE */
+.org-node{margin-bottom:8px}
+.org-children{margin-left:20px;padding-left:16px;border-left:2px solid #cdd9ee;margin-top:8px}
+.org-children .org-row{margin-bottom:8px}
+.oc-syn{background:#5b6473;color:#fff;border:1.5px solid #474e5b}
+.oc-syn .ocard-name{color:#fff}
+.oc-syn .ocard-sub{color:#d7dbe2;opacity:.95}
+.oc-syn .ocard-pill.pill-b{background:rgba(255,255,255,.22);color:#fff}
+
 /* card base */
 .ocard{border-radius:7px;padding:11px 12px 9px;cursor:pointer;transition:transform .12s,box-shadow .12s;min-width:155px;max-width:200px;box-shadow:0 1px 6px rgba(0,0,0,.1);position:relative}
 .ocard:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.18)}
@@ -211,6 +220,9 @@ table.mx tr.tot-row td.pname{background:var(--navy);color:#fff}
 .lead-tbl tr:nth-child(even) td{background:#fafbfe}
 .lead-tbl tr:nth-child(even) td.lt-lead{background:#eef1f9}
 .lead-tbl td.pc{font-weight:700}
+.lead-tbl td.lt-num,.lead-tbl .lt-num{cursor:pointer;text-decoration:underline;text-decoration-color:#b9c6e0;text-underline-offset:2px}
+.lead-tbl td.lt-num:hover{background:#dde7fa!important;color:var(--navy)}
+.lead-tbl tr.lt-overall td.lt-num:hover{background:#3a4f78!important;color:#fff}
 .pc.g{background:var(--g-bg)!important;color:var(--g)}.pc.y{background:var(--y-bg)!important;color:var(--y)}
 .pc.r{background:var(--r-bg)!important;color:var(--r)}.pc.b{background:var(--b-bg)!important;color:var(--b)}
 .lead-tbl tr.lt-overall td{background:var(--navy)!important;color:#fff;font-weight:700;border-color:#2851a0}
@@ -867,57 +879,67 @@ const pillTxt=e=>{
     </div>`;
   }
 
-  // Level classification by designation + YOE
+  // Level classification (used only for card colour now)
   const isL1=e=>/director/i.test(e.desig||'');
   const isL2=e=>!isL1(e)&&(/sr\.?\s*staff\s*engineer|senior staff engineer|staff engineer|program manager/i.test(e.desig||''))&&Number(e.yoe||0)>=7;
   const isL3=e=>!isL1(e)&&!isL2(e)&&(/senior engineer|technical writer|ci\s*\/?\s*cd/i.test(e.desig||'')||/consultant/i.test(e.desig||''));
+  const lvlCls=e=> isL1(e)?'oc-l1' : isL2(e)?(e.status==='Buffer'||e.status==='UnBilled'||e.status==='Bench'?'oc-l2f':'oc-l2b') : isL3(e)?'oc-l3':'oc-l4';
+  const lvlRank=e=>isL1(e)?0:isL2(e)?1:isL3(e)?2:3;
+  const sortNodes=a=>a.slice().sort((x,y)=> lvlRank(x)-lvlRank(y) || (Number(y.yoe||0)-Number(x.yoe||0)) || x.name.localeCompare(y.name));
 
-  // Working set = the filtered people (filtered() already includes the selected
-  // Team Lead themselves so the view reads "lead + their team").
   const people=emps;
+  const inSet=new Set(people.map(e=>e.id));
 
-  const l1=people.filter(isL1);
-  const l2=people.filter(isL2);
-  const l3=people.filter(isL3);
-  const upperIds=new Set([...l1,...l2,...l3].map(e=>e.id));
-  // L4 = remaining people, minus onsite
-  const l4=people.filter(e=>!upperIds.has(e.id)&&e.status!=='Onsite');
+  // Build the reporting tree from each person's ReportsTo (lead token), resolved
+  // to an employee via LEAD_EMP.  Srikanth (no manager) sits at the top; his
+  // directors / leads nest under him, and each lead's L3/L4 nest under them.
+  const childrenOf={};   // managerId -> [emp]
+  const unresolved={};   // token -> [emp]  (lead token isn't an employee in view)
+  const placed=new Set();
+  people.forEach(e=>{
+    const tok=e.lead;
+    if(!tok) return;                                   // genuine root
+    const mgrId=LEAD_EMP[tok];
+    if(mgrId && inSet.has(mgrId) && mgrId!==e.id){
+      (childrenOf[mgrId]=childrenOf[mgrId]||[]).push(e); placed.add(e.id);
+    }else{
+      (unresolved[tok]=unresolved[tok]||[]).push(e); placed.add(e.id);
+    }
+  });
+  const roots=people.filter(e=>!placed.has(e.id));
 
-  // L2 colour: Buffer/UnBilled→blue, otherwise teal
-  const l2cls=e=>e.status==='Buffer'||e.status==='UnBilled'||e.status==='Bench'?'oc-l2f':'oc-l2b';
+  const seen=new Set();
+  function childBlock(kids){
+    const k=sortNodes(kids);
+    const mgrKids=k.filter(c=>(childrenOf[c.id]||[]).length);
+    const leafKids=k.filter(c=>!(childrenOf[c.id]||[]).length);
+    let inner='';
+    if(leafKids.length) inner+=`<div class="org-row">${leafKids.map(c=>ocard(c,lvlCls(c),true)).join('')}</div>`;
+    if(mgrKids.length)  inner+=mgrKids.map(c=>renderNode(c)).join('');
+    return inner?`<div class="org-children">${inner}</div>`:'';
+  }
+  function renderNode(e){
+    if(seen.has(e.id)) return '';                       // cycle guard
+    seen.add(e.id);
+    return `<div class="org-node">${ocard(e,lvlCls(e),true)}${childBlock(childrenOf[e.id]||[])}</div>`;
+  }
+  function renderSynthetic(tok,members){
+    const k=reg(tok+' — team','Reports to '+tok,members);
+    return `<div class="org-node">
+      <div class="ocard oc-syn" onclick="openList('${k}')">
+        <div class="ocard-name">${esc(tok)}</div>
+        <div class="ocard-sub">Team Lead · ${members.length} report${members.length>1?'s':''}</div>
+        <span class="ocard-pill pill-b">reports to this lead</span>
+      </div>${childBlock(members)}</div>`;
+  }
 
-  // Group L4 by practice
-  const l4byPrac={};
-  l4.forEach(e=>{ const p=e.practice||'Other'; (l4byPrac[p]=l4byPrac[p]||[]).push(e); });
-  const l4pracOrder=PRACTICE_ORDER.filter(p=>l4byPrac[p]);
-  // also catch anything not in PRACTICE_ORDER
-  Object.keys(l4byPrac).forEach(p=>{ if(!l4pracOrder.includes(p)) l4pracOrder.push(p); });
+  const rootMgrs=sortNodes(roots.filter(e=>(childrenOf[e.id]||[]).length));
+  const rootLeaves=sortNodes(roots.filter(e=>!(childrenOf[e.id]||[]).length));
 
-  let html='';
-
-  if(l1.length)
-    html+=`<div class="org-level">
-      <div class="org-level-hdr">L1 — Executive Directors <span>(${l1.length})</span></div>
-      <div class="org-row">${l1.map(e=>ocard(e,'oc-l1',false)).join('')}</div>
-    </div><div class="org-connector"></div>`;
-
-  if(l2.length)
-    html+=`<div class="org-level">
-      <div class="org-level-hdr">L2 — Domain Leads &amp; Program Managers <span>(${l2.length})</span></div>
-      <div class="org-row">${l2.map(e=>ocard(e,l2cls(e),true)).join('')}</div>
-    </div><div class="org-connector"></div>`;
-
-  if(l3.length)
-    html+=`<div class="org-level">
-      <div class="org-level-hdr">L3 — Senior Engineers &amp; Sub-Leads <span>(${l3.length})</span></div>
-      <div class="org-row">${l3.map(e=>ocard(e,'oc-l3',true)).join('')}</div>
-    </div><div class="org-connector"></div>`;
-
-  if(l4pracOrder.length)
-    html+=`<div class="org-level">
-      <div class="org-level-hdr">L4 — Engineers I &amp; II <span>(${l4.length})</span></div>
-      ${l4pracOrder.map(p=>`<div class="org-subhdr">${esc(p)} <span style="color:#888;font-weight:400">(${l4byPrac[p].length})</span></div><div class="org-row">${l4byPrac[p].map(e=>ocard(e,'oc-l4',false)).join('')}</div>`).join('')}
-    </div>`;
+  let html=rootMgrs.map(e=>renderNode(e)).join('');
+  Object.keys(unresolved).sort().forEach(tok=>{ html+=renderSynthetic(tok,unresolved[tok]); });
+  if(rootLeaves.length)
+    html+=`<div class="org-node"><div class="org-level-hdr" style="margin:10px 0 6px">Unassigned / No Reporting Line <span>(${rootLeaves.length})</span></div><div class="org-row">${rootLeaves.map(e=>ocard(e,lvlCls(e),true)).join('')}</div></div>`;
 
   $('org-wrap').innerHTML=html||'<div class="card" style="color:#999;text-align:center">No one matches the current filters.</div>';
 }
@@ -1061,17 +1083,28 @@ function renderLeadTable(emps){
   </tr>`;
 
   const fmt=v=>v.toFixed(1)+'%';
+  // a count cell that opens the matching people when non-zero
+  const numCell=(n,label,members)=> n>0
+    ? `<td class="lt-num" onclick="openList('${reg(label,'',members)}')">${n}</td>`
+    : `<td>0</td>`;
+  const subset={
+    pureBilled: m=>m.filter(e=>e.status==='Billed'&&!e.bufferBilled),
+    bufBilled:  m=>m.filter(e=>e.bufferBilled),
+    allBilled:  m=>m.filter(e=>e.status==='Billed'),
+    buffer:     m=>m.filter(e=>e.status==='Buffer'),
+    unbilled:   m=>m.filter(e=>e.status==='UnBilled'||e.status==='Bench'),
+    total:      m=>m,
+  };
   const rows=leadNames.map(L=>{
-    const st=leadStats(groups[L]);
-    const k=reg(L+' — team','Team Lead view',groups[L]);
+    const m=groups[L], st=leadStats(m);
     return `<tr>
-      <td class="lt-lead" onclick="openList('${k}')">${esc(L)}</td>
-      <td>${st.total}</td>
-      <td>${st.pureBilled}</td>
-      <td>${st.bufBilled}</td>
-      <td><b>${st.billed}</b></td>
-      <td>${st.buffer}</td>
-      <td>${st.unbilled}</td>
+      <td class="lt-lead" onclick="openList('${reg(L+' — team','Team Lead view',m)}')">${esc(L)}</td>
+      ${numCell(st.total,L+' · Everyone',subset.total(m))}
+      ${numCell(st.pureBilled,L+' · Billed',subset.pureBilled(m))}
+      ${numCell(st.bufBilled,L+' · Buffer Billed',subset.bufBilled(m))}
+      <td>${st.billed>0?`<b class="lt-num" onclick="openList('${reg(L+' · Billed + Buffer Billed','',subset.allBilled(m))}')">${st.billed}</b>`:'<b>0</b>'}</td>
+      ${numCell(st.buffer,L+' · Buffer',subset.buffer(m))}
+      ${numCell(st.unbilled,L+' · UnBilled / Bench',subset.unbilled(m))}
       <td class="pc ${pctCls('billed',st.billedPct)}">${fmt(st.billedPct)}</td>
       <td class="pc ${pctCls('buffer',st.bufferPct)}">${fmt(st.bufferPct)}</td>
       <td class="pc ${pctCls('unbilled',st.unbilledPct)}">${fmt(st.unbilledPct)}</td>
@@ -1081,10 +1114,17 @@ function renderLeadTable(emps){
   // OVERALL row — computed from the rows actually shown, so it always reconciles
   const shownEmps=leadNames.flatMap(L=>groups[L]||[]);
   const o=leadStats(shownEmps);
+  const onum=(n,label,members)=> n>0
+    ? `<td class="lt-num" onclick="openList('${reg(label,'',members)}')">${n}</td>`
+    : `<td>0</td>`;
   const overall=`<tr class="lt-overall">
-    <td class="lt-lead" style="position:sticky;left:0">OVERALL</td>
-    <td>${o.total}</td><td>${o.pureBilled}</td><td>${o.bufBilled}</td>
-    <td>${o.billed}</td><td>${o.buffer}</td><td>${o.unbilled}</td>
+    <td class="lt-lead" style="position:sticky;left:0" onclick="openList('${reg('OVERALL — everyone shown','',shownEmps)}')">OVERALL</td>
+    ${onum(o.total,'OVERALL · Everyone',subset.total(shownEmps))}
+    ${onum(o.pureBilled,'OVERALL · Billed',subset.pureBilled(shownEmps))}
+    ${onum(o.bufBilled,'OVERALL · Buffer Billed',subset.bufBilled(shownEmps))}
+    ${o.billed>0?`<td class="lt-num" onclick="openList('${reg('OVERALL · Billed + Buffer Billed','',subset.allBilled(shownEmps))}')"><b>${o.billed}</b></td>`:'<td><b>0</b></td>'}
+    ${onum(o.buffer,'OVERALL · Buffer',subset.buffer(shownEmps))}
+    ${onum(o.unbilled,'OVERALL · UnBilled / Bench',subset.unbilled(shownEmps))}
     <td class="pc">${fmt(o.billedPct)}</td>
     <td class="pc">${fmt(o.bufferPct)}</td>
     <td class="pc">${fmt(o.unbilledPct)}</td>
