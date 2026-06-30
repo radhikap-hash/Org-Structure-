@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-30T06:04:29.592Z",
+ "generatedAt": "2026-06-30T06:29:28.305Z",
  "months": [
   "April",
   "May",
@@ -366,7 +366,7 @@
    "Designation": "Senior Engineer",
    "YOE": 5.1,
    "ReportsTo": "Aravind",
-   "Project": "HSM/ RISCV",
+   "Project": "RCI Flash Boting , DLI",
    "Status": "UnBilled",
    "Allocation": 0,
    "BilledUpto": "NA",
@@ -374,16 +374,16 @@
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "FPGA",
-   "ProjectCode": "BENCH",
+   "ProjectCode": "DLI",
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
-     "Project": "HSM/ RISCV",
+     "Project": "RCI Flash Boting , DLI",
      "Status": "UnBilled"
     },
     "April": {
      "ReportsTo": "Aravind",
-     "Project": "HSM/ RISCV",
+     "Project": "RCI Flash Boting , DLI",
      "Status": "UnBilled"
     }
    }
