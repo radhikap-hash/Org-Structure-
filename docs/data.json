@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-30T10:31:21.653Z",
+ "generatedAt": "2026-06-30T10:31:42.508Z",
  "months": [
   "April",
   "May",
@@ -1470,7 +1470,7 @@
    "ReportsTo": "Shyam",
    "Project": "Smart IP Camera ( Novotec )",
    "Status": "Buffer",
-   "Allocation": 1,
+   "Allocation": "",
    "BilledUpto": "2026-05-31T18:30:00.000Z",
    "Plan": "",
    "CurrentTask": "",
@@ -2946,7 +2946,7 @@
    "Practice": "Application Software",
    "Designation": "Engineer I",
    "YOE": 0.8,
-   "ReportsTo": "Shyam",
+   "ReportsTo": "KeerthI Pratap",
    "Project": "Smart IP Camera",
    "Status": "Buffer",
    "Allocation": 1,
@@ -2958,12 +2958,12 @@
    "ProjectCode": "CAM",
    "byMonth": {
     "Current": {
-     "ReportsTo": "Shyam",
+     "ReportsTo": "KeerthI Pratap",
      "Project": "Smart IP Camera",
      "Status": "Buffer"
     },
     "April": {
-     "ReportsTo": "Shyam",
+     "ReportsTo": "KeerthI Pratap",
      "Project": "Smart IP Camera",
      "Status": "Buffer"
     }
@@ -2975,7 +2975,7 @@
    "Practice": "Application Software",
    "Designation": "Software Trainee II",
    "YOE": 0.5,
-   "ReportsTo": "Shyam",
+   "ReportsTo": "KeerthI Pratap",
    "Project": "Smart IP Camera",
    "Status": "Buffer",
    "Allocation": 1,
@@ -2987,12 +2987,12 @@
    "ProjectCode": "CAM",
    "byMonth": {
     "Current": {
-     "ReportsTo": "Shyam",
+     "ReportsTo": "KeerthI Pratap",
      "Project": "Smart IP Camera",
      "Status": "Buffer"
     },
     "April": {
-     "ReportsTo": "Shyam",
+     "ReportsTo": "KeerthI Pratap",
      "Project": "Smart IP Camera",
      "Status": "UnBilled"
     }
