@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-30T09:14:11.475Z",
+ "generatedAt": "2026-06-30T09:14:25.335Z",
  "months": [
   "April",
   "May",
@@ -3181,7 +3181,7 @@
    "ReportsTo": "Srikanth",
    "Project": "Self Learning",
    "Status": "Buffer",
-   "Allocation": "",
+   "Allocation": 0,
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
