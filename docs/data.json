@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-06-30T10:15:26.563Z",
+ "generatedAt": "2026-06-30T10:16:50.519Z",
  "months": [
   "April",
   "May",
@@ -2977,7 +2977,7 @@
    "YOE": 0.5,
    "ReportsTo": "Shyam",
    "Project": "Smart IP Camera",
-   "Status": "UnBilled",
+   "Status": "Buffer",
    "Allocation": 1,
    "BilledUpto": "NA",
    "Plan": "Smart IP Camera",
@@ -2989,7 +2989,7 @@
     "Current": {
      "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
-     "Status": "UnBilled"
+     "Status": "Buffer"
     },
     "April": {
      "ReportsTo": "Shyam",
