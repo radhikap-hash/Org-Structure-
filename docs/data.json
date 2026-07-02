@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-02T08:04:26.194Z",
+ "generatedAt": "2026-07-02T08:04:30.105Z",
  "months": [
   "April",
   "May",
@@ -393,7 +393,7 @@
    "Name": "Sreekanth. Arati",
    "Practice": "FPGA",
    "Designation": "Senior Engineer",
-   "YOE": 5.5,
+   "YOE": 5.6,
    "ReportsTo": "Aravind",
    "Project": "HSM/ RISCV",
    "Status": "Billed",
