@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-02T08:07:46.580Z",
+ "generatedAt": "2026-07-02T08:08:06.611Z",
  "months": [
   "April",
   "May",
@@ -2162,7 +2162,7 @@
    "Name": "Kantipudi Sri Sai Kiran",
    "Practice": "Embedded - S/W",
    "Designation": "Engineer I",
-   "YOE": 1.2,
+   "YOE": 1.3,
    "ReportsTo": "Teja",
    "Project": "Renesas ( ISP )",
    "Status": "Buffer Billed",
@@ -2191,7 +2191,7 @@
    "Name": "T Harish",
    "Practice": "Embedded - S/W",
    "Designation": "Engineer I",
-   "YOE": 1.1,
+   "YOE": 1.2,
    "ReportsTo": "Kameswara rao",
    "Project": "Renesas FSP",
    "Status": "Buffer",
