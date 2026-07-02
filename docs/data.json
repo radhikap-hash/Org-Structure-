@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-02T05:50:30.843Z",
+ "generatedAt": "2026-07-02T05:52:21.227Z",
  "months": [
   "April",
   "May",
@@ -1758,7 +1758,7 @@
    "Designation": "Engineer II",
    "YOE": 2.3,
    "ReportsTo": "Kiran Allada",
-   "Project": "FUSA - Broadcom",
+   "Project": "",
    "Status": "UnBilled",
    "Allocation": "",
    "BilledUpto": "",
@@ -1766,16 +1766,16 @@
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "EMSW",
-   "ProjectCode": "FUSA",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "Kiran Allada",
-     "Project": "FUSA - Broadcom",
+     "Project": "",
      "Status": "UnBilled"
     },
     "April": {
      "ReportsTo": "Kiran Allada",
-     "Project": "FUSA - Broadcom",
+     "Project": "",
      "Status": "UnBilled"
     }
    }
@@ -1816,7 +1816,7 @@
    "Designation": "Engineer II",
    "YOE": 2,
    "ReportsTo": "Kiran Allada",
-   "Project": "FUSA - Broadcom",
+   "Project": "",
    "Status": "UnBilled",
    "Allocation": "",
    "BilledUpto": "",
@@ -1824,16 +1824,16 @@
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "EMSW",
-   "ProjectCode": "FUSA",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "Kiran Allada",
-     "Project": "FUSA - Broadcom",
+     "Project": "",
      "Status": "UnBilled"
     },
     "April": {
      "ReportsTo": "Kiran Allada",
-     "Project": "FUSA - Broadcom",
+     "Project": "",
      "Status": "UnBilled"
     }
    }
