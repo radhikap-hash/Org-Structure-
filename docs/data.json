@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-02T08:08:26.409Z",
+ "generatedAt": "2026-07-02T08:08:38.922Z",
  "months": [
   "April",
   "May",
@@ -2423,7 +2423,7 @@
    "Name": "Kamasani Poorna",
    "Practice": "Embedded - Validation",
    "Designation": "Engineer II",
-   "YOE": 2.2,
+   "YOE": 2.3,
    "ReportsTo": "Sasikanth",
    "Project": "Kandou",
    "Status": "Billed",
@@ -2452,7 +2452,7 @@
    "Name": "LingaSwamy Shyaga",
    "Practice": "Embedded - Validation",
    "Designation": "Senior Engineer",
-   "YOE": 7.9,
+   "YOE": 7.1,
    "ReportsTo": "Shyam",
    "Project": "Renesas NPU",
    "Status": "Billed",
