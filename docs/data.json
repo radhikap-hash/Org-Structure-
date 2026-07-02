@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-02T08:09:00.655Z",
+ "generatedAt": "2026-07-02T08:09:14.813Z",
  "months": [
   "April",
   "May",
@@ -2771,7 +2771,7 @@
    "Name": "Arepu Naga Sai Nikhitha",
    "Practice": "Embedded - Validation",
    "Designation": "Engineer I",
-   "YOE": 0.9,
+   "YOE": 0.1,
    "ReportsTo": "Kameswara rao",
    "Project": "Renesas FSP",
    "Status": "Buffer",
@@ -2800,7 +2800,7 @@
    "Name": "Rupaji Rithika",
    "Practice": "Embedded - Validation",
    "Designation": "Engineer I",
-   "YOE": 0.9,
+   "YOE": 0.1,
    "ReportsTo": "Kameswara rao",
    "Project": "Renesas FSP",
    "Status": "Buffer",
@@ -2829,7 +2829,7 @@
    "Name": "Mahmad Ameerullah",
    "Practice": "Application Software",
    "Designation": "Engineer I",
-   "YOE": 0.8,
+   "YOE": 0.9,
    "ReportsTo": "Teja",
    "Project": "Renesas ( ISP )",
    "Status": "Buffer Billed",
