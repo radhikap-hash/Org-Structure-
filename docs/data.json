@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-02T08:04:07.095Z",
+ "generatedAt": "2026-07-02T08:04:09.800Z",
  "months": [
   "April",
   "May",
@@ -190,7 +190,7 @@
    "Name": "Sudeep B Channalli",
    "Practice": "SystemC Modelling",
    "Designation": "Engineer I",
-   "YOE": 1.1,
+   "YOE": 1.2,
    "ReportsTo": "Aravind",
    "Project": "SmartSoC-ADI",
    "Status": "Billed",
@@ -219,7 +219,7 @@
    "Name": "Yepuri Karthikeya",
    "Practice": "SystemC Modelling",
    "Designation": "Engineer I",
-   "YOE": 1.1,
+   "YOE": 1.2,
    "ReportsTo": "Aravind",
    "Project": "FLC IP Modelling",
    "Status": "Buffer Billed",
