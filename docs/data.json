@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-02T07:05:42.244Z",
+ "generatedAt": "2026-07-02T08:04:07.095Z",
  "months": [
   "April",
   "May",
@@ -132,7 +132,7 @@
    "Name": "Sollapuram Kishore Reddy",
    "Practice": "SystemC Modelling",
    "Designation": "Engineer I",
-   "YOE": 1.1,
+   "YOE": 1.2,
    "ReportsTo": "Aravind",
    "Project": "SmartSoC-ADI",
    "Status": "Billed",
@@ -161,7 +161,7 @@
    "Name": "Kota Poojitha ",
    "Practice": "SystemC Modelling",
    "Designation": "Engineer I",
-   "YOE": 0.9,
+   "YOE": 0.1,
    "ReportsTo": "Aravind",
    "Project": "SmartSoC-ADI",
    "Status": "Billed",
