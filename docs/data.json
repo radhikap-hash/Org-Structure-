@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-02T08:04:38.750Z",
+ "generatedAt": "2026-07-02T08:04:55.821Z",
  "months": [
   "April",
   "May",
@@ -480,7 +480,7 @@
    "Name": "Mahammad Vaheed Pasha",
    "Practice": "FPGA",
    "Designation": "Engineer II",
-   "YOE": 2,
+   "YOE": 2.1,
    "ReportsTo": "Aravind",
    "Project": "HSM/ RISCV",
    "Status": "UnBilled",
@@ -509,7 +509,7 @@
    "Name": "Borusu Bala Satya Phaneendra",
    "Practice": "FPGA",
    "Designation": "Engineer I",
-   "YOE": 0.8,
+   "YOE": 0.9,
    "ReportsTo": "Aravind",
    "Project": "DLI Soc",
    "Status": "UnBilled",
@@ -567,7 +567,7 @@
    "Name": "Haridasu Rudra Bhupathi Naidu",
    "Practice": "DV",
    "Designation": "Engineer II",
-   "YOE": 1.11,
+   "YOE": 2,
    "ReportsTo": "Swarna Latha",
    "Project": "ORCA",
    "Status": "Billed",
