@@ -1,9 +1,8 @@
 {
- "generatedAt": "2026-07-02T05:04:28.774Z",
+ "generatedAt": "2026-07-02T05:50:30.843Z",
  "months": [
   "April",
   "May",
-  "june ",
   "Current"
  ],
  "employees": [
@@ -1614,7 +1613,7 @@
    "Designation": "Staff Engineer",
    "YOE": 7,
    "ReportsTo": "Srikanth",
-   "Project": "Renesas",
+   "Project": "Gen5",
    "Status": "Billed",
    "Allocation": 1,
    "BilledUpto": "",
@@ -1622,16 +1621,16 @@
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "EMSW",
-   "ProjectCode": "REN",
+   "ProjectCode": "GEN5",
    "byMonth": {
     "Current": {
      "ReportsTo": "Srikanth",
-     "Project": "Renesas",
+     "Project": "Gen5",
      "Status": "Billed"
     },
     "April": {
      "ReportsTo": "Srikanth",
-     "Project": "Renesas",
+     "Project": "Gen5",
      "Status": "Billed"
     }
    }
