@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-02T08:04:30.105Z",
+ "generatedAt": "2026-07-02T08:04:38.750Z",
  "months": [
   "April",
   "May",
@@ -422,7 +422,7 @@
    "Name": "Itla Sai Bharadwaj",
    "Practice": "FPGA",
    "Designation": "Senior Engineer",
-   "YOE": 4.1,
+   "YOE": 4.2,
    "ReportsTo": "Aravind",
    "Project": "FLC, DLI",
    "Status": "Billed",
@@ -451,7 +451,7 @@
    "Name": "Tejeswara Rao Padda",
    "Practice": "FPGA",
    "Designation": "Engineer I",
-   "YOE": 2.1,
+   "YOE": 2.2,
    "ReportsTo": "Aravind",
    "Project": "HSM/ RISCV",
    "Status": "UnBilled",
