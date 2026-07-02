@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-02T05:52:21.227Z",
+ "generatedAt": "2026-07-02T06:00:20.834Z",
  "months": [
   "April",
   "May",
@@ -511,7 +511,7 @@
    "Designation": "Engineer I",
    "YOE": 0.8,
    "ReportsTo": "Aravind",
-   "Project": "DLI",
+   "Project": "DLI Soc",
    "Status": "UnBilled",
    "Allocation": 1,
    "BilledUpto": "NA",
@@ -523,12 +523,12 @@
    "byMonth": {
     "Current": {
      "ReportsTo": "Aravind",
-     "Project": "DLI",
+     "Project": "DLI Soc",
      "Status": "UnBilled"
     },
     "April": {
      "ReportsTo": "Aravind",
-     "Project": "DLI",
+     "Project": "DLI Soc",
      "Status": "UnBilled"
     }
    }
