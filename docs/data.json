@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-02T08:05:40.977Z",
+ "generatedAt": "2026-07-02T08:05:55.350Z",
  "months": [
   "April",
   "May",
@@ -973,7 +973,7 @@
    "Name": "Jampani Samudralankaiah",
    "Practice": "Hardware",
    "Designation": "Senior Engineer",
-   "YOE": 6.1,
+   "YOE": 6.2,
    "ReportsTo": "Rajesh",
    "Project": "FLC, ZMD Edge, Belly Camera",
    "Status": "Billed",
@@ -1002,7 +1002,7 @@
    "Name": "Varimadla Anjaneyulu",
    "Practice": "Hardware",
    "Designation": "Engineer II",
-   "YOE": 7.1,
+   "YOE": 7.11,
    "ReportsTo": "Rajesh",
    "Project": "FLC/TRS/Internal, RCI ITS",
    "Status": "Billed",
@@ -1031,7 +1031,7 @@
    "Name": "Chintha Vivek Sai",
    "Practice": "Hardware",
    "Designation": "Engineer I",
-   "YOE": 0.7,
+   "YOE": 0.8,
    "ReportsTo": "Rajesh",
    "Project": "FLC, DVRU/PVC/Belly Camera, TRS",
    "Status": "Billed",
