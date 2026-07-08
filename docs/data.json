@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-08T10:26:08.120Z",
+ "generatedAt": "2026-07-08T10:28:37.296Z",
  "months": [
   "April",
   "May",
@@ -544,7 +544,7 @@
    "Status": "UnBilled",
    "Allocation": 0,
    "BilledUpto": "",
-   "Plan": "",
+   "Plan": "Staffing",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "DV",
