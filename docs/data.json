@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-08T10:33:18.262Z",
+ "generatedAt": "2026-07-08T10:34:14.182Z",
  "months": [
   "April",
   "May",
@@ -633,7 +633,7 @@
    "BilledUpto": "",
    "Plan": "Protocol Verification",
    "CurrentTask": "",
-   "Remarks": "UnBilled from June 16th, New Project may come , we will know by July end",
+   "Remarks": "UnBilled from June 16th, New Project may come , we will know by July end, No place for staffing",
    "DomainCode": "DV",
    "ProjectCode": "ORCA",
    "byMonth": {
@@ -662,7 +662,7 @@
    "BilledUpto": "",
    "Plan": "Protocol Verification",
    "CurrentTask": "",
-   "Remarks": "UnBilled from June 16th, New Project may come , we will know by July end",
+   "Remarks": "UnBilled from June 16th, New Project may come , we will know by July end, No place for staffing",
    "DomainCode": "DV",
    "ProjectCode": "ORCA",
    "byMonth": {
@@ -691,7 +691,7 @@
    "BilledUpto": "",
    "Plan": "Protocol Verification",
    "CurrentTask": "",
-   "Remarks": "UnBilled from June 16th, New Project may come , we will know by July end",
+   "Remarks": "UnBilled from June 16th, New Project may come , we will know by July end, No place for staffing",
    "DomainCode": "DV",
    "ProjectCode": "ORCA",
    "byMonth": {
@@ -807,7 +807,7 @@
    "BilledUpto": "",
    "Plan": "Protocol Verification",
    "CurrentTask": "",
-   "Remarks": "",
+   "Remarks": "lack of experience for staffing",
    "DomainCode": "DV",
    "ProjectCode": "BENCH",
    "byMonth": {
