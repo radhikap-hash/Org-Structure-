@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-08T06:53:56.632Z",
+ "generatedAt": "2026-07-08T07:04:08.480Z",
  "months": [
   "April",
   "May",
@@ -774,7 +774,7 @@
    "ReportsTo": "Swarna Latha",
    "Project": "Zerro Power systems",
    "Status": "Billed",
-   "Allocation": 1,
+   "Allocation": 0.7,
    "BilledUpto": "2026-10-31T18:30:00.000Z",
    "Plan": "",
    "CurrentTask": "",
