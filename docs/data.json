@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-08T05:45:58.596Z",
+ "generatedAt": "2026-07-08T05:47:22.493Z",
  "months": [
   "April",
   "May",
@@ -1816,7 +1816,7 @@
    "Designation": "Engineer II",
    "YOE": 2.1,
    "ReportsTo": "Kiran Allada",
-   "Project": "",
+   "Project": "E Delivery Robot",
    "Status": "UnBilled",
    "Allocation": "",
    "BilledUpto": "",
@@ -1824,16 +1824,16 @@
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "EMSW",
-   "ProjectCode": "BENCH",
+   "ProjectCode": "DBOT",
    "byMonth": {
     "Current": {
      "ReportsTo": "Kiran Allada",
-     "Project": "",
+     "Project": "E Delivery Robot",
      "Status": "UnBilled"
     },
     "April": {
      "ReportsTo": "Kiran Allada",
-     "Project": "",
+     "Project": "E Delivery Robot",
      "Status": "UnBilled"
     }
    }
