@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-08T06:52:46.094Z",
+ "generatedAt": "2026-07-08T06:53:56.632Z",
  "months": [
   "April",
   "May",
@@ -629,7 +629,7 @@
    "ReportsTo": "Swarna Latha",
    "Project": "ORCA ,Protocol Verification",
    "Status": "UnBilled",
-   "Allocation": 0,
+   "Allocation": "50% +50%",
    "BilledUpto": "",
    "Plan": "Protocol Verification",
    "CurrentTask": "",
@@ -658,7 +658,7 @@
    "ReportsTo": "Swarna Latha",
    "Project": "ORCA ,Protocol Verification",
    "Status": "UnBilled",
-   "Allocation": 0,
+   "Allocation": "50% +50%",
    "BilledUpto": "",
    "Plan": "Protocol Verification",
    "CurrentTask": "",
@@ -687,7 +687,7 @@
    "ReportsTo": "Swarna Latha",
    "Project": "ORCA ,Protocol Verification",
    "Status": "UnBilled",
-   "Allocation": 0,
+   "Allocation": "50% +50%",
    "BilledUpto": "",
    "Plan": "Protocol Verification",
    "CurrentTask": "",
