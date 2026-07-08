@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-08T09:04:32.954Z",
+ "generatedAt": "2026-07-08T09:20:19.425Z",
  "months": [
   "April",
   "May",
@@ -2946,7 +2946,7 @@
    "Practice": "Application Software",
    "Designation": "Engineer I",
    "YOE": 0.9,
-   "ReportsTo": "KeerthI Pratap",
+   "ReportsTo": "Shyam",
    "Project": "Smart IP Camera",
    "Status": "Buffer",
    "Allocation": 1,
@@ -2958,12 +2958,12 @@
    "ProjectCode": "CAM",
    "byMonth": {
     "Current": {
-     "ReportsTo": "KeerthI Pratap",
+     "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "Buffer"
     },
     "April": {
-     "ReportsTo": "KeerthI Pratap",
+     "ReportsTo": "Shyam",
      "Project": "Smart IP Camera",
      "Status": "Buffer"
     }
