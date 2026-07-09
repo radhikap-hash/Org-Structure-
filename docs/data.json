@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-09T04:29:28.009Z",
+ "generatedAt": "2026-07-09T04:29:40.514Z",
  "months": [
   "April",
   "May",
@@ -3246,7 +3246,7 @@
    "Status": "Billed",
    "Allocation": 1,
    "BilledUpto": "",
-   "Plan": "",
+   "Plan": "AMD Continues",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "DV",
@@ -3270,7 +3270,7 @@
    "Status": "Billed",
    "Allocation": 1,
    "BilledUpto": "",
-   "Plan": "",
+   "Plan": "AMD Continues",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "DV",
