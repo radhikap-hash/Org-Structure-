@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-09T04:30:33.482Z",
+ "generatedAt": "2026-07-09T04:31:02.181Z",
  "months": [
   "April",
   "May",
@@ -2357,6 +2357,30 @@
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
      "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_248",
+   "Name": "Sridhar Akula",
+   "Practice": "",
+   "Designation": "",
+   "YOE": "",
+   "ReportsTo": "",
+   "Project": "",
+   "Status": "",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "DomainCode": "OTH",
+   "ProjectCode": "BENCH",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "",
+     "Project": "",
+     "Status": ""
     }
    }
   },
