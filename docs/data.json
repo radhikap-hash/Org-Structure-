@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-09T04:30:01.112Z",
+ "generatedAt": "2026-07-09T04:30:33.482Z",
  "months": [
   "April",
   "May",
@@ -3053,6 +3053,30 @@
      "ReportsTo": "Sriram",
      "Project": "VCTS Website",
      "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VC_246",
+   "Name": "Immadisetty Srilekha",
+   "Practice": "",
+   "Designation": "",
+   "YOE": "",
+   "ReportsTo": "",
+   "Project": "",
+   "Status": "",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "DomainCode": "OTH",
+   "ProjectCode": "BENCH",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "",
+     "Project": "",
+     "Status": ""
     }
    }
   },
