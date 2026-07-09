@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-09T04:37:34.637Z",
+ "generatedAt": "2026-07-09T04:37:47.254Z",
  "months": [
   "April",
   "May",
@@ -2363,7 +2363,7 @@
   {
    "EmpID": "VC_248",
    "Name": "Sridhar Akula",
-   "Practice": "",
+   "Practice": "Embedded - S/W",
    "Designation": "",
    "YOE": "",
    "ReportsTo": "Kameswara rao",
@@ -2374,7 +2374,7 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
-   "DomainCode": "OTH",
+   "DomainCode": "EMSW",
    "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
