@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-09T04:19:49.889Z",
+ "generatedAt": "2026-07-09T04:20:04.758Z",
  "months": [
   "April",
   "May",
@@ -2280,7 +2280,7 @@
    "Designation": "Engineer I",
    "YOE": 0.1,
    "ReportsTo": "Shyam",
-   "Project": "Smart IP Camera",
+   "Project": "Server",
    "Status": "Billed",
    "Allocation": 1,
    "BilledUpto": "2026-11-30T18:30:00.000Z",
@@ -2288,16 +2288,16 @@
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "EMSW",
-   "ProjectCode": "CAM",
+   "ProjectCode": "SERVER",
    "byMonth": {
     "Current": {
      "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
+     "Project": "Server",
      "Status": "Billed"
     },
     "April": {
      "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
+     "Project": "Server",
      "Status": "UnBilled"
     }
    }
