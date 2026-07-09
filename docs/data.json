@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-09T04:31:02.181Z",
+ "generatedAt": "2026-07-09T04:31:50.743Z",
  "months": [
   "April",
   "May",
@@ -3188,6 +3188,30 @@
      "ReportsTo": "Venkata Kiran",
      "Project": "Server",
      "Status": "UnBilled"
+    }
+   }
+  },
+  {
+   "EmpID": "VCC_117",
+   "Name": "Tarun Allani",
+   "Practice": "",
+   "Designation": "",
+   "YOE": "",
+   "ReportsTo": "",
+   "Project": "",
+   "Status": "",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "DomainCode": "OTH",
+   "ProjectCode": "BENCH",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "",
+     "Project": "",
+     "Status": ""
     }
    }
   },
