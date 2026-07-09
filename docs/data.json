@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-09T04:20:56.945Z",
+ "generatedAt": "2026-07-09T04:21:11.221Z",
  "months": [
   "April",
   "May",
@@ -2744,7 +2744,7 @@
    "Designation": "Engineer I",
    "YOE": 1.3,
    "ReportsTo": "Shyam",
-   "Project": "Smart IP Camera",
+   "Project": "Smart IP Camera ( BSP )",
    "Status": "Buffer",
    "Allocation": 1,
    "BilledUpto": "",
@@ -2756,12 +2756,12 @@
    "byMonth": {
     "Current": {
      "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
+     "Project": "Smart IP Camera ( BSP )",
      "Status": "Buffer"
     },
     "April": {
      "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
+     "Project": "Smart IP Camera ( BSP )",
      "Status": "Buffer"
     }
    }
@@ -2947,7 +2947,7 @@
    "Designation": "Engineer I",
    "YOE": 0.9,
    "ReportsTo": "Shyam",
-   "Project": "Smart IP Camera",
+   "Project": "Smart IP Camera ( AI )",
    "Status": "Buffer",
    "Allocation": 1,
    "BilledUpto": "NA",
@@ -2959,12 +2959,12 @@
    "byMonth": {
     "Current": {
      "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
+     "Project": "Smart IP Camera ( AI )",
      "Status": "Buffer"
     },
     "April": {
      "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
+     "Project": "Smart IP Camera ( AI )",
      "Status": "Buffer"
     }
    }
