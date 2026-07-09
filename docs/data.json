@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-09T04:04:30.165Z",
+ "generatedAt": "2026-07-09T04:18:44.426Z",
  "months": [
   "April",
   "May",
@@ -2628,7 +2628,7 @@
    "Designation": "Engineer I",
    "YOE": 1.2,
    "ReportsTo": "Shyam",
-   "Project": "Renesas NPU",
+   "Project": "Edge",
    "Status": "Buffer Billed",
    "Allocation": 1,
    "BilledUpto": "",
@@ -2636,16 +2636,16 @@
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "EMVL",
-   "ProjectCode": "NPU",
+   "ProjectCode": "EDGE",
    "byMonth": {
     "Current": {
      "ReportsTo": "Shyam",
-     "Project": "Renesas NPU",
+     "Project": "Edge",
      "Status": "Buffer Billed"
     },
     "April": {
      "ReportsTo": "Shyam",
-     "Project": "Renesas NPU",
+     "Project": "Edge",
      "Status": "Buffer"
     }
    }
