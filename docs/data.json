@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-09T04:35:41.606Z",
+ "generatedAt": "2026-07-09T04:36:15.528Z",
  "months": [
   "April",
   "May",
@@ -3086,7 +3086,7 @@
    "Practice": "Application Software",
    "Designation": "Trainee II",
    "YOE": "",
-   "ReportsTo": "",
+   "ReportsTo": "George",
    "Project": "",
    "Status": "",
    "Allocation": "",
@@ -3098,7 +3098,7 @@
    "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
-     "ReportsTo": "",
+     "ReportsTo": "George",
      "Project": "",
      "Status": ""
     }
