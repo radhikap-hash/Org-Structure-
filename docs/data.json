@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-09T04:39:15.784Z",
+ "generatedAt": "2026-07-09T04:40:07.917Z",
  "months": [
   "April",
   "May",
@@ -3194,7 +3194,7 @@
   {
    "EmpID": "VCC_117",
    "Name": "Tarun Allani",
-   "Practice": "",
+   "Practice": "Product Managers",
    "Designation": "",
    "YOE": "",
    "ReportsTo": "Srikanth",
@@ -3205,7 +3205,7 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
-   "DomainCode": "OTH",
+   "DomainCode": "PDM",
    "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
