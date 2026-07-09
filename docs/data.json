@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-09T04:36:15.528Z",
+ "generatedAt": "2026-07-09T04:37:34.637Z",
  "months": [
   "April",
   "May",
@@ -2366,7 +2366,7 @@
    "Practice": "",
    "Designation": "",
    "YOE": "",
-   "ReportsTo": "",
+   "ReportsTo": "Kameswara rao",
    "Project": "",
    "Status": "",
    "Allocation": "",
@@ -2378,7 +2378,7 @@
    "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
-     "ReportsTo": "",
+     "ReportsTo": "Kameswara rao",
      "Project": "",
      "Status": ""
     }
@@ -3088,7 +3088,7 @@
    "YOE": "",
    "ReportsTo": "George",
    "Project": "",
-   "Status": "",
+   "Status": "UnBilled",
    "Allocation": "",
    "BilledUpto": "",
    "Plan": "",
@@ -3100,7 +3100,7 @@
     "Current": {
      "ReportsTo": "George",
      "Project": "",
-     "Status": ""
+     "Status": "UnBilled"
     }
    }
   },
