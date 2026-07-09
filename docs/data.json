@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-09T05:14:52.222Z",
+ "generatedAt": "2026-07-09T05:18:26.376Z",
  "months": [
   "April",
   "May",
@@ -2367,7 +2367,7 @@
    "Designation": "Trainee II",
    "YOE": "",
    "ReportsTo": "Kameswara rao",
-   "Project": "",
+   "Project": "Renesas FSP",
    "Status": "UnBilled",
    "Allocation": "",
    "BilledUpto": "",
@@ -2375,11 +2375,11 @@
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "EMSW",
-   "ProjectCode": "BENCH",
+   "ProjectCode": "FSP",
    "byMonth": {
     "Current": {
      "ReportsTo": "Kameswara rao",
-     "Project": "",
+     "Project": "Renesas FSP",
      "Status": "UnBilled"
     }
    }
