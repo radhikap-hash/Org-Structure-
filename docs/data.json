@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-09T04:29:12.191Z",
+ "generatedAt": "2026-07-09T04:29:28.009Z",
  "months": [
   "April",
   "May",
@@ -3241,19 +3241,19 @@
    "Practice": "DV",
    "Designation": "",
    "YOE": 4.2,
-   "ReportsTo": "KeerthI Pratap",
+   "ReportsTo": "",
    "Project": "On Site",
    "Status": "Billed",
    "Allocation": 1,
    "BilledUpto": "",
-   "Plan": "Staffing",
+   "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "DV",
    "ProjectCode": "ONSITE",
    "byMonth": {
     "Current": {
-     "ReportsTo": "KeerthI Pratap",
+     "ReportsTo": "",
      "Project": "On Site",
      "Status": "Billed"
     }
@@ -3265,19 +3265,19 @@
    "Practice": "DV",
    "Designation": "",
    "YOE": 4.9,
-   "ReportsTo": "KeerthI Pratap",
+   "ReportsTo": "",
    "Project": "On Site",
    "Status": "Billed",
    "Allocation": 1,
    "BilledUpto": "",
-   "Plan": "Staffing",
+   "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "DV",
    "ProjectCode": "ONSITE",
    "byMonth": {
     "Current": {
-     "ReportsTo": "KeerthI Pratap",
+     "ReportsTo": "",
      "Project": "On Site",
      "Status": "Billed"
     }
