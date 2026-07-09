@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-09T04:31:50.743Z",
+ "generatedAt": "2026-07-09T04:35:24.641Z",
  "months": [
   "April",
   "May",
@@ -3083,7 +3083,7 @@
   {
    "EmpID": "VC_246",
    "Name": "Immadisetty Srilekha",
-   "Practice": "",
+   "Practice": "Application Software",
    "Designation": "",
    "YOE": "",
    "ReportsTo": "",
@@ -3094,7 +3094,7 @@
    "Plan": "",
    "CurrentTask": "",
    "Remarks": "",
-   "DomainCode": "OTH",
+   "DomainCode": "APPSW",
    "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
