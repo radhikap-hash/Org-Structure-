@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-09T04:21:11.221Z",
+ "generatedAt": "2026-07-09T04:21:13.160Z",
  "months": [
   "April",
   "May",
@@ -2976,7 +2976,7 @@
    "Designation": "Software Trainee II",
    "YOE": 0.6,
    "ReportsTo": "Shyam",
-   "Project": "Smart IP Camera",
+   "Project": "Smart IP Camera ( AI )",
    "Status": "Buffer",
    "Allocation": 1,
    "BilledUpto": "NA",
@@ -2988,12 +2988,12 @@
    "byMonth": {
     "Current": {
      "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
+     "Project": "Smart IP Camera ( AI )",
      "Status": "Buffer"
     },
     "April": {
      "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
+     "Project": "Smart IP Camera ( AI )",
      "Status": "UnBilled"
     }
    }
