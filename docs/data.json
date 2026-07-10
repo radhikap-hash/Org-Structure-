@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-10T05:04:07.155Z",
+ "generatedAt": "2026-07-10T05:04:29.214Z",
  "months": [
   "April",
   "May",
@@ -307,7 +307,7 @@
    "Practice": "SystemC Modelling",
    "Designation": "Engineer I",
    "YOE": 0.7,
-   "ReportsTo": "Aravind",
+   "ReportsTo": "Swarna Latha",
    "Project": "DLI Soc Modelling",
    "Status": "Buffer",
    "Allocation": 1,
@@ -319,12 +319,12 @@
    "ProjectCode": "DLI",
    "byMonth": {
     "Current": {
-     "ReportsTo": "Aravind",
+     "ReportsTo": "Swarna Latha",
      "Project": "DLI Soc Modelling",
      "Status": "Buffer"
     },
     "April": {
-     "ReportsTo": "Aravind",
+     "ReportsTo": "Swarna Latha",
      "Project": "DLI Soc Modelling",
      "Status": "Buffer"
     }
@@ -336,7 +336,7 @@
    "Practice": "SystemC Modelling",
    "Designation": "Engineer I",
    "YOE": 0.5,
-   "ReportsTo": "Aravind",
+   "ReportsTo": "Swarna Latha",
    "Project": "DLI Soc Modelling",
    "Status": "Buffer",
    "Allocation": 1,
@@ -348,12 +348,12 @@
    "ProjectCode": "DLI",
    "byMonth": {
     "Current": {
-     "ReportsTo": "Aravind",
+     "ReportsTo": "Swarna Latha",
      "Project": "DLI Soc Modelling",
      "Status": "Buffer"
     },
     "April": {
-     "ReportsTo": "Aravind",
+     "ReportsTo": "Swarna Latha",
      "Project": "DLI Soc Modelling",
      "Status": "Buffer"
     }
@@ -365,7 +365,7 @@
    "Practice": "FPGA",
    "Designation": "Senior Engineer",
    "YOE": 5.6,
-   "ReportsTo": "Aravind",
+   "ReportsTo": "Srikanth",
    "Project": "HSM/ RISCV",
    "Status": "Billed",
    "Allocation": 1,
@@ -377,12 +377,12 @@
    "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
-     "ReportsTo": "Aravind",
+     "ReportsTo": "Srikanth",
      "Project": "HSM/ RISCV",
      "Status": "Billed"
     },
     "April": {
-     "ReportsTo": "Aravind",
+     "ReportsTo": "Srikanth",
      "Project": "HSM/ RISCV",
      "Status": "Billed"
     }
@@ -394,7 +394,7 @@
    "Practice": "FPGA",
    "Designation": "Senior Engineer",
    "YOE": 4.2,
-   "ReportsTo": "Aravind",
+   "ReportsTo": "Srikanth",
    "Project": "FLC, DLI",
    "Status": "Billed",
    "Allocation": 1,
@@ -406,12 +406,12 @@
    "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
-     "ReportsTo": "Aravind",
+     "ReportsTo": "Srikanth",
      "Project": "FLC, DLI",
      "Status": "Billed"
     },
     "April": {
-     "ReportsTo": "Aravind",
+     "ReportsTo": "Srikanth",
      "Project": "FLC, DLI",
      "Status": "Billed"
     }
@@ -423,7 +423,7 @@
    "Practice": "FPGA",
    "Designation": "Engineer I",
    "YOE": 2.2,
-   "ReportsTo": "Aravind",
+   "ReportsTo": "Srikanth",
    "Project": "HSM/ RISCV",
    "Status": "UnBilled",
    "Allocation": 1,
@@ -435,12 +435,12 @@
    "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
-     "ReportsTo": "Aravind",
+     "ReportsTo": "Srikanth",
      "Project": "HSM/ RISCV",
      "Status": "UnBilled"
     },
     "April": {
-     "ReportsTo": "Aravind",
+     "ReportsTo": "Srikanth",
      "Project": "HSM/ RISCV",
      "Status": "UnBilled"
     }
@@ -452,7 +452,7 @@
    "Practice": "FPGA",
    "Designation": "Engineer II",
    "YOE": 2.1,
-   "ReportsTo": "Aravind",
+   "ReportsTo": "Srikanth",
    "Project": "HSM/ RISCV",
    "Status": "UnBilled",
    "Allocation": 1,
@@ -464,12 +464,12 @@
    "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
-     "ReportsTo": "Aravind",
+     "ReportsTo": "Srikanth",
      "Project": "HSM/ RISCV",
      "Status": "UnBilled"
     },
     "April": {
-     "ReportsTo": "Aravind",
+     "ReportsTo": "Srikanth",
      "Project": "HSM/ RISCV",
      "Status": "UnBilled"
     }
@@ -481,7 +481,7 @@
    "Practice": "FPGA",
    "Designation": "Engineer I",
    "YOE": 0.9,
-   "ReportsTo": "Aravind",
+   "ReportsTo": "Srikanth",
    "Project": "DLI Soc",
    "Status": "UnBilled",
    "Allocation": 1,
@@ -493,12 +493,12 @@
    "ProjectCode": "DLI",
    "byMonth": {
     "Current": {
-     "ReportsTo": "Aravind",
+     "ReportsTo": "Srikanth",
      "Project": "DLI Soc",
      "Status": "UnBilled"
     },
     "April": {
-     "ReportsTo": "Aravind",
+     "ReportsTo": "Srikanth",
      "Project": "DLI Soc",
      "Status": "UnBilled"
     }
