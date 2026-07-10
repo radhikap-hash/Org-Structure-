@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-10T04:04:29.842Z",
+ "generatedAt": "2026-07-10T05:01:50.188Z",
  "months": [
   "April",
   "May",
@@ -356,35 +356,6 @@
      "ReportsTo": "Aravind",
      "Project": "DLI Soc Modelling",
      "Status": "Buffer"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_122",
-   "Name": "Charan Raj Bommadeni",
-   "Practice": "FPGA",
-   "Designation": "Senior Engineer",
-   "YOE": 5.2,
-   "ReportsTo": "Aravind",
-   "Project": "RCI Flash Boting , DLI",
-   "Status": "UnBilled",
-   "Allocation": "50% + 50%",
-   "BilledUpto": "NA",
-   "Plan": "HSM / RISCV Tasks",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "FPGA",
-   "ProjectCode": "DLI",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Aravind",
-     "Project": "RCI Flash Boting , DLI",
-     "Status": "UnBilled"
-    },
-    "April": {
-     "ReportsTo": "Aravind",
-     "Project": "RCI Flash Boting , DLI",
-     "Status": "UnBilled"
     }
    }
   },
