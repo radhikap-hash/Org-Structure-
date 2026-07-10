@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-10T05:24:23.980Z",
+ "generatedAt": "2026-07-10T05:24:39.886Z",
  "months": [
   "April",
   "May",
@@ -283,7 +283,7 @@
    "Status": "Buffer",
    "Allocation": 1,
    "BilledUpto": "NA",
-   "Plan": "System C Modelling Ramp Up",
+   "Plan": "System C Modelling Ramp Up , Staffing",
    "CurrentTask": "Security IP modelling",
    "Remarks": "In House Development",
    "DomainCode": "SYSC",
