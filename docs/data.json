@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-10T05:03:46.317Z",
+ "generatedAt": "2026-07-10T05:04:07.155Z",
  "months": [
   "April",
   "May",
@@ -278,7 +278,7 @@
    "Practice": "SystemC Modelling",
    "Designation": "Engineer I",
    "YOE": 0.8,
-   "ReportsTo": "Aravind",
+   "ReportsTo": "Swarna Latha",
    "Project": "DLI Soc Modelling",
    "Status": "Buffer",
    "Allocation": 1,
@@ -290,12 +290,12 @@
    "ProjectCode": "DLI",
    "byMonth": {
     "Current": {
-     "ReportsTo": "Aravind",
+     "ReportsTo": "Swarna Latha",
      "Project": "DLI Soc Modelling",
      "Status": "Buffer"
     },
     "April": {
-     "ReportsTo": "Aravind",
+     "ReportsTo": "Swarna Latha",
      "Project": "DLI Soc Modelling",
      "Status": "Buffer"
     }
