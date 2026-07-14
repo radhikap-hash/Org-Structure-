@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-14T06:04:29.368Z",
+ "generatedAt": "2026-07-14T06:19:20.667Z",
  "months": [
   "April",
   "May",
@@ -227,7 +227,7 @@
    "BilledUpto": "August",
    "Plan": "Project May Extend, Staffing",
    "CurrentTask": "FLC Chip top modelling",
-   "Remarks": "Project Extension will know by July 1",
+   "Remarks": "",
    "DomainCode": "SYSC",
    "ProjectCode": "FLC",
    "byMonth": {
@@ -256,7 +256,7 @@
    "BilledUpto": "August",
    "Plan": "Project May Extend, Staffing",
    "CurrentTask": "QEMU bringup",
-   "Remarks": "Project Extension will know by July 1",
+   "Remarks": "",
    "DomainCode": "SYSC",
    "ProjectCode": "FLC",
    "byMonth": {
