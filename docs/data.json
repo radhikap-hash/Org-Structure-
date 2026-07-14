@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-14T06:19:20.667Z",
+ "generatedAt": "2026-07-14T06:19:37.161Z",
  "months": [
   "April",
   "May",
@@ -140,7 +140,7 @@
    "BilledUpto": "July",
    "Plan": "Project May Extend",
    "CurrentTask": "Supporting DLI models",
-   "Remarks": "Need 3 buffers(Trainees) for existing engineers",
+   "Remarks": "",
    "DomainCode": "SYSC",
    "ProjectCode": "ADI",
    "byMonth": {
