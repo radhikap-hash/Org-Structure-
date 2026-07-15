@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-15T04:04:29.441Z",
+ "generatedAt": "2026-07-15T05:01:22.963Z",
  "months": [
   "April",
   "May",
@@ -3058,7 +3058,7 @@
    "Designation": "Trainee II",
    "YOE": "",
    "ReportsTo": "George",
-   "Project": "",
+   "Project": "VCT Intranet Development",
    "Status": "UnBilled",
    "Allocation": "",
    "BilledUpto": "",
@@ -3070,7 +3070,7 @@
    "byMonth": {
     "Current": {
      "ReportsTo": "George",
-     "Project": "",
+     "Project": "VCT Intranet Development",
      "Status": "UnBilled"
     }
    }
