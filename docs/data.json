@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-15T06:04:30.407Z",
+ "generatedAt": "2026-07-15T06:50:40.912Z",
  "months": [
   "April",
   "May",
@@ -1729,7 +1729,7 @@
    "Designation": "Engineer II",
    "YOE": 2.4,
    "ReportsTo": "Kiran Allada",
-   "Project": "E Delivery Robot",
+   "Project": "Linux Training",
    "Status": "UnBilled",
    "Allocation": "",
    "BilledUpto": "",
@@ -1737,16 +1737,16 @@
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "EMSW",
-   "ProjectCode": "DBOT",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "Kiran Allada",
-     "Project": "E Delivery Robot",
+     "Project": "Linux Training",
      "Status": "UnBilled"
     },
     "April": {
      "ReportsTo": "Kiran Allada",
-     "Project": "E Delivery Robot",
+     "Project": "Linux Training",
      "Status": "UnBilled"
     }
    }
@@ -1758,7 +1758,7 @@
    "Designation": "Engineer II",
    "YOE": 4.6,
    "ReportsTo": "KeerthI Pratap",
-   "Project": "",
+   "Project": "Linux Training",
    "Status": "UnBilled",
    "Allocation": 0,
    "BilledUpto": "",
@@ -1770,12 +1770,12 @@
    "byMonth": {
     "Current": {
      "ReportsTo": "KeerthI Pratap",
-     "Project": "",
+     "Project": "Linux Training",
      "Status": "UnBilled"
     },
     "April": {
      "ReportsTo": "KeerthI Pratap",
-     "Project": "",
+     "Project": "Linux Training",
      "Status": "Billed"
     }
    }
@@ -1787,7 +1787,7 @@
    "Designation": "Engineer II",
    "YOE": 2.1,
    "ReportsTo": "Kiran Allada",
-   "Project": "E Delivery Robot",
+   "Project": "Linux Training",
    "Status": "UnBilled",
    "Allocation": "",
    "BilledUpto": "",
@@ -1795,16 +1795,16 @@
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "EMSW",
-   "ProjectCode": "DBOT",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "Kiran Allada",
-     "Project": "E Delivery Robot",
+     "Project": "Linux Training",
      "Status": "UnBilled"
     },
     "April": {
      "ReportsTo": "Kiran Allada",
-     "Project": "E Delivery Robot",
+     "Project": "Linux Training",
      "Status": "UnBilled"
     }
    }
@@ -1874,7 +1874,7 @@
    "Designation": "Senior Engineer",
    "YOE": 5.2,
    "ReportsTo": "KeerthI Pratap",
-   "Project": "",
+   "Project": "Linux Training",
    "Status": "UnBilled",
    "Allocation": 0,
    "BilledUpto": "",
@@ -1886,12 +1886,12 @@
    "byMonth": {
     "Current": {
      "ReportsTo": "KeerthI Pratap",
-     "Project": "",
+     "Project": "Linux Training",
      "Status": "UnBilled"
     },
     "April": {
      "ReportsTo": "KeerthI Pratap",
-     "Project": "",
+     "Project": "Linux Training",
      "Status": "UnBilled"
     }
    }
@@ -1961,7 +1961,7 @@
    "Designation": "Engineer I",
    "YOE": 1.11,
    "ReportsTo": "Sasikanth",
-   "Project": "DLI Soc / Staffing",
+   "Project": "Linux Training",
    "Status": "UnBilled",
    "Allocation": 0.3,
    "BilledUpto": "NA",
@@ -1969,16 +1969,16 @@
    "CurrentTask": "",
    "Remarks": "",
    "DomainCode": "EMSW",
-   "ProjectCode": "DLI",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "Sasikanth",
-     "Project": "DLI Soc / Staffing",
+     "Project": "Linux Training",
      "Status": "UnBilled"
     },
     "April": {
      "ReportsTo": "Sasikanth",
-     "Project": "DLI Soc / Staffing",
+     "Project": "Linux Training",
      "Status": "UnBilled"
     }
    }
