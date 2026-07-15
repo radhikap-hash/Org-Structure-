@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-15T08:21:10.952Z",
+ "generatedAt": "2026-07-15T08:21:30.142Z",
  "months": [
   "April",
   "May",
@@ -3222,7 +3222,7 @@
    "Designation": "Technical Writer",
    "YOE": 4.9,
    "ReportsTo": "Srikanth",
-   "Project": "",
+   "Project": "Dual Lens / Single Lens Camera",
    "Status": "UnBilled",
    "Allocation": 0,
    "BilledUpto": "",
@@ -3230,21 +3230,21 @@
    "CurrentTask": "",
    "Remarks": "Supporting ORCA & Renesas ( ISP )",
    "DomainCode": "OPS",
-   "ProjectCode": "BENCH",
+   "ProjectCode": "CAM",
    "byMonth": {
     "Current": {
      "ReportsTo": "Srikanth",
-     "Project": "",
+     "Project": "Dual Lens / Single Lens Camera",
      "Status": "UnBilled"
     },
     "April": {
      "ReportsTo": "Srikanth",
-     "Project": "",
+     "Project": "Dual Lens / Single Lens Camera",
      "Status": "UnBilled"
     },
     "May": {
      "ReportsTo": "Srikanth",
-     "Project": "",
+     "Project": "Dual Lens / Single Lens Camera",
      "Status": "Unbilled "
     }
    }
