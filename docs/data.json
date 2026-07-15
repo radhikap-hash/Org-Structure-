@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-15T08:04:29.626Z",
+ "generatedAt": "2026-07-15T08:21:10.952Z",
  "months": [
   "April",
   "May",
@@ -3222,7 +3222,7 @@
    "Designation": "Technical Writer",
    "YOE": 4.9,
    "ReportsTo": "Srikanth",
-   "Project": "Self Learning",
+   "Project": "",
    "Status": "UnBilled",
    "Allocation": 0,
    "BilledUpto": "",
@@ -3234,17 +3234,17 @@
    "byMonth": {
     "Current": {
      "ReportsTo": "Srikanth",
-     "Project": "Self Learning",
+     "Project": "",
      "Status": "UnBilled"
     },
     "April": {
      "ReportsTo": "Srikanth",
-     "Project": "Self Learning",
+     "Project": "",
      "Status": "UnBilled"
     },
     "May": {
      "ReportsTo": "Srikanth",
-     "Project": "Self Learning",
+     "Project": "",
      "Status": "Unbilled "
     }
    }
