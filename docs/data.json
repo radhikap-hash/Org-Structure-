@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-15T05:01:22.963Z",
+ "generatedAt": "2026-07-15T05:01:39.908Z",
  "months": [
   "April",
   "May",
@@ -2339,8 +2339,8 @@
    "YOE": "",
    "ReportsTo": "Kameswara rao",
    "Project": "Renesas FSP",
-   "Status": "UnBilled",
-   "Allocation": "",
+   "Status": "Buffer",
+   "Allocation": "Buffer",
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
@@ -2351,7 +2351,7 @@
     "Current": {
      "ReportsTo": "Kameswara rao",
      "Project": "Renesas FSP",
-     "Status": "UnBilled"
+     "Status": "Buffer"
     }
    }
   },
