@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-16T06:00:28.090Z",
+ "generatedAt": "2026-07-16T06:00:30.996Z",
  "months": [
   "April",
   "May",
@@ -3594,7 +3594,7 @@
    "EmpID": "VC_108",
    "Name": "Sai Swetha Devi Vana",
    "Practice": "HR",
-   "Designation": "",
+   "Designation": "HR",
    "YOE": "",
    "ReportsTo": "Sudha",
    "Project": "",
@@ -3618,7 +3618,7 @@
    "EmpID": "VC_114",
    "Name": "Vaishnavi. Vulapu",
    "Practice": "HR",
-   "Designation": "",
+   "Designation": "HR",
    "YOE": "",
    "ReportsTo": "Sudha",
    "Project": "",
@@ -3642,7 +3642,7 @@
    "EmpID": "VCIN_50",
    "Name": "Priya Kalaga",
    "Practice": "HR",
-   "Designation": "",
+   "Designation": "HR",
    "YOE": "",
    "ReportsTo": "Sudha",
    "Project": "",
