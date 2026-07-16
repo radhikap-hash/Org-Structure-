@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-16T05:52:39.115Z",
+ "generatedAt": "2026-07-16T05:53:45.520Z",
  "months": [
   "April",
   "May",
@@ -3521,7 +3521,7 @@
   {
    "EmpID": "VC_239",
    "Name": "Narendra Reddy Nagireddy",
-   "Practice": "",
+   "Practice": "Marketing",
    "Designation": "",
    "YOE": "",
    "ReportsTo": "Mounika",
@@ -3545,7 +3545,7 @@
   {
    "EmpID": "VC_158",
    "Name": "Aadhi Seshulu",
-   "Practice": "",
+   "Practice": "UI / UX Designer",
    "Designation": "",
    "YOE": "",
    "ReportsTo": "Mounika",
