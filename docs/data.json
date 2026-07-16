@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-16T05:53:45.520Z",
+ "generatedAt": "2026-07-16T05:54:11.527Z",
  "months": [
   "April",
   "May",
@@ -3569,7 +3569,7 @@
   {
    "EmpID": "VC_100",
    "Name": "Sai Sudha Kilaru",
-   "Practice": "",
+   "Practice": "HR",
    "Designation": "",
    "YOE": "",
    "ReportsTo": "Srikanth",
@@ -3593,7 +3593,7 @@
   {
    "EmpID": "VC_108",
    "Name": "Sai Swetha Devi Vana",
-   "Practice": "",
+   "Practice": "HR",
    "Designation": "",
    "YOE": "",
    "ReportsTo": "Sudha",
