@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-16T05:40:28.302Z",
+ "generatedAt": "2026-07-16T05:41:01.798Z",
  "months": [
   "April",
   "May",
@@ -3833,6 +3833,30 @@
   {
    "EmpID": "VCC_114",
    "Name": "Chintala Keerthi Pratap",
+   "Practice": "",
+   "Designation": "",
+   "YOE": "",
+   "ReportsTo": "",
+   "Project": "",
+   "Status": "",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "DomainCode": "OTH",
+   "ProjectCode": "BENCH",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "",
+     "Project": "",
+     "Status": ""
+    }
+   }
+  },
+  {
+   "EmpID": "VCIN_50",
+   "Name": "Priya Kalaga",
    "Practice": "",
    "Designation": "",
    "YOE": "",
