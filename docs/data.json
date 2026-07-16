@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-16T05:38:14.066Z",
+ "generatedAt": "2026-07-16T05:38:29.687Z",
  "months": [
   "April",
   "May",
@@ -3593,6 +3593,30 @@
   {
    "EmpID": "VC_114",
    "Name": "Vaishnavi. Vulapu",
+   "Practice": "",
+   "Designation": "",
+   "YOE": "",
+   "ReportsTo": "",
+   "Project": "",
+   "Status": "",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "DomainCode": "OTH",
+   "ProjectCode": "BENCH",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "",
+     "Project": "",
+     "Status": ""
+    }
+   }
+  },
+  {
+   "EmpID": "VC_158",
+   "Name": "Aadhi Seshulu",
    "Practice": "",
    "Designation": "",
    "YOE": "",
