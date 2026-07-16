@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-16T06:09:41.364Z",
+ "generatedAt": "2026-07-16T06:11:02.437Z",
  "months": [
   "April",
   "May",
@@ -3742,8 +3742,8 @@
    "YOE": "",
    "ReportsTo": "Srikanth",
    "Project": "Staffing",
-   "Status": "",
-   "Allocation": "",
+   "Status": "UnBilled",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "",
    "CurrentTask": "",
@@ -3754,7 +3754,7 @@
     "Current": {
      "ReportsTo": "Srikanth",
      "Project": "Staffing",
-     "Status": ""
+     "Status": "UnBilled"
     }
    }
   },
