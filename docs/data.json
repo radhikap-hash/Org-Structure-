@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-16T06:00:33.096Z",
+ "generatedAt": "2026-07-16T06:00:53.030Z",
  "months": [
   "April",
   "May",
@@ -3666,7 +3666,7 @@
    "EmpID": "VC_109",
    "Name": "Swathi Kandukuri",
    "Practice": "Admin",
-   "Designation": "",
+   "Designation": "Admin",
    "YOE": "",
    "ReportsTo": "Srikanth",
    "Project": "",
@@ -3690,7 +3690,7 @@
    "EmpID": "VC_160",
    "Name": "Srinivasa Rao Baratam",
    "Practice": "IT",
-   "Designation": "",
+   "Designation": "Senior System Administrator",
    "YOE": "",
    "ReportsTo": "Srikanth",
    "Project": "",
