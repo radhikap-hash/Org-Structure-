@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-16T05:39:57.311Z",
+ "generatedAt": "2026-07-16T05:40:13.764Z",
  "months": [
   "April",
   "May",
@@ -3785,6 +3785,30 @@
   {
    "EmpID": "VC_239",
    "Name": "Narendra Reddy Nagireddy",
+   "Practice": "",
+   "Designation": "",
+   "YOE": "",
+   "ReportsTo": "",
+   "Project": "",
+   "Status": "",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "DomainCode": "OTH",
+   "ProjectCode": "BENCH",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "",
+     "Project": "",
+     "Status": ""
+    }
+   }
+  },
+  {
+   "EmpID": "VC_245",
+   "Name": "Pothuraju Radhika",
    "Practice": "",
    "Designation": "",
    "YOE": "",
