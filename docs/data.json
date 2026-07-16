@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-16T05:39:34.592Z",
+ "generatedAt": "2026-07-16T05:39:52.402Z",
  "months": [
   "April",
   "May",
@@ -3737,6 +3737,54 @@
   {
    "EmpID": "VC_236",
    "Name": "Saheram Kurra",
+   "Practice": "",
+   "Designation": "",
+   "YOE": "",
+   "ReportsTo": "",
+   "Project": "",
+   "Status": "",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "DomainCode": "OTH",
+   "ProjectCode": "BENCH",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "",
+     "Project": "",
+     "Status": ""
+    }
+   }
+  },
+  {
+   "EmpID": "VC_237",
+   "Name": "Katta Pavan Kumar Reddy",
+   "Practice": "",
+   "Designation": "",
+   "YOE": "",
+   "ReportsTo": "",
+   "Project": "",
+   "Status": "",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "DomainCode": "OTH",
+   "ProjectCode": "BENCH",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "",
+     "Project": "",
+     "Status": ""
+    }
+   }
+  },
+  {
+   "EmpID": "VC_239",
+   "Name": "Narendra Reddy Nagireddy",
    "Practice": "",
    "Designation": "",
    "YOE": "",
