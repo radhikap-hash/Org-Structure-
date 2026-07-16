@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-16T05:37:41.238Z",
+ "generatedAt": "2026-07-16T05:37:59.737Z",
  "months": [
   "April",
   "May",
@@ -3521,6 +3521,54 @@
   {
    "EmpID": "VC_100",
    "Name": "Sai Sudha Kilaru",
+   "Practice": "",
+   "Designation": "",
+   "YOE": "",
+   "ReportsTo": "",
+   "Project": "",
+   "Status": "",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "DomainCode": "OTH",
+   "ProjectCode": "BENCH",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "",
+     "Project": "",
+     "Status": ""
+    }
+   }
+  },
+  {
+   "EmpID": "VC_108",
+   "Name": "Sai Swetha Devi Vana",
+   "Practice": "",
+   "Designation": "",
+   "YOE": "",
+   "ReportsTo": "",
+   "Project": "",
+   "Status": "",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "DomainCode": "OTH",
+   "ProjectCode": "BENCH",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "",
+     "Project": "",
+     "Status": ""
+    }
+   }
+  },
+  {
+   "EmpID": "VC_109",
+   "Name": "Swathi Kandukuri",
    "Practice": "",
    "Designation": "",
    "YOE": "",
