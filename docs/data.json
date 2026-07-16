@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-16T05:38:49.039Z",
+ "generatedAt": "2026-07-16T05:39:04.350Z",
  "months": [
   "April",
   "May",
@@ -3665,6 +3665,30 @@
   {
    "EmpID": "VC_172",
    "Name": "Kranthi Chaitanya Udarakonda",
+   "Practice": "",
+   "Designation": "",
+   "YOE": "",
+   "ReportsTo": "",
+   "Project": "",
+   "Status": "",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "DomainCode": "OTH",
+   "ProjectCode": "BENCH",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "",
+     "Project": "",
+     "Status": ""
+    }
+   }
+  },
+  {
+   "EmpID": "VC_195",
+   "Name": "Ajay Sirigiri",
    "Practice": "",
    "Designation": "",
    "YOE": "",
