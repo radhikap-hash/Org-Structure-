@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-16T05:38:29.687Z",
+ "generatedAt": "2026-07-16T05:38:49.039Z",
  "months": [
   "April",
   "May",
@@ -3617,6 +3617,54 @@
   {
    "EmpID": "VC_158",
    "Name": "Aadhi Seshulu",
+   "Practice": "",
+   "Designation": "",
+   "YOE": "",
+   "ReportsTo": "",
+   "Project": "",
+   "Status": "",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "DomainCode": "OTH",
+   "ProjectCode": "BENCH",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "",
+     "Project": "",
+     "Status": ""
+    }
+   }
+  },
+  {
+   "EmpID": "VC_160",
+   "Name": "Srinivasa Rao Baratam",
+   "Practice": "",
+   "Designation": "",
+   "YOE": "",
+   "ReportsTo": "",
+   "Project": "",
+   "Status": "",
+   "Allocation": "",
+   "BilledUpto": "",
+   "Plan": "",
+   "CurrentTask": "",
+   "Remarks": "",
+   "DomainCode": "OTH",
+   "ProjectCode": "BENCH",
+   "byMonth": {
+    "Current": {
+     "ReportsTo": "",
+     "Project": "",
+     "Status": ""
+    }
+   }
+  },
+  {
+   "EmpID": "VC_172",
+   "Name": "Kranthi Chaitanya Udarakonda",
    "Practice": "",
    "Designation": "",
    "YOE": "",
