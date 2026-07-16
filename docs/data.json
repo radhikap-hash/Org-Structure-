@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-16T05:56:25.157Z",
+ "generatedAt": "2026-07-16T05:57:10.318Z",
  "months": [
   "April",
   "May",
@@ -3737,7 +3737,7 @@
   {
    "EmpID": "VCC_114",
    "Name": "Chintala Keerthi Pratap",
-   "Practice": "",
+   "Practice": "Staffing",
    "Designation": "",
    "YOE": "",
    "ReportsTo": "Srikanth",
@@ -3761,7 +3761,7 @@
   {
    "EmpID": "VC_236",
    "Name": "Saheram Kurra",
-   "Practice": "",
+   "Practice": "Sales",
    "Designation": "",
    "YOE": "",
    "ReportsTo": "Kranthi",
