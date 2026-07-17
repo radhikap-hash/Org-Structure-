@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-17T04:36:54.682Z",
+ "generatedAt": "2026-07-17T04:37:59.969Z",
  "months": [
   "April",
   "May",
@@ -571,7 +571,7 @@
    "ReportsTo": "Swarna Latha",
    "Project": "Protocol Verification",
    "Status": "UnBilled",
-   "Allocation": "50% +50%",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "Protocol Verification",
    "CurrentTask": "",
@@ -598,24 +598,24 @@
    "Designation": "Engineer I",
    "YOE": 1.2,
    "ReportsTo": "Swarna Latha",
-   "Project": "ORCA ,Protocol Verification",
+   "Project": "Protocol Verification",
    "Status": "UnBilled",
-   "Allocation": "50% +50%",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "Protocol Verification",
    "CurrentTask": "",
    "Remarks": "UnBilled from June 16th, New Project may come , we will know by July end, lack of experience for staffing",
    "DomainCode": "DV",
-   "ProjectCode": "ORCA",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "Swarna Latha",
-     "Project": "ORCA ,Protocol Verification",
+     "Project": "Protocol Verification",
      "Status": "UnBilled"
     },
     "April": {
      "ReportsTo": "Swarna Latha",
-     "Project": "ORCA ,Protocol Verification",
+     "Project": "Protocol Verification",
      "Status": "Buffer"
     }
    }
@@ -627,24 +627,24 @@
    "Designation": "Engineer I",
    "YOE": 1.2,
    "ReportsTo": "Swarna Latha",
-   "Project": "ORCA ,Protocol Verification",
+   "Project": "Protocol Verification",
    "Status": "UnBilled",
-   "Allocation": "50% +50%",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "Protocol Verification",
    "CurrentTask": "",
    "Remarks": "UnBilled from June 16th, New Project may come , we will know by July end, lack of experience for staffing",
    "DomainCode": "DV",
-   "ProjectCode": "ORCA",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "Swarna Latha",
-     "Project": "ORCA ,Protocol Verification",
+     "Project": "Protocol Verification",
      "Status": "UnBilled"
     },
     "April": {
      "ReportsTo": "Swarna Latha",
-     "Project": "ORCA ,Protocol Verification",
+     "Project": "Protocol Verification",
      "Status": "BufferBilled"
     }
    }
@@ -656,24 +656,24 @@
    "Designation": "Engineer I",
    "YOE": 1.2,
    "ReportsTo": "Swarna Latha",
-   "Project": "ORCA ,Protocol Verification",
+   "Project": "Protocol Verification",
    "Status": "UnBilled",
-   "Allocation": "50% +50%",
+   "Allocation": 1,
    "BilledUpto": "",
    "Plan": "Protocol Verification",
    "CurrentTask": "",
    "Remarks": "UnBilled from June 16th, New Project may come , we will know by July end, lack of experience for staffing",
    "DomainCode": "DV",
-   "ProjectCode": "ORCA",
+   "ProjectCode": "BENCH",
    "byMonth": {
     "Current": {
      "ReportsTo": "Swarna Latha",
-     "Project": "ORCA ,Protocol Verification",
+     "Project": "Protocol Verification",
      "Status": "UnBilled"
     },
     "April": {
      "ReportsTo": "Swarna Latha",
-     "Project": "ORCA ,Protocol Verification",
+     "Project": "Protocol Verification",
      "Status": "Billed"
     }
    }
