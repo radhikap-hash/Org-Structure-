@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-20T09:08:20.952Z",
+ "generatedAt": "2026-07-20T09:20:14.043Z",
  "months": [
   "April",
   "May",
@@ -946,7 +946,7 @@
    "Designation": "Senior Engineer",
    "YOE": 6.2,
    "ReportsTo": "Rajesh",
-   "Project": "FLC, ZMD Edge, Belly Camera",
+   "Project": "FLC, ZMD Edge, Belly Camera, RCI ITS",
    "Status": "Billed",
    "Allocation": "40% + 30%+ 30%",
    "BilledUpto": "June End",
@@ -958,12 +958,12 @@
    "byMonth": {
     "Current": {
      "ReportsTo": "Rajesh",
-     "Project": "FLC, ZMD Edge, Belly Camera",
+     "Project": "FLC, ZMD Edge, Belly Camera, RCI ITS",
      "Status": "Billed"
     },
     "April": {
      "ReportsTo": "Rajesh",
-     "Project": "FLC, ZMD Edge, Belly Camera",
+     "Project": "FLC, ZMD Edge, Belly Camera, RCI ITS",
      "Status": "Billed"
     }
    }
