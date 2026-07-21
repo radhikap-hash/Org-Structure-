@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-21T07:04:29.677Z",
+ "generatedAt": "2026-07-21T08:00:46.433Z",
  "months": [
   "April",
   "May",
@@ -3286,7 +3286,7 @@
    "YOE": 4.2,
    "ReportsTo": "",
    "Project": "On Site",
-   "Status": "Billed",
+   "Status": "UnBilled",
    "Allocation": 1,
    "BilledUpto": "",
    "Plan": "AMD Continues",
@@ -3298,7 +3298,7 @@
     "Current": {
      "ReportsTo": "",
      "Project": "On Site",
-     "Status": "Billed"
+     "Status": "UnBilled"
     }
    }
   },
@@ -3310,7 +3310,7 @@
    "YOE": 4.9,
    "ReportsTo": "",
    "Project": "On Site",
-   "Status": "Billed",
+   "Status": "UnBilled",
    "Allocation": 1,
    "BilledUpto": "",
    "Plan": "AMD Continues",
@@ -3322,7 +3322,7 @@
     "Current": {
      "ReportsTo": "",
      "Project": "On Site",
-     "Status": "Billed"
+     "Status": "UnBilled"
     }
    }
   },
