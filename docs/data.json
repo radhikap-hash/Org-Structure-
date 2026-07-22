@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-22T12:07:11.674Z",
+ "generatedAt": "2026-07-22T12:07:25.730Z",
  "months": [
   "April",
   "May",
@@ -1322,7 +1322,7 @@
    "Practice": "Embedded - Linux",
    "Designation": "Engineer II",
    "YOE": 2.1,
-   "ReportsTo": "Kameswara rao",
+   "ReportsTo": "Sasikanth",
    "Project": "FLC",
    "Status": "Buffer Billed",
    "Allocation": 1,
@@ -1334,12 +1334,12 @@
    "ProjectCode": "FLC",
    "byMonth": {
     "Current": {
-     "ReportsTo": "Kameswara rao",
+     "ReportsTo": "Sasikanth",
      "Project": "FLC",
      "Status": "Buffer Billed"
     },
     "April": {
-     "ReportsTo": "Kameswara rao",
+     "ReportsTo": "Sasikanth",
      "Project": "FLC",
      "Status": "Buffer"
     }
@@ -2538,7 +2538,7 @@
    "ReportsTo": "Teja , Sasikanth",
    "Project": "Gen5 , Safety Band",
    "Status": "Buffer",
-   "Allocation": 1,
+   "Allocation": "20% + 80%",
    "BilledUpto": "",
    "Plan": "Required for Gen5",
    "CurrentTask": "Buffer for IT testing",
