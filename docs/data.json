@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-22T12:05:37.669Z",
+ "generatedAt": "2026-07-22T12:05:53.655Z",
  "months": [
   "April",
   "May",
@@ -1962,8 +1962,8 @@
    "YOE": 1.11,
    "ReportsTo": "Sasikanth",
    "Project": "Linux Training , Safety Band",
-   "Status": "UnBilled",
-   "Allocation": 1,
+   "Status": "Buffer",
+   "Allocation": "50% + 50%",
    "BilledUpto": "NA",
    "Plan": "Staffing",
    "CurrentTask": "",
@@ -1974,7 +1974,7 @@
     "Current": {
      "ReportsTo": "Sasikanth",
      "Project": "Linux Training , Safety Band",
-     "Status": "UnBilled"
+     "Status": "Buffer"
     },
     "April": {
      "ReportsTo": "Sasikanth",
