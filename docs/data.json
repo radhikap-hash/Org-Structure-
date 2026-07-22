@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-22T12:05:53.655Z",
+ "generatedAt": "2026-07-22T12:06:07.964Z",
  "months": [
   "April",
   "May",
@@ -2047,7 +2047,7 @@
    "Practice": "Embedded - S/W",
    "Designation": "Engineer I",
    "YOE": 2,
-   "ReportsTo": "Teja",
+   "ReportsTo": "Teja, Sasiaknth",
    "Project": "Gen5",
    "Status": "Buffer",
    "Allocation": 1,
@@ -2059,12 +2059,12 @@
    "ProjectCode": "GEN5",
    "byMonth": {
     "Current": {
-     "ReportsTo": "Teja",
+     "ReportsTo": "Teja, Sasiaknth",
      "Project": "Gen5",
      "Status": "Buffer"
     },
     "April": {
-     "ReportsTo": "Teja",
+     "ReportsTo": "Teja, Sasiaknth",
      "Project": "Gen5",
      "Status": "Billed"
     }
