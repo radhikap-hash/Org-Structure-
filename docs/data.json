@@ -1,5 +1,5 @@
 {
- "generatedAt": "2026-07-22T12:06:07.964Z",
+ "generatedAt": "2026-07-22T12:06:43.217Z",
  "months": [
   "April",
   "May",
@@ -2047,10 +2047,10 @@
    "Practice": "Embedded - S/W",
    "Designation": "Engineer I",
    "YOE": 2,
-   "ReportsTo": "Teja, Sasiaknth",
-   "Project": "Gen5",
+   "ReportsTo": "Teja, Sasikanth",
+   "Project": "Gen5 , Safety Band",
    "Status": "Buffer",
-   "Allocation": 1,
+   "Allocation": "",
    "BilledUpto": "",
    "Plan": "Required for Gen5",
    "CurrentTask": "Buffer for Kiran",
@@ -2059,13 +2059,13 @@
    "ProjectCode": "GEN5",
    "byMonth": {
     "Current": {
-     "ReportsTo": "Teja, Sasiaknth",
-     "Project": "Gen5",
+     "ReportsTo": "Teja, Sasikanth",
+     "Project": "Gen5 , Safety Band",
      "Status": "Buffer"
     },
     "April": {
-     "ReportsTo": "Teja, Sasiaknth",
-     "Project": "Gen5",
+     "ReportsTo": "Teja, Sasikanth",
+     "Project": "Gen5 , Safety Band",
      "Status": "Billed"
     }
    }
