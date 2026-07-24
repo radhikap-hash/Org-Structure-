@@ -1,3511 +1,1326 @@
-{
- "generatedAt": "2026-06-22T15:36:22.112599+00:00",
- "months": [
-  "April 2026",
-  "Current"
- ],
- "employees": [
-  {
-   "EmpID": "VC_099",
-   "Name": "Srikanth Neelam",
-   "Practice": "",
-   "Designation": "Director",
-   "YOE": "24",
-   "ReportsTo": "",
-   "Project": "FLC",
-   "Status": "Billed",
-   "Allocation": "",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "LEAD",
-   "ProjectCode": "FLC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "",
-     "Project": "FLC",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "",
-     "Project": "FLC",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_116",
-   "Name": "Abhishek Vulapu",
-   "Practice": "Program Manager",
-   "Designation": "Program Manager",
-   "YOE": "14",
-   "ReportsTo": "Srikanth",
-   "Project": "Renesas",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "PGM",
-   "ProjectCode": "REN",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Srikanth",
-     "Project": "Renesas",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Srikanth",
-     "Project": "Renesas",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_112",
-   "Name": "Prithvi Nagilla",
-   "Practice": "Program Manager",
-   "Designation": "Program Manager",
-   "YOE": "14",
-   "ReportsTo": "Shyam",
-   "Project": "Smart IP Camera",
-   "Status": "Buffer",
-   "Allocation": "70",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "PGM",
-   "ProjectCode": "CAM",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
-     "Status": "Buffer"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_104",
-   "Name": "Aravind Kumar Goud Kurra",
-   "Practice": "SystemC Modelling",
-   "Designation": "Staff Engineer",
-   "YOE": "8",
-   "ReportsTo": "Srikanth",
-   "Project": "SmartSoC-ADI",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "SYSC",
-   "ProjectCode": "ADI",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Srikanth",
-     "Project": "SmartSoC-ADI",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Srikanth",
-     "Project": "SmartSoC-ADI",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_191",
-   "Name": "Sollapuram Kishore Reddy",
-   "Practice": "SystemC Modelling",
-   "Designation": "Engineer I",
-   "YOE": "1.1",
-   "ReportsTo": "Aravind",
-   "Project": "SmartSoC-ADI",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "July",
-   "Plan": "",
-   "CurrentTask": "Supporting DLI models",
-   "Remarks": "Need 4 engineers with 3-4 years of experience from August. Need 3 buffers(Trainees) for existing engineers.",
-   "DomainCode": "SYSC",
-   "ProjectCode": "ADI",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Aravind",
-     "Project": "SmartSoC-ADI",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Aravind",
-     "Project": "SmartSoC-ADI",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_218",
-   "Name": "Kota Poojitha",
-   "Practice": "SystemC Modelling",
-   "Designation": "Engineer I",
-   "YOE": "0.9",
-   "ReportsTo": "Aravind",
-   "Project": "SmartSoC-ADI",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "July",
-   "Plan": "",
-   "CurrentTask": "Supporting DLI models",
-   "Remarks": "",
-   "DomainCode": "SYSC",
-   "ProjectCode": "ADI",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Aravind",
-     "Project": "SmartSoC-ADI",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Aravind",
-     "Project": "SmartSoC-ADI",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_192",
-   "Name": "Sudeep B Channalli",
-   "Practice": "SystemC Modelling",
-   "Designation": "Engineer I",
-   "YOE": "1.1",
-   "ReportsTo": "Aravind",
-   "Project": "SmartSoC-ADI",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "Supporting DLI models",
-   "Remarks": "",
-   "DomainCode": "SYSC",
-   "ProjectCode": "ADI",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Aravind",
-     "Project": "SmartSoC-ADI",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Aravind",
-     "Project": "SmartSoC-ADI",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_194",
-   "Name": "Yepuri Karthikeya",
-   "Practice": "SystemC Modelling",
-   "Designation": "Engineer I",
-   "YOE": "1.1",
-   "ReportsTo": "Aravind",
-   "Project": "FLC IP Modelling",
-   "Status": "Buffer Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "FLC Chip top modelling",
-   "Remarks": "Aravind will ask srikanth",
-   "DomainCode": "SYSC",
-   "ProjectCode": "FLC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Aravind",
-     "Project": "FLC IP Modelling",
-     "Status": "Buffer Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Aravind",
-     "Project": "FLC IP Modelling",
-     "Status": "BufferBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_225",
-   "Name": "G Sudarshan Reddy",
-   "Practice": "SystemC Modelling",
-   "Designation": "Engineer I",
-   "YOE": "0.7",
-   "ReportsTo": "Aravind",
-   "Project": "FLC IP Modelling",
-   "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "QEMU bringup",
-   "Remarks": "Aravind will ask srikanth",
-   "DomainCode": "SYSC",
-   "ProjectCode": "FLC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Aravind",
-     "Project": "FLC IP Modelling",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Aravind",
-     "Project": "FLC IP Modelling",
-     "Status": "Buffer"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_226",
-   "Name": "Kanturi Jeevan Sai",
-   "Practice": "SystemC Modelling",
-   "Designation": "Engineer I",
-   "YOE": "0.7",
-   "ReportsTo": "Aravind",
-   "Project": "DLI Soc Modelling",
-   "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "Security IP modelling",
-   "Remarks": "Billing plan?",
-   "DomainCode": "SYSC",
-   "ProjectCode": "DLI",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Aravind",
-     "Project": "DLI Soc Modelling",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Aravind",
-     "Project": "DLI Soc Modelling",
-     "Status": "Buffer"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_213",
-   "Name": "Mutakoduru Sowmya",
-   "Practice": "SystemC Modelling",
-   "Designation": "Engineer I",
-   "YOE": "0.6",
-   "ReportsTo": "Aravind",
-   "Project": "DLI Soc Modelling",
-   "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "Security IP modelling",
-   "Remarks": "",
-   "DomainCode": "SYSC",
-   "ProjectCode": "DLI",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Aravind",
-     "Project": "DLI Soc Modelling",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Aravind",
-     "Project": "DLI Soc Modelling",
-     "Status": "Buffer"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_217",
-   "Name": "Balijepalli Anil Kumar",
-   "Practice": "SystemC Modelling",
-   "Designation": "Trainee II",
-   "YOE": "0.4",
-   "ReportsTo": "Aravind",
-   "Project": "DLI Soc Modelling",
-   "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "DMA model",
-   "Remarks": "",
-   "DomainCode": "SYSC",
-   "ProjectCode": "DLI",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Aravind",
-     "Project": "DLI Soc Modelling",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Aravind",
-     "Project": "DLI Soc Modelling",
-     "Status": "Buffer"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_122",
-   "Name": "Charan Raj Bommadeni",
-   "Practice": "FPGA",
-   "Designation": "Senior Engineer",
-   "YOE": "5.1",
-   "ReportsTo": "Aravind",
-   "Project": "DLI Soc",
-   "Status": "UnBilled",
-   "Allocation": "0",
-   "BilledUpto": "",
-   "Plan": "Staffing",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "FPGA",
-   "ProjectCode": "DLI",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Aravind",
-     "Project": "DLI Soc",
-     "Status": "UnBilled"
-    },
-    "April 2026": {
-     "ReportsTo": "Aravind",
-     "Project": "DLI Soc",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_126",
-   "Name": "Sreekanth. Arati",
-   "Practice": "FPGA",
-   "Designation": "Senior Engineer",
-   "YOE": "5.5",
-   "ReportsTo": "Aravind",
-   "Project": "DLI Soc",
-   "Status": "Billed",
-   "Allocation": "0",
-   "BilledUpto": "",
-   "Plan": "Staffing",
-   "CurrentTask": "",
-   "Remarks": "Billed in FLC",
-   "DomainCode": "FPGA",
-   "ProjectCode": "DLI",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Aravind",
-     "Project": "DLI Soc",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Aravind",
-     "Project": "DLI Soc",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_136",
-   "Name": "Itla Sai Bharadwaj",
-   "Practice": "FPGA",
-   "Designation": "Senior Engineer",
-   "YOE": "4.1",
-   "ReportsTo": "Aravind",
-   "Project": "FLC",
-   "Status": "Billed",
-   "Allocation": "0",
-   "BilledUpto": "",
-   "Plan": "Staffing",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "FPGA",
-   "ProjectCode": "FLC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Aravind",
-     "Project": "FLC",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Aravind",
-     "Project": "FLC",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_238",
-   "Name": "Tejeswara Rao Padda",
-   "Practice": "FPGA",
-   "Designation": "Engineer I",
-   "YOE": "2.1",
-   "ReportsTo": "Aravind",
-   "Project": "DLI Soc",
-   "Status": "UnBilled",
-   "Allocation": "0",
-   "BilledUpto": "",
-   "Plan": "Staffing",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "FPGA",
-   "ProjectCode": "DLI",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Aravind",
-     "Project": "DLI Soc",
-     "Status": "UnBilled"
-    },
-    "April 2026": {
-     "ReportsTo": "Aravind",
-     "Project": "DLI Soc",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_133",
-   "Name": "Mahammad Vaheed Pasha",
-   "Practice": "FPGA",
-   "Designation": "Engineer II",
-   "YOE": "2",
-   "ReportsTo": "Aravind",
-   "Project": "DLI Soc",
-   "Status": "UnBilled",
-   "Allocation": "0",
-   "BilledUpto": "",
-   "Plan": "Staffing",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "FPGA",
-   "ProjectCode": "DLI",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Aravind",
-     "Project": "DLI Soc",
-     "Status": "UnBilled"
-    },
-    "April 2026": {
-     "ReportsTo": "Aravind",
-     "Project": "DLI Soc",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_227",
-   "Name": "Borusu Bala Satya Phaneendra",
-   "Practice": "FPGA",
-   "Designation": "Engineer I",
-   "YOE": "0.8",
-   "ReportsTo": "Aravind",
-   "Project": "DLI Soc",
-   "Status": "UnBilled",
-   "Allocation": "0",
-   "BilledUpto": "",
-   "Plan": "Staffing",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "FPGA",
-   "ProjectCode": "DLI",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Aravind",
-     "Project": "DLI Soc",
-     "Status": "UnBilled"
-    },
-    "April 2026": {
-     "ReportsTo": "Aravind",
-     "Project": "DLI Soc",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_204",
-   "Name": "Swarna Latha Jakka",
-   "Practice": "DV",
-   "Designation": "Senior Staff Engineer",
-   "YOE": "15",
-   "ReportsTo": "Srikanth",
-   "Project": "",
-   "Status": "UnBilled",
-   "Allocation": "0",
-   "BilledUpto": "",
-   "Plan": "New Project",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "DV",
-   "ProjectCode": "BENCH",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Srikanth",
-     "Project": "",
-     "Status": "UnBilled"
-    },
-    "April 2026": {
-     "ReportsTo": "Srikanth",
-     "Project": "",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_149",
-   "Name": "Haridasu Rudra Bhupathi Naidu",
-   "Practice": "DV",
-   "Designation": "Engineer II",
-   "YOE": "1.11",
-   "ReportsTo": "Swarna Latha",
-   "Project": "ORCA",
-   "Status": "Billed",
-   "Allocation": "30",
-   "BilledUpto": "June 15th",
-   "Plan": "",
-   "CurrentTask": "Drop_c.1 release and code coverage",
-   "Remarks": "",
-   "DomainCode": "DV",
-   "ProjectCode": "ORCA",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Swarna Latha",
-     "Project": "ORCA",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Swarna Latha",
-     "Project": "ORCA",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_188",
-   "Name": "Rayidi Luhitha",
-   "Practice": "DV",
-   "Designation": "Engineer I",
-   "YOE": "1.1",
-   "ReportsTo": "Swarna Latha",
-   "Project": "ORCA",
-   "Status": "Billed",
-   "Allocation": "30",
-   "BilledUpto": "June 15th",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "DV",
-   "ProjectCode": "ORCA",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Swarna Latha",
-     "Project": "ORCA",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Swarna Latha",
-     "Project": "ORCA",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_189",
-   "Name": "Chittimadha Anil",
-   "Practice": "DV",
-   "Designation": "Engineer I",
-   "YOE": "1.1",
-   "ReportsTo": "Swarna Latha",
-   "Project": "ORCA",
-   "Status": "Buffer",
-   "Allocation": "30",
-   "BilledUpto": "",
-   "Plan": "New Project",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "DV",
-   "ProjectCode": "ORCA",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Swarna Latha",
-     "Project": "ORCA",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Swarna Latha",
-     "Project": "ORCA",
-     "Status": "Buffer"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_190",
-   "Name": "Pothula Bhargav Sai",
-   "Practice": "DV",
-   "Designation": "Engineer I",
-   "YOE": "1.1",
-   "ReportsTo": "Swarna Latha",
-   "Project": "ORCA",
-   "Status": "Buffer Billed",
-   "Allocation": "30",
-   "BilledUpto": "June 15th",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "DV",
-   "ProjectCode": "ORCA",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Swarna Latha",
-     "Project": "ORCA",
-     "Status": "Buffer Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Swarna Latha",
-     "Project": "ORCA",
-     "Status": "BufferBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_193",
-   "Name": "Tammana Viswanadha Muralidhar",
-   "Practice": "DV",
-   "Designation": "Engineer I",
-   "YOE": "1.1",
-   "ReportsTo": "Swarna Latha",
-   "Project": "ORCA",
-   "Status": "Billed",
-   "Allocation": "30",
-   "BilledUpto": "June 15th",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "DV",
-   "ProjectCode": "ORCA",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Swarna Latha",
-     "Project": "ORCA",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Swarna Latha",
-     "Project": "ORCA",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_220",
-   "Name": "Mudragada Sri Venkata Ram Pavan",
-   "Practice": "DV",
-   "Designation": "Engineer I",
-   "YOE": "0.9",
-   "ReportsTo": "Swarna Latha",
-   "Project": "ORCA",
-   "Status": "Buffer",
-   "Allocation": "30",
-   "BilledUpto": "",
-   "Plan": "New Project",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "DV",
-   "ProjectCode": "ORCA",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Swarna Latha",
-     "Project": "ORCA",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Swarna Latha",
-     "Project": "ORCA",
-     "Status": "Buffer"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_150",
-   "Name": "Mani Gopi Nalajala",
-   "Practice": "DV",
-   "Designation": "Engineer II",
-   "YOE": "1.11",
-   "ReportsTo": "Srikanth",
-   "Project": "FLC",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "DV",
-   "ProjectCode": "FLC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Srikanth",
-     "Project": "FLC",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Srikanth",
-     "Project": "FLC",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_203",
-   "Name": "Aadesh Gonda",
-   "Practice": "DV",
-   "Designation": "Engineer I",
-   "YOE": "3.1",
-   "ReportsTo": "Swarna Latha",
-   "Project": "Zerro Power systems",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "6 Months from May 2026",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "DV",
-   "ProjectCode": "ZPS",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Swarna Latha",
-     "Project": "Zerro Power systems",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Swarna Latha",
-     "Project": "Zerro Power systems",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_221",
-   "Name": "A.V.S.Padma Sri",
-   "Practice": "DV",
-   "Designation": "Engineer I",
-   "YOE": "0.7",
-   "ReportsTo": "Swarna Latha",
-   "Project": "DLI Soc",
-   "Status": "UnBilled",
-   "Allocation": "0",
-   "BilledUpto": "",
-   "Plan": "Staffing",
-   "CurrentTask": "EMAC Bit file generation",
-   "Remarks": "",
-   "DomainCode": "DV",
-   "ProjectCode": "DLI",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Swarna Latha",
-     "Project": "DLI Soc",
-     "Status": "UnBilled"
-    },
-    "April 2026": {
-     "ReportsTo": "Swarna Latha",
-     "Project": "DLI Soc",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_223",
-   "Name": "Anasuri durgabhavani",
-   "Practice": "DV",
-   "Designation": "Engineer I",
-   "YOE": "0.6",
-   "ReportsTo": "Swarna Latha",
-   "Project": "DLI Soc",
-   "Status": "UnBilled",
-   "Allocation": "0",
-   "BilledUpto": "",
-   "Plan": "Staffing",
-   "CurrentTask": "FPGA Bit file generation",
-   "Remarks": "",
-   "DomainCode": "DV",
-   "ProjectCode": "DLI",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Swarna Latha",
-     "Project": "DLI Soc",
-     "Status": "UnBilled"
-    },
-    "April 2026": {
-     "ReportsTo": "Swarna Latha",
-     "Project": "DLI Soc",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_228",
-   "Name": "Kona Sri Devi",
-   "Practice": "DV",
-   "Designation": "Engineer I",
-   "YOE": "0.6",
-   "ReportsTo": "Swarna Latha",
-   "Project": "DLI Soc",
-   "Status": "UnBilled",
-   "Allocation": "0",
-   "BilledUpto": "",
-   "Plan": "Staffing",
-   "CurrentTask": "USB Bit file generation",
-   "Remarks": "",
-   "DomainCode": "DV",
-   "ProjectCode": "DLI",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Swarna Latha",
-     "Project": "DLI Soc",
-     "Status": "UnBilled"
-    },
-    "April 2026": {
-     "ReportsTo": "Swarna Latha",
-     "Project": "DLI Soc",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_105",
-   "Name": "AV Rajesh",
-   "Practice": "Hardware",
-   "Designation": "Director",
-   "YOE": "24",
-   "ReportsTo": "Srikanth",
-   "Project": "FLC, SmartSoc(ProbeASIC)",
-   "Status": "Billed",
-   "Allocation": "",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "HW",
-   "ProjectCode": "FLC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Srikanth",
-     "Project": "FLC, SmartSoc(ProbeASIC)",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Srikanth",
-     "Project": "FLC, SmartSoc(ProbeASIC)",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_101",
-   "Name": "Srinivasa Rao Supuri",
-   "Practice": "Hardware",
-   "Designation": "Senior Engineer",
-   "YOE": "7+",
-   "ReportsTo": "Rajesh",
-   "Project": "FLC",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "HW",
-   "ProjectCode": "FLC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Rajesh",
-     "Project": "FLC",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Rajesh",
-     "Project": "FLC",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_124",
-   "Name": "Galipothu.Sunil Kumar",
-   "Practice": "Hardware",
-   "Designation": "Senior Staff Engineer",
-   "YOE": "18",
-   "ReportsTo": "Rajesh",
-   "Project": "FLC",
-   "Status": "Billed",
-   "Allocation": "",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "HW",
-   "ProjectCode": "FLC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Rajesh",
-     "Project": "FLC",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Rajesh",
-     "Project": "FLC",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_176",
-   "Name": "Jampani Samudralankaiah",
-   "Practice": "Hardware",
-   "Designation": "Senior Engineer",
-   "YOE": "6.1",
-   "ReportsTo": "Rajesh",
-   "Project": "FLC",
-   "Status": "Billed",
-   "Allocation": "",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "HW",
-   "ProjectCode": "FLC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Rajesh",
-     "Project": "FLC",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Rajesh",
-     "Project": "FLC",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_183",
-   "Name": "Varimadla Anjaneyulu",
-   "Practice": "Hardware",
-   "Designation": "Engineer II",
-   "YOE": "7.10",
-   "ReportsTo": "Rajesh",
-   "Project": "FLC/TRS/Internal",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "HW",
-   "ProjectCode": "FLC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Rajesh",
-     "Project": "FLC/TRS/Internal",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Rajesh",
-     "Project": "FLC/TRS/Internal",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_224",
-   "Name": "Chintha Vivek Sai",
-   "Practice": "Hardware",
-   "Designation": "Engineer I",
-   "YOE": "0.7",
-   "ReportsTo": "Rajesh",
-   "Project": "FLC",
-   "Status": "Buffer",
-   "Allocation": "75",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "HW",
-   "ProjectCode": "FLC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Rajesh",
-     "Project": "FLC",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Rajesh",
-     "Project": "FLC",
-     "Status": "Buffer"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_161",
-   "Name": "Veeresh Meeniga",
-   "Practice": "Hardware",
-   "Designation": "Engineer I",
-   "YOE": "2.4",
-   "ReportsTo": "Rajesh",
-   "Project": "FLC",
-   "Status": "Buffer",
-   "Allocation": "25",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "HW",
-   "ProjectCode": "FLC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Rajesh",
-     "Project": "FLC",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Rajesh",
-     "Project": "FLC",
-     "Status": "Buffer"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_141",
-   "Name": "Ravada Ramesh",
-   "Practice": "Hardware",
-   "Designation": "Engineer II",
-   "YOE": "3.11",
-   "ReportsTo": "Rajesh",
-   "Project": "TRS",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "HW",
-   "ProjectCode": "TRS",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Rajesh",
-     "Project": "TRS",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Rajesh",
-     "Project": "TRS",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_163",
-   "Name": "Ruka Nandi Vardhan Reddy",
-   "Practice": "Hardware",
-   "Designation": "Engineer I",
-   "YOE": "2.4",
-   "ReportsTo": "Rajesh",
-   "Project": "TRS",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "HW",
-   "ProjectCode": "TRS",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Rajesh",
-     "Project": "TRS",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Rajesh",
-     "Project": "TRS",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_196",
-   "Name": "Keerthi Sepana",
-   "Practice": "Hardware",
-   "Designation": "Associate Engineer",
-   "YOE": "1",
-   "ReportsTo": "Rajesh",
-   "Project": "TRS",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "HW",
-   "ProjectCode": "TRS",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Rajesh",
-     "Project": "TRS",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Rajesh",
-     "Project": "TRS",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_200",
-   "Name": "Harika Kunduru",
-   "Practice": "Hardware",
-   "Designation": "Engineer II",
-   "YOE": "3.9",
-   "ReportsTo": "Rajesh",
-   "Project": "Smart IP Camera",
-   "Status": "Billed",
-   "Allocation": "",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "HW",
-   "ProjectCode": "CAM",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Rajesh",
-     "Project": "Smart IP Camera",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Rajesh",
-     "Project": "Smart IP Camera",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_229",
-   "Name": "Bommi Sandhya",
-   "Practice": "Hardware",
-   "Designation": "Engineer I",
-   "YOE": "0.7",
-   "ReportsTo": "Rajesh",
-   "Project": "Voila Tech",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "HW",
-   "ProjectCode": "VLT",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Rajesh",
-     "Project": "Voila Tech",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Rajesh",
-     "Project": "Voila Tech",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VCIN_43",
-   "Name": "Jayadev Lokanadham",
-   "Practice": "Hardware",
-   "Designation": "Intern I",
-   "YOE": "",
-   "ReportsTo": "Rajesh",
-   "Project": "Smart IP Camera",
-   "Status": "UnBilled",
-   "Allocation": "",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "HW",
-   "ProjectCode": "CAM",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Rajesh",
-     "Project": "Smart IP Camera",
-     "Status": "UnBilled"
-    },
-    "April 2026": {
-     "ReportsTo": "Rajesh",
-     "Project": "Smart IP Camera",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VCIN_26",
-   "Name": "Naveen",
-   "Practice": "Hardware",
-   "Designation": "Consultant",
-   "YOE": "",
-   "ReportsTo": "Rajesh",
-   "Project": "Voila Tech",
-   "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "HW",
-   "ProjectCode": "VLT",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Rajesh",
-     "Project": "Voila Tech",
-     "Status": "Buffer"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_110",
-   "Name": "Shyam Kumar Thella",
-   "Practice": "Embedded - Linux",
-   "Designation": "Senior Staff Engineer",
-   "YOE": "11",
-   "ReportsTo": "Srikanth",
-   "Project": "FLC, Renesas (NPU), Smart IP Camera",
-   "Status": "Billed",
-   "Allocation": "",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "EMBL",
-   "ProjectCode": "FLC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Srikanth",
-     "Project": "FLC, Renesas (NPU), Smart IP Camera",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Srikanth",
-     "Project": "FLC, Renesas (NPU), Smart IP Camera",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_119",
-   "Name": "Buneboyina.Pavan Kalyan",
-   "Practice": "Embedded - Linux",
-   "Designation": "Engineer II",
-   "YOE": "2.3",
-   "ReportsTo": "Sasikanth",
-   "Project": "Kandou",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "3 Months",
-   "Plan": "",
-   "CurrentTask": "E21 , ANDES Bring up",
-   "Remarks": "",
-   "DomainCode": "EMBL",
-   "ProjectCode": "KAN",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Sasikanth",
-     "Project": "Kandou",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Sasikanth",
-     "Project": "Kandou",
-     "Status": "BufferBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_134",
-   "Name": "Yeshwanth Namburi",
-   "Practice": "Embedded - Linux",
-   "Designation": "Engineer II",
-   "YOE": "2",
-   "ReportsTo": "Kameswara rao",
-   "Project": "FLC",
-   "Status": "Buffer",
-   "Allocation": "70",
-   "BilledUpto": "",
-   "Plan": "FLC",
-   "CurrentTask": "FLC hand off",
-   "Remarks": "Buffer Billed for shyam to replace Pavan B",
-   "DomainCode": "EMBL",
-   "ProjectCode": "FLC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "FLC",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "FLC",
-     "Status": "Buffer"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_138",
-   "Name": "Gunupuru Pavan Kalyan",
-   "Practice": "Embedded - Linux",
-   "Designation": "Senior Engineer",
-   "YOE": "4.2",
-   "ReportsTo": "Shyam",
-   "Project": "Edge",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "3 months",
-   "Plan": "Edge",
-   "CurrentTask": "DDR",
-   "Remarks": "",
-   "DomainCode": "EMBL",
-   "ProjectCode": "EDGE",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Shyam",
-     "Project": "Edge",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Shyam",
-     "Project": "Edge",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_209",
-   "Name": "Naveen Namburi",
-   "Practice": "Embedded - Linux",
-   "Designation": "Senior Engineer",
-   "YOE": "6.8",
-   "ReportsTo": "Sasikanth",
-   "Project": "Kandou",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "EMBL",
-   "ProjectCode": "KAN",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Sasikanth",
-     "Project": "Kandou",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Sasikanth",
-     "Project": "Kandou",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_214",
-   "Name": "Kiran Allada",
-   "Practice": "Embedded - Linux",
-   "Designation": "Senior Engineer",
-   "YOE": "5.5",
-   "ReportsTo": "Teja",
-   "Project": "Gen5",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "Billed in place off venkatesh nookatattu",
-   "DomainCode": "EMBL",
-   "ProjectCode": "GEN5",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Teja",
-     "Project": "Gen5",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Teja",
-     "Project": "Gen5",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_186",
-   "Name": "Inampudi Phani Kumar",
-   "Practice": "Embedded - Linux",
-   "Designation": "Engineer I",
-   "YOE": "1.2",
-   "ReportsTo": "Shyam",
-   "Project": "Renesas NPU",
-   "Status": "Buffer Billed",
-   "Allocation": "100",
-   "BilledUpto": "June",
-   "Plan": "",
-   "CurrentTask": "NPU Validation",
-   "Remarks": "Customer has plan till Dec, not officially confirmed",
-   "DomainCode": "EMBL",
-   "ProjectCode": "NPU",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Shyam",
-     "Project": "Renesas NPU",
-     "Status": "Buffer Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Shyam",
-     "Project": "Renesas NPU",
-     "Status": "BufferBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_187",
-   "Name": "Bali Harsha Vardhan",
-   "Practice": "Embedded - Linux",
-   "Designation": "Engineer I",
-   "YOE": "1.1",
-   "ReportsTo": "Shyam",
-   "Project": "Smart IP Camera",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "Camera Sensor",
-   "Remarks": "",
-   "DomainCode": "EMBL",
-   "ProjectCode": "CAM",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_219",
-   "Name": "S Vishnu Vardhan Reddy",
-   "Practice": "Embedded - Linux",
-   "Designation": "Engineer I",
-   "YOE": "0.9",
-   "ReportsTo": "Shyam",
-   "Project": "Smart IP Camera",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "Optimization Pipelines",
-   "Remarks": "",
-   "DomainCode": "EMBL",
-   "ProjectCode": "CAM",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_205",
-   "Name": "Veleparampil Limin",
-   "Practice": "Embedded - Linux",
-   "Designation": "Engineer I",
-   "YOE": "0.9",
-   "ReportsTo": "Shyam",
-   "Project": "Smart IP Camera",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "Server app sensors",
-   "Remarks": "",
-   "DomainCode": "EMBL",
-   "ProjectCode": "CAM",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VCIN_47",
-   "Name": "Menuga Sai Swetha Sri",
-   "Practice": "Embedded - Linux",
-   "Designation": "Intern II",
-   "YOE": "",
-   "ReportsTo": "Shyam",
-   "Project": "Smart IP Camera",
-   "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "Training",
-   "Remarks": "",
-   "DomainCode": "EMBL",
-   "ProjectCode": "CAM",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_106",
-   "Name": "SriTeja Allani",
-   "Practice": "Embedded - S/W",
-   "Designation": "Staff Engineer",
-   "YOE": "7",
-   "ReportsTo": "Srikanth",
-   "Project": "Renesas",
-   "Status": "Billed",
-   "Allocation": "",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "EMSW",
-   "ProjectCode": "REN",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Srikanth",
-     "Project": "Renesas",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Srikanth",
-     "Project": "Renesas",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_107",
-   "Name": "Hardik",
-   "Practice": "Embedded - S/W",
-   "Designation": "",
-   "YOE": "",
-   "ReportsTo": "Teja",
-   "Project": "Gen5",
-   "Status": "Billed",
-   "Allocation": "80",
-   "BilledUpto": "June",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "Project May Extend - May 29th",
-   "DomainCode": "EMSW",
-   "ProjectCode": "GEN5",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Teja",
-     "Project": "Gen5",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Teja",
-     "Project": "Gen5",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_103",
-   "Name": "Deepika Vandana",
-   "Practice": "Embedded - S/W",
-   "Designation": "Engineer I",
-   "YOE": "2.8",
-   "ReportsTo": "Sasikanth",
-   "Project": "DLI Soc",
-   "Status": "UnBilled",
-   "Allocation": "30",
-   "BilledUpto": "",
-   "Plan": "Staffing",
-   "CurrentTask": "Infra development for DLI IPs, automating tests for low speed peripherals",
-   "Remarks": "",
-   "DomainCode": "EMSW",
-   "ProjectCode": "DLI",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Sasikanth",
-     "Project": "DLI Soc",
-     "Status": "UnBilled"
-    },
-    "April 2026": {
-     "ReportsTo": "Sasikanth",
-     "Project": "DLI Soc",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_118",
-   "Name": "Panchangam. Sai Vinodh",
-   "Practice": "Embedded - S/W",
-   "Designation": "Engineer II",
-   "YOE": "2.3",
-   "ReportsTo": "Teja",
-   "Project": "Renesas",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "June",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "Project May Extend - May 29th",
-   "DomainCode": "EMSW",
-   "ProjectCode": "REN",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Teja",
-     "Project": "Renesas",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Teja",
-     "Project": "Renesas",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_120",
-   "Name": "S Noor Mahammad",
-   "Practice": "Embedded - S/W",
-   "Designation": "Engineer II",
-   "YOE": "2.3",
-   "ReportsTo": "Teja",
-   "Project": "Renesas",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "June",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "Project May Extend - May 29th",
-   "DomainCode": "EMSW",
-   "ProjectCode": "REN",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Teja",
-     "Project": "Renesas",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Teja",
-     "Project": "Renesas",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_123",
-   "Name": "Bhimineni.Pravallika",
-   "Practice": "Embedded - S/W",
-   "Designation": "Engineer II",
-   "YOE": "2.3",
-   "ReportsTo": "Kiran Allada",
-   "Project": "Internal ( Delivery Robot )",
-   "Status": "UnBilled",
-   "Allocation": "",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "EMSW",
-   "ProjectCode": "DBOT",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Kiran Allada",
-     "Project": "Internal ( Delivery Robot )",
-     "Status": "UnBilled"
-    },
-    "April 2026": {
-     "ReportsTo": "Kiran Allada",
-     "Project": "Internal ( Delivery Robot )",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_127",
-   "Name": "Mallikharjun Palasa",
-   "Practice": "Embedded - S/W",
-   "Designation": "Engineer II",
-   "YOE": "4.5",
-   "ReportsTo": "Teja",
-   "Project": "Renesas",
-   "Status": "Billed",
-   "Allocation": "60 ( Ramping up Parallel )",
-   "BilledUpto": "June",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "Project May Extend - May 29th",
-   "DomainCode": "EMSW",
-   "ProjectCode": "REN",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Teja",
-     "Project": "Renesas",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Teja",
-     "Project": "Renesas",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_131",
-   "Name": "Tappeta Sai Lakshmi Geetha",
-   "Practice": "Embedded - S/W",
-   "Designation": "Engineer II",
-   "YOE": "2",
-   "ReportsTo": "Kiran Allada",
-   "Project": "Internal ( Delivery Robot )",
-   "Status": "UnBilled",
-   "Allocation": "",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "EMSW",
-   "ProjectCode": "DBOT",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Kiran Allada",
-     "Project": "Internal ( Delivery Robot )",
-     "Status": "UnBilled"
-    },
-    "April 2026": {
-     "ReportsTo": "Kiran Allada",
-     "Project": "Internal ( Delivery Robot )",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_132",
-   "Name": "Ullangula Aparna",
-   "Practice": "Embedded - S/W",
-   "Designation": "Engineer II",
-   "YOE": "2",
-   "ReportsTo": "Kameswara rao",
-   "Project": "FLC",
-   "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "Backup for Poorna in FLC, poorna will move to Kandou",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "EMSW",
-   "ProjectCode": "FLC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "FLC",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "FLC",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_139",
-   "Name": "Chandaka Srinivasarao",
-   "Practice": "Embedded - S/W",
-   "Designation": "Senior Engineer",
-   "YOE": "3.11",
-   "ReportsTo": "Kameswara rao",
-   "Project": "Renesas FSP",
-   "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "Dont know",
-   "Plan": "",
-   "CurrentTask": "Preparation for Reneses MCU",
-   "Remarks": "",
-   "DomainCode": "EMSW",
-   "ProjectCode": "FSP",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "Renesas FSP",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "Renesas FSP",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_148",
-   "Name": "Nokatattu Venkatesh",
-   "Practice": "Embedded - S/W",
-   "Designation": "Senior Engineer",
-   "YOE": "5.1",
-   "ReportsTo": "Teja",
-   "Project": "Gen5",
-   "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "Back up for naveen namburi in Gen5",
-   "DomainCode": "EMSW",
-   "ProjectCode": "GEN5",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Teja",
-     "Project": "Gen5",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Teja",
-     "Project": "Gen5",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_152",
-   "Name": "Akhila Reddy Addula",
-   "Practice": "Embedded - S/W",
-   "Designation": "Senior Engineer",
-   "YOE": "6.10",
-   "ReportsTo": "Teja",
-   "Project": "Gen5",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "June",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "Project May Extend - May 29th",
-   "DomainCode": "EMSW",
-   "ProjectCode": "GEN5",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Teja",
-     "Project": "Gen5",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Teja",
-     "Project": "Gen5",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_162",
-   "Name": "Subramanyam G",
-   "Practice": "Embedded - S/W",
-   "Designation": "Engineer I",
-   "YOE": "1.11",
-   "ReportsTo": "Shyam",
-   "Project": "Parking, Edge",
-   "Status": "Buffer",
-   "Allocation": "50 + 50",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "LoRa gateway change for 8 channels",
-   "Remarks": "Srikanth",
-   "DomainCode": "EMSW",
-   "ProjectCode": "EDGE",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Shyam",
-     "Project": "Parking, Edge",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Shyam",
-     "Project": "Parking, Edge",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_165",
-   "Name": "Yaswanth E",
-   "Practice": "Embedded - S/W",
-   "Designation": "Engineer I",
-   "YOE": "1.9",
-   "ReportsTo": "Sasikanth",
-   "Project": "DLI Soc",
-   "Status": "UnBilled",
-   "Allocation": "30",
-   "BilledUpto": "",
-   "Plan": "Staffing",
-   "CurrentTask": "bluetootha, wifi spec, drivers understanding",
-   "Remarks": "",
-   "DomainCode": "EMSW",
-   "ProjectCode": "DLI",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Sasikanth",
-     "Project": "DLI Soc",
-     "Status": "UnBilled"
-    },
-    "April 2026": {
-     "ReportsTo": "Sasikanth",
-     "Project": "DLI Soc",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_167",
-   "Name": "Geetha Mounika V",
-   "Practice": "Embedded - S/W",
-   "Designation": "Engineer I",
-   "YOE": "1.11",
-   "ReportsTo": "Teja",
-   "Project": "Gen5",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "June",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "Project May Extend - May 29th",
-   "DomainCode": "EMSW",
-   "ProjectCode": "GEN5",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Teja",
-     "Project": "Gen5",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Teja",
-     "Project": "Gen5",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_168",
-   "Name": "Chandrika K",
-   "Practice": "Embedded - S/W",
-   "Designation": "Engineer I",
-   "YOE": "1.11",
-   "ReportsTo": "Kameswara rao",
-   "Project": "Renesas FSP",
-   "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "Dont know",
-   "Plan": "",
-   "CurrentTask": "Preparation for Reneses MCU",
-   "Remarks": "",
-   "DomainCode": "EMSW",
-   "ProjectCode": "FSP",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "Renesas FSP",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "Renesas FSP",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_170",
-   "Name": "Pavani D S",
-   "Practice": "Embedded - S/W",
-   "Designation": "Engineer I",
-   "YOE": "1.11",
-   "ReportsTo": "Teja",
-   "Project": "Gen5",
-   "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "EMSW",
-   "ProjectCode": "GEN5",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Teja",
-     "Project": "Gen5",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Teja",
-     "Project": "Gen5",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_171",
-   "Name": "Hari Chandana K",
-   "Practice": "Embedded - S/W",
-   "Designation": "Engineer I",
-   "YOE": "1.11",
-   "ReportsTo": "Teja",
-   "Project": "Gen5",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "June",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "Project May Extend - May 29th",
-   "DomainCode": "EMSW",
-   "ProjectCode": "GEN5",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Teja",
-     "Project": "Gen5",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Teja",
-     "Project": "Gen5",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_198",
-   "Name": "Pujitha Uttharkar",
-   "Practice": "Embedded - S/W",
-   "Designation": "Engineer II",
-   "YOE": "2.11",
-   "ReportsTo": "Teja",
-   "Project": "Gen5",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "June",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "Project May Extend - May 29th",
-   "DomainCode": "EMSW",
-   "ProjectCode": "GEN5",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Teja",
-     "Project": "Gen5",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Teja",
-     "Project": "Gen5",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_181",
-   "Name": "Kantipudi Sri Sai Kiran",
-   "Practice": "Embedded - S/W",
-   "Designation": "Engineer I",
-   "YOE": "1.2",
-   "ReportsTo": "Teja",
-   "Project": "Renesas",
-   "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "EMSW",
-   "ProjectCode": "REN",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Teja",
-     "Project": "Renesas",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Teja",
-     "Project": "Renesas",
-     "Status": "Buffer"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_185",
-   "Name": "T Harish",
-   "Practice": "Embedded - S/W",
-   "Designation": "Engineer I",
-   "YOE": "1.1",
-   "ReportsTo": "Sasikanth",
-   "Project": "DLI Soc",
-   "Status": "UnBilled",
-   "Allocation": "50",
-   "BilledUpto": "",
-   "Plan": "Staffing",
-   "CurrentTask": "Bood code development is completed, working on bringup of USB",
-   "Remarks": "",
-   "DomainCode": "EMSW",
-   "ProjectCode": "DLI",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Sasikanth",
-     "Project": "DLI Soc",
-     "Status": "UnBilled"
-    },
-    "April 2026": {
-     "ReportsTo": "Sasikanth",
-     "Project": "DLI Soc",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_243",
-   "Name": "Kolapalli Vyshnavi Sai",
-   "Practice": "Embedded - S/W",
-   "Designation": "Engineer I",
-   "YOE": "3.1",
-   "ReportsTo": "Kameswara rao",
-   "Project": "FLC",
-   "Status": "Buffer",
-   "Allocation": "50",
-   "BilledUpto": "",
-   "Plan": "Buffer in place of Pavan G for FLC",
-   "CurrentTask": "-",
-   "Remarks": "",
-   "DomainCode": "EMSW",
-   "ProjectCode": "FLC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "FLC",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "FLC",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_206",
-   "Name": "Gorli Poorna Lakshmi Praneeth",
-   "Practice": "Embedded - S/W",
-   "Designation": "Engineer I",
-   "YOE": "0.9",
-   "ReportsTo": "Kameswara rao",
-   "Project": "Renesas FSP",
-   "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "Dont know",
-   "Plan": "",
-   "CurrentTask": "Preparation for Reneses MCU",
-   "Remarks": "",
-   "DomainCode": "EMSW",
-   "ProjectCode": "FSP",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "Renesas FSP",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "Renesas FSP",
-     "Status": "Buffer"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_222",
-   "Name": "Undamatla Santhoshi Mani",
-   "Practice": "Embedded - S/W",
-   "Designation": "Engineer I",
-   "YOE": "0.9",
-   "ReportsTo": "Shyam",
-   "Project": "Smart IP Camera",
-   "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "Tuning and Caliberation",
-   "Remarks": "",
-   "DomainCode": "EMSW",
-   "ProjectCode": "CAM",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VCC_113",
-   "Name": "Ambika Vallandas",
-   "Practice": "Embedded - S/W",
-   "Designation": "Consultant",
-   "YOE": "",
-   "ReportsTo": "Sasikanth",
-   "Project": "Kandou",
-   "Status": "UnBilled",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "Kandou",
-   "CurrentTask": "",
-   "Remarks": "Kranthi",
-   "DomainCode": "EMSW",
-   "ProjectCode": "KAN",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Sasikanth",
-     "Project": "Kandou",
-     "Status": "UnBilled"
-    },
-    "April 2026": {
-     "ReportsTo": "Sasikanth",
-     "Project": "Kandou",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_240",
-   "Name": "Sudheer Reddy",
-   "Practice": "Embedded - S/W",
-   "Designation": "",
-   "YOE": "",
-   "ReportsTo": "Kameswara rao",
-   "Project": "Renesas FSP",
-   "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "Dont know",
-   "Plan": "",
-   "CurrentTask": "Preparation for Reneses MCU",
-   "Remarks": "",
-   "DomainCode": "EMSW",
-   "ProjectCode": "FSP",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "Renesas FSP",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "Renesas FSP",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_113",
-   "Name": "SasiKanth Golla",
-   "Practice": "Embedded - Validation",
-   "Designation": "Senior Staff Engineer",
-   "YOE": "14",
-   "ReportsTo": "Srikanth",
-   "Project": "Kandou",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "Kandou",
-   "CurrentTask": "",
-   "Remarks": "Billed in FLC",
-   "DomainCode": "EMVL",
-   "ProjectCode": "KAN",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Srikanth",
-     "Project": "Kandou",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Srikanth",
-     "Project": "Kandou",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_125",
-   "Name": "Jithendran Ponnusamy",
-   "Practice": "Embedded - Validation",
-   "Designation": "Senior Engineer",
-   "YOE": "4.1",
-   "ReportsTo": "Srikanth",
-   "Project": "Renesas",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "EMVL",
-   "ProjectCode": "REN",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Srikanth",
-     "Project": "Renesas",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Srikanth",
-     "Project": "Renesas",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_130",
-   "Name": "Kamasani Poorna",
-   "Practice": "Embedded - Validation",
-   "Designation": "Engineer II",
-   "YOE": "2.2",
-   "ReportsTo": "Sasikanth",
-   "Project": "Kandou",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "D2D",
-   "Remarks": "",
-   "DomainCode": "EMVL",
-   "ProjectCode": "KAN",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Sasikanth",
-     "Project": "Kandou",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Sasikanth",
-     "Project": "Kandou",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_155",
-   "Name": "LingaSwamy Shyaga",
-   "Practice": "Embedded - Validation",
-   "Designation": "Senior Engineer",
-   "YOE": "7.9",
-   "ReportsTo": "Shyam",
-   "Project": "Renesas NPU",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "June",
-   "Plan": "Customer has plan till Dec, not officially confirmed",
-   "CurrentTask": "NPU Validation",
-   "Remarks": "",
-   "DomainCode": "EMVL",
-   "ProjectCode": "NPU",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Shyam",
-     "Project": "Renesas NPU",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Shyam",
-     "Project": "Renesas NPU",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_164",
-   "Name": "Akash R",
-   "Practice": "Embedded - Validation",
-   "Designation": "Engineer I",
-   "YOE": "1.11",
-   "ReportsTo": "Teja",
-   "Project": "Gen5",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "June",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "EMVL",
-   "ProjectCode": "GEN5",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Teja",
-     "Project": "Gen5",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Teja",
-     "Project": "Gen5",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_166",
-   "Name": "Sai Gandhi A",
-   "Practice": "Embedded - Validation",
-   "Designation": "Engineer I",
-   "YOE": "1.11",
-   "ReportsTo": "Kameswara rao",
-   "Project": "FLC",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "IPM, RC",
-   "Remarks": "",
-   "DomainCode": "EMVL",
-   "ProjectCode": "FLC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "FLC",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "FLC",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_169",
-   "Name": "Yeshasri. S",
-   "Practice": "Embedded - Validation",
-   "Designation": "Engineer I",
-   "YOE": "1.11",
-   "ReportsTo": "Teja",
-   "Project": "Gen5",
-   "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "EMVL",
-   "ProjectCode": "GEN5",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Teja",
-     "Project": "Gen5",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Teja",
-     "Project": "Gen5",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_215",
-   "Name": "Kameswara rao Dasari",
-   "Practice": "Embedded - Validation",
-   "Designation": "Senior Staff Engineer",
-   "YOE": "11+",
-   "ReportsTo": "Srikanth",
-   "Project": "Renesas FSP",
-   "Status": "Buffer",
-   "Allocation": "",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "EMVL",
-   "ProjectCode": "FSP",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Srikanth",
-     "Project": "Renesas FSP",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Srikanth",
-     "Project": "Renesas FSP",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_129",
-   "Name": "Hemanth Aare",
-   "Practice": "Embedded - Validation",
-   "Designation": "Engineer I",
-   "YOE": "2.1",
-   "ReportsTo": "Sasikanth",
-   "Project": "Self Learning",
-   "Status": "UnBilled",
-   "Allocation": "0",
-   "BilledUpto": "",
-   "Plan": "New Project",
-   "CurrentTask": "-",
-   "Remarks": "",
-   "DomainCode": "EMVL",
-   "ProjectCode": "BENCH",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Sasikanth",
-     "Project": "Self Learning",
-     "Status": "UnBilled"
-    },
-    "April 2026": {
-     "ReportsTo": "Sasikanth",
-     "Project": "Self Learning",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_178",
-   "Name": "Battula Venu Madhav",
-   "Practice": "Embedded - Validation",
-   "Designation": "Engineer I",
-   "YOE": "1.1",
-   "ReportsTo": "Sasikanth",
-   "Project": "FLC",
-   "Status": "Buffer",
-   "Allocation": "50",
-   "BilledUpto": "",
-   "Plan": "New Project",
-   "CurrentTask": "Power, Boot from SPI, Boot from SD",
-   "Remarks": "",
-   "DomainCode": "EMVL",
-   "ProjectCode": "FLC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Sasikanth",
-     "Project": "FLC",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Sasikanth",
-     "Project": "FLC",
-     "Status": "Buffer"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_179",
-   "Name": "Maganti Raviteja",
-   "Practice": "Embedded - Validation",
-   "Designation": "Engineer I",
-   "YOE": "1.2",
-   "ReportsTo": "Sasikanth",
-   "Project": "DLI Soc",
-   "Status": "UnBilled",
-   "Allocation": "50",
-   "BilledUpto": "",
-   "Plan": "Staffing",
-   "CurrentTask": "Camera- Completed, Security, HSM-study",
-   "Remarks": "",
-   "DomainCode": "EMVL",
-   "ProjectCode": "DLI",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Sasikanth",
-     "Project": "DLI Soc",
-     "Status": "UnBilled"
-    },
-    "April 2026": {
-     "ReportsTo": "Sasikanth",
-     "Project": "DLI Soc",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_180",
-   "Name": "Saahith Chandra Geela",
-   "Practice": "Embedded - Validation",
-   "Designation": "Engineer I",
-   "YOE": "1.2",
-   "ReportsTo": "Kameswara rao",
-   "Project": "FLC",
-   "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "Backup for Poorna in FLC, poorna will move to Kandou",
-   "CurrentTask": "RISC-V, D2D",
-   "Remarks": "",
-   "DomainCode": "EMVL",
-   "ProjectCode": "FLC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "FLC",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "FLC",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_182",
-   "Name": "Singireddi Mohan Rao",
-   "Practice": "Embedded - Validation",
-   "Designation": "Engineer I",
-   "YOE": "1.2",
-   "ReportsTo": "Kameswara rao",
-   "Project": "Renesas FSP",
-   "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "Dont know",
-   "Plan": "",
-   "CurrentTask": "Preparation for Reneses MCU",
-   "Remarks": "",
-   "DomainCode": "EMVL",
-   "ProjectCode": "FSP",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "Renesas FSP",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "Renesas FSP",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_184",
-   "Name": "Sanaka Venkata Karthikeya",
-   "Practice": "Embedded - Validation",
-   "Designation": "Engineer I",
-   "YOE": "1.2",
-   "ReportsTo": "Sasikanth",
-   "Project": "FLC",
-   "Status": "Buffer",
-   "Allocation": "60",
-   "BilledUpto": "",
-   "Plan": "New Project",
-   "CurrentTask": "FLC1, FLC2,OSPI, SMC",
-   "Remarks": "",
-   "DomainCode": "EMVL",
-   "ProjectCode": "FLC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Sasikanth",
-     "Project": "FLC",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Sasikanth",
-     "Project": "FLC",
-     "Status": "Buffer"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_208",
-   "Name": "Arepu Naga Sai Nikhitha",
-   "Practice": "Embedded - Validation",
-   "Designation": "Engineer I",
-   "YOE": "0.9",
-   "ReportsTo": "Kameswara rao",
-   "Project": "Renesas FSP",
-   "Status": "UnBilled",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "Renesas FSP",
-   "CurrentTask": "Ethernet- Completed",
-   "Remarks": "",
-   "DomainCode": "EMVL",
-   "ProjectCode": "FSP",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "Renesas FSP",
-     "Status": "UnBilled"
-    },
-    "April 2026": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "Renesas FSP",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_207",
-   "Name": "Rupaji Rithika",
-   "Practice": "Embedded - Validation",
-   "Designation": "Engineer I",
-   "YOE": "0.9",
-   "ReportsTo": "Kameswara rao",
-   "Project": "Renesas FSP",
-   "Status": "UnBilled",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "Renesas FSP",
-   "CurrentTask": "NVMe",
-   "Remarks": "",
-   "DomainCode": "EMVL",
-   "ProjectCode": "FSP",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "Renesas FSP",
-     "Status": "UnBilled"
-    },
-    "April 2026": {
-     "ReportsTo": "Kameswara rao",
-     "Project": "Renesas FSP",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_233",
-   "Name": "Mahmad Ameerullah",
-   "Practice": "Software",
-   "Designation": "Engineer I",
-   "YOE": "0.8",
-   "ReportsTo": "Teja",
-   "Project": "Renesas",
-   "Status": "Buffer",
-   "Allocation": "80",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "APPSW",
-   "ProjectCode": "REN",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Teja",
-     "Project": "Renesas",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Teja",
-     "Project": "Renesas",
-     "Status": "Buffer"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_235",
-   "Name": "Gandla Vaishnavi",
-   "Practice": "Software",
-   "Designation": "Engineer I",
-   "YOE": "1.1",
-   "ReportsTo": "George",
-   "Project": "RLCC",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "APPSW",
-   "ProjectCode": "RLCC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "George",
-     "Project": "RLCC",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "George",
-     "Project": "RLCC",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_232",
-   "Name": "Sai Charan Siddhanthi Thyadi",
-   "Practice": "Software",
-   "Designation": "Engineer I",
-   "YOE": "0.8",
-   "ReportsTo": "George",
-   "Project": "RLCC",
-   "Status": "Billed",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "APPSW",
-   "ProjectCode": "RLCC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "George",
-     "Project": "RLCC",
-     "Status": "Billed"
-    },
-    "April 2026": {
-     "ReportsTo": "George",
-     "Project": "RLCC",
-     "Status": "Billed"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_231",
-   "Name": "Gonthina Lakshmana Swami",
-   "Practice": "Software",
-   "Designation": "Engineer I",
-   "YOE": "0.8",
-   "ReportsTo": "George",
-   "Project": "RLCC",
-   "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "APPSW",
-   "ProjectCode": "RLCC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "George",
-     "Project": "RLCC",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "George",
-     "Project": "RLCC",
-     "Status": "Buffer"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_230",
-   "Name": "Thota Chaithra",
-   "Practice": "Software",
-   "Designation": "Engineer I",
-   "YOE": "0.8",
-   "ReportsTo": "Shyam",
-   "Project": "Smart IP Camera",
-   "Status": "UnBilled",
-   "Allocation": "0",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "APPSW",
-   "ProjectCode": "CAM",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
-     "Status": "UnBilled"
-    },
-    "April 2026": {
-     "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
-     "Status": "Buffer"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_234",
-   "Name": "Roopini Gorle",
-   "Practice": "Software",
-   "Designation": "Software Trainee II",
-   "YOE": "0.5",
-   "ReportsTo": "Shyam",
-   "Project": "Smart IP Camera",
-   "Status": "UnBilled",
-   "Allocation": "0",
-   "BilledUpto": "",
-   "Plan": "NPU is low priority in camera, need to plan tasks",
-   "CurrentTask": "NPU models",
-   "Remarks": "",
-   "DomainCode": "APPSW",
-   "ProjectCode": "CAM",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
-     "Status": "UnBilled"
-    },
-    "April 2026": {
-     "ReportsTo": "Shyam",
-     "Project": "Smart IP Camera",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VCIN_44",
-   "Name": "Kiranmai Battu",
-   "Practice": "Software",
-   "Designation": "Trainee III",
-   "YOE": "0.2",
-   "ReportsTo": "George",
-   "Project": "RLCC",
-   "Status": "UnBilled",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "NPU is low priority in camera, need to plan tasks",
-   "CurrentTask": "NPU models",
-   "Remarks": "",
-   "DomainCode": "APPSW",
-   "ProjectCode": "RLCC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "George",
-     "Project": "RLCC",
-     "Status": "UnBilled"
-    },
-    "April 2026": {
-     "ReportsTo": "George",
-     "Project": "RLCC",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VCIN_51",
-   "Name": "Yogeshwar Reddy Meda",
-   "Practice": "Software",
-   "Designation": "Software Intern II",
-   "YOE": "",
-   "ReportsTo": "Srikanth",
-   "Project": "",
-   "Status": "UnBilled",
-   "Allocation": "",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "APPSW",
-   "ProjectCode": "BENCH",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Srikanth",
-     "Project": "",
-     "Status": "UnBilled"
-    },
-    "April 2026": {
-     "ReportsTo": "Srikanth",
-     "Project": "",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VCIN_49",
-   "Name": "Praddumna Rajendra Raut",
-   "Practice": "Product Engineers",
-   "Designation": "Product Management Intern",
-   "YOE": "",
-   "ReportsTo": "Srikanth",
-   "Project": "Smart IP Camera",
-   "Status": "Buffer",
-   "Allocation": "",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "PDM",
-   "ProjectCode": "CAM",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Srikanth",
-     "Project": "Smart IP Camera",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Srikanth",
-     "Project": "Smart IP Camera",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VCIN_53",
-   "Name": "Durga R",
-   "Practice": "Product Engineers",
-   "Designation": "Product Management Intern",
-   "YOE": "",
-   "ReportsTo": "Srikanth",
-   "Project": "Edge",
-   "Status": "Buffer",
-   "Allocation": "",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "PDM",
-   "ProjectCode": "EDGE",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Srikanth",
-     "Project": "Edge",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Srikanth",
-     "Project": "Edge",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VCIN_54",
-   "Name": "Bharath Mamidi",
-   "Practice": "Product Engineers",
-   "Designation": "Product Management Intern",
-   "YOE": "",
-   "ReportsTo": "Venkata Kiran",
-   "Project": "Server",
-   "Status": "Buffer",
-   "Allocation": "",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "PDM",
-   "ProjectCode": "SERVER",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Venkata Kiran",
-     "Project": "Server",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Venkata Kiran",
-     "Project": "Server",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_159",
-   "Name": "Sriram Ungatla",
-   "Practice": "CI/ CD Automation Engineer",
-   "Designation": "CI/CD Automation Engineer",
-   "YOE": "2.1",
-   "ReportsTo": "Mounika",
-   "Project": "Website",
-   "Status": "UnBilled",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "OPS",
-   "ProjectCode": "INT",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Mounika",
-     "Project": "Website",
-     "Status": "UnBilled"
-    },
-    "April 2026": {
-     "ReportsTo": "Mounika",
-     "Project": "Website",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_177",
-   "Name": "Abhishek Begari",
-   "Practice": "Technical Writer",
-   "Designation": "Technical Writer",
-   "YOE": "4.8",
-   "ReportsTo": "Srikanth",
-   "Project": "Internal ( Vconnectech Website )",
-   "Status": "Buffer",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "OPS",
-   "ProjectCode": "INT",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Srikanth",
-     "Project": "Internal ( Vconnectech Website )",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Srikanth",
-     "Project": "Internal ( Vconnectech Website )",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VCC_112",
-   "Name": "Venkata Kiran Venigalla",
-   "Practice": "Program Manager",
-   "Designation": "Consultant",
-   "YOE": "",
-   "ReportsTo": "Srikanth",
-   "Project": "Edge",
-   "Status": "Buffer",
-   "Allocation": "",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "PGM",
-   "ProjectCode": "EDGE",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Srikanth",
-     "Project": "Edge",
-     "Status": "Buffer"
-    },
-    "April 2026": {
-     "ReportsTo": "Srikanth",
-     "Project": "Edge",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_210",
-   "Name": "Supriya Kallepelli",
-   "Practice": "DV",
-   "Designation": "",
-   "YOE": "",
-   "ReportsTo": "",
-   "Project": "On Site",
-   "Status": "",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "DV",
-   "ProjectCode": "ONSITE",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "",
-     "Project": "On Site",
-     "Status": ""
-    }
-   }
-  },
-  {
-   "EmpID": "VC_212",
-   "Name": "Balachandra Anguru",
-   "Practice": "DV",
-   "Designation": "",
-   "YOE": "",
-   "ReportsTo": "",
-   "Project": "On Site",
-   "Status": "",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "DV",
-   "ProjectCode": "ONSITE",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "",
-     "Project": "On Site",
-     "Status": ""
-    }
-   }
-  },
-  {
-   "EmpID": "VCC_100",
-   "Name": "Koppurothu Subash",
-   "Practice": "Physical Design",
-   "Designation": "",
-   "YOE": "",
-   "ReportsTo": "",
-   "Project": "FLC",
-   "Status": "",
-   "Allocation": "",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "PD",
-   "ProjectCode": "FLC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "",
-     "Project": "FLC",
-     "Status": ""
-    }
-   }
-  },
-  {
-   "EmpID": "VCC_101",
-   "Name": "Yedla Suryaarjuna rao",
-   "Practice": "Physical Design",
-   "Designation": "",
-   "YOE": "",
-   "ReportsTo": "",
-   "Project": "FLC",
-   "Status": "",
-   "Allocation": "",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "PD",
-   "ProjectCode": "FLC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "",
-     "Project": "FLC",
-     "Status": ""
-    }
-   }
-  },
-  {
-   "EmpID": "VCC_102",
-   "Name": "Shinagam Chanti",
-   "Practice": "Physical Design",
-   "Designation": "",
-   "YOE": "",
-   "ReportsTo": "",
-   "Project": "FLC",
-   "Status": "",
-   "Allocation": "",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "PD",
-   "ProjectCode": "FLC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "",
-     "Project": "FLC",
-     "Status": ""
-    }
-   }
-  },
-  {
-   "EmpID": "VCC_103",
-   "Name": "Duragasi Venkatesh",
-   "Practice": "Physical Design",
-   "Designation": "",
-   "YOE": "",
-   "ReportsTo": "",
-   "Project": "FLC",
-   "Status": "",
-   "Allocation": "",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "PD",
-   "ProjectCode": "FLC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "",
-     "Project": "FLC",
-     "Status": ""
-    }
-   }
-  },
-  {
-   "EmpID": "VCC_115",
-   "Name": "Chinni Murali Krishna",
-   "Practice": "Embedded - Validation",
-   "Designation": "",
-   "YOE": "",
-   "ReportsTo": "",
-   "Project": "AMD",
-   "Status": "",
-   "Allocation": "100",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "EMVL",
-   "ProjectCode": "AMD",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "",
-     "Project": "AMD",
-     "Status": ""
-    }
-   }
-  },
-  {
-   "EmpID": "VCIN_52",
-   "Name": "Attuluri Venkat Dhanush",
-   "Practice": "Software",
-   "Designation": "",
-   "YOE": "",
-   "ReportsTo": "Srikanth",
-   "Project": "",
-   "Status": "UnBilled",
-   "Allocation": "",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "APPSW",
-   "ProjectCode": "BENCH",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Srikanth",
-     "Project": "",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_197",
-   "Name": "MukeshKumar Rajkumar Pasi",
-   "Practice": "Embedded - S/W",
-   "Designation": "Engineer II",
-   "YOE": "3.3",
-   "ReportsTo": "Srikanth",
-   "Project": "Renesas (FUSA)",
-   "Status": "UnBilled",
-   "Allocation": "",
-   "BilledUpto": "Billed from July 1st",
-   "Plan": "",
-   "CurrentTask": "UnBilled from April 7th",
-   "Remarks": "",
-   "DomainCode": "EMSW",
-   "ProjectCode": "FUSA",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Srikanth",
-     "Project": "Renesas (FUSA)",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VC_201",
-   "Name": "Vidhu Shekhar Singh",
-   "Practice": "Functional Safety",
-   "Designation": "Senior Staff Engineer",
-   "YOE": "14+",
-   "ReportsTo": "Srikanth",
-   "Project": "Renesas (FUSA)",
-   "Status": "UnBilled",
-   "Allocation": "",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "UnBilled from April 7th",
-   "Remarks": "",
-   "DomainCode": "FUSA",
-   "ProjectCode": "FUSA",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "Srikanth",
-     "Project": "Renesas (FUSA)",
-     "Status": "UnBilled"
-    }
-   }
-  },
-  {
-   "EmpID": "VCC_104",
-   "Name": "Anil Kumar Gedela",
-   "Practice": "Physical Design",
-   "Designation": "",
-   "YOE": "",
-   "ReportsTo": "",
-   "Project": "FLC",
-   "Status": "",
-   "Allocation": "",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "PD",
-   "ProjectCode": "FLC",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "",
-     "Project": "FLC",
-     "Status": ""
-    }
-   }
-  },
-  {
-   "EmpID": "VCC_116",
-   "Name": "Kshitij Varma Pinnamaraju",
-   "Practice": "Software",
-   "Designation": "",
-   "YOE": "",
-   "ReportsTo": "",
-   "Project": "",
-   "Status": "UnBilled",
-   "Allocation": "",
-   "BilledUpto": "",
-   "Plan": "",
-   "CurrentTask": "",
-   "Remarks": "",
-   "DomainCode": "APPSW",
-   "ProjectCode": "BENCH",
-   "byMonth": {
-    "Current": {
-     "ReportsTo": "",
-     "Project": "",
-     "Status": "UnBilled"
-    }
-   }
-  }
- ]
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>VConnecTech — Workforce Intelligence Dashboard v3</title>
+<style>
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Segoe UI',Arial,sans-serif;font-size:13px;background:#F0F3F8;color:#1a1a1a;min-height:100vh}
+:root{
+  --navy:#1F3864;--blue:#2E5FAC;--teal:#1F7A8C;
+  --g-bg:#E2EFDA;--g:#375623;--gbar:#6FA84F;
+  --y-bg:#FFF2CC;--y:#7A5000;--ybar:#E6B84C;
+  --r-bg:#FFCCCC;--r:#C00000;--rbar:#E06666;
+  --b-bg:#D6E4F7;--b:#1F3864;
+  --grey-bg:#E8EAF0;--grey:#555;
+  --rad:8px;--shadow:0 2px 8px rgba(0,0,0,.07);
 }
+.page{max-width:1440px;margin:0 auto;padding:14px}
+
+/* TOPBAR */
+.topbar{background:linear-gradient(135deg,#1F3864 0%,#2E5FAC 100%);border-radius:var(--rad);padding:14px 20px;display:flex;align-items:center;justify-content:space-between;box-shadow:0 3px 12px rgba(31,56,100,.3);flex-wrap:wrap;gap:8px}
+.topbar .title{color:#fff;font-size:17px;font-weight:700}
+.topbar .sub{color:#B4C7E7;font-size:11px;margin-top:3px}
+.topbar-right{color:#B4C7E7;font-size:11px;text-align:right}
+.logo{font-size:22px;font-weight:700;color:#fff;letter-spacing:2px}
+.vpill{display:inline-block;background:rgba(255,255,255,.15);color:#fff;font-size:9px;padding:2px 8px;border-radius:3px;margin-left:8px;vertical-align:middle}
+
+/* DATA SOURCE BAR */
+.srcbar{display:flex;align-items:center;gap:10px;font-size:11px;padding:7px 14px;border-radius:var(--rad);margin:10px 0;border:1.5px solid;flex-wrap:wrap}
+.srcbar.live{background:#E2EFDA;border-color:#6FA84F;color:#375623}
+.srcbar.snap{background:#FFF2CC;border-color:#E6B84C;color:#7A5000}
+.srcbar.stale{background:#FDE9D9;border-color:#E08A3C;color:#8A3B00}
+.srcbar.loading{background:#D6E4F7;border-color:#8CA8D8;color:#1F3864}
+.src-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
+.srcbar.live .src-dot{background:#375623;box-shadow:0 0 0 3px rgba(55,86,35,.2)}
+.srcbar.snap .src-dot{background:#E6AC00}
+.srcbar.stale .src-dot{background:#E08A3C}
+.srcbar.loading .src-dot{background:#2E5FAC;animation:pulse 1s infinite}
+@keyframes pulse{50%{opacity:.3}}
+.src-btn{margin-left:auto;font-size:10px;padding:4px 11px;border-radius:5px;border:1px solid currentColor;background:transparent;color:inherit;cursor:pointer;font-weight:700}
+.src-help{font-size:10px;margin-top:6px;width:100%;display:none;line-height:1.6}
+.src-help.open{display:block}
+.src-help code{background:rgba(0,0,0,.07);padding:1px 5px;border-radius:3px;font-size:9px}
+
+/* KPI STRIP */
+.kpi-strip{display:flex;gap:8px;flex-wrap:wrap;margin-bottom:12px}
+.kpi{flex:1;min-width:105px;background:#fff;border:1.5px solid #dde3ef;border-radius:var(--rad);padding:11px 13px;box-shadow:var(--shadow);cursor:pointer;transition:transform .12s}
+.kpi:hover{transform:translateY(-2px)}
+.kpi-val{font-size:25px;font-weight:700;line-height:1}
+.kpi-lbl{font-size:10px;color:#666;margin-top:3px;text-transform:uppercase;letter-spacing:.04em}
+.kpi-sub{font-size:9px;color:#999;margin-top:3px}
+.kpi.green .kpi-val{color:var(--g)}.kpi.amber .kpi-val{color:var(--y)}
+.kpi.red .kpi-val{color:var(--r)}.kpi.blue .kpi-val{color:var(--b)}
+.kpi.teal .kpi-val{color:var(--teal)}.kpi.grey .kpi-val{color:var(--grey)}
+
+/* ALERTS */
+.alert{display:flex;align-items:flex-start;gap:10px;border-radius:var(--rad);padding:9px 14px;margin-bottom:8px;font-size:11px;border:1.5px solid;line-height:1.5}
+.alert.crit{background:var(--r-bg);border-color:var(--r);color:var(--r)}
+.alert.warn{background:var(--y-bg);border-color:#E6AC00;color:var(--y)}
+.alert-pill{font-size:9px;font-weight:700;padding:2px 7px;border-radius:3px;white-space:nowrap;color:#fff;margin-top:1px}
+.alert.crit .alert-pill{background:var(--r)}.alert.warn .alert-pill{background:#E6AC00}
+
+/* LEGEND */
+.legend{display:flex;gap:14px;flex-wrap:wrap;font-size:11px;margin-bottom:10px;background:#fff;padding:8px 13px;border-radius:var(--rad);border:1.5px solid #dde3ef;align-items:center}
+.legend .dot{margin-right:4px}
+.legend-note{color:#999;font-size:10px}
+.dot{display:inline-block;width:9px;height:9px;border-radius:50%;vertical-align:middle}
+.dot.g{background:var(--gbar)}.dot.y{background:var(--ybar)}.dot.r{background:var(--rbar)}.dot.o{background:#999}
+
+/* FILTER BAR */
+.filterbar{display:flex;gap:9px;flex-wrap:wrap;align-items:center;background:#fff;border:1.5px solid #dde3ef;border-radius:var(--rad);padding:9px 13px;margin-bottom:12px;box-shadow:var(--shadow)}
+.filterbar label{font-size:11px;font-weight:700;color:#444}
+.filterbar select{font-size:11px;padding:5px 9px;border-radius:5px;border:1px solid #ccc;background:#fff;cursor:pointer;max-width:160px}
+.filter-count{font-size:11px;color:#888;margin-left:auto}
+.btn-reset{font-size:11px;padding:5px 11px;border-radius:5px;border:1px solid #ccc;background:#fff;cursor:pointer;color:#555}
+.btn-reset:hover{background:#f0f0f0}
+
+/* TABS */
+.tab-row{display:flex;border-bottom:2px solid #dde3ef;margin-bottom:6px;overflow-x:auto}
+.tab{padding:9px 15px;font-size:11px;font-weight:700;cursor:pointer;border:none;background:none;color:#888;border-bottom:3px solid transparent;margin-bottom:-2px;white-space:nowrap}
+.tab.active{color:var(--navy);border-bottom-color:var(--navy);background:#f5f7fc}
+.tab:hover{color:var(--navy)}
+.pane{display:none}.pane.active{display:block}
+.pane-cap{font-size:11px;color:#888;margin:6px 0 12px}
+
+/* CARDS GENERIC */
+.card{background:#fff;border:1.5px solid #dde3ef;border-radius:var(--rad);padding:14px 16px;box-shadow:var(--shadow);margin-bottom:12px}
+.card h4{font-size:11px;font-weight:700;color:var(--navy);margin-bottom:10px;text-transform:uppercase;letter-spacing:.05em;padding-bottom:6px;border-bottom:1.5px solid #dde3ef}
+.card .hint{font-size:10px;color:#999;margin-bottom:8px}
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:12px}
+@media(max-width:820px){.grid2{grid-template-columns:1fr}}
+
+/* ORG HIERARCHY — level card boxes */
+.org-level{margin-bottom:18px}
+.org-level-hdr{font-size:10px;font-weight:700;color:#888;text-transform:uppercase;letter-spacing:.08em;margin-bottom:10px;padding-bottom:5px;border-bottom:1.5px solid #dde3ef}
+.org-level-hdr span{color:#aaa;font-weight:400;margin-left:6px}
+.org-row{display:flex;flex-wrap:wrap;gap:8px;margin-bottom:8px}
+.org-connector{width:1px;background:#c8d4e8;margin:0 0 8px 18px;height:14px}
+/* sub-group label (e.g. SystemC) */
+.org-subhdr{font-size:10px;font-weight:700;color:#555;margin:8px 0 5px;padding-left:2px;text-transform:uppercase;letter-spacing:.05em;width:100%}
+
+/* NESTED REPORTING TREE */
+.org-node{margin-bottom:8px}
+.org-children{margin-left:20px;padding-left:16px;border-left:2px solid #cdd9ee;margin-top:8px}
+.org-children .org-row{margin-bottom:8px}
+.oc-syn{background:#5b6473;color:#fff;border:1.5px solid #474e5b}
+.oc-syn .ocard-name{color:#fff}
+.oc-syn .ocard-sub{color:#d7dbe2;opacity:.95}
+.oc-syn .ocard-pill.pill-b{background:rgba(255,255,255,.22);color:#fff}
+
+/* card base */
+.ocard{border-radius:7px;padding:11px 12px 9px;cursor:pointer;transition:transform .12s,box-shadow .12s;min-width:155px;max-width:200px;box-shadow:0 1px 6px rgba(0,0,0,.1);position:relative}
+.ocard:hover{transform:translateY(-2px);box-shadow:0 4px 12px rgba(0,0,0,.18)}
+.ocard-name{font-size:12px;font-weight:700;line-height:1.3;margin-bottom:3px}
+.ocard-sub{font-size:10px;opacity:.72;margin-bottom:2px;line-height:1.4}
+.ocard-prac{font-size:9.5px;opacity:.60;margin-bottom:7px;line-height:1.4}
+.ocard-pill{display:inline-block;font-size:9px;font-weight:700;padding:2px 8px;border-radius:10px;white-space:nowrap}
+
+/* L1 — navy */
+.oc-l1{background:#1F3864;color:#fff}
+.oc-l1 .ocard-pill.pill-b{background:rgba(255,255,255,.22);color:#fff}
+.oc-l1 .ocard-pill.pill-f{background:#E6B84C;color:#5a3c00}
+.oc-l1 .ocard-pill.pill-u{background:#E06666;color:#fff}
+
+/* L2 billed — teal */
+.oc-l2b{background:#1F7A8C;color:#fff}
+.oc-l2b .ocard-pill.pill-b{background:rgba(255,255,255,.22);color:#fff}
+.oc-l2b .ocard-pill.pill-f{background:#E6B84C;color:#5a3c00}
+.oc-l2b .ocard-pill.pill-u{background:#E06666;color:#fff}
+
+/* L2 buffer — mid-blue */
+.oc-l2f{background:#2E5FAC;color:#fff}
+.oc-l2f .ocard-pill.pill-b{background:rgba(255,255,255,.22);color:#fff}
+.oc-l2f .ocard-pill.pill-f{background:#E6B84C;color:#5a3c00}
+.oc-l2f .ocard-pill.pill-u{background:#E06666;color:#fff}
+
+/* L3 — light blue */
+.oc-l3{background:#D6E4F7;color:#1F3864;border:1.5px solid #8CA8D8}
+.oc-l3 .ocard-pill.pill-b{background:#1F3864;color:#fff}
+.oc-l3 .ocard-pill.pill-f{background:#2E5FAC;color:#fff}
+.oc-l3 .ocard-pill.pill-u{background:#E06666;color:#fff}
+
+/* L4 — white */
+.oc-l4{background:#fff;color:#1a1a1a;border:1.5px solid #c8d4e8}
+.oc-l4 .ocard-pill.pill-b{background:#1F3864;color:#fff}
+.oc-l4 .ocard-pill.pill-f{background:#2E5FAC;color:#fff}
+.oc-l4 .ocard-pill.pill-u{background:#E06666;color:#fff}
+
+.ocard-pill.pill-k{background:#8C8C8C;color:#fff}
+.oc-l3 .ocard-pill.pill-k,.oc-l4 .ocard-pill.pill-k{background:#8C8C8C;color:#fff}
+
+
+/* legacy chip (unused in new view but kept for matrix etc.) */
+.lead-group{display:none}
+.chip{display:inline-flex;align-items:center;gap:6px;font-size:10px;padding:5px 9px;border-radius:14px;border:1.2px solid #dde3ef;background:#fafbfd;cursor:pointer;font-family:inherit;transition:transform .1s}
+.chip:hover{transform:translateY(-1px);box-shadow:0 3px 8px rgba(0,0,0,.1);background:#fff}
+.chip .cp{color:#999;font-size:9px}
+.chip.st-Billed{border-color:#1F3864;background:#EEF2FA}.chip.st-Buffer{border-color:#2E5FAC;background:#F0F5FF}.chip.st-UnBilled{border-color:#1F7A8C;background:#EAF4F7}.chip.st-Onsite{border-color:#8CA8D8;background:#F5F8FD}
+
+/* MATRIX */
+.matrix-wrap{overflow-x:auto;border-radius:var(--rad);box-shadow:var(--shadow)}
+table.mx{border-collapse:collapse;font-size:11px;width:100%;background:#fff}
+table.mx th{background:var(--navy);color:#fff;padding:6px 6px;text-align:center;font-weight:700;font-size:9.5px;border:1px solid #2E5FAC;position:sticky;top:0;z-index:2;white-space:pre-line;min-width:52px}
+table.mx th.prac-hdr{text-align:left;min-width:150px;position:sticky;left:0;z-index:3;background:var(--navy)}
+table.mx td{padding:4px 3px;text-align:center;border:1px solid #e8ecf4;vertical-align:middle}
+table.mx td.pname{text-align:left;font-weight:700;padding-left:10px;background:#f5f7fc;position:sticky;left:0;z-index:1;border-right:2px solid #dde3ef;cursor:pointer}
+table.mx td.pname:hover{background:#e9eef8}
+table.mx td.tot{font-weight:700;background:var(--b-bg);color:var(--b);border-left:2px solid #8CA8D8;cursor:pointer}
+table.mx td.tot:hover{background:#c3d6f0}
+table.mx tr.tot-row td{font-weight:700;background:var(--navy);color:#fff;cursor:pointer}
+table.mx tr.tot-row td:hover{background:#2E5FAC}
+table.mx tr.tot-row td.pname{background:var(--navy);color:#fff}
+.cx{display:inline-flex;align-items:center;justify-content:center;min-width:22px;height:22px;border-radius:4px;font-weight:700;font-size:10.5px;cursor:pointer;margin:1px;transition:transform .1s}
+.cx:hover{transform:scale(1.18);box-shadow:0 2px 6px rgba(0,0,0,.15)}
+.cx-b{background:var(--g-bg);color:var(--g)}.cx-f{background:var(--y-bg);color:var(--y)}.cx-u{background:var(--r-bg);color:var(--r)}.cx-k{background:var(--grey-bg);color:var(--grey)}.cx-o{background:var(--grey-bg);color:var(--grey)}.stb-Bench{background:var(--grey-bg);color:var(--grey)}
+.cx-nil{color:#ddd}
+
+/* PROJECT CARDS */
+.own-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(215px,1fr));gap:10px}
+.own-card{border-radius:var(--rad);padding:12px 14px;border:1.5px solid #dde3ef;background:#fff;cursor:pointer;transition:transform .12s,box-shadow .12s;position:relative;box-shadow:var(--shadow)}
+.own-card:hover{transform:translateY(-2px);box-shadow:0 5px 14px rgba(0,0,0,.12)}
+.own-hc{position:absolute;top:10px;right:13px;font-size:22px;font-weight:700;color:var(--navy)}
+.own-proj{font-weight:700;font-size:12px;padding-right:42px}
+.own-client{font-size:10px;color:#888;margin-top:2px}
+.own-owner{font-size:10px;color:var(--blue);font-weight:700;margin-top:4px}
+.own-split{display:flex;gap:5px;margin-top:8px;flex-wrap:wrap}
+.split-pill{font-size:9.5px;font-weight:700;padding:2px 7px;border-radius:10px}
+.sp-g{background:var(--g-bg);color:var(--g)}.sp-y{background:var(--y-bg);color:var(--y)}.sp-r{background:var(--r-bg);color:var(--r)}.sp-o{background:var(--grey-bg);color:var(--grey)}
+.own-risk{font-size:10px;margin-top:8px;padding:3px 8px;border-radius:4px;display:inline-block;font-weight:600}
+.own-risk.r{background:var(--r-bg);color:var(--r)}.own-risk.w{background:var(--y-bg);color:var(--y)}.own-risk.ok{background:var(--g-bg);color:var(--g)}
+.own-hdr{font-size:12px;font-weight:700;color:var(--navy);margin:16px 0 8px;padding-bottom:5px;border-bottom:2px solid #dde3ef;text-transform:uppercase;letter-spacing:.04em}
+
+/* HEALTH: gauge + stacked bars */
+.gauge-wrap{display:flex;align-items:center;gap:18px;flex-wrap:wrap}
+.gi-val{font-size:34px;font-weight:700;color:var(--navy)}
+.gi-lbl{font-size:10px;color:#888;text-transform:uppercase;letter-spacing:.04em}
+.gi-sub{font-size:11px;color:#555;margin-top:4px;max-width:340px;line-height:1.5}
+.pills{display:flex;gap:8px;flex-wrap:wrap;margin-top:10px}
+.pill{font-size:10px;padding:4px 10px;border-radius:20px;font-weight:700;cursor:pointer}
+.pl-g{background:var(--g-bg);color:var(--g)}.pl-y{background:var(--y-bg);color:var(--y)}.pl-r{background:var(--r-bg);color:var(--r)}.pl-o{background:var(--grey-bg);color:var(--grey)}
+.stk-row{display:flex;align-items:center;gap:8px;margin-bottom:7px;cursor:pointer}
+.stk-row:hover .stk-lbl{color:var(--navy);font-weight:700}
+.stk-lbl{font-size:10.5px;color:#555;min-width:128px;text-align:right}
+.stk-track{flex:1;display:flex;height:19px;border-radius:4px;overflow:hidden;background:#f0f3f8}
+.stk-seg{height:100%;display:flex;align-items:center;justify-content:center;font-size:9.5px;font-weight:700;min-width:0;white-space:nowrap;overflow:hidden}
+.seg-g{background:var(--gbar);color:#fff}.seg-y{background:var(--ybar);color:#5a3c00}.seg-r{background:var(--rbar);color:#fff}.seg-o{background:#b9bfcc;color:#fff}
+.stk-n{font-size:10px;color:#888;min-width:28px}
+
+/* TEAM LEAD BILLING TABLE */
+.lead-benchmarks{font-size:10.5px;color:#7a6000;background:#FFF8E6;border:1px solid #F0D98C;border-radius:6px;padding:7px 11px;margin-bottom:10px;line-height:1.7}
+.lead-benchmarks .lb-key{display:inline-block;margin-left:8px;color:#555}
+.lb-chip{display:inline-block;width:10px;height:10px;border-radius:2px;vertical-align:middle;margin-right:3px}
+.lb-chip.g{background:var(--g-bg);border:1px solid var(--gbar)}.lb-chip.y{background:var(--y-bg);border:1px solid var(--ybar)}.lb-chip.r{background:var(--r-bg);border:1px solid var(--rbar)}
+.lead-tbl-wrap{overflow-x:auto;border:1px solid #dde3ef;border-radius:6px}
+.lead-tbl{border-collapse:collapse;width:100%;min-width:880px;font-size:11px}
+.lead-tbl th{background:var(--blue);color:#fff;font-weight:700;padding:7px 8px;text-align:center;border:1px solid #2851a0;font-size:10px;line-height:1.3;position:sticky;top:0;white-space:nowrap}
+.lead-tbl th.lt-lead{background:var(--navy);text-align:left;min-width:118px;position:sticky;left:0;z-index:3}
+.lead-tbl td{padding:6px 8px;text-align:center;border:1px solid #e3e8f2;vertical-align:middle}
+.lead-tbl td.lt-lead{text-align:left;font-weight:700;color:var(--navy);background:#f5f7fc;cursor:pointer;position:sticky;left:0;z-index:1}
+.lead-tbl td.lt-lead:hover{background:#e9effb}
+.lead-tbl tr:nth-child(even) td{background:#fafbfe}
+.lead-tbl tr:nth-child(even) td.lt-lead{background:#eef1f9}
+.lead-tbl td.pc{font-weight:700}
+.lead-tbl td.lt-num,.lead-tbl .lt-num{cursor:pointer;text-decoration:underline;text-decoration-color:#b9c6e0;text-underline-offset:2px}
+.lead-tbl td.lt-num:hover{background:#dde7fa!important;color:var(--navy)}
+.lead-tbl tr.lt-overall td.lt-num:hover{background:#3a4f78!important;color:#fff}
+.pc.g{background:var(--g-bg)!important;color:var(--g)}.pc.y{background:var(--y-bg)!important;color:var(--y)}
+.pc.r{background:var(--r-bg)!important;color:var(--r)}.pc.b{background:var(--b-bg)!important;color:var(--b)}
+.lead-tbl tr.lt-overall td{background:var(--navy)!important;color:#fff;font-weight:700;border-color:#2851a0}
+.lead-tbl tr.lt-overall td.pc{color:#fff}
+.conc-row{display:flex;align-items:center;gap:8px;margin-bottom:6px;cursor:pointer}
+.conc-row:hover .stk-lbl{color:var(--navy);font-weight:700}
+.conc-fill{height:17px;border-radius:3px;background:linear-gradient(90deg,#2E5FAC,#1F7A8C);display:flex;align-items:center;padding:0 7px;color:#fff;font-size:9.5px;font-weight:700;min-width:30px}
+.cliff-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(170px,1fr));gap:10px}
+.cliff-card{border-radius:var(--rad);padding:12px 14px;border:1.5px solid;cursor:pointer;transition:transform .12s}
+.cliff-card:hover{transform:translateY(-2px)}
+.cliff-card .cc-val{font-size:24px;font-weight:700;line-height:1}
+.cliff-card .cc-lbl{font-size:10px;margin-top:4px;font-weight:700;text-transform:uppercase;letter-spacing:.03em}
+.cliff-card .cc-sub{font-size:9.5px;margin-top:3px;opacity:.8}
+.cc-r{background:var(--r-bg);border-color:var(--rbar);color:var(--r)}
+.cc-y{background:var(--y-bg);border-color:var(--ybar);color:var(--y)}
+.cc-g{background:var(--g-bg);border-color:var(--gbar);color:var(--g)}
+.cc-b{background:var(--b-bg);border-color:#8CA8D8;color:var(--b)}
+
+/* PLANNING: gantt */
+.gantt{margin-top:6px}
+.g-scale{display:flex;margin-left:148px;font-size:9.5px;color:#999;border-bottom:1px solid #eee;padding-bottom:3px;margin-bottom:7px}
+.g-scale span{flex:1;text-align:left;border-left:1px dashed #e2e6f0;padding-left:4px}
+.g-row{display:flex;align-items:center;margin-bottom:7px;cursor:pointer}
+.g-row:hover .g-lbl{color:var(--navy);font-weight:700}
+.g-lbl{font-size:10.5px;color:#555;width:148px;flex-shrink:0;padding-right:8px;text-align:right;line-height:1.3}
+.g-track{flex:1;position:relative;height:21px;background:repeating-linear-gradient(90deg,#f6f8fc 0,#f6f8fc calc(16.66% - 1px),#e8ecf4 calc(16.66% - 1px),#e8ecf4 16.66%);border-radius:4px}
+.g-bar{position:absolute;top:2px;bottom:2px;border-radius:4px;display:flex;align-items:center;padding:0 7px;font-size:9.5px;font-weight:700;color:#fff;white-space:nowrap;overflow:hidden}
+.gb-r{background:var(--rbar)}.gb-y{background:var(--ybar);color:#5a3c00}.gb-g{background:var(--gbar)}.gb-b{background:#5B85C9}
+.g-end{position:absolute;top:-1px;bottom:-1px;width:2.5px;background:var(--r)}
+.req-row{display:flex;align-items:center;gap:9px;padding:8px 0;border-bottom:1px dashed #eee}
+.req-row:last-child{border-bottom:none}
+.req-badge{font-size:9px;font-weight:700;padding:3px 8px;border-radius:3px;white-space:nowrap}
+.req-urgent{background:var(--r-bg);color:var(--r)}.req-soon{background:var(--y-bg);color:var(--y)}
+.req-info{flex:1}.ri-proj{font-size:11px;font-weight:700}.ri-detail{font-size:10px;color:#888;margin-top:2px}
+.req-count{font-size:17px;font-weight:700;color:var(--navy)}
+
+/* TABLES */
+.tbl{width:100%;border-collapse:collapse;font-size:11px}
+.tbl th{background:var(--navy);color:#fff;padding:6px 9px;text-align:left;font-size:10px;font-weight:700;white-space:nowrap}
+.tbl td{padding:5px 9px;border-bottom:1px solid #eee;vertical-align:top}
+.tbl tr:nth-child(even) td{background:#fafbfd}
+.tbl tr:last-child td{border-bottom:none}
+.tbl tr.clickable{cursor:pointer}
+.tbl tr.clickable:hover td{background:#eef3fb}
+.sid{font-size:9px;font-weight:700;padding:2px 6px;border-radius:3px;font-family:'Courier New',monospace}
+.sid-vc{background:var(--b-bg);color:var(--b)}.sid-vcin{background:var(--y-bg);color:var(--y)}.sid-vcc{background:#E9D7F5;color:#3C3489}
+.st-badge{font-size:9px;font-weight:700;padding:2px 7px;border-radius:3px;white-space:nowrap}
+.stb-Billed{background:var(--g-bg);color:var(--g)}.stb-Buffer{background:var(--y-bg);color:var(--y)}
+.stb-UnBilled{background:var(--r-bg);color:var(--r)}.stb-Bench{background:var(--grey-bg);color:var(--grey)}.stb-Onsite{background:var(--grey-bg);color:var(--grey)}
+
+/* MODAL */
+.modal-bg{display:none;position:fixed;inset:0;background:rgba(20,30,55,.45);z-index:50;padding:16px;align-items:flex-end;justify-content:center}
+.modal-bg.open{display:flex}
+.modal-card{background:#fff;border-radius:12px 12px 8px 8px;max-width:920px;width:100%;max-height:78vh;display:flex;flex-direction:column;box-shadow:0 -8px 40px rgba(0,0,0,.3)}
+.modal-hd{display:flex;align-items:center;justify-content:space-between;padding:13px 18px;border-bottom:1.5px solid #dde3ef}
+.modal-hd .mt{font-size:13px;font-weight:700;color:var(--navy)}
+.modal-hd .ms{font-size:10px;color:#999;margin-top:2px}
+.modal-x{font-size:24px;cursor:pointer;color:#999;background:none;border:none;line-height:1;padding:0 4px}
+.modal-body{overflow:auto;padding:6px 12px 14px}
+@media(min-width:700px){.modal-bg{align-items:center}}
+
+.footer{text-align:center;font-size:10px;color:#aaa;margin-top:22px;padding-top:12px;border-top:1px solid #dde3ef}
+::-webkit-scrollbar{width:6px;height:6px}
+::-webkit-scrollbar-track{background:#f0f3f8}
+::-webkit-scrollbar-thumb{background:#cdd6e8;border-radius:3px}
+@media (prefers-reduced-motion:reduce){*{transition:none!important;animation:none!important}}
+</style>
+</head>
+<body>
+<div class="page">
+
+<div class="topbar">
+  <div>
+    <div class="title">VConnecTech Systems — Workforce Intelligence <span class="vpill">LIVE</span></div>
+  </div>
+  <div class="topbar-right"><div class="logo">VCT</div><div style="margin-top:2px">Confidential</div></div>
+</div>
+
+<div class="srcbar loading" id="srcbar">
+  <span class="src-dot"></span>
+  <span id="src-text">Connecting to Google Sheet…</span>
+  <button class="src-btn" onclick="boot(true)">&#8635; Refresh data</button>
+  <button class="src-btn" id="src-help-btn" style="display:none" onclick="document.getElementById('src-help').classList.toggle('open')">How to fix</button>
+  <div class="src-help" id="src-help">
+    <b>If the bar says STALE:</b> the Apps Script time-driven trigger has stopped writing <code>data.json</code>. Open the Apps Script project → Triggers → check the failure log, then re-save the hourly trigger.<br>
+    <b>If the bar says SNAPSHOT:</b> no data file was reachable at all. Confirm GitHub Pages is serving the folder that contains <code>data.json</code> (Settings → Pages → Source), and that <code>WEBAPP_URL</code> near the top of this file holds a current <code>/exec</code> URL. The published CSV fallback only works over http(s), not from a local file.
+  </div>
+</div>
+
+<div class="kpi-strip" id="kpi-strip"></div>
+<div id="alerts"></div>
+
+
+
+<div class="filterbar">
+  <label>Month</label><select id="f-month" onchange="applyMonth()"><option>Current</option></select>
+  <label>Domain</label><select id="f-practice" onchange="renderAll()"><option value="">All</option></select>
+  <label>Team Lead</label><select id="f-lead" onchange="renderAll()"><option value="">All</option></select>
+  <label>Designation</label><select id="f-desig" onchange="renderAll()"><option value="">All</option></select>
+  <label>YOE</label><select id="f-yoe" onchange="renderAll()"><option value="">All</option></select>
+  <label>Project</label><select id="f-project" onchange="renderAll()"><option value="">All</option></select>
+  <label>Status</label><select id="f-status" onchange="renderAll()"><option value="">All</option><option>Billed</option><option>Buffer</option><option>UnBilled</option><option>Bench</option><option>Onsite</option></select>
+  <label>Client</label><select id="f-client" onchange="renderAll()"><option value="">All</option></select>
+  <span class="filter-count" id="filter-count"></span>
+  <button class="btn-reset" onclick="resetFilters()">&#8635; Reset</button>
+</div>
+
+<div class="tab-row">
+  <button class="tab active" data-pane="org" onclick="showTab('org',this)">🏢 Org Hierarchy</button>
+  <button class="tab" data-pane="matrix" onclick="showTab('matrix',this)">📊 Allocation Matrix</button>
+  <button class="tab" data-pane="projects" onclick="showTab('projects',this)">📋 Projects</button>
+  <button class="tab" data-pane="health" onclick="showTab('health',this)">💚 Business Health</button>
+</div>
+
+<div class="pane active" id="pane-org">
+  <div class="pane-cap">Who reports to whom — grouped by Project Lead from the sheet. Click a header for the team list, a chip for one person.</div>
+  <div id="org-wrap"></div>
+</div>
+
+<div class="pane" id="pane-matrix">
+  <div class="pane-cap">Who is staffed where — domains × projects. Click any cell, row total, column total or the grand total to see names.</div>
+  <div class="matrix-wrap"><table class="mx" id="mx-table"></table></div>
+</div>
+
+<div class="pane" id="pane-projects">
+  <div class="pane-cap">Every project at a glance — headcount, status mix and billing risk. Click a card for the full team.</div>
+  <div id="own-wrap"></div>
+</div>
+
+<div class="pane" id="pane-health">
+  <div class="pane-cap">Headcount-based health metrics only — no estimated rupees. Everything here is computed directly from the sheet and respects the filters above.</div>
+  <div class="card">
+    <h4>Core Utilization</h4>
+    <div class="gauge-wrap">
+      <svg viewBox="0 0 120 70" width="135">
+        <path d="M10,65 A55,55 0 0,1 110,65" fill="none" stroke="#eee" stroke-width="10" stroke-linecap="round"/>
+        <path id="gauge-arc" d="M10,65 A55,55 0 0,1 110,65" fill="none" stroke="#2E5FAC" stroke-width="10" stroke-linecap="round" stroke-dasharray="0,200"/>
+      </svg>
+      <div>
+        <div class="gi-val" id="util-pct">—</div>
+        <div class="gi-lbl">Billed ÷ (Total − Onsite)</div>
+        <div class="gi-sub" id="util-sub"></div>
+      </div>
+    </div>
+    <div class="pills" id="util-pills"></div>
+    <div style="font-size:10px;color:#888;margin-top:10px">Healthy range for a services firm: <b>75–85%</b>. Below 65% is a margin warning.</div>
+  </div>
+
+  <div class="card">
+    <h4>Team Lead-wise Billing Analysis &nbsp;·&nbsp; <span id="lead-fy" style="font-weight:400;color:#888">FY 2026–27</span></h4>
+    <div class="lead-benchmarks">
+      Benchmarks: Billed (incl. Buffer Billed) ≥ 70% &nbsp;|&nbsp; Buffer ≈ 20% &nbsp;|&nbsp; UnBilled ≤ 10%
+      &nbsp;&nbsp;<span class="lb-key"><span class="lb-chip g"></span>On/Above Target</span>
+      <span class="lb-key"><span class="lb-chip y"></span>Near Target</span>
+      <span class="lb-key"><span class="lb-chip r"></span>Below Target</span>
+    </div>
+    <div class="hint">One row per Team Lead. Counts respect the current Month + filters. Click a lead name for the full team list.</div>
+    <div class="lead-tbl-wrap"><table class="lead-tbl" id="lead-table"></table></div>
+  </div>
+</div>
+
+
+<div class="footer" id="footer">VConnecTech Systems · Workforce Intelligence v3 · Confidential</div>
+</div>
+
+<div class="modal-bg" id="modal" onclick="if(event.target===this)closeModal()">
+  <div class="modal-card">
+    <div class="modal-hd">
+      <div><div class="mt" id="modal-title"></div><div class="ms" id="modal-sub"></div></div>
+      <button class="modal-x" onclick="closeModal()">&#215;</button>
+    </div>
+    <div class="modal-body" id="modal-body"></div>
+  </div>
+</div>
+
+<script>
+// ════════════════════════════════════════════════════════════
+// CONFIG — data source
+// ════════════════════════════════════════════════════════════
+// ▼▼▼ PASTE YOUR APPS SCRIPT WEB-APP URL HERE (ends in /exec). This is the most reliable live source. ▼▼▼
+const WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbw_P_KGmPSEs6F99tmiPMUUIo13gKoTHokcQ3_NzSxzoxbJZTqapNZcYBLz66e1mo7clQ/exec';
+// ▲▲▲ Leave blank until you deploy the Apps Script. When set, the dashboard reads live JSON from it. ▲▲▲
+const SHEET_ID = '1YqPdYKBTCyU7LvKkMExoG9ikgS_zu3Grvju7qlqE6lo';
+const PUB_BASE = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTGKpXllqYJrHeCI_9-Z9wT6TReZzZs2jGulrirNgDbBoBAVpONGFEJWxDS63H4dzwVvw2tgzohkzUE';
+const SHEET_NAME_CANDIDATES = ['Employee List 2026- 27','Employee List 2026-27','Employee List 2026 - 27','Employee List'];
+const SNAPSHOT_DATE = '10 Jun 2026';
+// Committed by Apps Script; primary, month-aware source on GitHub Pages.
+// Both paths are checked because Pages may be served from the repo root or /docs;
+// whichever file has the newer generatedAt wins.
+const DATA_JSON_CANDIDATES = ['data.json','docs/data.json'];
+const STALE_HOURS = 6; // older than this and the bar says STALE, not LIVE
+let RAW=[], MONTHS=['Current'], MONTH='Current';
+
+// Hiring requirements — from the "Requirements" block in the SystemC sheet tab.
+// Edit here (or move into the sheet later) when requirements change.
+const REQUIREMENTS = [
+  {proj:'SmartSoC-ADI', role:'Trainees — buffers for existing engineers', count:4, eta:'Immediate', urg:'urgent'},
+  {proj:'SmartSoC-ADI', role:'Engineers with 3–4 yrs experience', count:4, eta:'Aug 2026', urg:'soon'},
+];
+
+// Embedded fallback snapshot — verbatim copy of the "Employee List 2026- 27" tab, 10 Jun 2026.
+// Used automatically only if the live fetch fails. Same parser handles both, so behaviour is identical.
+const SNAPSHOT_CSV = `EMP ID,Employee Name,Project Lead,Domain,Designation,YOE,Project Assigned,Bandwidth,Billed Status,Bench,Current Task,Billed Upto,Billing Scope ,Plan,Back Up Plan,Remarks,April,May 
+VC_099,Srikanth Neelam,,,Director,24,FLC,,Billed  ,,,,,,,,Billed
+VC_116,Abhishek Vulapu,Srikanth,Program Manager,Program Manager,14,Renesas,100%,Billed,,,,,,,,Billed
+VC_112,Prithvi Nagilla,Shyam,Program Manager,Program Manager,14,Smart IP Camera,70%,Buffer,,,,,,,,Buffer
+VC_104,Aravind Kumar Goud Kurra,Srikanth,SystemC Modelling,Staff Engineer,8,SmartSoC-ADI,100%,Billed,,,,,,,,Billed
+VC_191,Sollapuram Kishore Reddy,Aravind,SystemC Modelling,Engineer I,1.1,SmartSoC-ADI,100%,Billed,Billed from May,Supporting DLI models,July,,,,Need 4 engineers with 3-4 years of experience from August. Need 3 buffers(Trainees) for existing engineers.,Billed
+VC_218,Kota Poojitha ,Aravind,SystemC Modelling,Engineer I,0.9,SmartSoC-ADI,100%,Billed,Billed from May,Supporting DLI models,July,,,,,Billed
+VC_192,Sudeep B Channalli,Aravind,SystemC Modelling,Engineer I,1.1,SmartSoC-ADI,100%,Billed,Billed from May,Supporting DLI models,,,,,,Billed
+VC_194,Yepuri Karthikeya,Aravind,SystemC Modelling,Engineer I,1.1,FLC IP Modelling,100%,Buffer Billed,,FLC Chip top modelling,,,,,Aravind will ask srikanth,BufferBilled
+VC_225,G Sudarshan Reddy,Aravind,SystemC Modelling,Engineer I,0.7,FLC IP Modelling,100%,Buffer,,QEMU bringup,,,,,Aravind will ask srikanth,Buffer
+VC_226,Kanturi Jeevan Sai,Aravind,SystemC Modelling,Engineer I,0.7,DLI Soc Modelling,100%,Buffer,,Security IP modelling,,,,,Billing plan?,Buffer
+VC_213,Mutakoduru Sowmya,Aravind,SystemC Modelling,Engineer I,0.6,DLI Soc Modelling,100%,Buffer,,Security IP modelling,,,,,,Buffer
+VC_217,Balijepalli Anil Kumar,Aravind,SystemC Modelling,Trainee II,0.4,DLI Soc Modelling,100%,Buffer,,DMA model,,,,,,Buffer
+VC_122,Charan Raj Bommadeni,Aravind,FPGA,Senior Engineer,5.1,DLI Soc   ,0%,UnBilled,Bench,,,,Staffing,,,UnBilled
+VC_126,Sreekanth. Arati,Aravind,FPGA,Senior Engineer,5.5,DLI Soc   ,0%,Billed,,,,,Staffing,,Billed in FLC,Billed
+VC_136,Itla Sai Bharadwaj,Aravind,FPGA,Senior Engineer,4.1,FLC,0%,Billed,,,,,Staffing,,,Billed
+VC_238,Tejeswara Rao Padda,Aravind,FPGA,Engineer I,2.1,DLI Soc   ,0%,UnBilled,Bench,,,,Staffing,,,UnBilled
+VC_133,Mahammad Vaheed Pasha,Aravind,FPGA,Engineer II,2,DLI Soc   ,0%,UnBilled,Bench,,,,Staffing,,,UnBilled
+VC_227,Borusu Bala Satya Phaneendra,Aravind,FPGA,Engineer I,0.8,DLI Soc   ,0%,UnBilled,Bench,,,,Staffing,,,UnBilled
+VC_204 ,Swarna Latha Jakka,Srikanth,DV,Senior Staff Engineer,15,,0%,UnBilled,Bench,,,,New Project,,,Billed
+VC_149,Haridasu Rudra Bhupathi Naidu,Swarna Latha,DV,Engineer II,1.11,ORCA,30%,Billed,,Drop_c.1 release and code coverage,June 15th,,,New Project,,Billed
+VC_188,Rayidi Luhitha,Swarna Latha,DV,Engineer I,1.1,ORCA,30%,Billed,,,June 15th,,,New Project,,Billed
+VC_189,Chittimadha Anil,Swarna Latha,DV,Engineer I,1.1,ORCA,30%,Buffer,,,,,New Project,,,Buffer
+VC_190,Pothula Bhargav Sai,Swarna Latha,DV,Engineer I,1.1,ORCA,30%,Buffer Billed,,,June 15th,,,New Project,,BufferBilled
+VC_193,Tammana Viswanadha Muralidhar,Swarna Latha,DV,Engineer I,1.1,ORCA,30%,Billed,,,June 15th,,,New Project,,Billed
+VC_220,Mudragada Sri Venkata Ram Pavan,Swarna Latha,DV,Engineer I,0.9,ORCA,30%,Buffer,,,,,New Project,,,Buffer
+VC_150,Mani Gopi Nalajala,Srikanth,DV,Engineer II,1.11,FLC,100%,Billed,,,,,,,,Billed
+VC_203,Aadesh Gonda,Swarna Latha,DV,Engineer I,3.1,Zerro Power systems,100%,Billed,,,6 Months from May 2026,,,,,Billed
+VC_221,A.V.S.Padma Sri,Swarna Latha,DV,Engineer I,0.7,DLI Soc   ,0%,UnBilled,Bench,EMAC Bit file generation,,,Staffing,,,UnBilled
+VC_223,Anasuri durgabhavani,Swarna Latha,DV,Engineer I,0.6,DLI Soc   ,0%,UnBilled,Bench,FPGA Bit file generation,,,Staffing,,,UnBilled
+VC_228,Kona Sri Devi,Swarna Latha ,DV,Engineer I,0.6,DLI Soc   ,0%,UnBilled,Bench,USB Bit file generation,,,Staffing,,,UnBilled
+VC_105,AV Rajesh,Srikanth,Hardware,Director,24,"FLC, SmartSoc(ProbeASIC)",,Billed,,,,,,,,Billed
+VC_101,Srinivasa Rao Supuri,Rajesh,Hardware,Senior Engineer,7+,FLC,100%,Billed,,,,,,,,Billed
+VC_124,Galipothu.Sunil Kumar,Rajesh,Hardware,Senior Staff Engineer,18,FLC,,Billed,,,,,,,,Billed
+VC_176,Jampani Samudralankaiah,Rajesh,Hardware,Senior Engineer,6.1,FLC,,Billed,,,,,,,,Billed
+VC_183,Varimadla Anjaneyulu,Rajesh,Hardware,Engineer II,7.10,FLC/TRS/Internal,100%,Billed,,,,,,,,Billed
+VC_224,Chintha Vivek Sai,Rajesh,Hardware,Engineer I,0.7,FLC,75%,Buffer,,,,,,,,Buffer
+VC_161,Veeresh Meeniga,Rajesh,Hardware,Engineer I,2.4,FLC,25%,Buffer,,,,,,,,Buffer
+VC_141,Ravada Ramesh,Rajesh,Hardware,Engineer II,3.11,TRS,100%,Billed,,,,,,,,Billed
+VC_163,Ruka Nandi Vardhan Reddy,Rajesh,Hardware,Engineer I,2.4,TRS,100%,Billed,,,,,,,,Billed
+VC_196,Keerthi Sepana,Rajesh,Hardware,Associate Engineer,1,TRS,100%,Billed,,,,,,,,Billed
+VC_200,Harika Kunduru,Rajesh,Hardware,Engineer II,3.9,Smart IP Camera,,Billed,,,,,,,,Billed
+VC_229,Bommi Sandhya,Rajesh,Hardware,Engineer I,0.7,Voila Tech,100%,Billed,,,,,,,,Billed
+VCIN_43,Jayadev Lokanadham,Rajesh,Hardware,Intern I,,Smart IP Camera,,UnBilled,,,,,,,,UnBilled
+VCIN_26,Naveen,Rajesh,Hardware,Consultant,,Voila Tech,100%,Buffer
+VC_110,Shyam Kumar Thella  ,Srikanth,Embedded - Linux,Senior Staff Engineer,11,"FLC, Renesas (NPU), Smart IP Camera",,Billed,,,,,,,,Billed
+VC_119,Buneboyina.Pavan Kalyan,Sasikanth,Embedded - Linux,Engineer II,2.3,Kandou,100%,Billed,,"E21 , ANDES Bring up",3 Months,,,Kandou,,BufferBilled
+VC_134,Yeshwanth Namburi,Kameswara rao,Embedded - Linux,Engineer II,2,FLC,70%,Buffer,,FLC hand off,,,FLC,,Buffer Billed for shyam to replace Pavan B,Buffer
+VC_138,Gunupuru Pavan Kalyan,Shyam,Embedded - Linux,Senior Engineer,4.2,Edge,100%,Billed,,DDR,3 months,,Edge,,,Billed
+VC_209,Naveen Namburi,Sasikanth,Embedded - Linux,Senior Engineer,6.8,Kandou,100%,Billed,,,,,,Kandou,,Billed
+VC_214,Kiran Allada,Teja,Embedded - Linux,Senior Engineer,5.5,Gen5,100%,Billed,,,,,,,Billed in place off venkatesh nookatattu,UnBilled
+VC_186,Inampudi Phani Kumar,Shyam,Embedded - Linux,Engineer I,1.2,Renesas NPU,100%,Buffer Billed,,NPU Validation,June ,,,,"Customer has plan till Dec, not officially confirmed",BufferBilled
+VC_187,Bali Harsha Vardhan,Shyam,Embedded - Linux,Engineer I,1.1,Smart IP Camera,100%,Billed,,Camera Sensor,,,,,,UnBilled
+VC_219,S Vishnu Vardhan Reddy ,Shyam,Embedded - Linux,Engineer I,0.9,Smart IP Camera,100%,Billed,,Optimization Pipelines,,,,,,UnBilled
+VC_205,Veleparampil Limin,Shyam,Embedded - Linux,Engineer I,0.9,Smart IP Camera,100%,Billed,,Server app sensors,,,,,,UnBilled
+VCIN_47,Menuga Sai Swetha Sri,Shyam,Embedded - Linux,Intern II,,Smart IP Camera,100%,Buffer,,Training,,,,,,UnBilled
+VC_106,SriTeja Allani,Srikanth,Embedded - S/W,Staff Engineer,7,Renesas,,Billed,,,,,,,,Billed
+VC_107,Hardik,Teja,Embedded - S/W,,,Gen5,80%,Billed,,,June,,,,Project May Extend - May 29th,Billed
+VC_103,Deepika Vandana,Sasikanth,Embedded - S/W,Engineer I,2.8,DLI Soc   ,30%,UnBilled,,"Infra development for DLI IPs, automating tests for low speed peripherals",,No,Staffing,,,UnBilled
+VC_118,Panchangam. Sai Vinodh,Teja,Embedded - S/W,Engineer II,2.3,Renesas,100%,Billed,,,June,,,,Project May Extend - May 29th,Billed
+VC_120,S Noor Mahammad,Teja,Embedded - S/W,Engineer II,2.3,Renesas,100%,Billed,,,June,,,,Project May Extend - May 29th,Billed
+VC_123,Bhimineni.Pravallika,Kiran Allada,Embedded - S/W,Engineer II,2.3,Internal ( Delivery Robot ),,UnBilled,,,,,,,,UnBilled
+VC_127,Mallikharjun Palasa,Teja,Embedded - S/W,Engineer II,4.5,Renesas,60% ( Ramping up Parallel ),Billed,,,June,,,,Project May Extend - May 29th,Billed
+VC_131,Tappeta Sai Lakshmi Geetha,Kiran Allada,Embedded - S/W,Engineer II,2,Internal ( Delivery Robot ),,UnBilled,,,,,,,,UnBilled
+VC_132,Ullangula Aparna,Kameswara rao,Embedded - S/W,Engineer II,2,FLC,100%,Buffer,,,,,"Backup for Poorna in FLC, poorna will move to Kandou",,,Billed
+VC_139,Chandaka Srinivasarao,Kameswara rao,Embedded - S/W,Senior Engineer,3.11,Renesas FSP,100%,Buffer,,Preparation for Reneses MCU,Dont know ,Billing will start in next week,,,,UnBilled
+VC_148,Nokatattu Venkatesh,Teja,Embedded - S/W,Senior Engineer,5.1,Gen5,100%,Buffer,,,,,,,Back up for naveen namburi in Gen5,UnBilled
+VC_152,Akhila Reddy Addula,Teja,Embedded - S/W,Senior Engineer,6.10,Gen5,100%,Billed,,,June,,,,Project May Extend - May 29th,UnBilled
+VC_162,Subramanyam G,Shyam,Embedded - S/W,Engineer I,1.11,"Parking, Edge",50% + 50%,Buffer,,LoRa gateway change for 8 channels,,,,,Srikanth ,UnBilled
+VC_165,Yaswanth E,Sasikanth,Embedded - S/W,Engineer I,1.9,DLI Soc   ,30%,UnBilled,,"bluetootha, wifi spec, drivers understanding",,No,Staffing,,,UnBilled
+VC_167,Geetha Mounika V,Teja,Embedded - S/W,Engineer I,1.11,Gen5,100%,Billed,,,June,,,,Project May Extend - May 29th,Billed
+VC_168,Chandrika K,Kameswara rao,Embedded - S/W,Engineer I,1.11,Renesas FSP,100%,Buffer,,Preparation for Reneses MCU,Dont know ,Billing will start in next week,,,,UnBilled
+VC_170,Pavani D S,Teja,Embedded - S/W,Engineer I,1.11,Gen5,100%,Buffer,,,,,,,,Billed
+VC_171,Hari Chandana K,Teja,Embedded - S/W,Engineer I,1.11,Gen5,100%,Billed,,,June,,,,Project May Extend - May 29th,Billed
+VC_198,Pujitha Uttharkar,Teja,Embedded - S/W,Engineer II,2.11,Gen5,100%,Billed,,,June,,,,Project May Extend - May 29th,Billed
+VC_181,Kantipudi Sri Sai Kiran,Teja,Embedded - S/W,Engineer I,1.2,Renesas,100%,Buffer,,,,,,,,Buffer
+VC_185,T Harish,Sasikanth,Embedded - S/W,Engineer I,1.1,DLI Soc   ,50%,UnBilled,,"Bood code development is completed, working on bringup of USB ",,No,Staffing,,,UnBilled
+VC_243,Kolapalli Vyshnavi Sai,Kameswara rao,Embedded - S/W,Engineer I,3.1,FLC,50%,Buffer,,-,,,Buffer in place of Pavan G for FLC,,,UnBilled
+VC_206,Gorli Poorna Lakshmi Praneeth,Kameswara rao,Embedded - S/W,Engineer I,0.9,Renesas FSP,100%,Buffer,,Preparation for Reneses MCU,Dont know ,Billing will start in next week,,,,Buffer
+VC_222,Undamatla Santhoshi Mani ,Shyam,Embedded - S/W,Engineer I,0.9,Smart IP Camera,100%,Buffer,,Tuning and Caliberation,,,,,,UnBilled
+VCC_113,Ambika Vallandas,Sasikanth,Embedded - S/W,Consultant,,Kandou,100%,UnBilled,,,,,Kandou ,Kandou ,Kranthi,UnBilled
+VC_240,Sudheer Reddy,Kameswara rao,Embedded - S/W,,,Renesas FSP,100%,Buffer,,Preparation for Reneses MCU,Dont know ,Billing will start in next week,,,,UnBilled
+VC_113,SasiKanth Golla,Srikanth,Embedded - Validation,Senior Staff Engineer,14,Kandou,100%,Billed,,,,,Kandou,Kandou,Billed in FLC,Billed
+VC_125,Jithendran Ponnusamy,Srikanth,Embedded - Validation,Senior Engineer,4.1,Renesas,100%,Billed,,,,,,,,Billed
+VC_130,Kamasani Poorna,Sasikanth,Embedded - Validation,Engineer II,2.2,Kandou,100%,Billed,,D2D,,,,Kandou,,Billed
+VC_155,LingaSwamy Shyaga,Shyam,Embedded - Validation,Senior Engineer,7.9,Renesas NPU,100%,Billed,,NPU Validation,June,,"Customer has plan till Dec, not officially confirmed",,,Billed
+VC_164,Akash R,Teja,Embedded - Validation,Engineer I,1.11,Gen5,100%,Billed,,,June,,,,,Billed
+VC_166,Sai Gandhi A,Kameswara rao,Embedded - Validation,Engineer I,1.11,FLC,100%,Billed,,"IPM, RC",,,,,,Billed
+VC_169,Yeshasri. S,Teja,Embedded - Validation,Engineer I,1.11,Gen5,100%,Buffer,,,,,,,,UnBilled
+VC_215,Kameswara rao Dasari,Srikanth,Embedded - Validation,Senior Staff Engineer,11+,Renesas FSP,,Buffer,,,,,,,,UnBilled
+VC_129,Hemanth Aare,Sasikanth,Embedded - Validation,Engineer I,2.1,Self Learning,0%,UnBilled,Bench,-,,,New Project,,,UnBilled
+VC_178,Battula Venu Madhav,Sasikanth,Embedded - Validation,Engineer I,1.1,FLC,50%,Buffer,,"Power, Boot from SPI, Boot from SD",,,New Project,,,Buffer
+VC_179,Maganti Raviteja,Sasikanth,Embedded - Validation,Engineer I,1.2,DLI Soc   ,50%,UnBilled,,"Camera- Completed, Security, HSM-study",,,Staffing,,,UnBilled
+VC_180,Saahith Chandra Geela,Kameswara rao,Embedded - Validation,Engineer I,1.2,FLC,100%,Buffer,,"RISC-V, D2D",,,"Backup for Poorna in FLC, poorna will move to Kandou",,,UnBilled
+VC_182,Singireddi Mohan Rao,Kameswara rao,Embedded - Validation,Engineer I,1.2,Renesas FSP,100%,Buffer,,Preparation for Reneses MCU,Dont know ,Billing will start in next week,,,,UnBilled
+VC_184,Sanaka Venkata Karthikeya,Sasikanth,Embedded - Validation,Engineer I,1.2,FLC,60%,Buffer,,"FLC1, FLC2,OSPI, SMC",,,New Project,,,Buffer
+VC_208,Arepu Naga Sai Nikhitha,Kameswara rao,Embedded - Validation,Engineer I,0.9,Renesas FSP,100%,UnBilled,,Ethernet- Completed,,,Renesas FSP,,,UnBilled
+VC_207,Rupaji Rithika,Kameswara rao,Embedded - Validation,Engineer I,0.9,Renesas FSP,100%,UnBilled,Bench,NVMe,,,Renesas FSP,,,UnBilled
+VC_233,Mahmad Ameerullah,Teja,Software,Engineer I,0.8,Renesas,80%,Buffer,,,,,,,,Buffer
+VC_235,Gandla Vaishnavi,George,Software,Engineer I,1.1,RLCC,100%,Billed,,,,,,,,Billed
+VC_232,Sai Charan Siddhanthi Thyadi,George,Software,Engineer I,0.8,RLCC,100%,Billed,,,,,,,,Billed
+VC_231,Gonthina Lakshmana Swami,George,Software,Engineer I,0.8,RLCC,100%,Buffer,,,,,,,,Buffer
+VC_230,Thota Chaithra,Shyam,Software,Engineer I,0.8,Smart IP Camera,0%,UnBilled,Bench,,,,,,,Buffer
+VC_234,Roopini Gorle,Shyam,Software,Software Trainee II,0.5,Smart IP Camera,0%,UnBilled,Bench,NPU models,,,"NPU is low priority in camera, need to plan tasks",,,UnBilled
+VCIN_44,Kiranmai Battu,George,Software,Trainee III,0.2,RLCC,100%,UnBilled,,NPU models,,,"NPU is low priority in camera, need to plan tasks",,,UnBilled
+VCIN_51,Yogeshwar Reddy Meda,Srikanth,Software,Software Intern II,,,,UnBilled,Bench,,,,,,,UnBilled
+VCIN_49,Praddumna Rajendra Raut,Srikanth,Product Engineers,Product Management Intern,,Smart IP Camera,,Buffer,,,,,,,,UnBilled
+VCIN_53,Durga R,Srikanth,Product Engineers,Product Management Intern,,Edge,,Buffer,,,,,,,,UnBilled
+VCIN_54,Bharath Mamidi,Venkata Kiran,Product Engineers,Product Management Intern,,Server,,Buffer,,,,,,,,UnBilled
+VC_159,Sriram Ungatla,Mounika,CI/ CD Automation Engineer,CI/CD Automation Engineer,2.1,Website,100%,UnBilled,,,,,,,,UnBilled
+VC_177,Abhishek Begari,Srikanth,Technical Writer,Technical Writer,4.8,Internal ( Vconnectech Website ),100%,Buffer,,,,,,,,UnBilled
+VCC_112,Venkata Kiran Venigalla,Srikanth,Program Manager,Consultant,,Edge,,Buffer,,,,,,,,UnBilled
+VC_210,Supriya Kallepelli,,DV,,,On Site,100%
+VC_212,Balachandra Anguru,,DV,,,On Site,100%
+VCC_100,Koppurothu Subash,,Physical Design,,,FLC
+VCC_101,Yedla Suryaarjuna rao,,Physical Design,,,FLC
+VCC_102,Shinagam Chanti,,Physical Design,,,FLC
+VCC_103,Duragasi Venkatesh,,Physical Design,,,FLC
+VCC_115,Chinni Murali Krishna,,Embedded - Validation,,,AMD,100%
+VCIN_52,Attuluri Venkat Dhanush,Srikanth,Software,,,,,UnBilled,Bench
+VC_197,MukeshKumar Rajkumar Pasi,Srikanth,Embedded - S/W,Engineer II,3.3,Renesas (FUSA),,UnBilled,,UnBilled from April 7th ,Billed from July 1st
+VC_201,Vidhu Shekhar Singh,Srikanth,Functional Safety,Senior Staff Engineer,14+,Renesas (FUSA),,UnBilled,,UnBilled from April 7th ,,UnBilled
+VCC_104,Anil Kumar Gedela,,Physical Design,,,FLC
+VCC_116,Kshitij Varma Pinnamaraju,,Software,,,,,UnBilled,Bench`;
+
+// ════════════════════════════════════════════════════════════
+// PARSING & NORMALIZATION
+// ════════════════════════════════════════════════════════════
+function parseCSV(text){
+  const rows=[]; let row=[], cur='', q=false;
+  for(let i=0;i<text.length;i++){
+    const c=text[i];
+    if(q){ if(c==='"'){ if(text[i+1]==='"'){cur+='"';i++;} else q=false; } else cur+=c; }
+    else{
+      if(c==='"') q=true;
+      else if(c===','){ row.push(cur); cur=''; }
+      else if(c==='\n'){ row.push(cur); rows.push(row); row=[]; cur=''; }
+      else if(c==='\r'){ /* skip */ }
+      else cur+=c;
+    }
+  }
+  if(cur!=='' || row.length){ row.push(cur); rows.push(row); }
+  return rows;
+}
+
+const PRACTICE_RULES=[
+  [/system\s*c/i,'SystemC'],
+  [/fpga/i,'FPGA'],
+  [/^dv$/i,'DV'],
+  [/hardware/i,'Hardware'],
+  [/linux/i,'Embedded Linux'],
+  [/s\s*\/\s*w/i,'Embedded SW'],
+  [/validation/i,'Embedded Validation'],
+  [/physical/i,'Physical Design'],
+  [/functional/i,'Functional Safety'],
+  [/program manager/i,'Program Mgmt'],
+  [/product/i,'Product Mgmt'],
+  [/technical writer|ci\s*\/?\s*cd/i,'Operations'],
+  [/software/i,'Software'],
+];
+const PRACTICE_ORDER=['SystemC','FPGA','DV','Hardware','Embedded Linux','Embedded SW','Embedded Validation','Software','Physical Design','Functional Safety','Program Mgmt','Product Mgmt','Operations','Leadership'];
+const PRAC_CODE={SystemC:'SYSC',FPGA:'FPGA',DV:'DV',Hardware:'HW','Embedded Linux':'EMBL','Embedded SW':'EMSW','Embedded Validation':'EMVL',Software:'APPSW','Physical Design':'PD','Functional Safety':'FUSA','Program Mgmt':'PGM','Product Mgmt':'PDM',Operations:'OPS',Leadership:'LEAD',Other:'OTH'};
+
+const PROJ_DEFS={
+  FLC:    {label:'FLC',              client:'FLC'},
+  ADI:    {label:'SmartSoC-ADI',     client:'ADI / SmartSoC'},
+  DLI:    {label:'DLI SoC',          client:'DLI'},
+  ORCA:   {label:'ORCA',             client:'ORCA'},
+  ZPS:    {label:'Zerro Power',      client:'Zerro Power'},
+  GEN5:   {label:'Renesas Gen5',     client:'Renesas'},
+  REN:    {label:'Renesas Main',     client:'Renesas'},
+  FSP:    {label:'Renesas FSP',      client:'Renesas'},
+  NPU:    {label:'Renesas NPU',      client:'Renesas'},
+  FUSA:   {label:'Renesas FUSA',     client:'Renesas'},
+  KAN:    {label:'Kandou',           client:'Kandou'},
+  RLCC:   {label:'Airport CV (RLCC)',client:'GMR / RLCC'},
+  TRS:    {label:'TRS',              client:'TRS'},
+  VLT:    {label:'Voila Tech',       client:'Voila Tech'},
+  AMD:    {label:'AMD',              client:'AMD'},
+  CAM:    {label:'Smart IP Camera',  client:'Internal'},
+  EDGE:   {label:'Edge / Parking',   client:'Internal'},
+  SERVER: {label:'AI Edge Server',   client:'Internal'},
+  DBOT:   {label:'Delivery Robot',   client:'Internal'},
+  INT:    {label:'Internal / Web',   client:'Internal'},
+  ONSITE: {label:'On Site',          client:'Onsite'},
+  BENCH:  {label:'Bench / Self-Learning', client:'—'},
+};
+const PROJ_ORDER=['FLC','ADI','DLI','ORCA','ZPS','GEN5','REN','FSP','NPU','FUSA','KAN','RLCC','TRS','VLT','AMD','CAM','EDGE','SERVER','DBOT','INT','ONSITE','BENCH'];
+
+function canonProj(raw){
+  const p=(raw||'').toLowerCase();
+  if(!p.trim()||p.includes('self learning')) return 'BENCH';
+  if(p.includes('on site')) return 'ONSITE';
+  if(p.includes('flc')) return 'FLC';
+  if(p.includes('smartsoc')) return 'ADI';
+  if(p.includes('dli')) return 'DLI';
+  if(p.includes('orca')) return 'ORCA';
+  if(p.includes('zerro')) return 'ZPS';
+  if(p.includes('gen5')||p.includes('gen 5')) return 'GEN5';
+  if(p.includes('fusa')) return 'FUSA';
+  if(p.includes('fsp')||p.includes('renesas mcu')||p.includes('reneses mcu')) return 'FSP';
+  if(p.includes('npu')) return 'NPU';
+  if(p.includes('renesas')) return 'REN';
+  if(p.includes('kandou')) return 'KAN';
+  if(p.includes('rlcc')||p.includes('airport')) return 'RLCC';
+  if(p.includes('trs')) return 'TRS';
+  if(p.includes('voila')) return 'VLT';
+  if(p.includes('amd')) return 'AMD';
+  if(p.includes('camera')) return 'CAM';
+  if(p.includes('robot')) return 'DBOT';
+  if(p.includes('server')) return 'SERVER';
+  if(p.includes('edge')||p.includes('parking')) return 'EDGE';
+  if(p.includes('website')||p.includes('internal')) return 'INT';
+  return 'BENCH';
+}
+
+// Billed-Upto → cliff bucket. m = month number on a Jun(6) → Dec(12) scale.
+function parseUpto(u){
+  const s=(u||'').toLowerCase();
+  if(!s.trim()||s.includes('dont')||s.includes("don't")) return null;
+  if(s.includes('june 15')) return {label:'Jun 15', m:6, mid:true};
+  if(s.includes('june'))    return {label:'end Jun', m:6};
+  if(s.includes('july'))    return {label:'end Jul', m:7};
+  if(s.includes('3 month')) return {label:'~Aug', m:8};
+  if(s.includes('6 month')) return {label:'~Nov', m:11};
+  return {label:u.trim(), m:9};
+}
+
+// Shared per-employee derivation — used by both the CSV path and the Apps Script JSON path.
+function finalizeEmp(e){
+  e.domainRaw=e.domainRaw||''; e.statusRaw=e.statusRaw||''; e.projRaw=e.projRaw||''; e.bw=e.bw||'';
+  e.lead=(e.lead||'').trim();
+
+  if(!e.practice){
+    if(PRACTICE_ORDER.includes(e.domainRaw)) e.practice=e.domainRaw;     // already-clean (Master sheet)
+    else { for(const [re,n] of PRACTICE_RULES){ if(re.test(e.domainRaw)){ e.practice=n; break; } } }
+    if(!e.practice) e.practice=/director/i.test(e.desig||'')?'Leadership':'Other';
+  }
+  e.proj=canonProj(e.projRaw); e.projLabel=PROJ_DEFS[e.proj].label; e.client=PROJ_DEFS[e.proj].client;
+  const s=e.statusRaw.toLowerCase().replace(/\s+/g,' ').trim();
+  if(e.proj==='ONSITE') e.status='Onsite';
+  else if(s==='onsite') e.status='Onsite';
+  else if(!s){ if(e.projRaw.trim()){ e.status='Billed'; e.assumed=true; } else { e.status='UnBilled'; e.assumed=true; } }
+  else if(s==='bench') e.status='Bench';
+  else if(s.includes('unbilled')) e.status='UnBilled';
+  else if(s.replace(/ /g,'').includes('bufferbilled')){ e.status='Billed'; e.bufferBilled=true; }
+  else if(s.startsWith('buffer')) e.status='Buffer';
+  else if(s.includes('billed')) e.status='Billed';
+  else e.status='UnBilled';
+
+  if(e.alloc==null){ const p=(e.bw.match(/\d+/g)||[]).map(Number); e.alloc=p.length?Math.min(100,p.reduce((a,b)=>a+b,0)):null; }
+  e.cliff=parseUpto(e.upto);
+  return e;
+}
+
+// Adapter: one row from the clean "Master" tab (served as JSON by Apps Script) → internal employee object.
+function fromMaster(row){
+  const g=k=>{const v=row[k]; return v==null?'':String(v).trim();};
+  const id=g('EmpID'); if(!/^VC/i.test(id)) return null;
+  // Bandwidth is a percent-formatted cell, so the sheet sends 100% as the number 1
+  // and 50% as 0.5. Scale those up; strings like "50% + 50%" are already percentages.
+  const raw=g('Allocation');
+  let alloc='';
+  if(raw!==''){
+    if(/%/.test(raw)) alloc=raw;
+    else { const n=parseFloat(raw); alloc=isNaN(n)?raw:(n<=1?Math.round(n*100)+'%':n+'%'); }
+  }
+  return finalizeEmp({
+    id, name:g('Name')||id, lead:g('ReportsTo'), domainRaw:g('Practice'), desig:g('Designation'),
+    yoe:g('YOE'), projRaw:g('Project'), bw:alloc, statusRaw:g('Status'),
+    task:g('CurrentTask'), upto:g('BilledUpto'), plan:g('Plan'), remarks:g('Remarks'),
+  });
+}
+
+function normalize(rows){
+  const hi=rows.findIndex(r=>r.some(c=>/emp\s*id/i.test(c||'')));
+  if(hi<0) throw new Error('Header row with EMP ID not found');
+  const head=rows[hi].map(h=>(h||'').trim().toLowerCase());
+  const col=n=>head.findIndex(h=>h.startsWith(n));
+  const ix={id:col('emp id'),name:col('employee name'),lead:col('project lead'),dom:col('domain'),
+    des:col('designation'),yoe:col('yoe'),proj:col('project assigned'),bw:col('bandwidth'),
+   st:col('billed status'),task:col('current task'),upto:col('billed upto'),plan:col('plan'),rem:col('remarks')};
+  const emps=[];
+  const seen=new Set();
+  for(let i=hi+1;i<rows.length;i++){
+    const r=rows[i]||[];
+    const id=((ix.id>=0?r[ix.id]:'')||'').trim();
+    if(!/^VC/i.test(id)||seen.has(id)) continue;
+    seen.add(id);
+    const get=k=>ix[k]>=0?((r[ix[k]]||'').trim()):'';
+   const e={
+  id, name:get('name')||id, lead:get('lead'), domainRaw:get('dom'), desig:get('des'),
+  yoe:get('yoe'), projRaw:get('proj'), bw:get('bw'), statusRaw:get('st'),
+  task:get('task'), upto:get('upto'), plan:get('plan'), remarks:get('rem'),
+};
+    emps.push(finalizeEmp(e));
+  }
+  return emps;
+}
+function summarize(emps){
+  const by=s=>emps.filter(e=>e.status===s).length;
+  const total=emps.length, onsite=by('Onsite'), billed=by('Billed'), buffer=by('Buffer'), bench=by('UnBilled')+by('Bench');
+  const denom=Math.max(1,total-onsite);
+  return {total,onsite,billed,buffer,bench,util:Math.round(billed/denom*100)};
+}
+
+// ════════════════════════════════════════════════════════════
+// STATE & HELPERS
+// ════════════════════════════════════════════════════════════
+let ALL=[]; let LISTS={}; let regId=0; let SRC='loading';
+const $=id=>document.getElementById(id);
+const esc=s=>String(s==null?'':s).replace(/&/g,'&amp;').replace(/</g,'&lt;').replace(/>/g,'&gt;').replace(/"/g,'&quot;');
+const reg=(title,sub,emps)=>{const k='k'+(regId++);LISTS[k]={title,sub,emps};return k;};
+const STATUS_ORDER=['Billed','Buffer','UnBilled','Bench','Onsite'];
+const ST_DOT={Billed:'g',Buffer:'y',UnBilled:'r',Bench:'k',Onsite:'o'};
+const ST_CX={Billed:'cx-b',Buffer:'cx-f',UnBilled:'cx-u',Bench:'cx-k',Onsite:'cx-o'};
+
+// YOE buckets — junior granularity (the sheet uses 0.x / 1.11 style values).
+const YOE_BUCKETS=[
+  ['<1','< 1 year',    y=>y<1],
+  ['1-2','1–2 years',  y=>y>=1&&y<2],
+  ['2-3','2–3 years',  y=>y>=2&&y<3],
+  ['3-4','3–4 years',  y=>y>=3&&y<4],
+  ['4-5','4–5 years',  y=>y>=4&&y<5],
+  ['5-10','5–10 years',y=>y>=5&&y<10],
+  ['10+','10+ years',  y=>y>=10],
+];
+// token (ReportsTo) -> employee id of the lead themselves, best-effort by name match.
+let LEAD_EMP={};
+function buildLeadMap(){
+  LEAD_EMP={};
+  [...new Set(ALL.map(e=>e.lead).filter(Boolean))].forEach(tok=>{
+    const t=tok.toLowerCase();
+    let cand=ALL.filter(e=>e.name.toLowerCase().includes(t));
+    if(!cand.length){
+      const fw=t.split(/\s+/)[0];
+      cand=ALL.filter(e=>(e.name.toLowerCase().split(/\s+/)[0]||'')===fw);
+    }
+    if(cand.length){ cand.sort((a,b)=>(parseFloat(b.yoe)||0)-(parseFloat(a.yoe)||0)); LEAD_EMP[tok]=cand[0].id; }
+  });
+}
+
+function filtered(){
+  const fp=$('f-practice').value, fs=$('f-status').value, fc=$('f-client').value,
+        fl=$('f-lead').value, fd=$('f-desig').value, fy=$('f-yoe').value, fpj=$('f-project').value;
+  const yb=fy?YOE_BUCKETS.find(b=>b[0]===fy):null;
+  let out=ALL.filter(e=>
+    (!fp||e.practice===fp)&&
+    (!fs||e.status===fs)&&
+    (!fc||e.client===fc)&&
+    (!fl||e.lead===fl)&&
+    (!fd||(e.desig||'')===fd)&&
+    (!yb||(()=>{const v=parseFloat(e.yoe);return !isNaN(v)&&yb[2](v);})())&&
+    (!fpj||e.proj===fpj)
+  );
+  // When a Team Lead is selected, also bring in the lead themselves so every tab
+  // (org, matrix, projects, health) reads "lead + their team".
+  if(fl && LEAD_EMP[fl]){
+    const le=ALL.find(e=>e.id===LEAD_EMP[fl]);
+    if(le && !out.some(e=>e.id===le.id)) out=[le,...out];
+  }
+  return out;
+}
+function resetFilters(){
+  ['f-practice','f-status','f-client','f-lead','f-desig','f-yoe','f-project'].forEach(id=>{const el=$(id); if(el) el.value='';});
+  renderAll();
+}
+function showTab(name,btn){
+  document.querySelectorAll('.pane').forEach(p=>p.classList.remove('active'));
+  document.querySelectorAll('.tab').forEach(t=>t.classList.remove('active'));
+  $('pane-'+name).classList.add('active'); btn.classList.add('active');
+}
+
+// ════════════════════════════════════════════════════════════
+// MODAL DRILL-DOWN
+// ════════════════════════════════════════════════════════════
+function idBadge(id){
+  const cls=id.startsWith('VCIN')?'sid-vcin':id.startsWith('VCC')?'sid-vcc':'sid-vc';
+  return `<span class="sid ${cls}">${esc(id)}</span>`;
+}
+function notesOf(e){
+  const bits=[];
+  if(e.task) bits.push(e.task);
+  if(e.upto) bits.push('Billed upto: '+e.upto);
+  if(e.plan) bits.push('Plan: '+e.plan);
+  if(e.remarks) bits.push(e.remarks);
+  if(e.bufferBilled) bits.push('Buffer Billed in sheet');
+  if(e.assumed) bits.push('status not in sheet — assumed from project');
+  return bits.join(' · ');
+}
+function openList(k){
+  const d=LISTS[k]; if(!d) return;
+  $('modal-title').textContent=d.title;
+  $('modal-sub').textContent=d.sub||(d.emps.length+' people');
+  const rows=d.emps.map(e=>`<tr class="clickable" onclick="openPerson('${esc(e.id)}')">
+    <td>${idBadge(e.id)}</td><td><b>${esc(e.name)}</b></td><td>${esc(e.practice)}</td>
+  <td>${esc(e.yoe||'—')}</td><td><span class="st-badge stb-${e.status}">${e.status}</span></td>
+    <td>${esc(e.projLabel)}${e.alloc!=null&&e.alloc<100?` <span style="color:#C00000;font-size:9px">⚠ ${e.alloc}%</span>`:''}</td>
+    <td style="font-size:10px;color:#777;max-width:260px">${esc(notesOf(e))||'—'}</td></tr>`).join('');
+  $('modal-body').innerHTML=`<table class="tbl"><thead><tr><th>ID</th><th>Name</th><th>Domain</th><th>YOE</th><th>Status</th><th>Project</th><th>Notes</th></tr></thead><tbody>${rows||'<tr><td colspan=7 style="color:#999;text-align:center;padding:18px">No one matches.</td></tr>'}</tbody></table>`;
+  $('modal').classList.add('open');
+}
+function openPerson(id){
+  const e=ALL.find(x=>x.id===id); if(!e) return;
+  $('modal-title').textContent=e.name;
+  $('modal-sub').textContent=`${e.id} · ${e.practice} · ${e.desig||'—'}`;
+  const row=(l,v)=>v?`<tr><td style="font-weight:700;color:#1F3864;width:140px">${l}</td><td>${esc(v)}</td></tr>`:'';
+  $('modal-body').innerHTML=`<table class="tbl"><tbody>
+    ${row('Status',e.status+(e.bufferBilled?' (Buffer Billed in sheet — revenue-generating)':'')+(e.assumed?' (assumed — blank in sheet)':''))}
+    ${row('Project',e.projLabel+(e.projRaw&&e.projRaw.trim()!==e.projLabel?` — sheet says: "${e.projRaw.trim()}"`:''))}
+    ${row('Client',e.client)}
+    ${row('Codes (Domain / Project)', (PRAC_CODE[e.practice]||'OTH')+' / '+(e.proj||'BENCH'))}
+    ${row('Reports to',e.lead)}
+    ${row('Experience',e.yoe)}
+    ${row('Allocation',e.bw)}
+    ${row('Current task',e.task)}
+    ${row('Billed upto',e.upto)}
+    ${row('Plan',e.plan)}
+    ${row('Remarks',e.remarks)}
+  </tbody></table>`;
+  $('modal').classList.add('open');
+}
+function closeModal(){ $('modal').classList.remove('open'); }
+document.addEventListener('keydown',ev=>{ if(ev.key==='Escape') closeModal(); });
+
+// ════════════════════════════════════════════════════════════
+// RENDERERS
+// ════════════════════════════════════════════════════════════
+function renderKPIs(emps){
+  const s=summarize(emps);
+  const atRisk=emps.filter(e=>e.status==='Billed'&&e.cliff&&e.cliff.m<=6);
+  const card=(cls,val,lbl,sub,k)=>`<div class="kpi ${cls}" onclick="openList('${k}')"><div class="kpi-val">${val}</div><div class="kpi-lbl">${lbl}</div><div class="kpi-sub">${sub}</div></div>`;
+  $('kpi-strip').innerHTML=
+    card('blue',s.total,'Total People','incl. interns & consultants',reg('Everyone','',emps))+
+    card('green',s.billed,'Billed','incl. Buffer Billed',reg('Billed engineers','Generating revenue now',emps.filter(e=>e.status==='Billed')))+
+    card('amber',s.buffer,'Buffer','on project, not invoicing',reg('Buffer engineers','On a project but not yet invoiced',emps.filter(e=>e.status==='Buffer')))+
+    card('red',s.bench,'Bench / UnBilled','pure cost',reg('Bench / UnBilled','No revenue — staffing action needed',emps.filter(e=>e.status==='UnBilled'||e.status==='Bench')))+
+    card('grey',s.onsite,'Onsite','tracked separately',reg('Onsite','At client site',emps.filter(e=>e.status==='Onsite')))+
+    card('teal',s.util+'%','Billing Rate','billed ÷ (total − onsite)',reg('Billed engineers','',emps.filter(e=>e.status==='Billed')))+
+    card('red',atRisk.length,'Billing Ends ≤ Jun','confirmed end, no successor',reg('Billing ends in June','Billed today, confirmed only to mid/end June',atRisk));
+}
+
+function renderAlerts(){ $('alerts').innerHTML=''; }
+
+function renderOrg(emps){
+  // Pill helpers
+  const pillCls=e=>e.status==='Billed'?'pill-b':e.status==='Buffer'?'pill-f':e.status==='Bench'?'pill-k':'pill-u';
+const pillTxt=e=>{
+    const proj=e.projLabel&&e.projLabel!=='Bench / Self-Learning'?e.projLabel:'';
+    return e.status+(proj?' · '+proj:'');
+};
+
+  // Build a single card box
+  function ocard(e,lvlCls,showPrac){
+    const first2=e.name.trim().split(/\s+/).slice(0,2).join(' ');
+    const yoe=e.yoe?e.yoe+' yrs':'';
+    const desigYoe=[e.desig,yoe].filter(Boolean).join(' · ');
+    const prac=showPrac&&e.practice&&e.practice!=='Leadership'?e.practice:'';
+    return `<div class="ocard ${lvlCls}" onclick="openPerson('${esc(e.id)}')">
+      <div class="ocard-name">${esc(first2)}</div>
+      <div style="margin-top:2px"><span style="font:600 9px ui-monospace,SFMono-Regular,monospace;color:#2E5FAC;background:#eef2fb;border:1px solid #d6e0f5;border-radius:4px;padding:1px 5px;letter-spacing:.3px">${esc((PRAC_CODE[e.practice]||'OTH')+' · '+(e.proj||'BENCH'))}</span></div>
+      ${desigYoe?`<div class="ocard-sub">${esc(desigYoe)}</div>`:''}
+      ${prac?`<div class="ocard-prac">${esc(prac)}</div>`:''}
+      <span class="ocard-pill ${pillCls(e)}">${esc(pillTxt(e))}</span>
+    </div>`;
+  }
+
+  // Level classification (used only for card colour now)
+  const isL1=e=>/director/i.test(e.desig||'');
+  const isL2=e=>!isL1(e)&&(/sr\.?\s*staff\s*engineer|senior staff engineer|staff engineer|program manager/i.test(e.desig||''))&&Number(e.yoe||0)>=7;
+  const isL3=e=>!isL1(e)&&!isL2(e)&&(/senior engineer|technical writer|ci\s*\/?\s*cd/i.test(e.desig||'')||/consultant/i.test(e.desig||''));
+  const lvlCls=e=> isL1(e)?'oc-l1' : isL2(e)?(e.status==='Buffer'||e.status==='UnBilled'||e.status==='Bench'?'oc-l2f':'oc-l2b') : isL3(e)?'oc-l3':'oc-l4';
+  const lvlRank=e=>isL1(e)?0:isL2(e)?1:isL3(e)?2:3;
+  const sortNodes=a=>a.slice().sort((x,y)=> lvlRank(x)-lvlRank(y) || (Number(y.yoe||0)-Number(x.yoe||0)) || x.name.localeCompare(y.name));
+
+  const people=emps;
+  const inSet=new Set(people.map(e=>e.id));
+
+  // Build the reporting tree from each person's ReportsTo (lead token), resolved
+  // to an employee via LEAD_EMP.  Srikanth (no manager) sits at the top; his
+  // directors / leads nest under him, and each lead's L3/L4 nest under them.
+  const childrenOf={};   // managerId -> [emp]
+  const unresolved={};   // token -> [emp]  (lead token isn't an employee in view)
+  const placed=new Set();
+  people.forEach(e=>{
+    const tok=e.lead;
+    if(!tok) return;                                   // genuine root
+    const mgrId=LEAD_EMP[tok];
+    if(mgrId && inSet.has(mgrId) && mgrId!==e.id){
+      (childrenOf[mgrId]=childrenOf[mgrId]||[]).push(e); placed.add(e.id);
+    }else{
+      (unresolved[tok]=unresolved[tok]||[]).push(e); placed.add(e.id);
+    }
+  });
+  const roots=people.filter(e=>!placed.has(e.id));
+
+  const seen=new Set();
+  function childBlock(kids){
+    const k=sortNodes(kids);
+    const mgrKids=k.filter(c=>(childrenOf[c.id]||[]).length);
+    const leafKids=k.filter(c=>!(childrenOf[c.id]||[]).length);
+    let inner='';
+    if(leafKids.length) inner+=`<div class="org-row">${leafKids.map(c=>ocard(c,lvlCls(c),true)).join('')}</div>`;
+    if(mgrKids.length)  inner+=mgrKids.map(c=>renderNode(c)).join('');
+    return inner?`<div class="org-children">${inner}</div>`:'';
+  }
+  function renderNode(e){
+    if(seen.has(e.id)) return '';                       // cycle guard
+    seen.add(e.id);
+    return `<div class="org-node">${ocard(e,lvlCls(e),true)}${childBlock(childrenOf[e.id]||[])}</div>`;
+  }
+  function renderSynthetic(tok,members){
+    const k=reg(tok+' — team','Reports to '+tok,members);
+    return `<div class="org-node">
+      <div class="ocard oc-syn" onclick="openList('${k}')">
+        <div class="ocard-name">${esc(tok)}</div>
+        <div class="ocard-sub">Team Lead · ${members.length} report${members.length>1?'s':''}</div>
+        <span class="ocard-pill pill-b">reports to this lead</span>
+      </div>${childBlock(members)}</div>`;
+  }
+
+  const rootMgrs=sortNodes(roots.filter(e=>(childrenOf[e.id]||[]).length));
+  const rootLeaves=sortNodes(roots.filter(e=>!(childrenOf[e.id]||[]).length));
+
+  let html=rootMgrs.map(e=>renderNode(e)).join('');
+  Object.keys(unresolved).sort().forEach(tok=>{ html+=renderSynthetic(tok,unresolved[tok]); });
+  if(rootLeaves.length)
+    html+=`<div class="org-node"><div class="org-level-hdr" style="margin:10px 0 6px">Unassigned / No Reporting Line <span>(${rootLeaves.length})</span></div><div class="org-row">${rootLeaves.map(e=>ocard(e,lvlCls(e),true)).join('')}</div></div>`;
+
+  $('org-wrap').innerHTML=html||'<div class="card" style="color:#999;text-align:center">No one matches the current filters.</div>';
+}
+
+function renderMatrix(emps){
+  const pracs=PRACTICE_ORDER.filter(p=>emps.some(e=>e.practice===p));
+  const projs=PROJ_ORDER.filter(p=>emps.some(e=>e.proj===p));
+  let html='<tr><th class="prac-hdr">Domain \\ Project</th>'+projs.map(p=>`<th>${esc(PROJ_DEFS[p].label.replace(/[ /]/g,'\n'))}</th>`).join('')+'<th>TOTAL</th></tr>';
+  pracs.forEach(pr=>{
+    const inPrac=emps.filter(e=>e.practice===pr);
+    const kRow=reg(`${pr} — all`,'',inPrac);
+    html+=`<tr><td class="pname" onclick="openList('${kRow}')">${esc(pr)}</td>`;
+    projs.forEach(pj=>{
+      const cell=inPrac.filter(e=>e.proj===pj);
+      if(!cell.length){ html+='<td><span class="cx-nil">·</span></td>'; return; }
+      const chips=STATUS_ORDER.map(st=>{
+        const sub=cell.filter(e=>e.status===st);
+        if(!sub.length) return '';
+        const k=reg(`${pr} × ${PROJ_DEFS[pj].label} — ${st==='UnBilled'?'Bench':st}`,'',sub);
+        return `<span class="cx ${ST_CX[st]}" onclick="openList('${k}')">${sub.length}</span>`;
+      }).join('');
+      html+=`<td>${chips}</td>`;
+    });
+    const kTot=reg(`${pr} — all`,'',inPrac);
+    html+=`<td class="tot" onclick="openList('${kTot}')">${inPrac.length}</td></tr>`;
+  });
+  // totals row
+  html+=`<tr class="tot-row"><td class="pname" onclick="openList('${reg('Everyone','',emps)}')">TOTAL</td>`;
+  projs.forEach(pj=>{
+    const col=emps.filter(e=>e.proj===pj);
+    html+=`<td onclick="openList('${reg(PROJ_DEFS[pj].label+' — full team','',col)}')">${col.length}</td>`;
+  });
+  html+=`<td onclick="openList('${reg('Everyone','',emps)}')">${emps.length}</td></tr>`;
+  $('mx-table').innerHTML=html;
+}
+
+function projRisk(pj,members){
+  const cliffs=members.filter(e=>e.cliff&&e.status!=='UnBilled');
+  if(pj==='FSP') return {cls:'w',txt:'⏳ Billing start pending ("next week" per sheet)'};
+  if(pj==='FUSA') return {cls:'w',txt:'⏳ Unbilled since Apr 7 — resumes Jul 1'};
+  if(pj==='BENCH') return {cls:'r',txt:'Non-billable — staffing needed'};
+  if(pj==='ONSITE') return {cls:'ok',txt:'At client site'};
+  if(cliffs.length){
+    const minM=Math.min(...cliffs.map(e=>e.cliff.m));
+    const lbl=cliffs.find(e=>e.cliff.m===minM).cliff.label;
+    const n=cliffs.filter(e=>e.cliff.m===minM).length;
+    return {cls:minM<=6?'r':minM<=8?'w':'ok',txt:`Billing ${minM<=7?'ends':'confirmed to'} ${lbl} · ${n} HC`};
+  }
+  const billed=members.filter(e=>e.status==='Billed').length;
+  if(billed) return {cls:'ok',txt:'No end date recorded — running'};
+  return {cls:'w',txt:'No billing yet'};
+}
+function renderProjects(emps){
+  const groups=[['🏢 Client Projects',p=>!['Internal','—','Onsite'].includes(PROJ_DEFS[p].client)],
+                ['🔧 Internal Products & Platforms',p=>PROJ_DEFS[p].client==='Internal'],
+                ['⏸ Bench & Onsite',p=>['—','Onsite'].includes(PROJ_DEFS[p].client)]];
+  $('own-wrap').innerHTML=groups.map(([title,pred])=>{
+    const cards=PROJ_ORDER.filter(p=>pred(p)&&emps.some(e=>e.proj===p)).map(pj=>{
+      const m=emps.filter(e=>e.proj===pj);
+      const cnt=s=>m.filter(e=>e.status===s).length;
+      const leads={}; m.forEach(e=>{ if(e.lead) leads[e.lead]=(leads[e.lead]||0)+1; });
+      const lead=Object.entries(leads).sort((a,b)=>b[1]-a[1])[0];
+      const risk=projRisk(pj,m);
+      const k=reg(PROJ_DEFS[pj].label+' — full team',PROJ_DEFS[pj].client,m);
+      const split=[['sp-g',cnt('Billed'),'billed'],['sp-y',cnt('Buffer'),'buffer'],['sp-r',cnt('UnBilled'),'bench'],['sp-o',cnt('Onsite'),'onsite']]
+        .filter(x=>x[1]).map(x=>`<span class="split-pill ${x[0]}">${x[1]} ${x[2]}</span>`).join('');
+      return `<div class="own-card" onclick="openList('${k}')">
+        <div class="own-hc">${m.length}</div>
+        <div class="own-proj">${esc(PROJ_DEFS[pj].label)}</div>
+        <div class="own-client">Client: ${esc(PROJ_DEFS[pj].client)}</div>
+        <div class="own-owner">Lead: ${lead?esc(lead[0]):'—'}</div>
+        <div class="own-split">${split}</div>
+        <div class="own-risk ${risk.cls}">${risk.txt}</div>
+      </div>`;
+    }).join('');
+    return cards?`<div class="own-hdr">${title}</div><div class="own-grid">${cards}</div>`:'';
+  }).join('')||'<div class="card" style="color:#999;text-align:center">No projects match the current filters.</div>';
+}
+
+function renderHealth(emps){
+  const s=summarize(emps);
+  const arc=$('gauge-arc'), L=Math.PI*55;
+  arc.setAttribute('stroke-dasharray',`${(s.util/100*L).toFixed(1)},220`);
+  arc.setAttribute('stroke',s.util>=75?'#6FA84F':s.util>=65?'#E6AC00':'#C00000');
+  $('util-pct').textContent=s.util+'%';
+  $('util-sub').textContent=`${s.billed} of ${s.total-s.onsite} offshore people are billed. ${s.buffer} on buffer (parked, no invoice yet), ${s.bench} on bench (pure cost).`;
+  $('util-pills').innerHTML=[['pl-g',s.billed,'Billed','Billed'],['pl-y',s.buffer,'Buffer','Buffer'],['pl-r',s.bench,'Bench','UnBilled'],['pl-o',s.onsite,'Onsite','Onsite']]
+    .map(([c,n,l,st])=>`<span class="pill ${c}" onclick="openList('${reg(l,'',emps.filter(e=>e.status===st))}')">${n} ${l}</span>`).join('');
+
+  // Team Lead-wise billing analysis table
+  renderLeadTable(emps);
+}
+
+// ── Team Lead billing table ──────────────────────────────────
+function pctCls(kind,v){
+  if(kind==='billed') return v>=70?'g':v>=60?'y':'r';
+  if(kind==='buffer') return v>30?'y':v>=10?'g':'b';
+  if(kind==='unbilled') return v<=10?'g':v<20?'y':'r';
+  return '';
+}
+function leadStats(m){
+  const c=s=>m.filter(e=>e.status===s).length;
+  const total=m.length;
+  const billed=c('Billed');                 // incl. buffer-billed (folded into Billed)
+  const bufBilled=m.filter(e=>e.bufferBilled).length;
+  const pureBilled=billed-bufBilled;
+  const buffer=c('Buffer');
+  const unbilled=c('UnBilled')+c('Bench');
+  const onsite=c('Onsite');
+  const den=total||1;
+  return {total,billed,bufBilled,pureBilled,buffer,unbilled,onsite,
+    billedPct:billed/den*100, bufferPct:buffer/den*100, unbilledPct:unbilled/den*100};
+}
+function renderLeadTable(emps){
+  const tbl=$('lead-table'); if(!tbl) return;
+  $('lead-fy').textContent='FY 2026–27  ·  '+(MONTH==='Current'?'Current (live)':MONTH);
+
+  // group by lead (trimmed); blank lead → "(No Lead / Director)"
+  const groups={};
+  emps.forEach(e=>{ const L=e.lead||'(No Lead / Director)'; (groups[L]=groups[L]||[]).push(e); });
+  let leadNames=Object.keys(groups).sort((a,b)=>{
+    if(a.startsWith('(')) return 1; if(b.startsWith('(')) return -1;
+    return a.localeCompare(b);
+  });
+  // If a specific Team Lead is selected, show just that lead's row
+  // (skip the stray boss-row created by including the lead themselves).
+  const flSel=$('f-lead').value;
+  if(flSel) leadNames=leadNames.filter(L=>L===flSel);
+
+  const head=`<tr>
+    <th class="lt-lead">Team Lead</th>
+    <th>Total<br>Emp.</th>
+    <th>Billed<br>(Count)</th>
+    <th>Buffer<br>Billed</th>
+    <th>Billed +<br>Buffer Billed</th>
+    <th>Buffer<br>(Count)</th>
+    <th>UnBilled<br>(Count)</th>
+    <th>Billed %<br>(≥70%)</th>
+    <th>Buffer %<br>(≈20%)</th>
+    <th>UnBilled %<br>(≤10%)</th>
+  </tr>`;
+
+  const fmt=v=>v.toFixed(1)+'%';
+  // a count cell that opens the matching people when non-zero
+  const numCell=(n,label,members)=> n>0
+    ? `<td class="lt-num" onclick="openList('${reg(label,'',members)}')">${n}</td>`
+    : `<td>0</td>`;
+  const subset={
+    pureBilled: m=>m.filter(e=>e.status==='Billed'&&!e.bufferBilled),
+    bufBilled:  m=>m.filter(e=>e.bufferBilled),
+    allBilled:  m=>m.filter(e=>e.status==='Billed'),
+    buffer:     m=>m.filter(e=>e.status==='Buffer'),
+    unbilled:   m=>m.filter(e=>e.status==='UnBilled'||e.status==='Bench'),
+    total:      m=>m,
+  };
+  const rows=leadNames.map(L=>{
+    const m=groups[L], st=leadStats(m);
+    return `<tr>
+      <td class="lt-lead" onclick="openList('${reg(L+' — team','Team Lead view',m)}')">${esc(L)}</td>
+      ${numCell(st.total,L+' · Everyone',subset.total(m))}
+      ${numCell(st.pureBilled,L+' · Billed',subset.pureBilled(m))}
+      ${numCell(st.bufBilled,L+' · Buffer Billed',subset.bufBilled(m))}
+      <td>${st.billed>0?`<b class="lt-num" onclick="openList('${reg(L+' · Billed + Buffer Billed','',subset.allBilled(m))}')">${st.billed}</b>`:'<b>0</b>'}</td>
+      ${numCell(st.buffer,L+' · Buffer',subset.buffer(m))}
+      ${numCell(st.unbilled,L+' · UnBilled / Bench',subset.unbilled(m))}
+      <td class="pc ${pctCls('billed',st.billedPct)}">${fmt(st.billedPct)}</td>
+      <td class="pc ${pctCls('buffer',st.bufferPct)}">${fmt(st.bufferPct)}</td>
+      <td class="pc ${pctCls('unbilled',st.unbilledPct)}">${fmt(st.unbilledPct)}</td>
+    </tr>`;
+  }).join('');
+
+  // OVERALL row — computed from the rows actually shown, so it always reconciles
+  const shownEmps=leadNames.flatMap(L=>groups[L]||[]);
+  const o=leadStats(shownEmps);
+  const onum=(n,label,members)=> n>0
+    ? `<td class="lt-num" onclick="openList('${reg(label,'',members)}')">${n}</td>`
+    : `<td>0</td>`;
+  const overall=`<tr class="lt-overall">
+    <td class="lt-lead" style="position:sticky;left:0" onclick="openList('${reg('OVERALL — everyone shown','',shownEmps)}')">OVERALL</td>
+    ${onum(o.total,'OVERALL · Everyone',subset.total(shownEmps))}
+    ${onum(o.pureBilled,'OVERALL · Billed',subset.pureBilled(shownEmps))}
+    ${onum(o.bufBilled,'OVERALL · Buffer Billed',subset.bufBilled(shownEmps))}
+    ${o.billed>0?`<td class="lt-num" onclick="openList('${reg('OVERALL · Billed + Buffer Billed','',subset.allBilled(shownEmps))}')"><b>${o.billed}</b></td>`:'<td><b>0</b></td>'}
+    ${onum(o.buffer,'OVERALL · Buffer',subset.buffer(shownEmps))}
+    ${onum(o.unbilled,'OVERALL · UnBilled / Bench',subset.unbilled(shownEmps))}
+    <td class="pc">${fmt(o.billedPct)}</td>
+    <td class="pc">${fmt(o.bufferPct)}</td>
+    <td class="pc">${fmt(o.unbilledPct)}</td>
+  </tr>`;
+
+  tbl.innerHTML=head+(rows||'')+overall;
+}
+
+function renderAll(){
+  LISTS={}; regId=0;
+  const emps=filtered();
+  $('filter-count').textContent=emps.length===ALL.length?`Showing all ${ALL.length} people`:`Showing ${emps.length} of ${ALL.length}`;
+  renderKPIs(emps); renderAlerts(); renderOrg(emps); renderMatrix(emps);
+  renderProjects(emps); renderHealth(emps);
+}
+
+// ════════════════════════════════════════════════════════════
+// BOOT — live fetch with snapshot fallback
+// ════════════════════════════════════════════════════════════
+function fillFilters(){
+  const pr=$('f-practice'); pr.length=1;
+  PRACTICE_ORDER.filter(p=>ALL.some(e=>e.practice===p)).forEach(p=>pr.add(new Option(p,p)));
+  const fc=$('f-client'); fc.length=1;
+  [...new Set(PROJ_ORDER.map(p=>PROJ_DEFS[p].client))].filter(c=>ALL.some(e=>e.client===c)).forEach(c=>fc.add(new Option(c==='—'?'Bench (no client)':c,c)));
+
+  // Team Lead — sorted, trimmed, de-duped
+  const fl=$('f-lead'); fl.length=1;
+  [...new Set(ALL.map(e=>e.lead).filter(Boolean))].sort((a,b)=>a.localeCompare(b)).forEach(l=>fl.add(new Option(l,l)));
+
+  // Designation — sorted
+  const fd=$('f-desig'); fd.length=1;
+  [...new Set(ALL.map(e=>e.desig).filter(Boolean))].sort((a,b)=>a.localeCompare(b)).forEach(d=>fd.add(new Option(d,d)));
+
+  // YOE — bucketed ranges (only show buckets that have people)
+  const fy=$('f-yoe'); fy.length=1;
+  YOE_BUCKETS.filter(b=>ALL.some(e=>{const v=parseFloat(e.yoe);return !isNaN(v)&&b[2](v);}))
+    .forEach(b=>fy.add(new Option(b[1],b[0])));
+
+  // Project — in canonical order, labelled
+  const fpj=$('f-project'); fpj.length=1;
+  PROJ_ORDER.filter(p=>ALL.some(e=>e.proj===p)).forEach(p=>fpj.add(new Option(PROJ_DEFS[p].label,p)));
+
+  buildLeadMap();
+}
+function monthRow(e,month){
+  const m=(e.byMonth&&e.byMonth[month])||{};
+  const has=k=>m[k]!=null&&m[k]!=='';
+  return {EmpID:e.EmpID,Name:e.Name,Practice:e.Practice,Designation:e.Designation,YOE:e.YOE,
+    ReportsTo:has('ReportsTo')?m.ReportsTo:e.ReportsTo,
+    Project:has('Project')?m.Project:e.Project,
+    Status:(m.Status!=null)?m.Status:e.Status,
+    Allocation:e.Allocation,BilledUpto:e.BilledUpto,Plan:e.Plan,CurrentTask:e.CurrentTask,Remarks:e.Remarks};
+}
+function buildMonthSelect(){
+  const sel=$('f-month'); if(!sel) return; sel.length=0;
+  MONTHS.forEach(m=>sel.add(new Option(m==='Current'?'Current (live)':m,m)));
+  sel.value=MONTH;
+}
+function applyMonth(){
+  if(!RAW.length) return renderAll();
+  MONTH=$('f-month').value||'Current';
+  const prev={};
+  ['f-practice','f-lead','f-desig','f-yoe','f-project','f-status','f-client'].forEach(id=>{const el=$(id); if(el) prev[id]=el.value;});
+  ALL=RAW.map(e=>fromMaster(monthRow(e,MONTH))).filter(Boolean);
+  fillFilters();
+  // restore any selection that still exists for this month
+  Object.entries(prev).forEach(([id,val])=>{
+    const el=$(id); if(!el||!val) return;
+    if([...el.options].some(o=>o.value===val)) el.value=val;
+  });
+  renderAll();
+}
+async function fetchWithTimeout(url,ms){
+  const ctl=new AbortController(); const t=setTimeout(()=>ctl.abort(),ms);
+  try{ const r=await fetch(url,{signal:ctl.signal}); clearTimeout(t); return r; }
+  catch(e){ clearTimeout(t); throw e; }
+}
+async function boot(force){
+  const bar=$('srcbar');
+  bar.className='srcbar loading';
+  $('src-text').textContent='Connecting to data source…';
+  $('src-help-btn').style.display='none';
+  let people=null, srcLabel='', lastErr='', genAt=null;
+
+  // 0) Apps Script web app — live from the sheet. Primary source.
+  if(WEBAPP_URL){
+    try{
+      const r=await fetchWithTimeout(WEBAPP_URL+(WEBAPP_URL.includes('?')?'&':'?')+'t='+Date.now(),12000);
+      const txt=await r.text();
+      const j=JSON.parse(txt);
+      // Accept either a bare array, {people:[...]}, or the full month-aware
+      // payload {generatedAt, months, employees} that buildPayload_() returns.
+      if(j&&Array.isArray(j.employees)&&j.employees.length){
+        RAW=j.employees; MONTHS=(j.months&&j.months.length)?j.months:['Current'];
+        MONTH=MONTHS.includes('Current')?'Current':MONTHS[MONTHS.length-1];
+        buildMonthSelect();
+        const mapped=RAW.map(e=>fromMaster(monthRow(e,MONTH))).filter(Boolean);
+        if(mapped.length){ people=mapped; srcLabel='Apps Script web app'; genAt=j.generatedAt||null; }
+        else lastErr='web app returned no usable rows';
+      }else{
+        const arr=Array.isArray(j)?j:j.people;
+        const mapped=(arr||[]).map(fromMaster).filter(Boolean);
+        if(mapped.length){ people=mapped; srcLabel='Apps Script web app'; }
+        else lastErr='web app returned no rows';
+      }
+    }catch(e){ lastErr='web app: '+(e.name==='AbortError'?'timed out':e.message||'failed'); }
+  }
+
+  // 1) Committed JSON — only if the web app is unreachable. May be stale.
+  let best=null;
+  if(!people) for(const path of DATA_JSON_CANDIDATES){
+    try{
+      const r=await fetchWithTimeout(path+'?t='+Date.now(),9000);
+      if(!r.ok) continue;
+      const j=await r.json();
+      if(!(j&&Array.isArray(j.employees)&&j.employees.length)) continue;
+      const t=j.generatedAt?Date.parse(j.generatedAt):0;
+      if(!best||t>best.t) best={j,t,path};
+    }catch(e){ lastErr='data.json: '+(e.name==='AbortError'?'timed out':e.message||'failed'); }
+  }
+  if(!people && best){
+    const j=best.j;
+    RAW=j.employees; MONTHS=(j.months&&j.months.length)?j.months:['Current'];
+    MONTH=MONTHS.includes('Current')?'Current':MONTHS[MONTHS.length-1];
+    buildMonthSelect();
+    people=RAW.map(e=>fromMaster(monthRow(e,MONTH))).filter(Boolean);
+    srcLabel=best.path+' (GitHub)';
+    genAt=j.generatedAt||null;
+  }
+
+  // 2) Published-to-web CSV (works when the dashboard is hosted at a real web address)
+  if(!people){
+    const urls=[`${PUB_BASE}/pub?output=csv`];
+    SHEET_NAME_CANDIDATES.forEach(n=>urls.push(`https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(n)}`));
+    for(const u of urls){
+      try{
+        const r=await fetchWithTimeout(u,9000);
+        if(!r.ok){ lastErr='HTTP '+r.status; continue; }
+        const txt=await r.text();
+        if(txt.trim().startsWith('<')||!/emp\s*id/i.test(txt.slice(0,400))){ lastErr='sheet not reachable'; continue; }
+        people=normalize(parseCSV(txt)); srcLabel='published CSV'; break;
+      }catch(e){ lastErr=e.name==='AbortError'?'timed out':'network blocked'; }
+    }
+  }
+
+  // 3) Embedded snapshot (always works)
+  try{
+    if(people){
+      ALL=people; SRC='live';
+      const fmt=d=>new Date(d).toLocaleString('en-IN',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'});
+      if(genAt){
+        const ageH=(Date.now()-Date.parse(genAt))/36e5;
+        SRC=ageH>STALE_HOURS?'stale':'live';
+        if(SRC==='stale'){
+          bar.className='srcbar stale';
+          $('src-text').innerHTML=`<b>STALE</b> — sheet data was generated ${fmt(genAt)}, ${Math.round(ageH)} hours ago. The hourly sync has stopped. Re-run the Apps Script trigger to refresh.`;
+          $('src-help-btn').style.display='inline-block';
+        }else{
+          bar.className='srcbar live';
+          $('src-text').innerHTML=`<b>LIVE</b> — sheet data generated ${fmt(genAt)}. Hit Refresh for new data.`;
+        }
+      }else{
+        bar.className='srcbar live';
+        $('src-text').innerHTML=`<b>LIVE</b> — fetched ${fmt(Date.now())} from ${esc(srcLabel)}. Hit Refresh for new data.`;
+      }
+    }else{
+      ALL=normalize(parseCSV(SNAPSHOT_CSV)); SRC='snap';
+      bar.className='srcbar snap';
+      $('src-text').innerHTML=`<b>SNAPSHOT</b> — couldn't reach live data (${esc(lastErr)}). Showing built-in copy from ${SNAPSHOT_DATE} (${ALL.length} people).`;
+      $('src-help-btn').style.display='inline-block';
+    }
+  }catch(err){
+    ALL=normalize(parseCSV(SNAPSHOT_CSV)); SRC='snap';
+    bar.className='srcbar snap';
+    $('src-text').textContent='Parse problem — showing snapshot of '+SNAPSHOT_DATE+'.';
+  }
+  $('footer').textContent=`VConnecTech Systems · Workforce Intelligence v3 · Confidential · Source: ${SRC==='snap'?'embedded snapshot '+SNAPSHOT_DATE:srcLabel+' · generated '+(genAt?new Date(genAt).toLocaleString('en-IN'):'unknown')}`;
+  fillFilters(); renderAll();
+}
+if(typeof document!=='undefined'){ boot(); }
+
+</script>
+</body>
+</html>
