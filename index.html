@@ -30,10 +30,12 @@ body{font-family:'Segoe UI',Arial,sans-serif;font-size:13px;background:#F0F3F8;c
 .srcbar{display:flex;align-items:center;gap:10px;font-size:11px;padding:7px 14px;border-radius:var(--rad);margin:10px 0;border:1.5px solid;flex-wrap:wrap}
 .srcbar.live{background:#E2EFDA;border-color:#6FA84F;color:#375623}
 .srcbar.snap{background:#FFF2CC;border-color:#E6B84C;color:#7A5000}
+.srcbar.stale{background:#FDE9D9;border-color:#E08A3C;color:#8A3B00}
 .srcbar.loading{background:#D6E4F7;border-color:#8CA8D8;color:#1F3864}
 .src-dot{width:9px;height:9px;border-radius:50%;flex-shrink:0}
 .srcbar.live .src-dot{background:#375623;box-shadow:0 0 0 3px rgba(55,86,35,.2)}
 .srcbar.snap .src-dot{background:#E6AC00}
+.srcbar.stale .src-dot{background:#E08A3C}
 .srcbar.loading .src-dot{background:#2E5FAC;animation:pulse 1s infinite}
 @keyframes pulse{50%{opacity:.3}}
 .src-btn{margin-left:auto;font-size:10px;padding:4px 11px;border-radius:5px;border:1px solid currentColor;background:transparent;color:inherit;cursor:pointer;font-weight:700}
@@ -307,7 +309,8 @@ table.mx tr.tot-row td.pname{background:var(--navy);color:#fff}
   <button class="src-btn" onclick="boot(true)">&#8635; Refresh data</button>
   <button class="src-btn" id="src-help-btn" style="display:none" onclick="document.getElementById('src-help').classList.toggle('open')">How to fix</button>
   <div class="src-help" id="src-help">
-    Best fix: deploy the Apps Script web app (file provided) and paste its <code>/exec</code> URL into <code>WEBAPP_URL</code> near the top of this file. That works even from a local file. The published CSV only loads when the dashboard is opened from a real web address (not file://). Until live data is reachable, this shows the built-in snapshot from 10 Jun 2026.
+    <b>If the bar says STALE:</b> the Apps Script time-driven trigger has stopped writing <code>data.json</code>. Open the Apps Script project → Triggers → check the failure log, then re-save the hourly trigger.<br>
+    <b>If the bar says SNAPSHOT:</b> no data file was reachable at all. Confirm GitHub Pages is serving the folder that contains <code>data.json</code> (Settings → Pages → Source), and that <code>WEBAPP_URL</code> near the top of this file holds a current <code>/exec</code> URL. The published CSV fallback only works over http(s), not from a local file.
   </div>
 </div>
 
@@ -402,12 +405,17 @@ table.mx tr.tot-row td.pname{background:var(--navy);color:#fff}
 // CONFIG — data source
 // ════════════════════════════════════════════════════════════
 // ▼▼▼ PASTE YOUR APPS SCRIPT WEB-APP URL HERE (ends in /exec). This is the most reliable live source. ▼▼▼
-const WEBAPP_URL = 'https://script.google.com/a/macros/vconnectech.in/s/AKfycbw_P_KGmPSEs6F99tmiPMUUIo13gKoTHokcQ3_NzSxzoxbJZTqapNZcYBLz66e1mo7clQ/exec';
+const WEBAPP_URL = 'https://script.google.com/macros/s/AKfycbw_P_KGmPSEs6F99tmiPMUUIo13gKoTHokcQ3_NzSxzoxbJZTqapNZcYBLz66e1mo7clQ/exec';
 // ▲▲▲ Leave blank until you deploy the Apps Script. When set, the dashboard reads live JSON from it. ▲▲▲
-const SHEET_ID = '1mnOK_Ui4EATsbwkacDCodhrYO1aKu3THXMQTqdwuebc';
+const SHEET_ID = '1YqPdYKBTCyU7LvKkMExoG9ikgS_zu3Grvju7qlqE6lo';
+const PUB_BASE = 'https://docs.google.com/spreadsheets/d/e/2PACX-1vTGKpXllqYJrHeCI_9-Z9wT6TReZzZs2jGulrirNgDbBoBAVpONGFEJWxDS63H4dzwVvw2tgzohkzUE';
 const SHEET_NAME_CANDIDATES = ['Employee List 2026- 27','Employee List 2026-27','Employee List 2026 - 27','Employee List'];
 const SNAPSHOT_DATE = '10 Jun 2026';
-const DATA_JSON = 'data.json'; // committed by Apps Script; primary, month-aware source on GitHub Pages
+// Committed by Apps Script; primary, month-aware source on GitHub Pages.
+// Both paths are checked because Pages may be served from the repo root or /docs;
+// whichever file has the newer generatedAt wins.
+const DATA_JSON_CANDIDATES = ['data.json','docs/data.json'];
+const STALE_HOURS = 6; // older than this and the bar says STALE, not LIVE
 let RAW=[], MONTHS=['Current'], MONTH='Current';
 
 // Hiring requirements — from the "Requirements" block in the SystemC sheet tab.
@@ -678,10 +686,17 @@ function finalizeEmp(e){
 function fromMaster(row){
   const g=k=>{const v=row[k]; return v==null?'':String(v).trim();};
   const id=g('EmpID'); if(!/^VC/i.test(id)) return null;
-  const alloc=g('Allocation');
+  // Bandwidth is a percent-formatted cell, so the sheet sends 100% as the number 1
+  // and 50% as 0.5. Scale those up; strings like "50% + 50%" are already percentages.
+  const raw=g('Allocation');
+  let alloc='';
+  if(raw!==''){
+    if(/%/.test(raw)) alloc=raw;
+    else { const n=parseFloat(raw); alloc=isNaN(n)?raw:(n<=1?Math.round(n*100)+'%':n+'%'); }
+  }
   return finalizeEmp({
     id, name:g('Name')||id, lead:g('ReportsTo'), domainRaw:g('Practice'), desig:g('Designation'),
-    yoe:g('YOE'), projRaw:g('Project'), bw:alloc?alloc+'%':'', statusRaw:g('Status'),
+    yoe:g('YOE'), projRaw:g('Project'), bw:alloc, statusRaw:g('Status'),
     task:g('CurrentTask'), upto:g('BilledUpto'), plan:g('Plan'), remarks:g('Remarks'),
   });
 }
@@ -1207,41 +1222,58 @@ async function boot(force){
   bar.className='srcbar loading';
   $('src-text').textContent='Connecting to data source…';
   $('src-help-btn').style.display='none';
-  let people=null, srcLabel='', lastErr='';
+  let people=null, srcLabel='', lastErr='', genAt=null;
 
-  // 0) Committed month-keyed JSON (primary; refreshed by Apps Script via the GitHub API)
-  try{
-    const r=await fetchWithTimeout(DATA_JSON+'?t='+Date.now(),9000);
-    if(r.ok){
-      const j=await r.json();
-      if(j&&Array.isArray(j.employees)&&j.employees.length){
-        RAW=j.employees; MONTHS=(j.months&&j.months.length)?j.months:['Current'];
-        MONTH=MONTHS.includes('Current')?'Current':MONTHS[MONTHS.length-1];
-        buildMonthSelect();
-        people=RAW.map(e=>fromMaster(monthRow(e,MONTH))).filter(Boolean);
-        srcLabel='data.json (GitHub)';
-      }
-    }
-  }catch(e){ lastErr='data.json: '+(e.name==='AbortError'?'timed out':e.message||'failed'); }
-
-  // 1) Apps Script web app (best — works even from a local file)
-  if(!people && WEBAPP_URL){
+  // 0) Apps Script web app — live from the sheet. Primary source.
+  if(WEBAPP_URL){
     try{
       const r=await fetchWithTimeout(WEBAPP_URL+(WEBAPP_URL.includes('?')?'&':'?')+'t='+Date.now(),12000);
       const txt=await r.text();
       const j=JSON.parse(txt);
-      const arr=Array.isArray(j)?j:j.people;
-      const mapped=(arr||[]).map(fromMaster).filter(Boolean);
-      if(mapped.length){ people=mapped; srcLabel='Apps Script web app'; }
-      else lastErr='web app returned no rows';
+      // Accept either a bare array, {people:[...]}, or the full month-aware
+      // payload {generatedAt, months, employees} that buildPayload_() returns.
+      if(j&&Array.isArray(j.employees)&&j.employees.length){
+        RAW=j.employees; MONTHS=(j.months&&j.months.length)?j.months:['Current'];
+        MONTH=MONTHS.includes('Current')?'Current':MONTHS[MONTHS.length-1];
+        buildMonthSelect();
+        const mapped=RAW.map(e=>fromMaster(monthRow(e,MONTH))).filter(Boolean);
+        if(mapped.length){ people=mapped; srcLabel='Apps Script web app'; genAt=j.generatedAt||null; }
+        else lastErr='web app returned no usable rows';
+      }else{
+        const arr=Array.isArray(j)?j:j.people;
+        const mapped=(arr||[]).map(fromMaster).filter(Boolean);
+        if(mapped.length){ people=mapped; srcLabel='Apps Script web app'; }
+        else lastErr='web app returned no rows';
+      }
     }catch(e){ lastErr='web app: '+(e.name==='AbortError'?'timed out':e.message||'failed'); }
+  }
+
+  // 1) Committed JSON — only if the web app is unreachable. May be stale.
+  let best=null;
+  if(!people) for(const path of DATA_JSON_CANDIDATES){
+    try{
+      const r=await fetchWithTimeout(path+'?t='+Date.now(),9000);
+      if(!r.ok) continue;
+      const j=await r.json();
+      if(!(j&&Array.isArray(j.employees)&&j.employees.length)) continue;
+      const t=j.generatedAt?Date.parse(j.generatedAt):0;
+      if(!best||t>best.t) best={j,t,path};
+    }catch(e){ lastErr='data.json: '+(e.name==='AbortError'?'timed out':e.message||'failed'); }
+  }
+  if(!people && best){
+    const j=best.j;
+    RAW=j.employees; MONTHS=(j.months&&j.months.length)?j.months:['Current'];
+    MONTH=MONTHS.includes('Current')?'Current':MONTHS[MONTHS.length-1];
+    buildMonthSelect();
+    people=RAW.map(e=>fromMaster(monthRow(e,MONTH))).filter(Boolean);
+    srcLabel=best.path+' (GitHub)';
+    genAt=j.generatedAt||null;
   }
 
   // 2) Published-to-web CSV (works when the dashboard is hosted at a real web address)
   if(!people){
-    const urls=[`https://docs.google.com/spreadsheets/d/e/2PACX-1vTGKpXllqYJrHeCI_9-Z9wT6TReZzZs2jGulrirNgDbBoBAVpONGFEJWxDS63H4dzwVvw2tgzohkzUE/pubhtml}/pub?output=csv`,
-                `https://docs.google.com/spreadsheets/d/e/2PACX-1vTGKpXllqYJrHeCI_9-Z9wT6TReZzZs2jGulrirNgDbBoBAVpONGFEJWxDS63H4dzwVvw2tgzohkzUE/pubhtml}/pub?output=csv`];
-    SHEET_NAME_CANDIDATES.forEach(n=>urls.push(`https://docs.google.com/spreadsheets/d/e/2PACX-1vTGKpXllqYJrHeCI_9-Z9wT6TReZzZs2jGulrirNgDbBoBAVpONGFEJWxDS63H4dzwVvw2tgzohkzUE/pubhtml}/pub?output=csv/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(n)}`));
+    const urls=[`${PUB_BASE}/pub?output=csv`];
+    SHEET_NAME_CANDIDATES.forEach(n=>urls.push(`https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(n)}`));
     for(const u of urls){
       try{
         const r=await fetchWithTimeout(u,9000);
@@ -1257,8 +1289,22 @@ async function boot(force){
   try{
     if(people){
       ALL=people; SRC='live';
-      bar.className='srcbar live';
-      $('src-text').innerHTML=`<b>LIVE</b> — Last updated at ${new Date().toLocaleTimeString('en-IN',{hour:'2-digit',minute:'2-digit'})} · Hit Refresh for new data.`;
+      const fmt=d=>new Date(d).toLocaleString('en-IN',{day:'2-digit',month:'short',hour:'2-digit',minute:'2-digit'});
+      if(genAt){
+        const ageH=(Date.now()-Date.parse(genAt))/36e5;
+        SRC=ageH>STALE_HOURS?'stale':'live';
+        if(SRC==='stale'){
+          bar.className='srcbar stale';
+          $('src-text').innerHTML=`<b>STALE</b> — sheet data was generated ${fmt(genAt)}, ${Math.round(ageH)} hours ago. The hourly sync has stopped. Re-run the Apps Script trigger to refresh.`;
+          $('src-help-btn').style.display='inline-block';
+        }else{
+          bar.className='srcbar live';
+          $('src-text').innerHTML=`<b>LIVE</b> — sheet data generated ${fmt(genAt)}. Hit Refresh for new data.`;
+        }
+      }else{
+        bar.className='srcbar live';
+        $('src-text').innerHTML=`<b>LIVE</b> — fetched ${fmt(Date.now())} from ${esc(srcLabel)}. Hit Refresh for new data.`;
+      }
     }else{
       ALL=normalize(parseCSV(SNAPSHOT_CSV)); SRC='snap';
       bar.className='srcbar snap';
@@ -1270,7 +1316,7 @@ async function boot(force){
     bar.className='srcbar snap';
     $('src-text').textContent='Parse problem — showing snapshot of '+SNAPSHOT_DATE+'.';
   }
-  $('footer').textContent=`VConnecTech Systems · Workforce Intelligence v3 · Confidential · Source: ${SRC==='live'?srcLabel+' (live)':'embedded snapshot '+SNAPSHOT_DATE}`;
+  $('footer').textContent=`VConnecTech Systems · Workforce Intelligence v3 · Confidential · Source: ${SRC==='snap'?'embedded snapshot '+SNAPSHOT_DATE:srcLabel+' · generated '+(genAt?new Date(genAt).toLocaleString('en-IN'):'unknown')}`;
   fillFilters(); renderAll();
 }
 if(typeof document!=='undefined'){ boot(); }
